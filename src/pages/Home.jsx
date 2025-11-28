@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import { pcGames } from "../data/data";
 import { pcNews } from "../data/news";
 import News from "../components/News";
+import cyber from "../assets/Images/Cyberpunk.png";
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
       <div>
         <div className="w-full h-fit md:h-90 flex items-end justify-center relative">
           <img
-            src="../src/assets/Images/Cyberpunk.png"
+            src={cyber}
             className="w-[160px] min-[529px]:w-[240px] md:w-[350px] absolute right-[-12px] md:right-[2vw] -top-3 sm:-top-7 md:-top-13 z-20 drop-shadow-2xl"
             alt=""
           />
@@ -64,27 +65,27 @@ function Home() {
           <span className="text-xl md:text-2xl">Coming Soon</span>
           <div className="flex gap-3 flex-wrap justify-center">
             <img
-              src="../src/assets/Images/up1.jpg"
+              src={pcGames[6].image}
               className="w-[25vw] md:w-40 h-25 rounded-2xl"
               alt=""
             />
             <img
-              src="../src/assets/Images/up2.jpg"
+              src={pcGames[9].image}
               className="w-[25vw] md:w-40 h-25 rounded-2xl"
               alt=""
             />
             <img
-              src="../src/assets/Images/up3.jpg"
+              src={pcGames[14].image}
               className="w-[25vw] md:w-40 h-25 rounded-2xl"
               alt=""
             />
             <img
-              src="../src/assets/Images/up4.jpg"
+              src={pcGames[19].image}
               className="w-[25vw] md:w-40 h-25 rounded-2xl"
               alt=""
             />
             <img
-              src="../src/assets/Images/up5.jpg"
+              src={pcGames[11].image}
               className="w-[25vw] md:w-40 h-25 rounded-2xl"
               alt=""
             />

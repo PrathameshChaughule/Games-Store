@@ -1,12 +1,15 @@
 import { BsThreeDots } from "react-icons/bs";
 import { FaCrown, FaWindows } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/Images/logo.png";
+import user from "../assets/Images/user.png";
+import us from "../assets/Images/us.svg";
 
 function Navbar() {
   return (
     <div className="bg-[#181A1E] py-4">
       <div className="flex items-center justify-around w-[85vw] m-auto">
-        <img src="../src/assets/Images/logo.png" className="w-[15vw]" alt="" />
+        <img src={logo} className="w-[15vw]" alt="" />
         <ul className="flex text-sm md:text-xl items-center justify-around w-100">
           <NavLink to="/" className="cursor-pointer hover:text-gray-400">
             PC
@@ -29,12 +32,12 @@ function Navbar() {
             </span>
           </div>
           <div className="flex hidden md:block items-center gap-1 cursor-pointer hover:bg-gray-700 p-1 rounded">
-            <img src="/src/assets/Images/us.svg" className="w-4.5" alt="" />
+            <img src={us} className="w-4.5" alt="" />
             <span className="text-[13.5px]">EN</span>
           </div>
           <div className="flex items-center gap-3">
             <img
-              src="../src/assets/Images/user.png"
+              src={user}
               className="w-11 cursor-pointer h-11 border-4 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
               alt=""
             />

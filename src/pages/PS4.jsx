@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import { ps4Games } from "../data/data";
 import { ps4News } from "../data/news";
 import News from "../components/News";
+import got from "../assets/Images/got.png";
 
 function PS4() {
   return (
@@ -13,7 +14,7 @@ function PS4() {
         <div>
           <div className="w-full h-fit md:h-90 flex items-end justify-center relative">
             <img
-              src="../src/assets/Images/got.png"
+              src={got}
               className="max-[496px]:w-[130px] max-[736px]:w-[220px] md:w-[306px] absolute right-[10px] sm:right-[4px] md:right-[2vw] -top-0  md:-top-[-4] z-20 drop-shadow-2xl"
               alt=""
             />
