@@ -4,12 +4,13 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/Images/logo.png";
 import user from "../assets/Images/user.png";
 import us from "../assets/Images/us.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Navbar() {
   return (
     <div className="bg-[#181A1E] py-4">
       <div className="flex items-center justify-around w-[85vw] m-auto">
-        <img src={logo} className="w-[15vw]" alt="" />
+        <LazyLoadImage src={logo} className="w-[15vw]" alt="" />
         <ul className="flex text-sm md:text-xl items-center justify-around w-100">
           <NavLink
             to="/"
@@ -68,11 +69,11 @@ function Navbar() {
             </span>
           </div>
           <div className="flex hidden md:block items-center gap-1 cursor-pointer hover:bg-gray-700 p-1 rounded">
-            <img src={us} className="w-4.5" alt="" />
+            <LazyLoadImage src={us} className="w-4.5" alt="" />
             <span className="text-[13.5px]">EN</span>
           </div>
           <div className="flex items-center gap-3">
-            <img
+            <LazyLoadImage
               src={user}
               className="w-11 cursor-pointer h-11 border-4 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
               alt=""
@@ -85,8 +86,6 @@ function Navbar() {
                 <FaCrown /> Subscription
               </span>
             </div>
-
-            <BsThreeDots className="text-3xl hidden md:block px-1 text-gray-400 cursor-pointer rounded hover:bg-gray-800 ml-2" />
           </div>
         </div>
       </div>

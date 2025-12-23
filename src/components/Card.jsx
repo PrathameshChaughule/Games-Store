@@ -1,12 +1,14 @@
-import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Card({ name, com, img }) {
   return (
     <div className="flex flex-col items-center w-35 h-40 lg:h-fit lg:w-fit cursor-pointer hover:bg-white/10 p-3 rounded-xl">
-      <img
+      <LazyLoadImage
         src={img}
+        effect="blur"
         className="h-[100px] md:w-50 md:h-40 lg:rounded-3xl"
-        alt=""
+        alt={name}
       />
       <span className="mt-1.5 text-sm lg:text-xl font-semibold text-center">
         {name}

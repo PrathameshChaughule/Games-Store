@@ -1,14 +1,16 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Hero({ title, price, col, img }) {
   return (
     <div className="w-full h-fit md:h-90 flex items-end justify-center relative">
-      <img
+      <LazyLoadImage
+        alt={title}
         src={img}
+        effect="blur"
         className="w-[50vw] w-[170px] md:w-[350px] absolute right-[-12px] md:right-30 -top-7 md:-top-13 z-20 drop-shadow-2xl"
-        alt=""
       />
-
       <div
         className="w-full flex justify-between h-65 md:h-80 relative 
                   rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10 

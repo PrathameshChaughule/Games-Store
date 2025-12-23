@@ -6,11 +6,12 @@ import { RiTelegram2Fill } from "react-icons/ri";
 import { TfiYoutube } from "react-icons/tfi";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/Images/logo.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Footer() {
   return (
     <div className="bg-[#181A1E] py-13 flex flex-col justify-center gap-10 items-center">
-      <img src={logo} className="w-50" alt="" />
+      <LazyLoadImage src={logo} className="w-50" alt="" />
       <div className="flex gap-5 md:gap-10 items-center flex-col md:flex-row text-lg justify-center">
         <ul className="flex gap-10 items-center">
           <NavLink to="/" className="cursor-pointer hover:text-gray-400">

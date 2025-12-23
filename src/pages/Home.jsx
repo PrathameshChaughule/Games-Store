@@ -1,8 +1,9 @@
 import { IoSearch } from "react-icons/io5";
-import { pcGames } from "../data/data";
-import { pcNews } from "../data/news";
 import cyber from "../assets/Images/Cyberpunk.png";
-import { lazy, useState } from "react";
+import { lazy, useEffect, useMemo, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import axios from "axios";
 
 const News = lazy(() => import("../components/News"));
 const Card = lazy(() => import("../components/Card"));
@@ -11,11 +12,35 @@ const Filter = lazy(() => import("../components/Filter"));
 function Home() {
   const [filter, setFilter] = useState("Newest");
   const [search, setSearch] = useState("");
+  const [games, setGames] = useState([]);
+  const [news, setNews] = useState([]);
 
-  const sortGame = (games, filter, search) => {
-    const sorted = [...games];
+  useEffect(() => {
+    Promise.all([
+      axios.get("http://localhost:3000/games"),
+      axios.get("http://localhost:3000/news"),
+    ])
+      .then(([gamesRes, newsRes]) => {
+        setGames(gamesRes.data);
+        setNews(newsRes.data);
+      })
+      .catch((err) => console.error(err));
+  }, []);
 
-    sorted.sort((a, b) => {
+  const filteredNews = news.filter((item) => item.category === "pcNews");
+
+  const sortGame = (games, filter, search, category) => {
+    let filtered = [...games];
+
+    filtered = filtered.filter((game) =>
+      category === "all" ? true : game.category === category
+    );
+
+    filtered = filtered.filter((game) =>
+      game.title?.toLowerCase().includes(search.toLowerCase())
+    );
+
+    filtered.sort((a, b) => {
       switch (filter) {
         case "Newest":
           return new Date(b.releaseDate) - new Date(a.releaseDate);
@@ -39,16 +64,19 @@ function Home() {
           return 0;
       }
     });
-    return sorted.filter((item) =>
-      item.title.toLocaleLowerCase().includes(search?.toLowerCase() || "")
-    );
+
+    return filtered;
   };
+
+  const filteredGames = useMemo(() => {
+    return sortGame(games, filter, search, "pcGames");
+  }, [games, filter, search]);
 
   return (
     <div className="w-[90vw] md:w-[79vw] m-auto py-7">
       <div>
         <div className="w-full h-fit md:h-90 flex items-end justify-center relative">
-          <img
+          <LazyLoadImage
             src={cyber}
             className="w-[160px] min-[529px]:w-[240px] md:w-[350px] absolute right-[-12px] md:right-[2vw] -top-3 sm:-top-7 md:-top-13 z-20 drop-shadow-2xl"
             alt=""
@@ -98,34 +126,54 @@ function Home() {
           </div>
         </div>
         <div className="flex flex-col items-start gap-4 my-10 w-fit m-auto">
-          <span className="text-xl md:text-2xl">Coming Soon</span>
+          <span className="text-xl md:text-2xl">Suggest games</span>
           <div className="flex gap-3 flex-wrap justify-center">
-            <img
-              src={pcGames[6].image}
-              className="w-[25vw] md:w-40 h-25 rounded-2xl"
-              alt=""
-            />
-            <img
-              src={pcGames[9].image}
-              className="w-[25vw] md:w-40 h-25 rounded-2xl"
-              alt=""
-            />
-            <img
-              src={pcGames[14].image}
-              className="w-[25vw] md:w-40 h-25 rounded-2xl"
-              alt=""
-            />
-            <img
-              src={pcGames[19].image}
-              className="w-[25vw] md:w-40 h-25 rounded-2xl"
-              alt=""
-            />
-            <img
-              src={pcGames[11].image}
-              className="w-[25vw] md:w-40 h-25 rounded-2xl"
-              alt=""
-            />
-            <div className="flex flex-col bg-white/5 md:w-40 items-center w-[25vw] h-25 rounded-2xl border-dotted border-3 border-gray-700 cursor-pointer text-gray-400/50 ">
+            {games.length > 81 && (
+              <LazyLoadImage
+                effect="blur"
+                className="w-[25vw] md:w-40 h-25 rounded-2xl"
+                src={games[66].image}
+                alt={games[66].title}
+              />
+            )}
+
+            {games.length > 81 && (
+              <LazyLoadImage
+                effect="blur"
+                className="w-[25vw] md:w-40 h-25 rounded-2xl"
+                src={games[69].image}
+                alt={games[69].title}
+              />
+            )}
+
+            {games.length > 81 && (
+              <LazyLoadImage
+                effect="blur"
+                className="w-[25vw] md:w-40 h-25 rounded-2xl"
+                src={games[74].image}
+                alt={games[74].title}
+              />
+            )}
+
+            {games.length > 81 && (
+              <LazyLoadImage
+                effect="blur"
+                className="w-[25vw] md:w-40 h-25 rounded-2xl"
+                src={games[79].image}
+                alt={games[79].title}
+              />
+            )}
+
+            {games.length > 81 && (
+              <LazyLoadImage
+                effect="blur"
+                className="w-[25vw] md:w-40 h-25 rounded-2xl"
+                src={games[81].image}
+                alt={games[81].title}
+              />
+            )}
+
+            <div className="flex flex-col bg-white/5 md:w-40 items-center w-[24vw] h-25 rounded-2xl border-dotted border-3 border-gray-700 cursor-pointer text-gray-400/50 ">
               <span className="text-3xl">+</span>
               <span className="text-center font-semibold">
                 Propose
@@ -135,26 +183,26 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center mb-2 flex-col sm:flex-row">
-          <span className="text-sm sm:text-xl md:text-2xl font-bold">
+        <div className="flex justify-between items-center mb-2 flex-row">
+          <div className="flex items-center gap-2 w-fit text-sm md:text-[18px] bg-white/15 py-1 px-2 sm:px-4 rounded mr-3">
+            <IoSearch />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="outline-none border-none w-full"
+              placeholder="Search by game"
+            />
+          </div>
+          <span className="text-sm hidden sm:block sm:text-xl text-center md:text-2xl font-bold">
             Available for acceleration
           </span>
           <div className="flex gap-4 items-center">
             <Filter setFilter={setFilter} filter={filter} />
-            <div className="flex items-center gap-2 w-fit text-sm md:text-[18px] bg-white/15 py-1 px-4 rounded mr-3">
-              <IoSearch />
-              <input
-                type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="outline-none border-none"
-                placeholder="Search by game"
-              />
-            </div>
           </div>
         </div>
         <div className="flex gap-3 items-center justify-center flex-wrap">
-          {sortGame(pcGames, filter, search).map((val) => (
+          {filteredGames.map((val) => (
             <Card
               key={val.id}
               name={val.title}
@@ -169,7 +217,7 @@ function Home() {
           </span>
         </div>
         <div className="flex gap-4 items-center flex-wrap justify-center">
-          {pcNews.map((index) => (
+          {filteredNews.map((index) => (
             <News
               key={index.id}
               title={index.title}
