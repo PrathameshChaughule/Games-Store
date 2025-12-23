@@ -1,13 +1,49 @@
-import { BsFillGridFill } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
-import { FaAngleUp } from "react-icons/fa";
-import Card from "../components/Card";
 import { pcGames } from "../data/data";
 import { pcNews } from "../data/news";
-import News from "../components/News";
 import cyber from "../assets/Images/Cyberpunk.png";
+import { lazy, useState } from "react";
+
+const News = lazy(() => import("../components/News"));
+const Card = lazy(() => import("../components/Card"));
+const Filter = lazy(() => import("../components/Filter"));
 
 function Home() {
+  const [filter, setFilter] = useState("Newest");
+  const [search, setSearch] = useState("");
+
+  const sortGame = (games, filter, search) => {
+    const sorted = [...games];
+
+    sorted.sort((a, b) => {
+      switch (filter) {
+        case "Newest":
+          return new Date(b.releaseDate) - new Date(a.releaseDate);
+
+        case "Oldest":
+          return new Date(a.releaseDate) - new Date(b.releaseDate);
+
+        case "Price: Low to High":
+          return a.price - b.price;
+
+        case "Price: High to Low":
+          return b.price - a.price;
+
+        case "Most Popular":
+          return b.popularity - a.popularity;
+
+        case "Top Rated":
+          return b.rating - a.rating;
+
+        default:
+          return 0;
+      }
+    });
+    return sorted.filter((item) =>
+      item.title.toLocaleLowerCase().includes(search?.toLowerCase() || "")
+    );
+  };
+
   return (
     <div className="w-[90vw] md:w-[79vw] m-auto py-7">
       <div>
@@ -99,21 +135,18 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center mb-2">
+        <div className="flex justify-between items-center mb-2 flex-col sm:flex-row">
           <span className="text-sm sm:text-xl md:text-2xl font-bold">
             Available for acceleration
           </span>
           <div className="flex gap-4 items-center">
-            <div>
-              <span className="flex items-center hidden md:flex gap-2 md:block text-[18px] cursor-pointer text-white/85">
-                <BsFillGridFill /> By Date Added <FaAngleUp />
-              </span>
-            </div>
-
+            <Filter setFilter={setFilter} filter={filter} />
             <div className="flex items-center gap-2 w-fit text-sm md:text-[18px] bg-white/15 py-1 px-4 rounded mr-3">
               <IoSearch />
               <input
                 type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
                 className="outline-none border-none"
                 placeholder="Search by game"
               />
@@ -121,7 +154,7 @@ function Home() {
           </div>
         </div>
         <div className="flex gap-3 items-center justify-center flex-wrap">
-          {pcGames.map((val) => (
+          {sortGame(pcGames, filter, search).map((val) => (
             <Card
               key={val.id}
               name={val.title}

@@ -5,6 +5,10 @@ export const pcGames = [
     company: "CD Projekt",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg",
+    price: 2999,
+    releaseDate: "2020-12-10",
+    popularity: 88,
+    rating: 4.4,
   },
   {
     id: 2,
@@ -12,6 +16,10 @@ export const pcGames = [
     company: "CD Projekt",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg",
+    price: 1499,
+    releaseDate: "2015-05-19",
+    popularity: 96,
+    rating: 4.9,
   },
   {
     id: 3,
@@ -19,6 +27,10 @@ export const pcGames = [
     company: "Rockstar Games",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg",
+    price: 2499,
+    releaseDate: "2018-10-26",
+    popularity: 95,
+    rating: 4.8,
   },
   {
     id: 4,
@@ -26,6 +38,10 @@ export const pcGames = [
     company: "Rockstar Games",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
+    price: 1999,
+    releaseDate: "2015-04-14",
+    popularity: 99,
+    rating: 4.8,
   },
   {
     id: 5,
@@ -33,6 +49,10 @@ export const pcGames = [
     company: "Mojang Studios",
     image:
       "https://t4.ftcdn.net/jpg/04/02/36/15/240_F_402361507_ECwbO0u5LjvnSd6mOJWF76Bafr1doZNs.jpg",
+    price: 1999,
+    releaseDate: "2011-11-18",
+    popularity: 100,
+    rating: 4.9,
   },
   {
     id: 6,
@@ -40,12 +60,20 @@ export const pcGames = [
     company: "Riot Games",
     image:
       "https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-892482f9cbec5827c7c4989d7feb2bf1",
+    price: 0,
+    releaseDate: "2020-06-02",
+    popularity: 94,
+    rating: 4.6,
   },
   {
     id: 7,
     title: "Fortnite",
     company: "Epic Games",
     image: "https://i.ytimg.com/vi/adGdyCdvKz4/maxresdefault.jpg",
+    price: 0,
+    releaseDate: "2017-07-21",
+    popularity: 98,
+    rating: 4.5,
   },
   {
     id: 8,
@@ -53,18 +81,30 @@ export const pcGames = [
     company: "Respawn Entertainment",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg",
+    price: 0,
+    releaseDate: "2019-02-04",
+    popularity: 92,
+    rating: 4.4,
   },
   {
     id: 9,
     title: "Counter-Strike: Global Offensive",
     company: "Valve",
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
+    price: 0,
+    releaseDate: "2012-08-21",
+    popularity: 97,
+    rating: 4.7,
   },
   {
     id: 10,
     title: "Dota 2",
     company: "Valve",
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg",
+    price: 0,
+    releaseDate: "2013-07-09",
+    popularity: 93,
+    rating: 4.6,
   },
   {
     id: 11,
@@ -72,13 +112,21 @@ export const pcGames = [
     company: "Blizzard Entertainment",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVRwzZEYfbXaE-hPzngqen2W6Iqy6NltUCG_3sq7zgVIZaJIRsFFjHl1WZ5U4dd4eDxtI&s=10",
+    price: 0,
+    releaseDate: "2022-10-04",
+    popularity: 85,
+    rating: 4.1,
   },
   {
     id: 12,
     title: "Call of Duty: Modern Warfare II",
     company: "Activision",
     image:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/03a32ef57a71955100af89dc40add1c4535fd813/capsule_616x353.jpg?t=1763414032",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/03a32ef57a71955100af89dc40add1c4535fd813/capsule_616x353.jpg",
+    price: 4999,
+    releaseDate: "2022-10-28",
+    popularity: 90,
+    rating: 4.3,
   },
   {
     id: 13,
@@ -86,6 +134,10 @@ export const pcGames = [
     company: "FromSoftware / Bandai Namco",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg",
+    price: 3999,
+    releaseDate: "2022-02-25",
+    popularity: 98,
+    rating: 4.9,
   },
   {
     id: 14,
@@ -93,6 +145,10 @@ export const pcGames = [
     company: "Riot Games",
     image:
       "https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-47eb328eac5ddd63ebd096ded7d0d5ab",
+    price: 0,
+    releaseDate: "2009-10-27",
+    popularity: 99,
+    rating: 4.7,
   },
   {
     id: 15,
@@ -100,13 +156,21 @@ export const pcGames = [
     company: "Ubisoft",
     image:
       "https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Wide_3840x2160-3840x2160-485fe17203671386c71bde8110886c7d.jpg",
+    price: 2999,
+    releaseDate: "2020-11-10",
+    popularity: 86,
+    rating: 4.2,
   },
   {
     id: 16,
     title: "Far Cry 6",
     company: "Ubisoft",
     image:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2369390/header.jpg?t=1758656170",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2369390/header.jpg",
+    price: 2999,
+    releaseDate: "2021-10-07",
+    popularity: 82,
+    rating: 4.1,
   },
   {
     id: 17,
@@ -114,6 +178,10 @@ export const pcGames = [
     company: "Guerrilla Games / Sony",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/header.jpg",
+    price: 2499,
+    releaseDate: "2020-08-07",
+    popularity: 91,
+    rating: 4.6,
   },
   {
     id: 18,
@@ -121,6 +189,10 @@ export const pcGames = [
     company: "Bethesda",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1716740/header.jpg",
+    price: 4999,
+    releaseDate: "2023-09-06",
+    popularity: 84,
+    rating: 4.0,
   },
   {
     id: 19,
@@ -128,6 +200,10 @@ export const pcGames = [
     company: "Bethesda",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/header.jpg",
+    price: 1499,
+    releaseDate: "2011-11-11",
+    popularity: 97,
+    rating: 4.8,
   },
   {
     id: 20,
@@ -135,70 +211,21 @@ export const pcGames = [
     company: "EA DICE",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1517290/header.jpg",
-  },
-
-  {
-    id: 22,
-    title: "Back 4 Blood",
-    company: "Turtle Rock Studios",
-    image:
-      "https://cdn.cloudflare.steamstatic.com/steam/apps/924970/header.jpg",
-  },
-  {
-    id: 23,
-    title: "Tom Clancy’s Rainbow Six Siege",
-    company: "Ubisoft",
-    image:
-      "https://cdn.cloudflare.steamstatic.com/steam/apps/359550/header.jpg",
-  },
-  {
-    id: 25,
-    title: "Minecraft Dungeons",
-    company: "Mojang Studios",
-    image:
-      "https://cdn.cloudflare.steamstatic.com/steam/apps/1672970/header.jpg",
-  },
-  {
-    id: 26,
-    title: "Diablo IV",
-    company: "Blizzard Entertainment",
-    image:
-      "https://cdn.cloudflare.steamstatic.com/steam/apps/2344520/header.jpg",
-  },
-  {
-    id: 27,
-    title: "Rocket League",
-    company: "Psyonix",
-    image:
-      "https://cdn1.epicgames.com/offer/9773aa1aa54f4f7b80e44bef04986cea/EGS_RocketLeague_PsyonixLLC_S1_2560x1440-4c231557ef0a0626fbb97e0bd137d837",
-  },
-  {
-    id: 28,
-    title: "Fall Guys",
-    company: "Mediatonic / Epic Games",
-    image:
-      "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blte608ad726e62f133/650f0bfdfc5c842bbb0d4464/fallguysfeatured.jpg?disable=upscale&width=1200&height=630&fit=crop",
-  },
-  {
-    id: 29,
-    title: "No Man’s Sky",
-    company: "Hello Games",
-    image:
-      "https://cdn.cloudflare.steamstatic.com/steam/apps/275850/header.jpg",
-  },
-  {
-    id: 30,
-    title: "Destiny 2",
-    company: "Bungie",
-    image:
-      "https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header.jpg",
+    price: 2999,
+    releaseDate: "2021-11-19",
+    popularity: 78,
+    rating: 3.8,
   },
   {
     id: 21,
-    title: "Cyberpunk 2077: Phantom Liberty",
-    company: "CD Projekt",
+    title: "Baldur’s Gate 3",
+    company: "Larian Studios",
     image:
-      "https://cdn.cloudflare.steamstatic.com/steam/apps/2138330/header.jpg",
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg",
+    price: 3499,
+    releaseDate: "2023-08-03",
+    popularity: 96,
+    rating: 4.9,
   },
 ];
 
@@ -206,9 +233,13 @@ export const ps5Games = [
   {
     id: 1,
     title: "Marvel’s Spider-Man 2",
-    company: "Insomniac Games ",
+    company: "Insomniac Games",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSgkrYsVQkBwTJ6YQ8JtkT-VwyvKnd9xjyeQ&s",
+    price: 4999,
+    releaseDate: "2023-10-20",
+    popularity: 97,
+    rating: 4.8,
   },
   {
     id: 2,
@@ -216,20 +247,32 @@ export const ps5Games = [
     company: "Santa Monica Studio",
     image:
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/capsule_616x353.jpg?t=1750909504",
+    price: 3999,
+    releaseDate: "2022-11-09",
+    popularity: 98,
+    rating: 4.9,
   },
   {
     id: 3,
     title: "Horizon Forbidden West",
-    company: "Guerrilla Games ",
+    company: "Guerrilla Games",
     image:
       "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/yIa8STLMmCyhj48fGDpaAuRM.jpg",
+    price: 3999,
+    releaseDate: "2022-02-18",
+    popularity: 95,
+    rating: 4.7,
   },
   {
     id: 4,
     title: "Demon’s Souls (Remake)",
-    company: "Bluepoint Games ",
+    company: "Bluepoint Games",
     image:
       "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/M8cxD6UPmsU551lmNq9Lat9Y.png",
+    price: 3499,
+    releaseDate: "2020-11-12",
+    popularity: 92,
+    rating: 4.6,
   },
   {
     id: 5,
@@ -237,6 +280,10 @@ export const ps5Games = [
     company: "Square Enix",
     image:
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1741059170",
+    price: 4499,
+    releaseDate: "2023-06-22",
+    popularity: 93,
+    rating: 4.5,
   },
   {
     id: 6,
@@ -244,13 +291,21 @@ export const ps5Games = [
     company: "FromSoftware / Bandai Namco",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1748630546",
+    price: 3999,
+    releaseDate: "2022-02-25",
+    popularity: 97,
+    rating: 4.9,
   },
   {
     id: 7,
     title: "The Last of Us Part I",
-    company: "Naughty Dog ",
+    company: "Naughty Dog",
     image:
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1750959031",
+    price: 2999,
+    releaseDate: "2022-09-02",
+    popularity: 94,
+    rating: 4.7,
   },
   {
     id: 8,
@@ -258,6 +313,10 @@ export const ps5Games = [
     company: "Sucker Punch",
     image:
       "https://cdn1.epicgames.com/offer/6e6aa039c73347b885803de65ac5d3db/EGS_GhostofTsushima_SuckerPunchProductions_S1_2560x1440-c33a63e5da4518de6e32299bedf7efab",
+    price: 3499,
+    releaseDate: "2021-08-20",
+    popularity: 90,
+    rating: 4.6,
   },
   {
     id: 9,
@@ -265,6 +324,10 @@ export const ps5Games = [
     company: "Insomniac Games",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGgEMnB62PDdgiwyENZIJShLyO9ohb0A3Rkw&s",
+    price: 3499,
+    releaseDate: "2021-06-11",
+    popularity: 91,
+    rating: 4.8,
   },
   {
     id: 10,
@@ -272,6 +335,10 @@ export const ps5Games = [
     company: "Capcom",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1196590/capsule_616x353.jpg?t=1741142800",
+    price: 2999,
+    releaseDate: "2021-05-07",
+    popularity: 89,
+    rating: 4.4,
   },
   {
     id: 11,
@@ -279,6 +346,10 @@ export const ps5Games = [
     company: "NetherRealm Studios",
     image:
       "https://cdn1.epicgames.com/offer/fda0f2b4047f46ffb4e94d5595c1468e/EGS_MortalKombat1_NetherRealmStudios_S3_2560x1440-bea2296b499ceecfc1dc1a91ab0d9a36?resize=1&w=480&h=270&quality=medium",
+    price: 3499,
+    releaseDate: "2023-09-19",
+    popularity: 88,
+    rating: 4.3,
   },
   {
     id: 12,
@@ -286,6 +357,10 @@ export const ps5Games = [
     company: "Ubisoft",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt_QPN3LKBStlkGZQkmedDxOx024HuLf1Yw&s",
+    price: 2999,
+    releaseDate: "2023-10-05",
+    popularity: 87,
+    rating: 4.2,
   },
   {
     id: 13,
@@ -293,6 +368,10 @@ export const ps5Games = [
     company: "Activision",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595270/862980706af9711b9c79ba4be6cb551d72f343a5/capsule_616x353.jpg?t=1763413443",
+    price: 4999,
+    releaseDate: "2023-11-05",
+    popularity: 92,
+    rating: 4.4,
   },
   {
     id: 14,
@@ -300,6 +379,10 @@ export const ps5Games = [
     company: "Housemarque",
     image:
       "https://image.api.playstation.com/vulcan/ap/rnd/202011/1621/fYZQHZ42eXXUt7c6D5YjLrq5.png",
+    price: 2999,
+    releaseDate: "2022-04-15",
+    popularity: 86,
+    rating: 4.5,
   },
   {
     id: 15,
@@ -307,6 +390,10 @@ export const ps5Games = [
     company: "Kojima Productions",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg?t=1764081491",
+    price: 2499,
+    releaseDate: "2021-09-24",
+    popularity: 85,
+    rating: 4.3,
   },
   {
     id: 16,
@@ -314,6 +401,10 @@ export const ps5Games = [
     company: "CD Projekt",
     image:
       "https://image.api.playstation.com/vulcan/ap/rnd/202311/2812/ae84720b553c4ce943e9c342621b60f198beda0dbf533e21.jpg",
+    price: 2999,
+    releaseDate: "2023-03-17",
+    popularity: 83,
+    rating: 4.1,
   },
   {
     id: 17,
@@ -321,6 +412,10 @@ export const ps5Games = [
     company: "Polyphony Digital",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStzlV5ogWELL0Wt6FY-Anz007ddNQhTjYlzA&s",
+    price: 3499,
+    releaseDate: "2022-03-04",
+    popularity: 90,
+    rating: 4.6,
   },
   {
     id: 18,
@@ -328,6 +423,10 @@ export const ps5Games = [
     company: "2K Games",
     image:
       "https://image.api.playstation.com/vulcan/ap/rnd/202306/2609/278035a1f94e3a07d4d0f74cd61b987af14a833b65a56cd2.png",
+    price: 2999,
+    releaseDate: "2023-09-08",
+    popularity: 84,
+    rating: 4.2,
   },
   {
     id: 19,
@@ -335,6 +434,10 @@ export const ps5Games = [
     company: "EA Sports",
     image:
       "https://cdn2.unrealengine.com/ea-sports-fifa-23-is-coming-to-the-epic-games-store-1920x1080-398e19351a82.jpg",
+    price: 2799,
+    releaseDate: "2022-09-27",
+    popularity: 88,
+    rating: 4.1,
   },
   {
     id: 20,
@@ -342,6 +445,21 @@ export const ps5Games = [
     company: "Respawn Entertainment",
     image:
       "https://image.api.playstation.com/vulcan/ap/rnd/202304/1016/66eb1ad90edf540651444d04f0476a463a80a81ba0b46ea0.png",
+    price: 3999,
+    releaseDate: "2023-04-28",
+    popularity: 87,
+    rating: 4.3,
+  },
+  {
+    id: 21,
+    title: "Horizon Call of the Mountain",
+    company: "Guerrilla / Firesprite",
+    image:
+      "https://image.api.playstation.com/vulcan/img/rnd/202211/0418/1WbJG9K6fhV7V3QGmNRrxfqQ.png",
+    price: 3499,
+    releaseDate: "2023-02-22",
+    popularity: 82,
+    rating: 4.2,
   },
 ];
 
@@ -352,6 +470,10 @@ export const ps4Games = [
     company: "Naughty Dog",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2531310/header.jpg?t=1750959180",
+    price: 2499,
+    releaseDate: "2020-06-19",
+    popularity: 95,
+    rating: 4.8,
   },
   {
     id: 2,
@@ -359,12 +481,20 @@ export const ps4Games = [
     company: "Santa Monica Studio",
     image:
       "https://image.api.playstation.com/vulcan/img/rnd/202010/2217/LsaRVLF2IU2L1FNtu9d3MKLq.jpg",
+    price: 1999,
+    releaseDate: "2018-04-20",
+    popularity: 97,
+    rating: 4.9,
   },
   {
     id: 3,
     title: "Uncharted 4: A Thief’s End",
     company: "Naughty Dog",
     image: "https://i.ytimg.com/vi_webp/Ow2cL-pp6p8/maxresdefault.webp",
+    price: 1999,
+    releaseDate: "2016-05-10",
+    popularity: 93,
+    rating: 4.7,
   },
   {
     id: 4,
@@ -372,6 +502,10 @@ export const ps4Games = [
     company: "Insomniac Games",
     image:
       "https://i.guim.co.uk/img/media/892fa5c71f29ce088247397726f32ca83b8231d0/79_0_3386_2031/master/3386.jpg?width=1200&quality=85&auto=format&fit=max&s=f4abd83f4c0bebb2099b844cc144ccac",
+    price: 2499,
+    releaseDate: "2018-09-07",
+    popularity: 94,
+    rating: 4.8,
   },
   {
     id: 5,
@@ -379,6 +513,10 @@ export const ps4Games = [
     company: "Guerrilla Games",
     image:
       "https://cdn1.epicgames.com/3328b08ac1c14540aa265a1a85c07839/offer/hzd_wide-2560x1440-bd312be05c49cf339097777c493cb899.jpg",
+    price: 2499,
+    releaseDate: "2017-03-01",
+    popularity: 92,
+    rating: 4.7,
   },
   {
     id: 6,
@@ -386,6 +524,10 @@ export const ps4Games = [
     company: "Rockstar Games",
     image:
       "https://store-images.s-microsoft.com/image/apps.58752.68182501197884443.ac728a87-7bc1-4a0d-8bc6-0712072da93c.0cf58754-9802-46f8-8557-8d3ff32a627a?q=90&w=480&h=270",
+    price: 2499,
+    releaseDate: "2018-10-26",
+    popularity: 96,
+    rating: 4.8,
   },
   {
     id: 7,
@@ -393,6 +535,10 @@ export const ps4Games = [
     company: "FromSoftware",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4N6CC3X6NwZhz5b8vnzD_7hskAnHx8P5CGg&s",
+    price: 1999,
+    releaseDate: "2015-03-24",
+    popularity: 91,
+    rating: 4.7,
   },
   {
     id: 8,
@@ -400,6 +546,10 @@ export const ps4Games = [
     company: "Sucker Punch",
     image:
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/capsule_616x353.jpg?t=1763409398",
+    price: 2999,
+    releaseDate: "2020-07-17",
+    popularity: 93,
+    rating: 4.8,
   },
   {
     id: 9,
@@ -407,12 +557,20 @@ export const ps4Games = [
     company: "CD Projekt",
     image:
       "https://cdn2.unrealengine.com/egs-thewitcher3redkit-cdprojektred-dlc-s1-2560x1440-a65f0eb69f14.jpg?resize=1&w=480&h=270&quality=medium",
+    price: 1999,
+    releaseDate: "2015-05-19",
+    popularity: 97,
+    rating: 4.9,
   },
   {
     id: 10,
     title: "Grand Theft Auto V",
     company: "Rockstar Games",
     image: "https://i.ytimg.com/vi_webp/FZD_yAJg8uY/maxresdefault.webp",
+    price: 1999,
+    releaseDate: "2014-11-18",
+    popularity: 98,
+    rating: 4.8,
   },
   {
     id: 11,
@@ -420,6 +578,10 @@ export const ps4Games = [
     company: "Atlus",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/capsule_616x353.jpg?t=1763530018",
+    price: 2499,
+    releaseDate: "2017-04-04",
+    popularity: 90,
+    rating: 4.8,
   },
   {
     id: 12,
@@ -427,6 +589,10 @@ export const ps4Games = [
     company: "FromSoftware",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1762888662",
+    price: 2499,
+    releaseDate: "2019-03-22",
+    popularity: 89,
+    rating: 4.7,
   },
   {
     id: 13,
@@ -434,12 +600,20 @@ export const ps4Games = [
     company: "Ubisoft",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnV2fPULX7vTBn5idv3tZRepsAqQTca68z4w&s",
+    price: 2499,
+    releaseDate: "2018-10-05",
+    popularity: 88,
+    rating: 4.5,
   },
   {
     id: 14,
     title: "FIFA 23 (PS4)",
     company: "EA Sports",
     image: "https://i.ytimg.com/vi/X2kcBQegPV4/maxresdefault.jpg",
+    price: 2299,
+    releaseDate: "2022-09-27",
+    popularity: 86,
+    rating: 4.1,
   },
   {
     id: 15,
@@ -447,13 +621,21 @@ export const ps4Games = [
     company: "Activision",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962663/54bd6a40eb3759aca46966aadd4c4d0d84b2713e/header.jpg?t=1763146019",
+    price: 0,
+    releaseDate: "2020-03-10",
+    popularity: 92,
+    rating: 4.3,
   },
   {
     id: 16,
     title: "Cyberpunk 2077 (PS4)",
     company: "CD Projekt",
     image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.t3.com%2Fnews%2Fcd-projekt-cyberpunk-2077-ps4-and-xbox-one-fixes-incoming-whatever-the-cost&psig=AOvVaw3hp9cU1hLScan42wGznXlZ&ust=1764422612669000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNif8dT4lJEDFQAAAAAdAAAAABAE",
+      "https://image.api.playstation.com/vulcan/ap/rnd/202311/2812/ae84720b553c4ce943e9c342621b60f198beda0dbf533e21.jpg",
+    price: 1799,
+    releaseDate: "2020-01-13",
+    popularity: 80,
+    rating: 4.0,
   },
   {
     id: 17,
@@ -461,6 +643,10 @@ export const ps4Games = [
     company: "Capcom",
     image:
       "https://image.api.playstation.com/vulcan/ap/rnd/202206/0204/22MNn4z9dJnDmEAtmV4rw3Zq.jpg",
+    price: 2499,
+    releaseDate: "2019-01-25",
+    popularity: 90,
+    rating: 4.7,
   },
   {
     id: 18,
@@ -468,6 +654,10 @@ export const ps4Games = [
     company: "Epic Games",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtS4sZv_gqhio9QZzxMRwwuCzSyWUiqZxAvw&s",
+    price: 0,
+    releaseDate: "2017-07-21",
+    popularity: 94,
+    rating: 4.5,
   },
   {
     id: 19,
@@ -475,6 +665,10 @@ export const ps4Games = [
     company: "Respawn Entertainment",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/1eab2d507fbc0cfbfac0a4e2da51edc19703f4e4/capsule_616x353.jpg?t=1762457261",
+    price: 0,
+    releaseDate: "2019-02-04",
+    popularity: 91,
+    rating: 4.4,
   },
   {
     id: 20,
@@ -482,6 +676,21 @@ export const ps4Games = [
     company: "EA DICE",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkGd45ORcbYfVOgaCOUizEYI5qDTm3fiOqA&s",
+    price: 2499,
+    releaseDate: "2016-10-21",
+    popularity: 83,
+    rating: 4.3,
+  },
+  {
+    id: 21,
+    title: "Persona 5 Royal",
+    company: "Atlus",
+    image:
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/751900/header.jpg",
+    price: 2999,
+    releaseDate: "2019-03-01",
+    popularity: 89,
+    rating: 4.8,
   },
 ];
 
@@ -492,6 +701,10 @@ export const xboxGames = [
     company: "343 Industries",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQpqYnm1u_8lcPWbOSzmWD3vO9oUYgKXH0g&s",
+    price: 2999,
+    releaseDate: "2021-12-08",
+    popularity: 92,
+    rating: 4.5,
   },
   {
     id: 2,
@@ -499,6 +712,10 @@ export const xboxGames = [
     company: "Playground Games",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnwsa0CZgM6cGiSCGfKOX4qH2-RGyov6EcqQ&s",
+    price: 3499,
+    releaseDate: "2021-11-09",
+    popularity: 95,
+    rating: 4.7,
   },
   {
     id: 3,
@@ -506,6 +723,10 @@ export const xboxGames = [
     company: "The Coalition",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1097840/capsule_616x353.jpg?t=1684425784",
+    price: 2499,
+    releaseDate: "2019-09-10",
+    popularity: 88,
+    rating: 4.2,
   },
   {
     id: 4,
@@ -513,6 +734,10 @@ export const xboxGames = [
     company: "Rare",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhRTMtSuAzDSt8rX7u44OCDEWK0kePn001Q&s",
+    price: 0,
+    releaseDate: "2018-03-20",
+    popularity: 90,
+    rating: 4.3,
   },
   {
     id: 5,
@@ -520,6 +745,10 @@ export const xboxGames = [
     company: "Asobo Studio",
     image:
       "https://developer.microsoft.com/content/dam/microsoftgamedev/blogs/images/legacy/FlightSim.png",
+    price: 3999,
+    releaseDate: "2020-08-18",
+    popularity: 85,
+    rating: 4.4,
   },
   {
     id: 6,
@@ -527,6 +756,10 @@ export const xboxGames = [
     company: "Rockstar Games",
     image:
       "https://store-images.s-microsoft.com/image/apps.58752.68182501197884443.ac728a87-7bc1-4a0d-8bc6-0712072da93c.0cf58754-9802-46f8-8557-8d3ff32a627a?q=90&w=480&h=270",
+    price: 2499,
+    releaseDate: "2018-10-26",
+    popularity: 96,
+    rating: 4.8,
   },
   {
     id: 7,
@@ -534,6 +767,10 @@ export const xboxGames = [
     company: "FromSoftware",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1748630546",
+    price: 3999,
+    releaseDate: "2022-02-25",
+    popularity: 97,
+    rating: 4.9,
   },
   {
     id: 8,
@@ -541,6 +778,10 @@ export const xboxGames = [
     company: "Ubisoft",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEM3YDo4V9W05nElRAvQZyPsGxy73vABYe3A&s",
+    price: 2999,
+    releaseDate: "2020-11-10",
+    popularity: 89,
+    rating: 4.3,
   },
   {
     id: 9,
@@ -548,6 +789,10 @@ export const xboxGames = [
     company: "CD Projekt",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5UpvfCuJ8tJMei0YmoWow-WzlKIUHZFpB_A&s",
+    price: 2999,
+    releaseDate: "2020-12-10",
+    popularity: 88,
+    rating: 4.4,
   },
   {
     id: 10,
@@ -555,6 +800,10 @@ export const xboxGames = [
     company: "EA Sports",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKAKYcDPBxBIEudWlDZ3xl_6fyydrFvgMFw&s",
+    price: 2799,
+    releaseDate: "2022-09-27",
+    popularity: 91,
+    rating: 4.2,
   },
   {
     id: 11,
@@ -562,6 +811,10 @@ export const xboxGames = [
     company: "Activision",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/03a32ef57a71955100af89dc40add1c4535fd813/capsule_616x353.jpg?t=1763414032",
+    price: 4999,
+    releaseDate: "2022-10-28",
+    popularity: 90,
+    rating: 4.3,
   },
   {
     id: 12,
@@ -569,6 +822,10 @@ export const xboxGames = [
     company: "Bethesda Game Studios",
     image:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/capsule_616x353.jpg?t=1749757928",
+    price: 4999,
+    releaseDate: "2023-09-06",
+    popularity: 86,
+    rating: 4.1,
   },
   {
     id: 13,
@@ -576,6 +833,10 @@ export const xboxGames = [
     company: "CD Projekt",
     image:
       "https://cdn2.unrealengine.com/egs-thewitcher3redkit-cdprojektred-dlc-s1-2560x1440-a65f0eb69f14.jpg?resize=1&w=480&h=270&quality=medium",
+    price: 1499,
+    releaseDate: "2015-05-19",
+    popularity: 98,
+    rating: 4.9,
   },
   {
     id: 14,
@@ -583,6 +844,10 @@ export const xboxGames = [
     company: "Capcom",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpMiHDzXrYn4fvoRk12BCOu2c3QGu8zt3tNw&s",
+    price: 2499,
+    releaseDate: "2023-03-24",
+    popularity: 87,
+    rating: 4.5,
   },
   {
     id: 15,
@@ -590,6 +855,10 @@ export const xboxGames = [
     company: "Respawn Entertainment",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXfREm7vGbx4U-ePQcjj_qjV9txk816NGPA&s",
+    price: 0,
+    releaseDate: "2019-02-04",
+    popularity: 94,
+    rating: 4.4,
   },
   {
     id: 16,
@@ -597,6 +866,10 @@ export const xboxGames = [
     company: "Epic Games",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6i0wwFmBp6gwwdZyqpHMzkmrKh_TFCS4_Og&s",
+    price: 0,
+    releaseDate: "2017-07-21",
+    popularity: 96,
+    rating: 4.5,
   },
   {
     id: 17,
@@ -604,6 +877,10 @@ export const xboxGames = [
     company: "EA DICE",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi23EpOEyuzWfn1LLQudMHJW4ZCDxo6GsWCg&s",
+    price: 1999,
+    releaseDate: "2018-11-20",
+    popularity: 84,
+    rating: 4.0,
   },
   {
     id: 18,
@@ -611,6 +888,10 @@ export const xboxGames = [
     company: "id Software",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1BQREioBJ9NlZ-ap7xAbnM0nme5C-W8JkwA&s",
+    price: 2499,
+    releaseDate: "2020-03-20",
+    popularity: 83,
+    rating: 4.1,
   },
   {
     id: 19,
@@ -618,6 +899,10 @@ export const xboxGames = [
     company: "NetherRealm Studios",
     image:
       "https://cdn.dlcompare.com/game_tetiere/upload/gameimage/file/40594.jpeg.webp",
+    price: 2499,
+    releaseDate: "2019-04-23",
+    popularity: 89,
+    rating: 4.3,
   },
   {
     id: 20,
@@ -625,5 +910,9 @@ export const xboxGames = [
     company: "Bethesda",
     image:
       "https://cdn2.unrealengine.com/egs-theelderscrollsvskyrimanniversaryedition-bethesdagamestudios-editions-s1-2560x1440-0c02a73f3e1e.jpg?resize=1&w=480&h=270&quality=medium",
+    price: 1499,
+    releaseDate: "2016-10-28",
+    popularity: 91,
+    rating: 4.8,
   },
 ];
