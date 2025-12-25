@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Details from "./components/Details";
+import Loading from "./components/Loading";
+import Cart from "./components/Cart";
 
 const Navbar = lazy(() => import("./components/Navbar"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -15,26 +17,19 @@ function App() {
       <Router>
         <Suspense
           fallback={
-            <div className="w-full h-[100vh] flex items-center justify-center">
-              <div className="flex flex-col items-center justify-center w-full h-screen bg-black text-white gap-6">
-                <div className="w-16 h-16 border-4 border-orange-500 rounded-lg relative animate-spin">
-                  <div className="absolute w-2.5 h-2.5 bg-orange-500 rounded-full top-2 left-2"></div>
-                  <div className="absolute w-2.5 h-2.5 bg-orange-500 rounded-full bottom-2 right-2"></div>
-                </div>
-                <p className="font-mono text-sm tracking-wider">
-                  Loading Games...
-                </p>
-              </div>
+            <div className="bg-black">
+              <Loading />
             </div>
           }
         >
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/ps5" element={<PS5 />} />
-            <Route path="/ps4" element={<PS4 />} />
-            <Route path="/xbox" element={<XBOX />} />
+            <Route path="/ps5Games" element={<PS5 />} />
+            <Route path="/ps4Games" element={<PS4 />} />
+            <Route path="/xboxGames" element={<XBOX />} />
             <Route path="/details/:id" element={<Details />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
           <Footer />
         </Suspense>

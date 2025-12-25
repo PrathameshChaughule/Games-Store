@@ -17,13 +17,19 @@ function Footer() {
           <NavLink to="/" className="cursor-pointer hover:text-gray-400">
             PC
           </NavLink>
-          <NavLink to="/ps5" className="cursor-pointer hover:text-gray-400">
+          <NavLink
+            to="/ps5Games"
+            className="cursor-pointer hover:text-gray-400"
+          >
             PS5
           </NavLink>
-          <NavLink to="ps4" className="cursor-pointer hover:text-gray-400">
+          <NavLink to="ps4Games" className="cursor-pointer hover:text-gray-400">
             PS4
           </NavLink>
-          <NavLink to="xbox" className="cursor-pointer hover:text-gray-400">
+          <NavLink
+            to="xboxGames"
+            className="cursor-pointer hover:text-gray-400"
+          >
             XBOX
           </NavLink>
         </ul>

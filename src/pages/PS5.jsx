@@ -1,9 +1,9 @@
 import { IoSearch } from "react-icons/io5";
 import cod from "../assets/Images/cod.png";
-import { lazy, useEffect, useMemo, useState } from "react";
+import { lazy, useContext, useMemo, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import axios from "axios";
+import { GameContext } from "../components/GameContext";
 
 const News = lazy(() => import("../components/News"));
 const Card = lazy(() => import("../components/Card"));
@@ -12,20 +12,7 @@ const Filter = lazy(() => import("../components/Filter"));
 function PS5() {
   const [filter, setFilter] = useState("Newest");
   const [search, setSearch] = useState("");
-  const [games, setGames] = useState([]);
-  const [news, setNews] = useState([]);
-
-  useEffect(() => {
-    Promise.all([
-      axios.get("http://localhost:3000/games"),
-      axios.get("http://localhost:3000/news"),
-    ])
-      .then(([gamesRes, newsRes]) => {
-        setGames(gamesRes.data);
-        setNews(newsRes.data);
-      })
-      .catch((err) => console.error(err));
-  }, []);
+  const { games, news, loading } = useContext(GameContext);
 
   const filteredNews = news.filter((item) => item.category === "ps5News");
 

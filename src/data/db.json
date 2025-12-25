@@ -4,8 +4,11 @@
     "title": "Marvel’s Spider-Man 2",
     "company": "Insomniac Games",
     "category": "ps5Games",
-    "image":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSgkrYsVQkBwTJ6YQ8JtkT-VwyvKnd9xjyeQ&s",
+    "image":"/assets/images/spider-man-2-5.avif",
+    "image1":"/assets/images/spider-man-2-2.webp",
+    "image2":"/assets/images/spider-man-2-3.webp",
+    "image3":"/assets/images/spider-man-2-4.webp",
+    "image4":"/assets/images/spider-man-2-1.webp",
     "price": 4999,
     "youtube": "https://www.youtube.com/embed/nq1M_Wc4FIc?si=M47VEy4p1A6SrXcB",
     "releaseDate": "2023-10-20",
@@ -17,8 +20,11 @@
     "title": "God of War Ragnarök",
     "company": "Santa Monica Studio",
     "category": "ps5Games",
-    "image":
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/capsule_616x353.jpg?t=1750909504",
+    "image":"/assets/images/god-of-war-ragnarok-5.jpg",
+    "image1":"/assets/images/god-of-war-ragnarok-1.webp",
+    "image2":"/assets/images/god-of-war-ragnarok-2.webp",
+    "image3":"/assets/images/god-of-war-ragnarok-3.webp",
+    "image4":"/assets/images/god-of-war-ragnarok-4.webp",
     "price": 3999,
     "youtube": "https://www.youtube.com/embed/hfJ4Km46A-0?si=qnDVvZgYBg9lP8HP",
     "releaseDate": "2022-11-09",
@@ -30,8 +36,11 @@
     "title": "Horizon Forbidden West",
     "company": "Guerrilla Games",
     "category": "ps5Games",
-    "image":
-      "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/yIa8STLMmCyhj48fGDpaAuRM.jpg",
+    "image":"/assets/images/horizon-forbidden-west-5.avif",
+    "image1":"/assets/images/horizon-forbidden-west-1.webp",
+    "image2":"/assets/images/horizon-forbidden-west-2.webp",
+    "image3":"/assets/images/horizon-forbidden-west-3.webp",
+    "image4":"/assets/images/horizon-forbidden-west-4.webp",
     "price": 3999,
     "youtube": "https://www.youtube.com/embed/XLZN63UxAOM?si=myOA7CxcEImDq_uW",
     "releaseDate": "2022-02-18",
@@ -40,11 +49,14 @@
   },
   {
     "id": 4,
-    "title": "Demon’s Souls (Remake)",
+    "title": "Demon’s Souls",
     "company": "Bluepoint Games",
     "category": "ps5Games",
-    "image":
-      "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/M8cxD6UPmsU551lmNq9Lat9Y.png",
+    "image":"/assets/images/demons-souls-5.jpg",
+    "image1":"/assets/images/demons-souls-1.webp",
+    "image2":"/assets/images/demons-souls-2.webp",
+    "image3":"/assets/images/demons-souls-3.webp",
+    "image4":"/assets/images/demons-souls-4.webp",
     "price": 3499,
     "youtube": "https://www.youtube.com/embed/JiqGi3GMTko?si=nr83658OlljDTEQU",
     "releaseDate": "2020-11-12",
@@ -56,8 +68,11 @@
     "title": "Final Fantasy XVI",
     "company": "Square Enix",
     "category": "ps5Games",
-    "image":
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1741059170",
+    "image":"/assets/images/Final-Fantasy-5.webp",
+    "image1":"/assets/images/Final-Fantasy-1.webp",
+    "image2":"/assets/images/Final-Fantasy-2.webp",
+    "image3":"/assets/images/Final-Fantasy-3.webp",
+    "image4":"/assets/images/Final-Fantasy-4.webp",
     "price": 4499,
     "youtube": "https://www.youtube.com/embed/gV5rIW1Qums?si=SYgY0tqYMNuIJLQT",
     "releaseDate": "2023-06-22",
@@ -66,13 +81,16 @@
   },
   {
     "id": 6,
-    "title": "Elden Ring",
+    "title": "Elden Ring Nightreign",
     "company": "FromSoftware",
     "category": "ps5Games",
-    "image":
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1748630546",
+    "image":"/assets/images/elden-ring-5.avif",
+    "image1":"/assets/images/elden-ring-1.webp",
+    "image2":"/assets/images/elden-ring-2.webp",
+    "image3":"/assets/images/elden-ring-3.webp",
+    "image4":"/assets/images/elden-ring-4.webp",
     "price": 3999,
-    "youtube": "https://www.youtube.com/embed/qDNq9f_UpRw?si=fhqt9b5AdPTIEByu",
+    "youtube": "https://www.youtube.com/embed/Djtsw5k_DNc?si=Quz2GjuRzbm5p9h_",
     "releaseDate": "2022-02-25",
     "popularity": 97,
     "rating": 4.9
@@ -82,8 +100,11 @@
     "title": "The Last of Us Part I",
     "company": "Naughty Dog",
     "category": "ps5Games",
-    "image":
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1750959031",
+    "image":"/assets/images/the-last-of-us-part-5.jpg",
+    "image1":"/assets/images/the-last-of-us-part-4.webp",
+    "image2":"/assets/images/the-last-of-us-part-3.webp",
+    "image3":"/assets/images/the-last-of-us-part-2.webp",
+    "image4":"/assets/images/the-last-of-us-part-1.webp",
     "price": 2999,
     "youtube": "https://www.youtube.com/embed/R2Ebc_OFeug?si=jdZZyEyD1AXLfS0k",
     "releaseDate": "2022-09-02",
@@ -92,11 +113,14 @@
   },
   {
     "id": 8,
-    "title": "Ghost of Tsushima:",
+    "title": "Ghost of Tsushima",
     "company": "Sucker Punch",
     "category": "ps5Games",
-    "image":
-      "https://cdn1.epicgames.com/offer/6e6aa039c73347b885803de65ac5d3db/EGS_GhostofTsushima_SuckerPunchProductions_S1_2560x1440-c33a63e5da4518de6e32299bedf7efab",
+    "image":"/assets/images/ghost-of-tsushima-5.jpg",
+    "image1":"/assets/images/god-of-war-ragnarok-4.webp",
+    "image2":"/assets/images/god-of-war-ragnarok-3.webp",
+    "image3":"/assets/images/god-of-war-ragnarok-2.webp",
+    "image4":"/assets/images/god-of-war-ragnarok-1.webp",
     "price": 3499,
     "youtube": "https://www.youtube.com/embed/sc4_dXjkCl8?si=UskcWM8sIbZS5d8R",
     "releaseDate": "2021-08-20",
@@ -108,8 +132,11 @@
     "title": "Ratchet & Clank: Rift Apart",
     "company": "Insomniac Games",
     "category": "ps5Games",
-    "image":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGgEMnB62PDdgiwyENZIJShLyO9ohb0A3Rkw&s",
+    "image":"/assets/images/ratchet-and-clank-rift-5.jpg",
+    "image1":"/assets/images/ratchet-and-clank-rift-4.webp",
+    "image2":"/assets/images/ratchet-and-clank-rift-3.webp",
+    "image3":"/assets/images/ratchet-and-clank-rift-2.webp",
+    "image4":"/assets/images/ratchet-and-clank-rift-1.webp",
     "price": 3499,
     "youtube": "https://www.youtube.com/embed/55PRv_e00wc?si=8-vLLjWNCxbxcvxj",
     "releaseDate": "2021-06-11",
@@ -121,8 +148,11 @@
     "title": "Resident Evil Village",
     "company": "Capcom",
     "category": "ps5Games",
-    "image":
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1196590/capsule_616x353.jpg?t=1741142800",
+    "image":"/assets/images/resident-evil-village-5.webp",
+    "image1":"/assets/images/resident-evil-village-4.webp",
+    "image2":"/assets/images/resident-evil-village-3.webp",
+    "image3":"/assets/images/resident-evil-village-2.webp",
+    "image4":"/assets/images/resident-evil-village-1.webp",
     "price": 2999,
     "youtube": "https://www.youtube.com/embed/dRpXEc-EJow?si=Ria7WF035oqUAMLG",
     "releaseDate": "2021-05-07",
@@ -134,10 +164,13 @@
     "title": "Mortal Kombat 1",
     "company": "NetherRealm Studios",
     "category": "ps5Games",
-    "image":
-      "https://cdn1.epicgames.com/offer/fda0f2b4047f46ffb4e94d5595c1468e/EGS_MortalKombat1_NetherRealmStudios_S3_2560x1440-bea2296b499ceecfc1dc1a91ab0d9a36?resize=1&w=480&h=270&quality=medium",
+    "image":"/assets/images/Mortal-Kombat-1-5.avif",
+    "image1":"/assets/images/Mortal-Kombat-1-4.webp",
+    "image2":"/assets/images/Mortal-Kombat-1-3.avif",
+    "image3":"/assets/images/Mortal-Kombat-1-2.webp",
+    "image4":"/assets/images/Mortal-Kombat-1-1.webp",
     "price": 3499,
-    "youtube": "https://www.youtube.com/embed/LrNumBZGZ0o?si=q0OaiJWUjbf5RJ-k",
+    "youtube": "https://www.youtube.com/embed/lBYvt1_t6Q4?si=DFAa1_dNXCqbttOH",
     "releaseDate": "2023-09-19",
     "popularity": 88,
     "rating": 4.3
@@ -147,8 +180,11 @@
     "title": "Assassin’s Creed Mirage",
     "company": "Ubisoft",
     "category": "ps5Games",
-    "image":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt_QPN3LKBStlkGZQkmedDxOx024HuLf1Yw&s",
+    "image":"/assets/images/Assassin’s-Creed-Mirage-5.avif",
+    "image1":"/assets/images/Assassin’s-Creed-Mirage-4.avif",
+    "image2":"/assets/images/Assassin’s-Creed-Mirage-3.jpg",
+    "image3":"/assets/images/Assassin’s-Creed-Mirage-2.jpg",
+    "image4":"/assets/images/Assassin’s-Creed-Mirage-1.jpeg",
     "price": 2999,
     "youtube": "https://www.youtube.com/embed/4z2KghiD4Ds?si=RkZRQ2EmkTN28E9s",
     "releaseDate": "2023-10-05",
@@ -160,11 +196,14 @@
     "title": "Call of Duty III",
     "company": "Activision",
     "category": "ps5Games",
-    "image":
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595270/862980706af9711b9c79ba4be6cb551d72f343a5/capsule_616x353.jpg?t=1763413443",
-    "price": 4999,
+    "image":"/assets/images/Call-of-Duty-III-5.jpg",
+    "image1":"/assets/images/Call-of-Duty-III-4.png",
+    "image2":"/assets/images/Call-of-Duty-III-3.png",
+    "image3":"/assets/images/Call-of-Duty-III-2.jpg",
+    "image4":"/assets/images/Call-of-Duty-III-1.jpg",
     "youtube": "https://www.youtube.com/embed/i3IsLrPeZG8?si=RZ2-LK0qbWtHChep",
     "releaseDate": "2023-11-05",
+    "price": 5599,
     "popularity": 92,
     "rating": 4.4
   },
@@ -173,8 +212,11 @@
     "title": "Returnal",
     "company": "Housemarque",
     "category": "ps5Games",
-    "image":
-      "https://image.api.playstation.com/vulcan/ap/rnd/202011/1621/fYZQHZ42eXXUt7c6D5YjLrq5.png",
+    "image":"/assets/images/Returnal-5.avif",
+    "image1":"/assets/images/Returnal-1.jpg",
+    "image2":"/assets/images/Returnal-2.webp",
+    "image3":"/assets/images/Returnal-3.webp",
+    "image4":"/assets/images/Returnal-4.webp",
     "price": 2999,
     "youtube": "https://www.youtube.com/embed/ov4fJmGCsZM?si=MtpTnqJBKRlKxxYf",
     "releaseDate": "2022-04-15",
@@ -186,8 +228,11 @@
     "title": "Death Stranding Director’s Cut",
     "company": "Kojima Productions",
     "category": "ps5Games",
-    "image":
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg?t=1764081491",
+    "image":"/assets/images/Death Stranding Director’s Cut 5.jpg",
+    "image1":"/assets/images/Death Stranding Director’s Cut 4.jpg",
+    "image2":"/assets/images/Death Stranding Director’s Cut 3.jpg",
+    "image3":"/assets/images/Death Stranding Director’s Cut 2.jpg",
+    "image4":"/assets/images/Death Stranding Director’s Cut 1.jpg",
     "price": 2499,
     "youtube": "https://www.youtube.com/embed/QlLEmu8c-Vk?si=UpX_HJ7a8BV2PoHw",
     "releaseDate": "2021-09-24",
@@ -199,8 +244,11 @@
     "title": "Cyberpunk 2077 (PS5 Version)",
     "company": "CD Projekt",
     "category": "ps5Games",
-    "image":
-      "https://image.api.playstation.com/vulcan/ap/rnd/202311/2812/ae84720b553c4ce943e9c342621b60f198beda0dbf533e21.jpg",
+    "image":"/assets/images/Cyberpunk 2077 5.jpg",
+    "image1":"/assets/images/Cyberpunk 2077 4.jpg",
+    "image2":"/assets/images/Cyberpunk 2077 3.webp",
+    "image3":"/assets/images/Cyberpunk 2077 2.jpg",
+    "image4":"/assets/images/Cyberpunk 2077 1.jpg",
     "price": 2999,
     "youtube": "https://www.youtube.com/embed/Y4x_FjuwV4M?si=uSmcKaS-Iiubh6xf",
     "releaseDate": "2023-03-17",
@@ -212,8 +260,11 @@
     "title": "Gran Turismo 7",
     "company": "Polyphony Digital",
     "category": "ps5Games",
-    "image":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStzlV5ogWELL0Wt6FY-Anz007ddNQhTjYlzA&s",
+    "image":"/assets/images/Gran Turismo 5.jpg",
+    "image1":"/assets/images/Gran Turismo 4.webp",
+    "image2":"/assets/images/Gran Turismo 3.jpg",
+    "image3":"/assets/images/Gran Turismo 2.jpg",
+    "image4":"/assets/images/Gran Turismo 1.jpg",
     "price": 3499,
     "youtube": "https://www.youtube.com/embed/1tBUsXIkG1A?si=zV1Nu79aAMIrolqf",
     "releaseDate": "2022-03-04",
@@ -225,8 +276,11 @@
     "title": "NBA 2K24",
     "company": "2K Games",
     "category": "ps5Games",
-    "image":
-      "https://image.api.playstation.com/vulcan/ap/rnd/202306/2609/278035a1f94e3a07d4d0f74cd61b987af14a833b65a56cd2.png",
+    "image":"/assets/images/NBA 2K24 5.jpg",
+    "image1":"/assets/images/NBA 2K24 4.webp",
+    "image2":"/assets/images/NBA 2K24 3.png",
+    "image3":"/assets/images/NBA 2K24 2.jpg",
+    "image4":"/assets/images/NBA 2K24 1.jpg",
     "price": 2999,
     "youtube": "https://www.youtube.com/embed/GITzbGIiNKg?si=NHL6B4PQpWVKRsJC",
     "releaseDate": "2023-09-08",
@@ -238,8 +292,11 @@
     "title": "FIFA 23",
     "company": "EA Sports",
     "category": "ps5Games",
-    "image":
-      "https://cdn2.unrealengine.com/ea-sports-fifa-23-is-coming-to-the-epic-games-store-1920x1080-398e19351a82.jpg",
+    "image":"/assets/images/FIFA 23 5.jpg",
+    "image1":"/assets/images/FIFA 23 4.jpeg",
+    "image2":"/assets/images/FIFA 23 3.webp",
+    "image3":"/assets/images/FIFA 23 2.jpg",
+    "image4":"/assets/images/FIFA 23 1.jpg",
     "price": 2799,
     "youtube": "https://www.youtube.com/embed/0tIW1X2dv0c?si=8OI_ddoN79fX3ekz",
     "releaseDate": "2022-09-27",
@@ -251,8 +308,11 @@
     "title": "Star Wars Jedi: Survivor",
     "company": "Respawn Entertainment",
     "category": "ps5Games",
-    "image":
-      "https://image.api.playstation.com/vulcan/ap/rnd/202304/1016/66eb1ad90edf540651444d04f0476a463a80a81ba0b46ea0.png",
+    "image":"/assets/images/Star Wars Jedi Survivor 5.jpg",
+    "image1":"/assets/images/Star Wars Jedi Survivor 4.jpg",
+    "image2":"/assets/images/Star Wars Jedi Survivor 3.webp",
+    "image3":"/assets/images/Star Wars Jedi Survivor 2.avif",
+    "image4":"/assets/images/Star Wars Jedi Survivor 1.avif",
     "price": 3999,
     "youtube": "https://www.youtube.com/embed/VRaobDJjiec?si=J4vSBMJDCyYMZJVx",
     "releaseDate": "2023-04-28",
@@ -264,8 +324,11 @@
     "title": "Horizon Call of the Mountain",
     "company": "Guerrilla",
     "category": "ps5Games",
-    "image":
-      "https://www.allkeyshop.com/blog/wp-content/uploads/HORIZON-CALL-OF-THE-MOUNTAIN-MEET-RYAS_featured.jpg",
+    "image":"/assets/images/Horizon Call of the Mountain 5.webp",
+    "image1":"/assets/images/Horizon Call of the Mountain 4.jpg",
+    "image2":"/assets/images/Horizon Call of the Mountain 3.webp",
+    "image3":"/assets/images/Horizon Call of the Mountain 2.webp",
+    "image4":"/assets/images/Horizon Call of the Mountain 1.jpg",
     "price": 3499,
     "youtube": "https://www.youtube.com/embed/cUWB3NBpcbo?si=ZKH3E_k6npmGsJZC",
     "releaseDate": "2023-02-22",
@@ -277,8 +340,11 @@
     "title": "The Last of Us Part II",
     "company": "Naughty Dog",
     "category": "ps4Games",
-    "image":
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2531310/header.jpg?t=1750959180",
+    "image":"/assets/images/the-last-of-us-part-5.jpg",
+    "image1":"/assets/images/the-last-of-us-part-4.webp",
+    "image2":"/assets/images/the-last-of-us-part-3.webp",
+    "image3":"/assets/images/the-last-of-us-part-2.webp",
+    "image4":"/assets/images/the-last-of-us-part-1.webp",
     "price": 2499,
     "youtube": "https://www.youtube.com/embed/-llaUBqovHw?si=zkRA5R9jKfpibuX0",
     "releaseDate": "2020-06-19",
@@ -305,7 +371,7 @@
     "category": "ps4Games",
     "image": "https://i.ytimg.com/vi_webp/Ow2cL-pp6p8/maxresdefault.webp",
     "price": 1999,
-    "youtube": "https://www.youtube.com/embed/34QkYJc9qjE",
+    "youtube": "https://www.youtube.com/embed/hh5HV4iic1Y?si=FJzG_S8tNZ53Felx",
     "releaseDate": "2016-05-10",
     "popularity": 93,
     "rating": 4.7
@@ -331,7 +397,7 @@
     "image":
       "https://cdn1.epicgames.com/3328b08ac1c14540aa265a1a85c07839/offer/hzd_wide-2560x1440-bd312be05c49cf339097777c493cb899.jpg",
     "price": 2499,
-    "youtube": "https://www.youtube.com/embed/u4-FCsiF5x4",
+    "youtube": "https://www.youtube.com/embed/VNd7tpPzmzE?si=UCE0e2P-dxgCJ4Nm",
     "releaseDate": "2017-03-01",
     "popularity": 92,
     "rating": 4.7
@@ -343,7 +409,7 @@
     "category": "ps4Games",
     "image":
       "https://store-images.s-microsoft.com/image/apps.58752.68182501197884443.ac728a87-7bc1-4a0d-8bc6-0712072da93c.0cf58754-9802-46f8-8557-8d3ff32a627a?q=90&w=480&h=270",
-    "price": 2499,
+    "price": 4599,
     "youtube": "https://www.youtube.com/embed/eaW0tYpxyp0",
     "releaseDate": "2018-10-26",
     "popularity": 96,
@@ -402,16 +468,19 @@
   },
   {
     "id": 32,
-    "title": "Persona 5",
-    "company": "Atlus",
+    "title": "Assassin’s Creed Mirage",
+    "company": "Ubisoft",
     "category": "ps4Games",
-    "image":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqolK9zCfUQMhOAJwRB9TQhnMHoNR6O6Z7g&s",
-    "price": 2499,
-    "youtube": "https://www.youtube.com/embed/SKpSpvFCZRw",
-    "releaseDate": "2017-04-04",
-    "popularity": 90,
-    "rating": 4.8
+    "image":"/assets/images/Assassin’s-Creed-Mirage-5.avif",
+    "image1":"/assets/images/Assassin’s-Creed-Mirage-4.avif",
+    "image2":"/assets/images/Assassin’s-Creed-Mirage-3.jpg",
+    "image3":"/assets/images/Assassin’s-Creed-Mirage-2.jpg",
+    "image4":"/assets/images/Assassin’s-Creed-Mirage-1.jpeg",
+    "price": 2999,
+    "youtube": "https://www.youtube.com/embed/4z2KghiD4Ds?si=RkZRQ2EmkTN28E9s",
+    "releaseDate": "2023-10-05",
+    "popularity": 87,
+    "rating": 4.2
   },
   {
     "id": 33,
@@ -458,7 +527,7 @@
     "category": "ps4Games",
     "image":
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962663/54bd6a40eb3759aca46966aadd4c4d0d84b2713e/header.jpg?t=1763146019",
-    "price": 0,
+    "price": 2800,
     "youtube": "https://www.youtube.com/embed/0E44DClsX5Q",
     "releaseDate": "2020-03-10",
     "popularity": 92,
@@ -497,7 +566,7 @@
     "category": "ps4Games",
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtS4sZv_gqhio9QZzxMRwwuCzSyWUiqZxAvw&s",
-    "price": 0,
+    "price": 1500,
     "youtube": "https://www.youtube.com/embed/2gUtfBmw86Y",
     "releaseDate": "2017-07-21",
     "popularity": 94,
@@ -510,7 +579,7 @@
     "category": "ps4Games",
     "image":
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/1eab2d507fbc0cfbfac0a4e2da51edc19703f4e4/capsule_616x353.jpg?t=1762457261",
-    "price": 0,
+    "price": 1099,
     "youtube": "https://www.youtube.com/embed/innmNewjkuk",
     "releaseDate": "2019-02-04",
     "popularity": 91,
@@ -550,7 +619,7 @@
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQpqYnm1u_8lcPWbOSzmWD3vO9oUYgKXH0g&s",
     "price": 2999,
-    "youtube": "https://www.youtube.com/embed/_ThqQsAFT2U",
+    "youtube": "https://www.youtube.com/embed/rFh2i4AlPD4?si=DctljR37UezEq9OV",
     "releaseDate": "2021-12-08",
     "popularity": 92,
     "rating": 4.5
@@ -563,7 +632,7 @@
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnwsa0CZgM6cGiSCGfKOX4qH2-RGyov6EcqQ&s",
     "price": 3499,
-    "youtube": "https://www.youtube.com/embed/4UjB24C6GNo",
+    "youtube": "https://www.youtube.com/embed/Rv7xLt5yNsM?si=hP7geczZ4aU0kJSP",
     "releaseDate": "2021-11-09",
     "popularity": 95,
     "rating": 4.7
@@ -575,8 +644,8 @@
     "category": "xboxGames",
     "image":
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1097840/capsule_616x353.jpg?t=1684425784",
-    "price": 2499,
-    "youtube": "https://www.youtube.com/embed/QlcEj7l7jgo",
+    "price": 2199,
+    "youtube": "https://www.youtube.com/embed/h35_KOgslkM?si=3WGDMm9zyCOV7N-y",
     "releaseDate": "2019-09-10",
     "popularity": 88,
     "rating": 4.2
@@ -588,8 +657,8 @@
     "category": "xboxGames",
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhRTMtSuAzDSt8rX7u44OCDEWK0kePn001Q&s",
-    "price": 0,
-    "youtube": "https://www.youtube.com/embed/cLllgD2QH8s",
+    "price": 3499,
+    "youtube": "https://www.youtube.com/embed/r5JIBaasuE8?si=uJHNF4uLM18jbQQB",
     "releaseDate": "2018-03-20",
     "popularity": 90,
     "rating": 4.3
@@ -602,7 +671,7 @@
     "image":
       "https://developer.microsoft.com/content/dam/microsoftgamedev/blogs/images/legacy/FlightSim.png",
     "price": 3999,
-    "youtube": "https://www.youtube.com/embed/if0Y0p0Jy88",
+    "youtube": "https://www.youtube.com/embed/QZ6XpfaWbko?si=yu7o_CoEDbfY-9fC",
     "releaseDate": "2020-08-18",
     "popularity": 85,
     "rating": 4.4
@@ -614,7 +683,7 @@
     "category": "xboxGames",
     "image":
       "https://store-images.s-microsoft.com/image/apps.58752.68182501197884443.ac728a87-7bc1-4a0d-8bc6-0712072da93c.0cf58754-9802-46f8-8557-8d3ff32a627a?q=90&w=480&h=270",
-    "price": 2499,
+    "price": 4599,
     "youtube": "https://www.youtube.com/embed/eaW0tYpxyp0",
     "releaseDate": "2018-10-26",
     "popularity": 96,
@@ -628,7 +697,7 @@
     "image":
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1748630546",
     "price": 3999,
-    "youtube": "https://www.youtube.com/embed/INl0ZD-g6aA",
+    "youtube": "https://www.youtube.com/embed/E3Huy2cdih0?si=ExvDNIdRFcVrMaRO",
     "releaseDate": "2022-02-25",
     "popularity": 97,
     "rating": 4.9
@@ -667,7 +736,7 @@
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKAKYcDPBxBIEudWlDZ3xl_6fyydrFvgMFw&s",
     "price": 2799,
-    "youtube": "https://www.youtube.com/embed/cLXwh2EMsBY",
+    "youtube": "https://www.youtube.com/embed/o3V-GvvzjE4?si=rhKsNrexR1PXoccX",
     "releaseDate": "2022-09-27",
     "popularity": 91,
     "rating": 4.2
@@ -680,7 +749,7 @@
     "image":
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/03a32ef57a71955100af89dc40add1c4535fd813/capsule_616x353.jpg?t=1763414032",
     "price": 4999,
-    "youtube": "https://www.youtube.com/embed/9wH2vUsBJUg",
+    "youtube": "https://www.youtube.com/embed/ho3jY94txHI?si=ZOVC6uECTuAiExKj",
     "releaseDate": "2022-10-28",
     "popularity": 90,
     "rating": 4.3
@@ -719,7 +788,7 @@
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpMiHDzXrYn4fvoRk12BCOu2c3QGu8zt3tNw&s",
     "price": 2499,
-    "youtube": "https://www.youtube.com/embed/pc1HlnkeBwQ",
+    "youtube": "https://www.youtube.com/embed/j5Ic2z3_xp0?si=07fFNQNIjPqJMOBn",
     "releaseDate": "2023-03-24",
     "popularity": 87,
     "rating": 4.5
@@ -731,7 +800,7 @@
     "category": "xboxGames",
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXfREm7vGbx4U-ePQcjj_qjV9txk816NGPA&s",
-    "price": 0,
+    "price": 1099,
     "youtube": "https://www.youtube.com/embed/innmNewjkuk",
     "releaseDate": "2019-02-04",
     "popularity": 94,
@@ -744,7 +813,7 @@
     "category": "xboxGames",
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6i0wwFmBp6gwwdZyqpHMzkmrKh_TFCS4_Og&s",
-    "price": 0,
+    "price": 1500,
     "youtube": "https://www.youtube.com/embed/2gUtfBmw86Y",
     "releaseDate": "2017-07-21",
     "popularity": 96,
@@ -771,20 +840,20 @@
     "image":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1BQREioBJ9NlZ-ap7xAbnM0nme5C-W8JkwA&s",
     "price": 2499,
-    "youtube": "https://www.youtube.com/embed/HcJNV1BOxFk",
+    "youtube": "https://www.youtube.com/embed/jeba1xmYGWY?si=vwV8bVzy2gWoR7Bg",
     "releaseDate": "2020-03-20",
     "popularity": 83,
     "rating": 4.1
   },
   {
     "id": 61,
-    "title": "Mortal Kombat 11",
+    "title": "Mortal Kombat 1",
     "company": "NetherRealm Studios",
     "category": "xboxGames",
     "image":
       "https://cdn.dlcompare.com/game_tetiere/upload/gameimage/file/40594.jpeg.webp",
     "price": 2499,
-    "youtube": "https://www.youtube.com/embed/AeijfK5EY80",
+    "youtube": "https://www.youtube.com/embed/lBYvt1_t6Q4?si=DFAa1_dNXCqbttOH",
     "releaseDate": "2019-04-23",
     "popularity": 89,
     "rating": 4.3
@@ -835,7 +904,7 @@
     "category": "pcGames",
     "image":
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg",
-    "price": 2499,
+    "price": 4599,
     "youtube": "https://www.youtube.com/embed/eaW0tYpxyp0",
     "releaseDate": "2018-10-26",
     "popularity": 95,
@@ -874,8 +943,8 @@
     "category": "pcGames",
     "image":
       "https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-892482f9cbec5827c7c4989d7feb2bf1",
-    "price": 0,
-    "youtube": "https://www.youtube.com/embed/aTky2uIKq3k",
+    "price": 2176,
+    "youtube": "https://www.youtube.com/embed/GAkFklRvhjU?si=GcaVZWcaw6n0BkK5",
     "releaseDate": "2020-06-02",
     "popularity": 94,
     "rating": 4.6
@@ -886,7 +955,7 @@
     "company": "Epic Games",
     "category": "pcGames",
     "image": "https://i.ytimg.com/vi/adGdyCdvKz4/maxresdefault.jpg",
-    "price": 0,
+    "price": 1500,
     "youtube": "https://www.youtube.com/embed/2gUtfBmw86Y",
     "releaseDate": "2017-07-21",
     "popularity": 98,
@@ -899,7 +968,7 @@
     "category": "pcGames",
     "image":
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg",
-    "price": 0,
+    "price": 1099,
     "youtube": "https://www.youtube.com/embed/innmNewjkuk",
     "releaseDate": "2019-02-04",
     "popularity": 92,
@@ -911,8 +980,8 @@
     "company": "Valve",
     "category": "pcGames",
     "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
-    "price": 0,
-    "youtube": "https://www.youtube.com/embed/VQGCKyvzIM4",
+    "price": 1200,
+    "youtube": "https://www.youtube.com/embed/edYCtaNueQY?si=8tiDW_6ID2kE3Bj4",
     "releaseDate": "2012-08-21",
     "popularity": 97,
     "rating": 4.7
@@ -923,8 +992,8 @@
     "company": "Valve",
     "category": "pcGames",
     "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg",
-    "price": 0,
-    "youtube": "https://www.youtube.com/embed/ONYQjY2z28E",
+    "price": 3700,
+    "youtube": "https://www.youtube.com/embed/-cSFPIwMEq4?si=p5kTAWwd8pRS5FB_",
     "releaseDate": "2013-07-09",
     "popularity": 93,
     "rating": 4.6
@@ -950,7 +1019,7 @@
     "image":
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/03a32ef57a71955100af89dc40add1c4535fd813/capsule_616x353.jpg",
     "price": 4999,
-    "youtube": "https://www.youtube.com/embed/9wH2vUsBJUg",
+    "youtube": "https://www.youtube.com/embed/ho3jY94txHI?si=ZOVC6uECTuAiExKj",
     "releaseDate": "2022-10-28",
     "popularity": 90,
     "rating": 4.3
@@ -963,7 +1032,7 @@
     "image":
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg",
     "price": 3999,
-    "youtube": "https://www.youtube.com/embed/INl0ZD-g6aA",
+    "youtube": "https://www.youtube.com/embed/E3Huy2cdih0?si=ExvDNIdRFcVrMaRO",
     "releaseDate": "2022-02-25",
     "popularity": 98,
     "rating": 4.9
@@ -975,8 +1044,8 @@
     "category": "pcGames",
     "image":
       "https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-47eb328eac5ddd63ebd096ded7d0d5ab",
-    "price": 0,
-    "youtube": "https://www.youtube.com/embed/2Rf8cp_Q6Nw",
+    "price": 1300,
+    "youtube": "https://www.youtube.com/embed/pNjWjwae-us?si=2cwS29X_-D1-AQKx",
     "releaseDate": "2009-10-27",
     "popularity": 99,
     "rating": 4.7
@@ -1002,7 +1071,7 @@
     "image":
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2369390/header.jpg",
     "price": 2999,
-    "youtube": "https://www.youtube.com/embed/Hiw4Q5yO2ks",
+    "youtube": "https://www.youtube.com/embed/VbF6REQyel4?si=EqILwmDh62ciQAZs",
     "releaseDate": "2021-10-07",
     "popularity": 82,
     "rating": 4.1
@@ -1015,7 +1084,7 @@
     "image":
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/header.jpg",
     "price": 2499,
-    "youtube": "https://www.youtube.com/embed/O0r7yvpL5vA",
+    "youtube": "https://www.youtube.com/embed/VNd7tpPzmzE?si=UCE0e2P-dxgCJ4Nm",
     "releaseDate": "2020-08-07",
     "popularity": 91,
     "rating": 4.6
@@ -1041,7 +1110,7 @@
     "image":
       "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/header.jpg",
     "price": 1499,
-    "youtube": "https://www.youtube.com/embed/J2tYTpG-HuI",
+    "youtube": "https://www.youtube.com/embed/JSRtYpNRoN0?si=p8PtOEp-C8lg7P5T",
     "releaseDate": "2011-11-11",
     "popularity": 97,
     "rating": 4.8
@@ -1067,7 +1136,7 @@
     "image":
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg",
     "price": 3499,
-    "youtube": "https://www.youtube.com/embed/nX-u0N_J2Rs",
+    "youtube": "https://www.youtube.com/embed/1T22wNvoNiU?si=9CSFbPgO8vrDkFPv",
     "releaseDate": "2023-08-03",
     "popularity": 96,
     "rating": 4.9
