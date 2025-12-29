@@ -1,0 +1,210 @@
+import axios from "axios";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+
+function Login() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [data, setData] = useState({
+    email: "",
+    password: "",
+  });
+  const nav = useNavigate();
+
+  const videos = [
+    {
+      src: "/assets/video/solo-leveling - Trim.mp4",
+      position: "object-[54%]",
+      poster: "/assets/images/solo-leveling.png",
+    },
+    {
+      src: "/assets/video/League of Legends - Trim.mp4",
+      position: "object-[60%]",
+      poster: "/assets/images/lol.png",
+    },
+    {
+      src: "/assets/video/mortal-kombat - Trim.mp4",
+      position: "object-[50%] scale-120",
+      poster: "/assets/images/mortal-kombat.png",
+    },
+    {
+      src: "/assets/video/valorant - Trim.mp4",
+      position: "object-[40%] scale-115",
+      poster: "/assets/images/valorant.png",
+    },
+    {
+      src: "/assets/video/sekiro - Trim.mp4",
+      position: "object-[46%] scale-100",
+      poster: "/assets/images/sekiro.png",
+    },
+  ];
+
+  const handleEnd = () => {
+    setCurrentIndex((prev) => (prev + 1) % videos.length);
+  };
+
+  const formHandle = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
+  const formSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await axios.get(
+      `http://localhost:3000/users?email=${data.email}&password=${data.password}`
+    );
+
+    const userData = res.data;
+
+    if (userData.length === 0) {
+      toast.error("Invalid credentials");
+      return;
+    }
+
+    const user = userData[0];
+    toast.success("Login Successful!");
+
+    const auth = {
+      token: Math.random().toString(36),
+      isAuth: true,
+      role: user.role,
+      userId: user.id,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      email: user.email,
+    };
+
+    localStorage.setItem("auth", JSON.stringify(auth));
+    nav("/checkout");
+  };
+
+  return (
+    <div className="flex items-center justify-center h-[100vh] w-[100vw]">
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <video
+        key={`bg-${currentIndex}`}
+        src={videos[currentIndex].src}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-[95.1%] h-[95%] object-cover scale-110 blur-xl opacity-100 transition-all duration-700"
+      />
+
+      <div className="absolute inset-0 bg-black/30 h-screen w-screen" />
+      <div className="relative z-10 flex items-center justify-center h-full w-full">
+        <div className="w-[70%] h-[80%] flex rounded-xl justify-between  overflow-hidden bg-white">
+          <div className="flex w-[50%] h-156 overflow-hidden relative">
+            <video
+              src={videos[currentIndex].src}
+              poster={videos[currentIndex].poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              onEnded={handleEnd}
+              className={`absolute w-full rounded-l-xl h-full object-cover ${videos[currentIndex].position}`}
+            />
+          </div>
+
+          <div className="w-[50%] h-full px-17 py-10 flex flex-col gap-10 justify-center text-center text-black">
+            <div>
+              <span className="font-semibold text-4xl">SIGN IN</span>
+              <form
+                onSubmit={(e) => formSubmit(e)}
+                action=""
+                className="text-start my-4 flex flex-col gap-4"
+              >
+                <div className="flex flex-col gap-1">
+                  <label htmlFor="" className="font-medium">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    value={data.email}
+                    className="p-2 px-4 w-full outline-none border-none text-[18px] rounded bg-[#e6e3e6c4] placeholder:text-gray-500"
+                    placeholder="Email Address"
+                    onChange={(e) => formHandle(e)}
+                    required
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <label htmlFor="" className="font-medium">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    value={data.password}
+                    placeholder="Password"
+                    onChange={(e) => formHandle(e)}
+                    className="p-2 px-4 w-full outline-none border-none text-[18px] rounded bg-[#e6e3e6c4] placeholder:text-gray-500"
+                    min={6}
+                    required
+                  />
+                </div>
+                <div className="flex justify-end text-[17px] text-gray-500">
+                  {/* <label
+                    htmlFor=""
+                    className="flex items-center gap-1 cursor-pointer hover:text-gray-500/80"
+                  >
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      className="w-5 h-4 accent-[#e6e3e6c4] bg-white cursor-pointer "
+                    />
+                    Remember me
+                  </label> */}
+                  <span
+                    onClick={() => nav("/forgot")}
+                    className="cursor-pointer hover:text-gray-500/80"
+                  >
+                    Forgot Your Password
+                  </span>
+                </div>
+                <button
+                  type="submit"
+                  className="p-2  text-[18px] font-bold rounded bg-[#1D232A] text-white cursor-pointer hover:bg-[#1D232A]/90"
+                >
+                  <span>LOG IN NOW</span>
+                </button>
+              </form>
+            </div>
+
+            <div>
+              <span className="font-medium cursor-pointer hover:text-black/70">
+                Privacy Policy
+              </span>
+              <p className="text-gray-500 mt-1">
+                Don't have an account?{" "}
+                <span
+                  onClick={() => nav("/signup")}
+                  className="text-black font-semibold cursor-pointer hover:text-black/60"
+                >
+                  Sign Up
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Login;

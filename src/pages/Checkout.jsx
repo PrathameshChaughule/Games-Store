@@ -7,11 +7,15 @@ import { toast } from "react-toastify";
 
 function Checkout() {
   const [data, setData] = useState([]);
+  const [userData, setUserData] = useState(
+    JSON.parse(localStorage.getItem("auth"))
+  );
   const { updateCartCount } = useContext(GameContext);
+
   const [paymentData, setPaymentData] = useState({
     paymentMethod: "",
-    firstName: "",
-    lastName: "",
+    firstName: `${userData?.firstName || ""}`,
+    lastName: `${userData?.lastName || ""}`,
     address: "",
     country: "India",
     city: "",
@@ -47,11 +51,15 @@ function Checkout() {
   const formSubmit = (e) => {
     e.preventDefault();
     setPaymentData(paymentData.total + total);
+    if (total === 0) {
+      toast.error("Add games to your cart");
+      return;
+    }
     toast.success("Order placed successfully. Thank you for your purchase!");
     setPaymentData({
       paymentMethod: "",
-      firstName: "",
-      lastName: "",
+      firstName: `${userData?.firstName || ""}`,
+      lastName: `${userData?.lastName || ""}`,
       address: "",
       country: "India",
       city: "",
@@ -82,7 +90,6 @@ function Checkout() {
                       onChange={(e) => formHandle(e)}
                       required
                     />
-                    <LazyLoadImage src="" effect="blur" />
                     <span>UPI</span>
                   </label>
                   <label className="flex items-center gap-2 text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">

@@ -1,23 +1,36 @@
 import { FaCrown, FaPlaystation, FaWindows, FaXbox } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { useContext, useState } from "react";
 import { GameContext } from "../Context/GameContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdMonitor } from "react-icons/md";
 import Profile from "./Profile";
 
 function Navbar() {
   const { cartCount } = useContext(GameContext);
   const [profileOpen, setProfileOpen] = useState(false);
+  const userData = JSON.parse(localStorage.getItem("auth"));
+  const nav = useNavigate();
 
   return (
-    <div className="bg-[#181A1E] py-4">
+    <div className="bg-[#181A1E] relative py-4">
       <div className="flex items-center justify-around w-[85vw] m-auto">
         <div className="absolute top-2 right-2">
-          <ToastContainer />
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         </div>
 
         <LazyLoadImage src="/assets/logo.webp" className="w-[15vw]" alt="" />
@@ -98,20 +111,29 @@ function Navbar() {
             </div>
           </NavLink>
           <div
-            onClick={() => setProfileOpen(!profileOpen)}
+            onClick={() => {
+              userData?.isAuth ? setProfileOpen(!profileOpen) : nav("/login");
+            }}
             className="flex items-center gap-3 relative"
           >
             <LazyLoadImage
+              effect="blur"
               src="/assets/user.webp"
               className="w-11 cursor-pointer h-11 border-4 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
               alt=""
             />
-            <FaCrown className="text-[#F5B736] cursor-pointer absolute bottom-0 right-0 z-100" />
+            {userData?.isAuth && (
+              <FaCrown className="text-[#F5B736] cursor-pointer absolute bottom-0 right-0 z-100" />
+            )}
           </div>
         </div>
       </div>
-      <div onClick={() => setProfileOpen(!profileOpen)}>
-        {profileOpen && <Profile />}
+
+      <div
+        className="absolute right-32 top-26 z-100"
+        onClick={() => setProfileOpen(!profileOpen)}
+      >
+        {profileOpen && <>{userData?.isAuth && <Profile />}</>}
       </div>
     </div>
   );
