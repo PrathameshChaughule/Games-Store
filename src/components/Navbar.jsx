@@ -1,4 +1,4 @@
-import { FaCrown, FaPlaystation, FaWindows, FaXbox } from "react-icons/fa";
+import { FaAngleDown, FaCrown, FaPlaystation, FaWindows, FaXbox } from "react-icons/fa";
 import { NavLink, useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { RiShoppingCartLine } from "react-icons/ri";
@@ -22,10 +22,9 @@ function Navbar() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `cursor-pointer hover:text-gray-400 pb-1 flex items-center gap-2 ${
-                isActive
-                  ? "text-white border-b-2 border-white"
-                  : "text-gray-300"
+              `cursor-pointer hover:text-gray-400 pb-1 flex items-center gap-2 ${isActive
+                ? "text-white border-b-2 border-white"
+                : "text-gray-300"
               }`
             }
           >
@@ -35,10 +34,9 @@ function Navbar() {
           <NavLink
             to="/ps5Games"
             className={({ isActive }) =>
-              `cursor-pointer hover:text-gray-400 pb-1 flex items-center gap-2 ${
-                isActive
-                  ? "text-white border-b-2 border-white"
-                  : "text-gray-300"
+              `cursor-pointer hover:text-gray-400 pb-1 flex items-center gap-2 ${isActive
+                ? "text-white border-b-2 border-white"
+                : "text-gray-300"
               }`
             }
           >
@@ -48,10 +46,9 @@ function Navbar() {
           <NavLink
             to="/ps4Games"
             className={({ isActive }) =>
-              `cursor-pointer hover:text-gray-400 pb-1 flex items-center gap-2 ${
-                isActive
-                  ? "text-white border-b-2 border-white"
-                  : "text-gray-300"
+              `cursor-pointer hover:text-gray-400 pb-1 flex items-center gap-2 ${isActive
+                ? "text-white border-b-2 border-white"
+                : "text-gray-300"
               }`
             }
           >
@@ -61,10 +58,9 @@ function Navbar() {
           <NavLink
             to="/xboxGames"
             className={({ isActive }) =>
-              `cursor-pointer hover:text-gray-400 pb-1 flex items-center gap-2 ${
-                isActive
-                  ? "text-white border-b-2 border-white"
-                  : "text-gray-300"
+              `cursor-pointer hover:text-gray-400 pb-1 flex items-center gap-2 ${isActive
+                ? "text-white border-b-2 border-white"
+                : "text-gray-300"
               }`
             }
           >
@@ -82,10 +78,9 @@ function Navbar() {
           <NavLink
             to="/cart"
             className={({ isActive }) =>
-              `flex relative items-center gap-1 cursor-pointer  p-2 rounded ${
-                isActive
-                  ? "text-white border-b-2 border-white hover:bg-[#181A1E]"
-                  : "text-gray-300 hover:bg-gray-700"
+              `flex relative items-center gap-1 cursor-pointer  p-2 rounded ${isActive
+                ? "text-white border-b-2 border-white hover:bg-[#181A1E]"
+                : "text-gray-300 hover:bg-gray-700"
               }`
             }
           >
@@ -100,15 +95,23 @@ function Navbar() {
             }}
             className="flex items-center gap-3 relative"
           >
-            <LazyLoadImage
-              effect="blur"
-              src="/assets/user.webp"
-              className="w-11 cursor-pointer h-11 border-4 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
-              alt=""
-            />
-            {userData?.isAuth && (
-              <FaCrown className="text-[#F5B736] cursor-pointer absolute bottom-0 right-0 z-100" />
-            )}
+            {userData?.isAuth ?
+              <div className="flex items-center gap-1">
+                <div className="relative cursor-pointer border-3 border-blue-600 text-white/90 text-center h-12 w-12 flex items-center justify-center rounded-full text-3xl font-bold">
+                  <span>{userData?.firstName.split("")[0]}</span>
+                  <div className="absolute -bottom-0.5 -right-1 h-3.5 w-3.5 border-2 border-[#181A1E] rounded-full bg-green-500"></div>
+                </div>
+                <div className={`text-xl mt-1 ${profileOpen ? 'rotate-180' : 'rotate-0'}`}>
+                  <FaAngleDown />
+                </div>
+              </div>
+              :
+              <LazyLoadImage
+                effect="blur"
+                src="/assets/user.webp"
+                className="w-11 cursor-pointer h-11 border-4 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
+                alt=""
+              />}
           </div>
         </div>
       </div>

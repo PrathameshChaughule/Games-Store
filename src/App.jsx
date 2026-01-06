@@ -1,23 +1,23 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import Loading from "./components/Loading";
-import AdminDashboard from "./Admin/AdminDashboard";
-import AdminCustomer from "./Admin/AdminCustomer";
-import AdminInbox from "./Admin/AdminInbox";
-import AdminMarketing from "./Admin/AdminMarketing";
-import AdminOrders from "./Admin/AdminOrders";
-import AdminProducts from "./Admin/AdminProducts";
-
-import UserLayout from "./Layout/UserLayout";
-import AdminLayout from "./Layout/AdminLayout";
-import PublicLayout from "./Layout/PublicLayout";
-import Login from "./Auth/Login";
-import Signup from "./Auth/Signup";
-import ForgotPassword from "./Auth/ForgotPassword";
-import ProductsDetails from "./Admin/adminComponents/ProductsDetails";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const Loading = lazy(() => import("./components/Loading"));
+const AdminDashboard = lazy(() => import("./Admin/AdminDashboard"))
+const AdminCustomer = lazy(() => import("./Admin/AdminCustomer"))
+const AdminInbox = lazy(() => import("./Admin/AdminInbox"))
+const AdminMarketing = lazy(() => import("./Admin/AdminMarketing"))
+const AdminOrders = lazy(() => import("./Admin/AdminOrders"))
+const AdminProducts = lazy(() => import("./Admin/AdminProducts"))
+const UserLayout = lazy(() => import("./Layout/UserLayout"))
+const AdminLayout = lazy(() => import("./Layout/AdminLayout"))
+const PublicLayout = lazy(() => import("./Layout/PublicLayout"))
+const Login = lazy(() => import("./Auth/Login"))
+const Signup = lazy(() => import("./Auth/Signup"))
+const ForgotPassword = lazy(() => import("./Auth/ForgotPassword"))
+const ProductsDetails = lazy(() => import("./Admin/adminComponents/ProductsDetails"))
+const Library = lazy(() => import("./pages/Library"))
 const Checkout = lazy(() => import("./pages/Checkout"));
 const Cart = lazy(() => import("./pages/Cart"));
 const Home = lazy(() => import("./pages/Home"));
@@ -60,6 +60,7 @@ function App() {
               <Route path="/xboxGames" element={<XBOX />} />
               <Route path="/details/:id" element={<Details />} />
               <Route path="/cart" element={<Cart />} />
+              <Route path="/library" element={<Library />} />
               <Route path="*" element={<Home />} />
             </Route>
 

@@ -4,6 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { GameContext } from "../Context/GameContext";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 function Checkout() {
   const [data, setData] = useState([]);
@@ -23,10 +24,13 @@ function Checkout() {
     zipCode: "",
     total: 0,
   });
+  const [order, setOrder] = useState({ userId: userData.userId, games: [], paymentStatus: "paid", orderStatus: "completed", paymentMethod: "", createdAt: new Date().toISOString() })
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setData(storedCart);
+    const gameIds = storedCart.map((val) => val.id);
+    setOrder({ ...order, games: gameIds })
   }, [paymentData]);
 
   const removeItem = (id) => {
@@ -36,39 +40,68 @@ function Checkout() {
     toast.info("Item removed from cart");
     updateCartCount();
   };
+
   const subTotal = data.reduce(
     (sum, item) => sum + item.discountPrice * item.quantity,
     0
   );
+
   const GST_RATE = 0.18;
   const gstAmount = subTotal * GST_RATE;
   const total = subTotal + gstAmount;
 
   const formHandle = (e) => {
     setPaymentData({ ...paymentData, [e.target.name]: e.target.value });
+
+    if (e.target.name === "paymentMethod") {
+      setOrder(prev => ({ ...prev, paymentMethod: e.target.value }));
+    }
   };
 
-  const formSubmit = (e) => {
+  const formSubmit = async (e) => {
     e.preventDefault();
     setPaymentData(paymentData.total + total);
     if (total === 0) {
       toast.error("Add games to your cart");
       return;
     }
-    toast.success("Order placed successfully. Thank you for your purchase!");
-    setPaymentData({
-      paymentMethod: "",
-      firstName: `${userData?.firstName || ""}`,
-      lastName: `${userData?.lastName || ""}`,
-      address: "",
-      country: "India",
-      city: "",
-      state: "",
-      zipCode: "",
-      total: 0,
-    });
-    localStorage.removeItem("cart");
-    updateCartCount();
+
+    try {
+      const res = await axios.post("http://localhost:3000/orders", order);
+      const userRes = await axios.get(`http://localhost:3000/users/${userData.userId}`)
+
+      const library = data.map((val) => ({
+        gameId: val.id,
+        orderId: res.data.id,
+        purchasedAt: new Date().toISOString()
+      }))
+
+      const updateLibrary = [...(userRes.data.library || []), ...library]
+
+      await axios.patch(`http://localhost:3000/users/${userData.userId}`, {
+        library: updateLibrary
+      })
+
+      toast.success("Order placed successfully!");
+      toast.info("Your purchased games have been added to your library.");
+      setPaymentData({
+        paymentMethod: "",
+        firstName: `${userData?.firstName || ""}`,
+        lastName: `${userData?.lastName || ""}`,
+        address: "",
+        country: "India",
+        city: "",
+        state: "",
+        zipCode: "",
+        total: 0,
+      });
+      localStorage.removeItem("cart");
+      updateCartCount();
+
+    } catch (error) {
+      console.log(error)
+    }
+
   };
 
   return (
@@ -85,8 +118,8 @@ function Checkout() {
                     <input
                       type="radio"
                       name="paymentMethod"
-                      value="upi"
-                      id=""
+                      value="UPI"
+                      checked={paymentData.paymentMethod === "UPI"}
                       onChange={(e) => formHandle(e)}
                       required
                     />
@@ -96,8 +129,8 @@ function Checkout() {
                     <input
                       type="radio"
                       name="paymentMethod"
-                      value="debit"
-                      id=""
+                      value="Debit Card"
+                      checked={paymentData.paymentMethod === "Debit Card"}
                       onChange={(e) => formHandle(e)}
                       required
                     />
@@ -107,8 +140,8 @@ function Checkout() {
                     <input
                       type="radio"
                       name="paymentMethod"
-                      value="credit"
-                      id=""
+                      value="Credit Card"
+                      checked={paymentData.paymentMethod === "Credit Card"}
                       onChange={(e) => formHandle(e)}
                       required
                     />
@@ -118,8 +151,8 @@ function Checkout() {
                     <input
                       type="radio"
                       name="paymentMethod"
-                      value="netBanking"
-                      id=""
+                      value="NetBanking"
+                      checked={paymentData.paymentMethod === "NetBanking"}
                       onChange={(e) => formHandle(e)}
                       required
                     />

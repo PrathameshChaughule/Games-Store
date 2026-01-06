@@ -22,7 +22,7 @@ function Profile() {
         <p className="px-1 rounded hover:bg-[#111315] cursor-pointer">
           Wishlist
         </p>
-        <p className="px-1 rounded hover:bg-[#111315] cursor-pointer">
+        <p onClick={() => nav("/library")} className="px-1 rounded hover:bg-[#111315] cursor-pointer">
           Library
         </p>
         {userData.role === "admin" && (

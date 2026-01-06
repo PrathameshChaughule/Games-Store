@@ -3515,6 +3515,28 @@
       "email": "p@gmail.com",
       "password": "12345678",
       "role": "admin",
+      "library": [
+        {
+          "gameId": 20,
+          "orderId": 1,
+          "purchasedAt": "2026-01-06T16:06:14.275Z"
+        },
+        {
+          "gameId": 69,
+          "orderId": 1,
+          "purchasedAt": "2026-01-06T16:06:14.275Z"
+        },
+        {
+          "gameId": 32,
+          "orderId": 1,
+          "purchasedAt": "2026-01-06T16:06:14.275Z"
+        },
+        {
+          "gameId": 42,
+          "orderId": 1,
+          "purchasedAt": "2026-01-06T16:06:14.275Z"
+        }
+      ],
       "id": 1
     },
     {
@@ -3523,6 +3545,7 @@
       "email": "a@gmail.com",
       "password": "12345678",
       "role": "user",
+      "library": [],
       "id": 2
     },
     {
@@ -3531,7 +3554,24 @@
       "email": "r@gmail.com",
       "password": "12345678",
       "role": "user",
+      "library": [],
       "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "games": [
+        20,
+        69,
+        32,
+        42
+      ],
+      "paymentStatus": "paid",
+      "orderStatus": "completed",
+      "paymentMethod": "UPI",
+      "createdAt": "2026-01-06T16:05:56.433Z",
+      "id": 1
     }
   ]
 }
