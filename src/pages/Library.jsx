@@ -162,6 +162,7 @@ function Library() {
 
     return (
         <div className='w-[90vw] m-auto mb-10 flex-col'>
+            <h1 className="text-4xl font-bold text-white/90 mt-9 -mb-11 ml-3">Library</h1>
             <div className="mb-8 m-auto h-fit flex justify-between">
                 <div className={`${library?.length === 0 ? 'w-[100%]' : 'w-[76%]'} p-5 h-fit mt-17 flex flex-col gap-7 bg-[#18181872] border-2 border-[#292b26]/50 rounded-xl`}>
                     {library?.length === 0 ?

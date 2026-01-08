@@ -24,7 +24,7 @@ function Checkout() {
     zipCode: "",
     total: 0,
   });
-  const [order, setOrder] = useState({ userId: userData.userId, userFirstName: userData.firstName, userLastName: userData.lastName, games: [], paymentStatus: "paid", orderStatus: "Processing", paymentMethod: "", createdAt: new Date().toISOString(), total: null })
+  const [order, setOrder] = useState({ userId: userData.userId, userFirstName: userData.firstName, userLastName: userData.lastName, games: [], paymentStatus: "Paid", orderStatus: "Processing", paymentMethod: "", createdAt: new Date().toISOString(), total: null })
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];

@@ -3574,7 +3574,7 @@
           "price": 3999
         }
       ],
-      "paymentStatus": "paid",
+      "paymentStatus": "Paid",
       "orderStatus": "Processing",
       "paymentMethod": "NetBanking",
       "createdAt": "2026-01-07T18:31:37.775Z",
@@ -3597,7 +3597,7 @@
           "price": 2299
         }
       ],
-      "paymentStatus": "paid",
+      "paymentStatus": "Paid",
       "orderStatus": "Processing",
       "paymentMethod": "Credit Card",
       "createdAt": "2026-01-07T18:32:46.972Z",
