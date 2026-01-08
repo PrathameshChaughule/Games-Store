@@ -242,7 +242,7 @@ function Library() {
                                                 <LazyLoadImage
                                                     className='rounded w-full h-full'
                                                     src={`assets/${val?.category === "ps4Games" ||
-                                                        val?.category === "ps4Games"
+                                                        val?.category === "ps5Games"
                                                         ? `ps4.webp`
                                                         : val?.category === "xboxGames"
                                                             ? `xbox.webp`

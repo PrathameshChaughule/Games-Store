@@ -24,12 +24,12 @@ function Checkout() {
     zipCode: "",
     total: 0,
   });
-  const [order, setOrder] = useState({ userId: userData.userId, userFirstName: userData.firstName, userLastName: userData.lastName, games: [], paymentStatus: "Paid", orderStatus: "Processing", paymentMethod: "", createdAt: new Date().toISOString(), total: null })
+  const [order, setOrder] = useState({ userId: userData.userId, userFirstName: userData.firstName, userLastName: userData.lastName, email: userData.email, games: [], paymentStatus: "Paid", orderStatus: "Processing", paymentMethod: "", createdAt: new Date().toISOString(), total: null })
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setData(storedCart);
-    const gameIds = storedCart.map((val) => ({ gameId: val.id, title: val.title, price: val.discountPrice }));
+    const gameIds = storedCart.map((val) => ({ gameId: val.id, title: val.title, price: val.price, discountPrice: val.discountPrice }));
     setOrder({ ...order, games: gameIds, total: total })
   }, [paymentData]);
 
@@ -68,6 +68,14 @@ function Checkout() {
 
     try {
       const res = await axios.post("http://localhost:3000/orders", order);
+
+      const numericOrderId = res.data.id;
+      const customOrderId = `ORD-${String(numericOrderId).padStart(6, "0")}`
+
+      await axios.patch(`http://localhost:3000/orders/${numericOrderId}`, {
+        orderId: customOrderId
+      });
+
       const userRes = await axios.get(`http://localhost:3000/users/${userData.userId}`)
 
       const library = data.map((val) => ({

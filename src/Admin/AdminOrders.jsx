@@ -1,10 +1,12 @@
 import axios from 'axios'
 import { useEffect, useMemo, useState } from 'react'
 import { CiSearch } from 'react-icons/ci'
-import { HiCurrencyRupee, HiDotsVertical } from 'react-icons/hi'
+import { HiCurrencyRupee } from 'react-icons/hi'
 import { TbSortDescending2 } from 'react-icons/tb'
 import Loading from '../components/Loading'
 import { FiCheckCircle, FiClock, FiShoppingBag } from 'react-icons/fi'
+import { BsFillEyeFill } from 'react-icons/bs'
+import { useNavigate } from 'react-router-dom'
 
 function AdminOrders() {
   const [orders, setOrders] = useState([])
@@ -17,7 +19,9 @@ function AdminOrders() {
   const [search, setSearch] = useState("")
   const [show, setShow] = useState(false)
   const [filter, setFilter] = useState("Newest Added")
+  const [showGame, setShowGame] = useState(0)
   const limit = 15;
+  const nav = useNavigate()
 
   const fetchData = async () => {
     try {
@@ -178,10 +182,17 @@ function AdminOrders() {
             </thead>
             <tbody className='text-center'>
               {filteredOrders?.map((val) =>
-                <tr key={val?.id} className='border-b cursor-pointer dark:hover:bg-[#080b2c7a] hover:bg-gray-100 dark:border-[#011743] border-gray-300'>
+                <tr key={val?.id} className='border-b dark:border-[#011743] border-gray-300'>
                   <td className='py-3'>{val?.id}</td>
                   <td>{val?.userFirstName} {val?.userLastName}</td>
-                  <td>{val?.games?.length} Games</td>
+                  <td className='relative cursor-pointer'><span onMouseEnter={() => setShowGame(val?.id)} onMouseLeave={() => setShowGame(0)} >{val?.games?.length} Games</span>
+                    {showGame === val?.id &&
+                      <div className='absolute flex flex-col gap-1 rounded w-60 p-1 top-11 -left-14 z-100 dark:bg-[#080B2C] bg-gray-300'>
+                        {val?.games?.map((val, index) =>
+                          <p key={index} className='px-1 py-0.5 rounded text-gray-300/90 font-semibold'>{val.title}</p>
+                        )}
+                      </div>}
+                  </td>
                   <td>₹{val?.total}</td>
                   <td>
                     <span
@@ -214,7 +225,7 @@ function AdminOrders() {
                     </span>
                   </td>
                   <td>{new Date(val.createdAt).toLocaleDateString() || '_'}</td>
-                  <td className='flex items-center justify-center'><div className='w-fit my-2 px-1 rounded cursor-pointer py-1 text-2xl dark:hover:bg-[#000000] hover:bg-gray-300'><HiDotsVertical /></div></td>
+                  <td className='flex items-center justify-center'><div onClick={() => nav(`/adminOrders/${val.id}`)} className='w-fit my-2 p-2 rounded text-2xl cursor-pointer dark:hover:bg-[#0e145bf4] hover:bg-gray-100 dark:text-white/80 text-black/70'><BsFillEyeFill /></div></td>
                 </tr>
               )}
             </tbody>

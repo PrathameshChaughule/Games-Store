@@ -3518,15 +3518,57 @@
       "library": [
         {
           "gameId": 63,
+          "orderId": 1,
+          "purchasedAt": "2026-01-08T19:40:09.090Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed"
+        },
+        {
+          "gameId": 73,
+          "orderId": 1,
+          "purchasedAt": "2026-01-08T19:40:09.090Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed"
+        },
+        {
+          "gameId": 16,
+          "orderId": 1,
+          "purchasedAt": "2026-01-08T19:40:09.090Z",
+          "installStatus": "Installed",
+          "orderStatus": "Completed"
+        },
+        {
+          "gameId": 21,
+          "orderId": 1,
+          "purchasedAt": "2026-01-08T19:40:09.090Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed"
+        },
+        {
+          "gameId": 42,
+          "orderId": 1,
+          "purchasedAt": "2026-01-08T19:40:09.090Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed"
+        },
+        {
+          "gameId": 52,
           "orderId": 2,
-          "purchasedAt": "2026-01-07T18:32:58.956Z",
+          "purchasedAt": "2026-01-08T19:52:40.959Z",
           "installStatus": "Not Installed",
           "orderStatus": "Processing"
         },
         {
-          "gameId": 50,
+          "gameId": 59,
           "orderId": 2,
-          "purchasedAt": "2026-01-07T18:32:58.956Z",
+          "purchasedAt": "2026-01-08T19:52:40.959Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Processing"
+        },
+        {
+          "gameId": 34,
+          "orderId": 2,
+          "purchasedAt": "2026-01-08T19:52:40.959Z",
           "installStatus": "Not Installed",
           "orderStatus": "Processing"
         }
@@ -3557,52 +3599,79 @@
       "userId": 1,
       "userFirstName": "Prathamesh",
       "userLastName": "Chaughule",
+      "email": "p@gmail.com",
       "games": [
         {
           "gameId": 63,
           "title": "Cyberpunk 2077",
-          "price": 2199
+          "price": 2999,
+          "discountPrice": 2199
         },
         {
-          "gameId": 50,
-          "title": "Assassin’s Creed Valhalla",
-          "price": 2299
+          "gameId": 73,
+          "title": "Overwatch 2",
+          "price": 1200,
+          "discountPrice": 899
         },
         {
-          "gameId": 53,
-          "title": "Call of Duty II",
-          "price": 3999
+          "gameId": 16,
+          "title": "Cyberpunk 2077 (PS5 Version)",
+          "price": 2999,
+          "discountPrice": 2399
+        },
+        {
+          "gameId": 21,
+          "title": "Horizon Call of the Mountain",
+          "price": 3499,
+          "discountPrice": 2999
+        },
+        {
+          "gameId": 42,
+          "title": "Persona 5 Royal",
+          "price": 2999,
+          "discountPrice": 2499
         }
       ],
       "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "paymentMethod": "NetBanking",
-      "createdAt": "2026-01-07T18:31:37.775Z",
-      "total": 10026.46,
-      "id": 1
+      "orderStatus": "Completed",
+      "paymentMethod": "Debit Card",
+      "createdAt": "2026-01-08T19:39:51.897Z",
+      "total": 12974.1,
+      "id": 1,
+      "orderId": "ORD-000001"
     },
     {
       "userId": 1,
       "userFirstName": "Prathamesh",
       "userLastName": "Chaughule",
+      "email": "p@gmail.com",
       "games": [
         {
-          "gameId": 63,
-          "title": "Cyberpunk 2077",
-          "price": 2199
+          "gameId": 52,
+          "title": "FIFA 23",
+          "price": 2799,
+          "discountPrice": 1999
         },
         {
-          "gameId": 50,
-          "title": "Assassin’s Creed Valhalla",
-          "price": 2299
+          "gameId": 59,
+          "title": "Battlefield V",
+          "price": 1999,
+          "discountPrice": 1499
+        },
+        {
+          "gameId": 34,
+          "title": "Assassin’s Creed Odyssey",
+          "price": 2499,
+          "discountPrice": 1999
         }
       ],
       "paymentStatus": "Paid",
       "orderStatus": "Processing",
-      "paymentMethod": "Credit Card",
-      "createdAt": "2026-01-07T18:32:46.972Z",
-      "total": 5307.64,
-      "id": 2
+      "paymentMethod": "NetBanking",
+      "createdAt": "2026-01-08T19:52:33.162Z",
+      "total": 6486.46,
+      "id": 2,
+      "orderId": "ORD-000002"
     }
   ]
 }

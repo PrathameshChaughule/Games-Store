@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import OrdersDetails from "./Admin/adminComponents/OrdersDetails";
 
 const Loading = lazy(() => import("./components/Loading"));
 const AdminDashboard = lazy(() => import("./Admin/AdminDashboard"))
@@ -74,6 +75,7 @@ function App() {
               <Route path="/adminInbox" element={<AdminInbox />} />
               <Route path="/adminMarketing" element={<AdminMarketing />} />
               <Route path="/adminOrders" element={<AdminOrders />} />
+              <Route path="/adminOrders/:id" element={<OrdersDetails />} />
               <Route path="/adminProducts" element={<AdminProducts />} />
               <Route path="/adminProducts/:id" element={<ProductsDetails />} />
             </Route>

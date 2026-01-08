@@ -108,11 +108,11 @@ function Cart() {
                       <div className="w-20 h-20">
                         <LazyLoadImage
                           src={`assets/${item.category === "ps4Games" ||
-                              item.category === "ps4Games"
-                              ? `ps4.webp`
-                              : item.category === "xboxGames"
-                                ? `xbox.webp`
-                                : `pc.webp`
+                            item.category === "ps5Games"
+                            ? `ps4.webp`
+                            : item.category === "xboxGames"
+                              ? `xbox.webp`
+                              : `pc.webp`
                             }`}
                           className="w-20 h-16 rounded-xl"
                           effect="blur"
