@@ -27,7 +27,6 @@ function Library() {
     const [sortOpen, setSortOpen] = useState(false)
     const [filterOpen, setFilterOpen] = useState(false)
     const [search, setSearch] = useState("");
-    const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
     const nav = useNavigate()
 
@@ -81,8 +80,30 @@ function Library() {
                     : item
             );
 
+            const updatedReviewsCount = {
+                ...gameDetail.reviewsCount,
+                [rating]: gameDetail.reviewsCount[rating] + 1
+            };
+
+            const totalReviews = gameDetail.totalReviews + 1;
+
+            let totalStars = 0;
+            for (let star in updatedReviewsCount) {
+                totalStars += star * updatedReviewsCount[star];
+            }
+
+            const averageRating = Number(
+                (totalStars / totalReviews).toFixed(1)
+            );
+
             await axios.patch(`http://localhost:3000/users/${userId}`, {
                 library: updatedLibrary
+            });
+
+            await axios.patch(`http://localhost:3000/games/${gameId}`, {
+                reviewsCount: updatedReviewsCount,
+                totalReviews: totalReviews,
+                rating: averageRating
             });
 
             setLibraryData(updatedLibrary);
@@ -262,7 +283,7 @@ function Library() {
                                                 />
                                             </div>
                                             <div className='p-2 text-lg'>
-                                                <span>390 GB</span>
+                                                <span>{val?.sizeGB} GB</span>
                                             </div>
                                             <button onClick={() => startInstall(val?.id)} disabled={progress[val?.id] >= 100 || purchase?.orderStatus === "Processing"} className={`p-1.5 rounded text-3xl cursor-pointer ${purchase?.installStatus === "Not Installed" ? !progress[val?.id] ? "bg-sky-500" : progress[val?.id] >= 100 ? "bg-green-600" : "bg-violet-600" : "bg-green-600"} hover:scale-105 transition-all`}>
                                                 {purchase?.installStatus === "Not Installed" ?
@@ -339,15 +360,16 @@ function Library() {
                                     {libraryData?.find(item => item.gameId === gameDetail?.id)?.orderStatus === "Processing" &&
                                         <div className='absolute top-0.5 right-0.5 text-red-600 bg-red-600/50 rounded-full p-1 text-[18px]'><LuLockKeyhole /></div>}
                                 </button>
-                                <div className='flex items-center justify-between bg-[#18181872] border-2 border-[#2f354494] p-3 rounded'>
-                                    {[1, 2, 3, 4, 5].map((val) =>
-                                        <button disabled={libraryData?.find(item => item.gameId === gameDetail?.id)?.starRating > 0} key={val} onClick={() => ratingUpdate(gameDetail?.id, val)}
-                                            onMouseEnter={() => setHover(val)}
-                                            onMouseLeave={() => setHover(0)} className='text-4xl'>
-                                            {val <= (libraryData?.find(item => item.gameId === gameDetail?.id)?.starRating === 0 && hover || libraryData?.find(item => item.gameId === gameDetail?.id)?.starRating) ? <PiStarFill className='text-yellow-400 cursor-pointer' /> : <PiStarBold className='text-yellow-400 cursor-pointer' />}
-                                        </button>
-                                    )}
-                                </div>
+                                {libraryData?.find(item => item.gameId === gameDetail?.id)?.orderStatus === "Completed" &&
+                                    <div className='flex items-center justify-between bg-[#18181872] border-2 border-[#2f354494] p-3 rounded'>
+                                        {[1, 2, 3, 4, 5].map((val) =>
+                                            <button disabled={libraryData?.find(item => item.gameId === gameDetail?.id)?.starRating > 0} key={val} onClick={() => ratingUpdate(gameDetail?.id, val)}
+                                                onMouseEnter={() => setHover(val)}
+                                                onMouseLeave={() => setHover(0)} className='text-4xl'>
+                                                {val <= (libraryData?.find(item => item.gameId === gameDetail?.id)?.starRating === 0 && hover || libraryData?.find(item => item.gameId === gameDetail?.id)?.starRating) ? <PiStarFill className='text-yellow-400 cursor-pointer' /> : <PiStarBold className='text-yellow-400 cursor-pointer' />}
+                                            </button>
+                                        )}
+                                    </div>}
                             </div>
                         </div>
 

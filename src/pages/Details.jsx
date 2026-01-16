@@ -105,6 +105,13 @@ function Details() {
     }
   };
 
+  const getReviewPercent = (star) => {
+    if (!game.totalReviews) return 0;
+    return Math.round(
+      (game.reviewsCount[star] / game.totalReviews) * 100
+    );
+  };
+
   const videoId = getYouTubeId(game.youtube);
   const safeRating = Math.round((game.rating || 0) * 2) / 2;
 
@@ -336,7 +343,7 @@ function Details() {
                         <span className="flex text-white/60 items-end text-xl mb-1 font-semibold gap-0.5">
                           5{" "}
                           <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                            ({game.reviewsPercent[5]}%)
+                            ({getReviewPercent(5)}%)
                           </span>
                         </span>
                       </div>
@@ -344,7 +351,7 @@ function Details() {
                       <div className="w-full h-2 bg-[#252525] rounded">
                         <div
                           className="h-full bg-[#F5B736]/60 rounded"
-                          style={{ width: `${game.reviewsPercent[5]}%` }}
+                          style={{ width: `${getReviewPercent(5)}%` }}
                         ></div>
                       </div>
                     </div>
@@ -353,14 +360,14 @@ function Details() {
                         <span className="flex text-white/60  items-end text-xl mb-1 font-semibold gap-0.5">
                           4{" "}
                           <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                            ({game.reviewsPercent[4]}%)
+                            ({getReviewPercent(4)}%)
                           </span>
                         </span>
                       </div>
                       <div className="w-full h-2 bg-[#252525] rounded">
                         <div
                           className="h-full bg-[#F5B736]/60 rounded"
-                          style={{ width: `${game.reviewsPercent[4]}%` }}
+                          style={{ width: `${getReviewPercent(4)}%` }}
                         ></div>
                       </div>
                     </div>
@@ -369,7 +376,7 @@ function Details() {
                         <span className="flex text-white/60  items-end text-xl mb-1 font-semibold gap-0.5">
                           3{" "}
                           <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                            ({game.reviewsPercent[3]}%)
+                            ({getReviewPercent(3)}%)
                           </span>
                         </span>
                       </div>
@@ -377,7 +384,7 @@ function Details() {
                       <div className="w-full h-2 bg-[#252525] rounded">
                         <div
                           className="h-full bg-[#F5B736]/60 rounded"
-                          style={{ width: `${game.reviewsPercent[3]}%` }}
+                          style={{ width: `${getReviewPercent(3)}%` }}
                         ></div>
                       </div>
                     </div>
@@ -386,7 +393,7 @@ function Details() {
                         <span className="flex text-white/60  items-end text-xl mb-1 font-semibold gap-0.5">
                           2{" "}
                           <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                            ({game.reviewsPercent[2]}%)
+                            ({getReviewPercent(2)}%)
                           </span>
                         </span>
                       </div>
@@ -394,7 +401,7 @@ function Details() {
                       <div className="w-full h-2 bg-[#252525] rounded">
                         <div
                           className="h-full bg-[#F5B736]/60 rounded"
-                          style={{ width: `${game.reviewsPercent[2]}%` }}
+                          style={{ width: `${getReviewPercent(2)}%` }}
                         ></div>
                       </div>
                     </div>
@@ -403,7 +410,7 @@ function Details() {
                         <span className="flex text-white/60  items-end text-xl mb-1 font-semibold gap-0.5">
                           1{" "}
                           <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                            ({game.reviewsPercent[1]}%)
+                            ({getReviewPercent(1)}%)
                           </span>
                         </span>
                       </div>
@@ -411,7 +418,7 @@ function Details() {
                       <div className="w-full h-2 bg-[#252525] rounded">
                         <div
                           className="h-full bg-[#F5B736]/60 rounded"
-                          style={{ width: `${game.reviewsPercent[1]}%` }}
+                          style={{ width: `${getReviewPercent(1)}%` }}
                         ></div>
                       </div>
                     </div>
@@ -598,7 +605,7 @@ function Details() {
                     <span className="flex text-white/60 items-end text-xl mb-1 font-semibold gap-0.5">
                       5{" "}
                       <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                        ({game.reviewsPercent[5]}%)
+                        ({getReviewPercent(5)}%)
                       </span>
                     </span>
                   </div>
@@ -606,7 +613,7 @@ function Details() {
                   <div className="w-full h-2 bg-[#252525] rounded">
                     <div
                       className="h-full bg-[#F5B736]/60 rounded"
-                      style={{ width: `${game.reviewsPercent[5]}%` }}
+                      style={{ width: `${getReviewPercent(5)}%` }}
                     ></div>
                   </div>
                 </div>
@@ -615,14 +622,14 @@ function Details() {
                     <span className="flex text-white/60  items-end text-xl mb-1 font-semibold gap-0.5">
                       4{" "}
                       <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                        ({game.reviewsPercent[4]}%)
+                        ({getReviewPercent(4)}%)
                       </span>
                     </span>
                   </div>
                   <div className="w-full h-2 bg-[#252525] rounded">
                     <div
                       className="h-full bg-[#F5B736]/60 rounded"
-                      style={{ width: `${game.reviewsPercent[4]}%` }}
+                      style={{ width: `${getReviewPercent(4)}%` }}
                     ></div>
                   </div>
                 </div>
@@ -631,7 +638,7 @@ function Details() {
                     <span className="flex text-white/60  items-end text-xl mb-1 font-semibold gap-0.5">
                       3{" "}
                       <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                        ({game.reviewsPercent[3]}%)
+                        ({getReviewPercent(3)}%)
                       </span>
                     </span>
                   </div>
@@ -639,7 +646,7 @@ function Details() {
                   <div className="w-full h-2 bg-[#252525] rounded">
                     <div
                       className="h-full bg-[#F5B736]/60 rounded"
-                      style={{ width: `${game.reviewsPercent[3]}%` }}
+                      style={{ width: `${getReviewPercent(3)}%` }}
                     ></div>
                   </div>
                 </div>
@@ -648,7 +655,7 @@ function Details() {
                     <span className="flex text-white/60  items-end text-xl mb-1 font-semibold gap-0.5">
                       2{" "}
                       <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                        ({game.reviewsPercent[2]}%)
+                        ({getReviewPercent(2)}%)
                       </span>
                     </span>
                   </div>
@@ -656,7 +663,7 @@ function Details() {
                   <div className="w-full h-2 bg-[#252525] rounded">
                     <div
                       className="h-full bg-[#F5B736]/60 rounded"
-                      style={{ width: `${game.reviewsPercent[2]}%` }}
+                      style={{ width: `${getReviewPercent(2)}%` }}
                     ></div>
                   </div>
                 </div>
@@ -665,7 +672,7 @@ function Details() {
                     <span className="flex text-white/60  items-end text-xl mb-1 font-semibold gap-0.5">
                       1{" "}
                       <span className="text-gray-500 font-normal text-[16px] mb-[1px]">
-                        ({game.reviewsPercent[1]}%)
+                        ({getReviewPercent(1)}%)
                       </span>
                     </span>
                   </div>
@@ -673,7 +680,7 @@ function Details() {
                   <div className="w-full h-2 bg-[#252525] rounded">
                     <div
                       className="h-full bg-[#F5B736]/60 rounded"
-                      style={{ width: `${game.reviewsPercent[1]}%` }}
+                      style={{ width: `${getReviewPercent(1)}%` }}
                     ></div>
                   </div>
                 </div>

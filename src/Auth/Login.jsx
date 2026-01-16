@@ -3,6 +3,7 @@ import { useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import bcrypt from "bcryptjs";
 
 function Login() {
   const lastPage = localStorage.getItem("lastPage") || "/";
@@ -52,7 +53,7 @@ function Login() {
 
     try {
       const res = await axios.get(
-        `http://localhost:3000/users?email=${data.email}&password=${data.password}`
+        `http://localhost:3000/users?email=${data.email}`
       );
       const userData = res.data;
       if (userData.length === 0) {
@@ -61,6 +62,17 @@ function Login() {
       }
 
       const user = userData[0];
+
+      const isPasswordMatch = await bcrypt.compare(
+        data.password,
+        user.password
+      );
+
+      if (!isPasswordMatch) {
+        toast.error("Invalid email or password");
+        setLoading(false);
+        return;
+      }
 
       const auth = {
         token: crypto.randomUUID(),

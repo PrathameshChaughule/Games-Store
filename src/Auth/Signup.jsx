@@ -3,6 +3,7 @@ import { useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import bcrypt from "bcryptjs";
 
 function Signup() {
   const lastPage = localStorage.getItem("lastPage") || "/";
@@ -10,14 +11,15 @@ function Signup() {
     firstName: "",
     lastName: "",
     email: "",
-    password: "",
     role: "user",
     totalSpend: 0,
     library: [],
   });
+  const [password, setPassword] = useState("")
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false)
   const nav = useNavigate();
+  const saltRounds = 10
 
   const formHandle = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -27,10 +29,12 @@ function Signup() {
     e.preventDefault();
     setLoading(true)
 
-    if (data.password !== confirmPassword) {
+    if (password !== confirmPassword) {
       toast.error("Password and Confirm Password must be same");
       return;
     }
+
+    const hashedPassword = await bcrypt.hash(password, saltRounds);
 
     try {
       const response = await axios.get(
@@ -46,6 +50,7 @@ function Signup() {
 
       const res = await axios.post("http://localhost:3000/users", {
         ...data,
+        password: hashedPassword,
         customerId: `CUS-${Date.now().toString().slice(-6)}`,
         createdAt: new Date().toISOString(),
         status: "Active",
@@ -188,9 +193,9 @@ function Signup() {
                       type="password"
                       name="password"
                       id="password"
-                      value={data.password}
+                      value={password}
                       placeholder="Password"
-                      onChange={(e) => formHandle(e)}
+                      onChange={(e) => setPassword(e.target.value)}
                       className="p-2 px-4 w-full outline-none border-none text-[18px] rounded bg-[#e6e3e6c4] focus:bg-[#e6e3e6c4] placeholder:text-gray-500"
                       minLength={8}
                       required
@@ -213,21 +218,6 @@ function Signup() {
                     />
                   </div>
                 </div>
-
-                {/* <div className="mt-3 flex justify-between text-[17px] text-gray-500">
-                  <label
-                    htmlFor=""
-                    className="flex items-center gap-1 cursor-pointer hover:text-gray-500/80"
-                  >
-                    <input
-                      type="checkbox"
-                      name=""
-                      id=""
-                      className="w-5 h-4 accent-[#e6e3e6c4] bg-white cursor-pointer "
-                    />
-                    Remember me
-                  </label>
-                </div> */}
                 <button
                   type="submit"
                   className="p-2 mt-3 flex items-center justify-center text-[18px] font-bold rounded bg-[#1D232A] text-white cursor-pointer hover:bg-[#1D232A]/90"

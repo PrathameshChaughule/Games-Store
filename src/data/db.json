@@ -33,12 +33,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.8,
       "totalReviews": 1240,
-      "reviewsPercent": {
+      "installSizeGB": 98,
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 3,
-        "4": 10,
-        "5": 86
+        "2": 12,
+        "3": 37,
+        "4": 124,
+        "5": 1067
       }
     },
     {
@@ -74,12 +75,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.4,
       "totalReviews": 298300,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 5,
-        "4": 16,
-        "5": 76
+      "installSizeGB": 75,
+      "reviewsCount": {
+        "1": 2983,
+        "2": 5966,
+        "3": 14915,
+        "4": 47728,
+        "5": 226708
       }
     },
     {
@@ -116,12 +118,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.7,
       "totalReviews": 1820,
-      "reviewsPercent": {
+      "installSizeGB": 110,
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 3,
-        "4": 11,
-        "5": 85
+        "2": 18,
+        "3": 55,
+        "4": 200,
+        "5": 1547
       }
     },
     {
@@ -157,12 +160,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.9,
       "totalReviews": 1580,
-      "reviewsPercent": {
+      "installSizeGB": 106,
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 8,
-        "5": 89
+        "2": 16,
+        "3": 32,
+        "4": 126,
+        "5": 1406
       }
     },
     {
@@ -198,12 +202,13 @@
       "featuredStatus": "Featured",
       "rating": 4.7,
       "totalReviews": 1120,
-      "reviewsPercent": {
+      "installSizeGB": 90,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 4,
-        "4": 12,
-        "5": 82
+        "2": 22,
+        "3": 45,
+        "4": 134,
+        "5": 919
       }
     },
     {
@@ -239,12 +244,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.6,
       "totalReviews": 740,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 6,
-        "4": 15,
-        "5": 76
+      "installSizeGB": 66,
+      "reviewsCount": {
+        "1": 7,
+        "2": 15,
+        "3": 44,
+        "4": 111,
+        "5": 563
       }
     },
     {
@@ -280,12 +286,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.5,
       "totalReviews": 980,
-      "reviewsPercent": {
+      "installSizeGB": 90,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 4,
-        "4": 14,
-        "5": 80
+        "2": 20,
+        "3": 39,
+        "4": 137,
+        "5": 784
       }
     },
     {
@@ -321,12 +328,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.9,
       "totalReviews": 1620,
-      "reviewsPercent": {
+      "installSizeGB": 60,
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 7,
-        "5": 90
+        "2": 16,
+        "3": 32,
+        "4": 113,
+        "5": 1459
       }
     },
     {
@@ -362,12 +370,13 @@
       "featuredStatus": "Featured",
       "rating": 4.7,
       "totalReviews": 1050,
-      "reviewsPercent": {
+      "installSizeGB": 79,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 4,
-        "4": 11,
-        "5": 83
+        "2": 21,
+        "3": 42,
+        "4": 116,
+        "5": 871
       }
     },
     {
@@ -403,12 +412,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.6,
       "totalReviews": 1180,
-      "reviewsPercent": {
+      "installSizeGB": 82,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 5,
-        "4": 14,
-        "5": 79
+        "2": 24,
+        "3": 59,
+        "4": 165,
+        "5": 932
       }
     },
     {
@@ -444,12 +454,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.8,
       "totalReviews": 910,
-      "reviewsPercent": {
+      "installSizeGB": 39,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 3,
-        "4": 11,
-        "5": 84
+        "2": 18,
+        "3": 27,
+        "4": 100,
+        "5": 765
       }
     },
     {
@@ -485,12 +496,13 @@
       "featuredStatus": "Featured",
       "rating": 4.4,
       "totalReviews": 860,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 7,
-        "4": 19,
-        "5": 71
+      "installSizeGB": 31,
+      "reviewsCount": {
+        "1": 9,
+        "2": 17,
+        "3": 60,
+        "4": 163,
+        "5": 611
       }
     },
     {
@@ -526,12 +538,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.3,
       "totalReviews": 690,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 7,
-        "4": 18,
-        "5": 72
+      "installSizeGB": 45,
+      "reviewsCount": {
+        "1": 7,
+        "2": 14,
+        "3": 48,
+        "4": 124,
+        "5": 497
       }
     },
     {
@@ -567,12 +580,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.2,
       "totalReviews": 540,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 9,
-        "4": 21,
-        "5": 67
+      "installSizeGB": 40,
+      "reviewsCount": {
+        "1": 5,
+        "2": 11,
+        "3": 49,
+        "4": 113,
+        "5": 362
       }
     },
     {
@@ -608,12 +622,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.4,
       "totalReviews": 1320,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 6,
-        "4": 17,
-        "5": 74
+      "installSizeGB": 125,
+      "reviewsCount": {
+        "1": 13,
+        "2": 26,
+        "3": 79,
+        "4": 224,
+        "5": 978
       }
     },
     {
@@ -649,12 +664,13 @@
       "featuredStatus": "Featured",
       "rating": 4.5,
       "totalReviews": 820,
-      "reviewsPercent": {
+      "installSizeGB": 56,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 6,
-        "4": 16,
-        "5": 76
+        "2": 16,
+        "3": 49,
+        "4": 131,
+        "5": 624
       }
     },
     {
@@ -690,12 +706,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.3,
       "totalReviews": 610,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 8,
-        "4": 20,
-        "5": 69
+      "installSizeGB": 50,
+      "reviewsCount": {
+        "1": 6,
+        "2": 12,
+        "3": 49,
+        "4": 122,
+        "5": 421
       }
     },
     {
@@ -731,12 +748,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.1,
       "totalReviews": 940,
-      "reviewsPercent": {
+      "installSizeGB": 63,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 6,
-        "4": 15,
-        "5": 77
+        "2": 19,
+        "3": 56,
+        "4": 141,
+        "5": 724
       }
     },
     {
@@ -772,12 +790,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.6,
       "totalReviews": 770,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 6,
-        "4": 18,
-        "5": 73
+      "installSizeGB": 110,
+      "reviewsCount": {
+        "1": 8,
+        "2": 15,
+        "3": 46,
+        "4": 139,
+        "5": 562
       }
     },
     {
@@ -813,12 +832,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.2,
       "totalReviews": 830,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 7,
-        "4": 19,
-        "5": 71
+      "installSizeGB": 115,
+      "reviewsCount": {
+        "1": 8,
+        "2": 17,
+        "3": 58,
+        "4": 158,
+        "5": 589
       }
     },
     {
@@ -854,12 +874,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.1,
       "totalReviews": 560,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 8,
-        "4": 21,
-        "5": 68
+      "installSizeGB": 48,
+      "reviewsCount": {
+        "1": 6,
+        "2": 11,
+        "3": 45,
+        "4": 118,
+        "5": 380
       }
     },
     {
@@ -895,12 +916,13 @@
       "featuredStatus": "Featured",
       "rating": 4.3,
       "totalReviews": 880,
-      "reviewsPercent": {
+      "installSizeGB": 155,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 7,
-        "4": 17,
-        "5": 74
+        "2": 18,
+        "3": 62,
+        "4": 150,
+        "5": 650
       }
     },
     {
@@ -936,12 +958,13 @@
       "featuredStatus": "Not Featured",
       "rating": 4.2,
       "totalReviews": 1010,
-      "reviewsPercent": {
+      "installSizeGB": 46,
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 5,
-        "4": 15,
-        "5": 78
+        "2": 20,
+        "3": 51,
+        "4": 152,
+        "5": 787
       }
     },
     {
@@ -976,13 +999,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "installSizeGB": 78,
       "totalReviews": 1840,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 3,
-        "4": 8,
-        "5": 88
+        "2": 18,
+        "3": 55,
+        "4": 147,
+        "5": 1620
       }
     },
     {
@@ -1017,13 +1041,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
+      "installSizeGB": 45,
       "totalReviews": 2120,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 1,
-        "4": 7,
-        "5": 91
+        "2": 21,
+        "3": 21,
+        "4": 148,
+        "5": 1930
       }
     },
     {
@@ -1058,13 +1083,14 @@
       "requestId": "REQ-08",
       "featuredStatus": "Featured",
       "rating": 4.7,
+      "installSizeGB": 55,
       "totalReviews": 1560,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 3,
-        "4": 11,
-        "5": 84
+        "2": 31,
+        "3": 47,
+        "4": 172,
+        "5": 1310
       }
     },
     {
@@ -1099,13 +1125,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "installSizeGB": 45,
       "totalReviews": 1780,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 3,
-        "4": 9,
-        "5": 87
+        "2": 18,
+        "3": 53,
+        "4": 160,
+        "5": 1549
       }
     },
     {
@@ -1140,13 +1167,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.7,
+      "installSizeGB": 50,
       "totalReviews": 1490,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 3,
-        "4": 12,
-        "5": 83
+        "2": 30,
+        "3": 45,
+        "4": 179,
+        "5": 1236
       }
     },
     {
@@ -1179,13 +1207,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "installSizeGB": 105,
       "totalReviews": 2010,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 3,
-        "4": 10,
-        "5": 86
+        "2": 20,
+        "3": 60,
+        "4": 201,
+        "5": 1729
       }
     },
     {
@@ -1220,13 +1249,14 @@
       "requestId": "REQ-09",
       "featuredStatus": "Featured",
       "rating": 4.7,
+      "installSizeGB": 35,
       "totalReviews": 1320,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 3,
-        "4": 13,
-        "5": 82
+        "2": 26,
+        "3": 40,
+        "4": 172,
+        "5": 1082
       }
     },
     {
@@ -1261,13 +1291,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "installSizeGB": 50,
       "totalReviews": 1680,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 3,
-        "4": 9,
-        "5": 87
+        "2": 17,
+        "3": 50,
+        "4": 151,
+        "5": 1462
       }
     },
     {
@@ -1302,13 +1333,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
+      "installSizeGB": 50,
       "totalReviews": 2240,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 1,
-        "4": 6,
-        "5": 92
+        "2": 22,
+        "3": 22,
+        "4": 134,
+        "5": 2062
       }
     },
     {
@@ -1341,13 +1373,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "installSizeGB": 95,
       "totalReviews": 2360,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 8,
-        "5": 89
+        "2": 24,
+        "3": 47,
+        "4": 189,
+        "5": 2100
       }
     },
     {
@@ -1382,13 +1415,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.2,
+      "installSizeGB": 35,
       "totalReviews": 840,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 3,
-        "3": 8,
-        "4": 17,
-        "5": 71
+      "reviewsCount": {
+        "1": 8,
+        "2": 25,
+        "3": 67,
+        "4": 143,
+        "5": 597
       }
     },
     {
@@ -1423,13 +1457,14 @@
       "requestId": "REQ-010",
       "featuredStatus": "Featured",
       "rating": 4.7,
+      "installSizeGB": 25,
       "totalReviews": 1290,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 3,
-        "4": 12,
-        "5": 83
+        "2": 26,
+        "3": 39,
+        "4": 155,
+        "5": 1070
       }
     },
     {
@@ -1464,13 +1499,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.5,
+      "installSizeGB": 90,
       "totalReviews": 1180,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 5,
-        "4": 15,
-        "5": 78
+        "2": 24,
+        "3": 59,
+        "4": 177,
+        "5": 920
       }
     },
     {
@@ -1505,13 +1541,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.1,
+      "installSizeGB": 50,
       "totalReviews": 910,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 3,
-        "3": 7,
-        "4": 20,
-        "5": 69
+      "reviewsCount": {
+        "1": 9,
+        "2": 27,
+        "3": 64,
+        "4": 182,
+        "5": 628
       }
     },
     {
@@ -1546,13 +1583,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.3,
+      "installSizeGB": 120,
       "totalReviews": 1430,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 6,
-        "4": 17,
-        "5": 74
+      "reviewsCount": {
+        "1": 14,
+        "2": 29,
+        "3": 86,
+        "4": 243,
+        "5": 1058
       }
     },
     {
@@ -1561,11 +1599,11 @@
       "company": "CD Projekt",
       "category": "ps4Games",
       "image": [
+        "/assets/images/Cyberpunk 2077 5.webp",
         "/assets/images/Cyberpunk 2077 1.webp",
         "/assets/images/Cyberpunk 2077 2.webp",
         "/assets/images/Cyberpunk 2077 3.webp",
-        "/assets/images/Cyberpunk 2077 4.webp",
-        "/assets/images/Cyberpunk 2077 5.webp"
+        "/assets/images/Cyberpunk 2077 4.webp"
       ],
       "price": 1799,
       "discountPrice": 1399,
@@ -1587,13 +1625,14 @@
       "requestId": "REQ-011",
       "featuredStatus": "Featured",
       "rating": 4,
+      "installSizeGB": 70,
       "totalReviews": 760,
-      "reviewsPercent": {
-        "1": 2,
-        "2": 3,
-        "3": 7,
-        "4": 22,
-        "5": 66
+      "reviewsCount": {
+        "1": 15,
+        "2": 23,
+        "3": 53,
+        "4": 167,
+        "5": 502
       }
     },
     {
@@ -1628,13 +1667,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.7,
+      "installSizeGB": 30,
       "totalReviews": 1340,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 3,
-        "4": 11,
-        "5": 84
+        "2": 27,
+        "3": 40,
+        "4": 147,
+        "5": 1126
       }
     },
     {
@@ -1669,13 +1709,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.5,
+      "installSizeGB": 35,
       "totalReviews": 1960,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 4,
-        "4": 15,
-        "5": 79
+        "2": 39,
+        "3": 78,
+        "4": 294,
+        "5": 1549
       }
     },
     {
@@ -1710,13 +1751,14 @@
       "requestId": "REQ-012",
       "featuredStatus": "Featured",
       "rating": 4.4,
+      "installSizeGB": 55,
       "totalReviews": 1410,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 5,
-        "4": 16,
-        "5": 76
+      "reviewsCount": {
+        "1": 14,
+        "2": 28,
+        "3": 71,
+        "4": 226,
+        "5": 1071
       }
     },
     {
@@ -1751,13 +1793,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.3,
+      "installSizeGB": 45,
       "totalReviews": 980,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 3,
-        "3": 6,
-        "4": 18,
-        "5": 72
+      "reviewsCount": {
+        "1": 10,
+        "2": 29,
+        "3": 59,
+        "4": 176,
+        "5": 706
       }
     },
     {
@@ -1792,13 +1835,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "installSizeGB": 42,
       "totalReviews": 1370,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 9,
-        "5": 88
+        "2": 14,
+        "3": 27,
+        "4": 123,
+        "5": 1206
       }
     },
     {
@@ -1834,13 +1878,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.5,
+      "sizeGB": 97,
       "totalReviews": 1580,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 4,
-        "4": 14,
-        "5": 80
+        "2": 32,
+        "3": 63,
+        "4": 221,
+        "5": 1264
       }
     },
     {
@@ -1876,13 +1921,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.2,
+      "sizeGB": 80,
       "totalReviews": 1120,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 3,
-        "3": 6,
-        "4": 18,
-        "5": 72
+      "reviewsCount": {
+        "1": 11,
+        "2": 34,
+        "3": 67,
+        "4": 202,
+        "5": 806
       }
     },
     {
@@ -1917,13 +1963,14 @@
       "requestId": "REQ-013",
       "featuredStatus": "Featured",
       "rating": 4.3,
+      "sizeGB": 85,
       "totalReviews": 1360,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 5,
-        "4": 17,
-        "5": 75
+      "reviewsCount": {
+        "1": 14,
+        "2": 27,
+        "3": 68,
+        "4": 231,
+        "5": 1020
       }
     },
     {
@@ -1958,13 +2005,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.4,
+      "sizeGB": 150,
       "totalReviews": 1240,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 5,
-        "4": 16,
-        "5": 77
+      "reviewsCount": {
+        "1": 12,
+        "2": 12,
+        "3": 62,
+        "4": 198,
+        "5": 956
       }
     },
     {
@@ -2000,13 +2048,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "sizeGB": 120,
       "totalReviews": 2140,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 3,
-        "4": 9,
-        "5": 87
+        "2": 21,
+        "3": 64,
+        "4": 193,
+        "5": 1862
       }
     },
     {
@@ -2042,13 +2091,14 @@
       "requestId": "REQ-014",
       "featuredStatus": "Featured",
       "rating": 4.9,
+      "sizeGB": 60,
       "totalReviews": 2380,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 1,
-        "4": 6,
-        "5": 92
+        "2": 24,
+        "3": 24,
+        "4": 143,
+        "5": 2189
       }
     },
     {
@@ -2083,13 +2133,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.3,
+      "sizeGB": 90,
       "totalReviews": 1310,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 5,
-        "4": 17,
-        "5": 75
+      "reviewsCount": {
+        "1": 13,
+        "2": 26,
+        "3": 66,
+        "4": 223,
+        "5": 982
       }
     },
     {
@@ -2124,13 +2175,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.4,
+      "sizeGB": 70,
       "totalReviews": 1470,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 5,
-        "4": 16,
-        "5": 77
+      "reviewsCount": {
+        "1": 15,
+        "2": 15,
+        "3": 74,
+        "4": 235,
+        "5": 1131
       }
     },
     {
@@ -2166,13 +2218,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.2,
+      "sizeGB": 50,
       "totalReviews": 1390,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 7,
-        "4": 19,
-        "5": 71
+      "reviewsCount": {
+        "1": 14,
+        "2": 28,
+        "3": 97,
+        "4": 264,
+        "5": 987
       }
     },
     {
@@ -2208,13 +2261,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.3,
+      "sizeGB": 100,
       "totalReviews": 1520,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 5,
-        "4": 17,
-        "5": 75
+      "reviewsCount": {
+        "1": 15,
+        "2": 30,
+        "3": 76,
+        "4": 258,
+        "5": 1141
       }
     },
     {
@@ -2249,13 +2303,14 @@
       "requestId": "REQ-015",
       "featuredStatus": "Featured",
       "rating": 4.1,
+      "sizeGB": 125,
       "totalReviews": 980,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 3,
-        "3": 8,
-        "4": 20,
-        "5": 68
+      "reviewsCount": {
+        "1": 10,
+        "2": 29,
+        "3": 78,
+        "4": 196,
+        "5": 667
       }
     },
     {
@@ -2290,13 +2345,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
+      "sizeGB": 50,
       "totalReviews": 2260,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 1,
-        "4": 5,
-        "5": 93
+        "2": 23,
+        "3": 23,
+        "4": 113,
+        "5": 2101
       }
     },
     {
@@ -2331,13 +2387,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.5,
+      "sizeGB": 35,
       "totalReviews": 1440,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 4,
-        "4": 13,
-        "5": 81
+        "2": 29,
+        "3": 58,
+        "4": 187,
+        "5": 1166
       }
     },
     {
@@ -2372,13 +2429,14 @@
       "requestId": "REQ-016",
       "featuredStatus": "Featured",
       "rating": 4.4,
+      "sizeGB": 75,
       "totalReviews": 1670,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 5,
-        "4": 15,
-        "5": 78
+      "reviewsCount": {
+        "1": 17,
+        "2": 17,
+        "3": 84,
+        "4": 251,
+        "5": 1301
       }
     },
     {
@@ -2413,13 +2471,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.5,
+      "sizeGB": 45,
       "totalReviews": 2090,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 2,
-        "3": 4,
-        "4": 14,
-        "5": 80
+        "2": 42,
+        "3": 84,
+        "4": 293,
+        "5": 1671
       }
     },
     {
@@ -2454,13 +2513,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4,
+      "sizeGB": 70,
       "totalReviews": 860,
-      "reviewsPercent": {
-        "1": 2,
-        "2": 3,
-        "3": 8,
-        "4": 22,
-        "5": 65
+      "reviewsCount": {
+        "1": 17,
+        "2": 26,
+        "3": 69,
+        "4": 189,
+        "5": 559
       }
     },
     {
@@ -2495,13 +2555,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.1,
+      "sizeGB": 45,
       "totalReviews": 910,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 7,
-        "4": 21,
-        "5": 69
+      "reviewsCount": {
+        "1": 9,
+        "2": 18,
+        "3": 64,
+        "4": 191,
+        "5": 628
       }
     },
     {
@@ -2536,13 +2597,14 @@
       "requestId": "REQ-017",
       "featuredStatus": "Featured",
       "rating": 4.3,
+      "sizeGB": 55,
       "totalReviews": 1180,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 5,
-        "4": 17,
-        "5": 75
+      "reviewsCount": {
+        "1": 12,
+        "2": 24,
+        "3": 59,
+        "4": 201,
+        "5": 884
       }
     },
     {
@@ -2577,13 +2639,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "sizeGB": 15,
       "totalReviews": 1860,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 9,
-        "5": 88
+        "2": 19,
+        "3": 37,
+        "4": 167,
+        "5": 1637
       }
     },
     {
@@ -2618,13 +2681,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.4,
+      "sizeGB": 70,
       "totalReviews": 184250,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 3,
-        "3": 6,
-        "4": 18,
-        "5": 72
+      "reviewsCount": {
+        "1": 1843,
+        "2": 5528,
+        "3": 11055,
+        "4": 33165,
+        "5": 132659
       }
     },
     {
@@ -2659,13 +2723,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
+      "sizeGB": 50,
       "totalReviews": 256400,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 9,
-        "5": 88
+        "2": 2564,
+        "3": 5128,
+        "4": 23076,
+        "5": 225632
       }
     },
     {
@@ -2701,13 +2766,14 @@
       "requestId": "REQ-018",
       "featuredStatus": "Featured",
       "rating": 4.8,
+      "sizeGB": 120,
       "totalReviews": 312780,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 3,
-        "4": 11,
-        "5": 84
+      "reviewsCount": {
+        "1": 3128,
+        "2": 3128,
+        "3": 9383,
+        "4": 34406,
+        "5": 262735
       }
     },
     {
@@ -2743,13 +2809,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
+      "sizeGB": 95,
       "totalReviews": 520900,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 2,
-        "4": 10,
-        "5": 86
+      "reviewsCount": {
+        "1": 5209,
+        "2": 5209,
+        "3": 10418,
+        "4": 52090,
+        "5": 447974
       }
     },
     {
@@ -2785,13 +2852,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
+      "sizeGB": 2,
       "totalReviews": 1045800,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 7,
-        "5": 90
+        "2": 10458,
+        "3": 20916,
+        "4": 73206,
+        "5": 941220
       }
     },
     {
@@ -2827,13 +2895,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.6,
+      "sizeGB": 30,
       "totalReviews": 342600,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 4,
-        "4": 14,
-        "5": 80
+      "reviewsCount": {
+        "1": 3426,
+        "2": 3426,
+        "3": 13704,
+        "4": 47964,
+        "5": 273080
       }
     },
     {
@@ -2868,13 +2937,14 @@
       "requestId": "REQ-019",
       "featuredStatus": "Featured",
       "rating": 4.5,
+      "sizeGB": 45,
       "totalReviews": 689400,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 5,
-        "4": 15,
-        "5": 78
+      "reviewsCount": {
+        "1": 6894,
+        "2": 6894,
+        "3": 34470,
+        "4": 103410,
+        "5": 537732
       }
     },
     {
@@ -2909,13 +2979,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.7,
+      "sizeGB": 15,
       "totalReviews": 912700,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 3,
-        "4": 13,
-        "5": 82
+      "reviewsCount": {
+        "1": 9127,
+        "2": 9127,
+        "3": 27381,
+        "4": 118651,
+        "5": 748414
       }
     },
     {
@@ -2950,13 +3021,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.6,
+      "sizeGB": 15,
       "totalReviews": 865200,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 4,
-        "4": 14,
-        "5": 80
+      "reviewsCount": {
+        "1": 8652,
+        "2": 8652,
+        "3": 34608,
+        "4": 121128,
+        "5": 692160
       }
     },
     {
@@ -2992,13 +3064,14 @@
       "requestId": "REQ-020",
       "featuredStatus": "Featured",
       "rating": 4.1,
+      "sizeGB": 50,
       "totalReviews": 156900,
-      "reviewsPercent": {
-        "1": 2,
-        "2": 4,
-        "3": 8,
-        "4": 22,
-        "5": 64
+      "reviewsCount": {
+        "1": 3138,
+        "2": 6276,
+        "3": 12552,
+        "4": 34518,
+        "5": 100416
       }
     },
     {
@@ -3034,13 +3107,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.3,
+      "sizeGB": 100,
       "totalReviews": 224500,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 2,
-        "3": 6,
-        "4": 17,
-        "5": 74
+      "reviewsCount": {
+        "1": 2245,
+        "2": 4490,
+        "3": 13470,
+        "4": 38165,
+        "5": 166130
       }
     },
     {
@@ -3076,13 +3150,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
+      "sizeGB": 60,
       "totalReviews": 478600,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 7,
-        "5": 90
+        "2": 4786,
+        "3": 9572,
+        "4": 33502,
+        "5": 430740
       }
     },
     {
@@ -3118,13 +3193,14 @@
       "requestId": "REQ-021",
       "featuredStatus": "Featured",
       "rating": 4.7,
+      "sizeGB": 25,
       "totalReviews": 1284300,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 3,
-        "4": 13,
-        "5": 82
+      "reviewsCount": {
+        "1": 12843,
+        "2": 12843,
+        "3": 38529,
+        "4": 166959,
+        "5": 1053126
       }
     },
     {
@@ -3159,13 +3235,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.2,
+      "sizeGB": 90,
       "totalReviews": 198700,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 3,
-        "3": 7,
-        "4": 19,
-        "5": 70
+      "reviewsCount": {
+        "1": 1987,
+        "2": 5961,
+        "3": 13909,
+        "4": 37753,
+        "5": 139090
       }
     },
     {
@@ -3200,13 +3277,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.1,
+      "sizeGB": 75,
       "totalReviews": 142300,
-      "reviewsPercent": {
-        "1": 2,
-        "2": 3,
-        "3": 8,
-        "4": 21,
-        "5": 66
+      "reviewsCount": {
+        "1": 2846,
+        "2": 4269,
+        "3": 11384,
+        "4": 29883,
+        "5": 93918
       }
     },
     {
@@ -3241,13 +3319,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.6,
+      "sizeGB": 70,
       "totalReviews": 265800,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 4,
-        "4": 14,
-        "5": 80
+      "reviewsCount": {
+        "1": 2658,
+        "2": 2658,
+        "3": 10632,
+        "4": 37212,
+        "5": 212640
       }
     },
     {
@@ -3282,13 +3361,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4,
+      "sizeGB": 125,
       "totalReviews": 116900,
-      "reviewsPercent": {
-        "1": 3,
-        "2": 4,
-        "3": 9,
-        "4": 22,
-        "5": 62
+      "reviewsCount": {
+        "1": 3507,
+        "2": 4676,
+        "3": 10521,
+        "4": 25718,
+        "5": 72478
       }
     },
     {
@@ -3323,13 +3403,14 @@
       "requestId": "REQ-022",
       "featuredStatus": "Featured",
       "rating": 4.8,
+      "sizeGB": 15,
       "totalReviews": 734500,
-      "reviewsPercent": {
-        "1": 1,
-        "2": 1,
-        "3": 2,
-        "4": 10,
-        "5": 86
+      "reviewsCount": {
+        "1": 7345,
+        "2": 7345,
+        "3": 14690,
+        "4": 73450,
+        "5": 631670
       }
     },
     {
@@ -3364,13 +3445,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 3.8,
+      "sizeGB": 100,
       "totalReviews": 187400,
-      "reviewsPercent": {
-        "1": 3,
-        "2": 5,
-        "3": 10,
-        "4": 24,
-        "5": 58
+      "reviewsCount": {
+        "1": 5622,
+        "2": 9370,
+        "3": 18740,
+        "4": 44976,
+        "5": 108692
       }
     },
     {
@@ -3406,13 +3488,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
+      "sizeGB": 150,
       "totalReviews": 392600,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 7,
-        "5": 90
+        "2": 3926,
+        "3": 7852,
+        "4": 27482,
+        "5": 353340
       }
     },
     {
@@ -3448,13 +3531,14 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
+      "sizeGB": 150,
       "totalReviews": 392600,
-      "reviewsPercent": {
+      "reviewsCount": {
         "1": 0,
-        "2": 1,
-        "3": 2,
-        "4": 7,
-        "5": 90
+        "2": 3926,
+        "3": 7852,
+        "4": 27482,
+        "5": 353340
       }
     },
     {
@@ -3488,14 +3572,15 @@
       "status": "Active",
       "requestId": "undefined",
       "featuredStatus": "Featured",
-      "rating": 0,
-      "totalReviews": 0,
-      "reviewsPercent": {
+      "rating": 5,
+      "sizeGB": 130,
+      "totalReviews": 1,
+      "reviewsCount": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 0
+        "5": 1
       },
       "id": 85
     }
@@ -3667,14 +3752,14 @@
       "firstName": "Aaryan",
       "lastName": "Chaughule",
       "email": "a@gmail.com",
-      "password": "12345678",
+      "password": "$2b$10$YTVFOUlDxRYSGZiyyQw/L.GiBlZIxjrZePNWME.IqeGpUoVKGEI8e",
       "role": "user",
       "totalSpend": 8020.46,
       "library": [],
       "customerId": "CUS-398913",
       "createdAt": "2026-01-09T03:46:38.913Z",
       "lastOrder": "2026-01-09T03:46:38.913Z",
-      "lastLogin": "2026-01-09T04:13:27.325Z",
+      "lastLogin": "2026-01-16T07:51:27.461Z",
       "wishlist": [],
       "address": [
         {
@@ -3694,33 +3779,25 @@
       "firstName": "Prathamesh",
       "lastName": "Chaughule",
       "email": "p@gmail.com",
-      "password": "12345678",
+      "password": "$2b$10$2RnsUUbMg6oyq6Y0HM1keuK72iN5MBbVjNOc7o3jbENWzJHqbigdu",
       "role": "admin",
-      "totalSpend": 84218.95999999999,
+      "totalSpend": 90353.78,
       "library": [
         {
-          "gameId": 63,
+          "gameId": 45,
           "orderId": 1,
-          "purchasedAt": "2026-01-15T18:47:47.243Z",
+          "purchasedAt": "2026-01-16T07:04:48.529Z",
           "installStatus": "Not Installed",
-          "orderStatus": "Processing",
+          "orderStatus": "Completed",
           "starRating": 0
         },
         {
-          "gameId": 5,
+          "gameId": 85,
           "orderId": 1,
-          "purchasedAt": "2026-01-15T18:47:47.243Z",
+          "purchasedAt": "2026-01-16T07:04:48.529Z",
           "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 3
-        },
-        {
-          "gameId": 34,
-          "orderId": 1,
-          "purchasedAt": "2026-01-15T18:47:47.243Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 0
+          "orderStatus": "Completed",
+          "starRating": 5
         }
       ],
       "wishlist": [
@@ -3731,8 +3808,8 @@
       ],
       "customerId": "CUS-007325",
       "createdAt": "2026-01-09T04:13:27.325Z",
-      "lastOrder": "2026-01-15T18:47:47.243Z",
-      "lastLogin": "2026-01-15T15:04:23.050Z",
+      "lastOrder": "2026-01-16T07:04:48.529Z",
+      "lastLogin": "2026-01-16T07:49:02.035Z",
       "address": [
         {
           "address": "Ratnagiri, Maharashtra",
@@ -3743,15 +3820,15 @@
         }
       ],
       "mobileNumber": "1234567890",
-      "status": "Active",
-      "totalOrders": 11,
+      "status": "Inactive",
+      "totalOrders": 12,
       "id": 2
     },
     {
       "firstName": "Parth",
       "lastName": "Mayekar",
       "email": "parth@gmail.com",
-      "password": "12345678",
+      "password": "$2b$10$8kGZLn//bWFhjaz3qeCoxOlkG1GPDPAKOjrNXkXGnUBQVUnmX1Va.",
       "role": "user",
       "totalSpend": 0,
       "library": [],
@@ -3778,7 +3855,7 @@
       "firstName": "Vilas",
       "lastName": "Chaughule",
       "email": "v@gmail.com",
-      "password": "12345678",
+      "password": "$2b$10$e8P2ElLZgFxy79XPXdCunuG/msZz7oY.he0eA0YJJuVrwCL35kdiS",
       "role": "user",
       "totalSpend": 0,
       "library": [],
@@ -3805,7 +3882,7 @@
       "firstName": "Savita",
       "lastName": "Chaughule",
       "email": "s@gmail.com",
-      "password": "12345678",
+      "password": "$2b$10$QBo2vKO2Ue53YRf0ZnllruyFJ4nFd3CNfGvlqGn..7uzau0jzsSmS",
       "role": "user",
       "totalSpend": 0,
       "library": [],
@@ -3832,7 +3909,7 @@
       "firstName": "Aniket",
       "lastName": "Potale",
       "email": "aniket@gmail.com",
-      "password": "12345678",
+      "password": "$2b$10$ipX8MbyQPRdJnNoLY9/UOu9MQx.0heMzYycpxCktlSU4oEoyCz9TC",
       "role": "user",
       "totalSpend": 0,
       "library": [],
@@ -3854,6 +3931,33 @@
       "totalOrders": 0,
       "status": "Inactive",
       "id": 6
+    },
+    {
+      "firstName": "Maya",
+      "lastName": "Bhagane",
+      "email": "maya@gmail.com",
+      "role": "user",
+      "totalSpend": 0,
+      "library": [],
+      "password": "$2b$10$p45xZp9b9DSNUtqwSXCxxeEc5tMO08DdYiIHzJsSL10ylOrfVI9Iu",
+      "customerId": "CUS-156364",
+      "createdAt": "2026-01-16T07:55:56.364Z",
+      "status": "Active",
+      "lastLogin": "2026-01-16T07:55:56.364Z",
+      "lastOrder": null,
+      "totalOrders": 0,
+      "address": [
+        {
+          "address": "",
+          "city": "",
+          "country": "India",
+          "state": "",
+          "zipCode": ""
+        }
+      ],
+      "wishlist": [],
+      "mobileNumber": "",
+      "id": 7
     }
   ],
   "orders": [
@@ -3864,43 +3968,35 @@
       "email": "p@gmail.com",
       "games": [
         {
-          "gameId": 63,
-          "title": "Cyberpunk 2077",
-          "price": 2999,
-          "discountPrice": 2199,
-          "image": "/assets/images/Cyberpunk 2077 5.webp",
-          "category": "pcGames"
+          "gameId": 45,
+          "title": "Gears 5",
+          "price": 2199,
+          "discountPrice": 1699,
+          "image": "/assets/images/Gears 5 5.webp",
+          "category": "xboxGames"
         },
         {
-          "gameId": 5,
-          "title": "Final Fantasy XVI",
-          "price": 4499,
-          "discountPrice": 3599,
-          "image": "/assets/images/Final-Fantasy-5.webp",
+          "gameId": 85,
+          "title": "Black Myth: Wukong",
+          "price": 4200,
+          "discountPrice": 3500,
+          "image": "https://cdn.dlcompare.com/game_tetiere/upload/gameimage/file/black-myth-wukong-file-84439423e.jpg.webp",
           "category": "ps5Games"
-        },
-        {
-          "gameId": 34,
-          "title": "Assassin’s Creed Odyssey",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/Assassin’s Creed Odyssey 5.webp",
-          "category": "ps4Games"
         }
       ],
       "paymentStatus": "Paid",
       "orderStatus": "Completed",
-      "createdAt": "2026-01-15T18:47:33.394Z",
-      "total": 9200.46,
+      "createdAt": "2026-01-16T07:04:36.505Z",
+      "total": 6134.82,
       "paymentData": {
         "paymentMethod": "NetBanking",
         "firstName": "Prathamesh",
         "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
+        "address": "jjvvjvj",
         "country": "India",
         "city": "Ratnagiri",
         "state": "Maharashtra",
-        "zipCode": "415612"
+        "zipCode": "788767"
       },
       "id": 1,
       "orderId": "ORD-000001"

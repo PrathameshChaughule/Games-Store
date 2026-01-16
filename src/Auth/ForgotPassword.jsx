@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import bcrypt from "bcryptjs";
 
 function ForgotPassword() {
-  const lastPage = localStorage.getItem("lastPage") || "/";
   const [page, setPage] = useState("email");
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
@@ -17,6 +17,7 @@ function ForgotPassword() {
   const [loading, setLoading] = useState(false)
   const nav = useNavigate();
   const OTP_TIME = 30;
+  const saltRounds = 10
 
   const videos = [
     {
@@ -115,18 +116,23 @@ function ForgotPassword() {
       toast.error("Password must be at least 8 characters");
       return;
     }
+
+    setLoading(true)
+
+    const hashedPassword = await bcrypt.hash(password, saltRounds);
+
     try {
-      setLoading(true)
+
       const response = await axios.get(
         `http://localhost:3000/users?email=${email}`
       );
 
       const res = response.data[0];
 
-      await axios.patch(`http://localhost:3000/users/${res.id}`, { password });
+      await axios.patch(`http://localhost:3000/users/${res.id}`, { password: hashedPassword });
       toast.success("Password reset successful");
       setTimeout(() => {
-        nav(lastPage);
+        nav("/login");
       }, 1000);
     } catch (error) {
       console.log(error);
