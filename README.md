@@ -174,7 +174,6 @@ npx json-server --watch db.json --port 3000
 
 # Start the React app
 npm run dev
-```bash
 
 # Clone the repository
 git clone https://github.com/your-username/gemaring.git
