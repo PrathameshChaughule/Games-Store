@@ -3,6 +3,7 @@ import { lazy, useEffect, useMemo, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { useNavigate } from "react-router-dom";
+import Loading from '../components/Loading'
 
 const RequestForm = lazy(() => import("../components/RequestForm"));
 const News = lazy(() => import("../components/News"));
@@ -15,17 +16,21 @@ function PS4() {
   const [news, setNews] = useState([])
   const [showRequestForm, setShowRequestForm] = useState(false);
   const nav = useNavigate()
+  const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
+    setLoading(true)
     try {
       const [game, news] = await Promise.all([
-        axios.get("http://localhost:3000/games?category=ps4Games&status=Active"),
-        axios.get("http://localhost:3000/news?category=ps4News")
+        axios.get("https://gamering-data.onrender.com/games?category=ps4Games&status=Active"),
+        axios.get("https://gamering-data.onrender.com/news?category=ps4News")
       ])
       setGames(game.data)
       setNews(news.data)
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -76,6 +81,10 @@ function PS4() {
   const filteredGames = useMemo(() => {
     return sortGame(games, filter);
   }, [games, filter]);
+
+  if (loading) {
+    return <div><Loading /></div>
+  }
 
   return (
     <div>
@@ -178,6 +187,7 @@ function PS4() {
                 name={val.title}
                 com={val.company}
                 img={val.image}
+                discountPrice={val.discountPrice}
               />
             ))}
           </div>

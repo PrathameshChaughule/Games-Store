@@ -96,7 +96,7 @@ function ProductOverview({ game, id }) {
     const updateData = async () => {
         try {
             setLoading(true);
-            await axios.patch(`http://localhost:3000/games/${id}`, data);
+            await axios.patch(`https://gamering-data.onrender.com/games/${id}`, data);
             toast.success("Data Updated");
         } catch (error) {
             console.log(error);

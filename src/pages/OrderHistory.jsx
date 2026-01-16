@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { GoDotFill } from 'react-icons/go';
 import { TbSortDescending2 } from 'react-icons/tb'
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -18,7 +18,7 @@ function OrderHistory() {
   const fetchData = async () => {
     setLoading(true)
     try {
-      const res = await axios.get(`http://localhost:3000/orders?userId=${userData.userId}`)
+      const res = await axios.get(`https://gamering-data.onrender.com/orders?userId=${userData.userId}`)
       setOrders(res.data)
 
       const gameIds = []
@@ -29,7 +29,7 @@ function OrderHistory() {
       });
 
       const requests = gameIds.map(id =>
-        axios.get(`http://localhost:3000/games/${id}`)
+        axios.get(`https://gamering-data.onrender.com/games/${id}`)
       );
 
       const responses = await Promise.all(requests);
@@ -45,6 +45,29 @@ function OrderHistory() {
   useEffect(() => {
     fetchData()
   }, [])
+
+  const sortGame = (orders, filter) => {
+    let filtered = [...orders];
+
+    filtered.sort((a, b) => {
+      switch (filter) {
+        case "Newest Added":
+          return new Date(b.createdAt) - new Date(a.createdAt);
+
+        case "Oldest Added":
+          return new Date(a.createdAt) - new Date(b.createdAt);
+
+        default:
+          return 0;
+      }
+    });
+
+    return filtered;
+  };
+
+  const filteredOrders = useMemo(() => {
+    return sortGame(orders, filter);
+  }, [orders, filter]);
 
   if (loading) return <div><Loading /></div>
 
@@ -164,7 +187,7 @@ function OrderHistory() {
             </div>
             :
             <div className='flex flex-col gap-3'>
-              {orders?.map((val, index) =>
+              {filteredOrders?.map((val, index) =>
                 <div key={index} className='w-full mt-2 border bg-[#181A1E] border-[#2f354494] rounded'>
                   <div className='flex p-3 px-5 gap-5 items-center'>
                     <LazyLoadImage
@@ -176,7 +199,7 @@ function OrderHistory() {
                     <div className='flex items-center justify-between w-full'>
                       <div className='flex flex-col gap-1'>
                         <span className='text-2xl font-semibold'>Order {val?.orderId}</span>
-                        <span className='text-lg text-gray-400'>{new Date(val?.createdAt).toLocaleString('en-IN', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true, }).toUpperCase()} : <span className='text-white font-semibold'>₹{val?.total}.00</span></span>
+                        <span className='text-lg text-gray-400'>{new Date(val?.createdAt).toLocaleString('en-IN', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true, }).toUpperCase()} : <span className='text-white font-semibold'>₹{val?.total?.toFixed(2)}</span></span>
                         <div className='flex items-center gap-3'>
                           {val?.games?.map((item, index) =>
                             <p key={index} className='text-white/60 font-semibold flex items-center gap-1'><GoDotFill />{item?.title} {item?.category === "pcGames" ? <span>(PC)</span> : item?.category === "ps4Games" ? <span>(PS4)</span> : item?.category === "ps5Games" ? <span>(PS5)</span> : item?.category === "xboxGames" && <span>(XBOX)</span>}</p>

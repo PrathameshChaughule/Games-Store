@@ -25,7 +25,7 @@ function AdminOrders() {
 
   const fetchData = async () => {
     try {
-      const url = `${orderStatus === "All" ? `http://localhost:3000/orders?` : `http://localhost:3000/orders?orderStatus=${orderStatus}`}&_sort=id&_order=desc&_page=${page}&_limit=${limit}` + (search.trim() ? isNaN(search) ? `&q=${search}` : `&id=${search}` : "")
+      const url = `${orderStatus === "All" ? `https://gamering-data.onrender.com/orders?` : `https://gamering-data.onrender.com/orders?orderStatus=${orderStatus}`}&_sort=id&_order=desc&_page=${page}&_limit=${limit}` + (search.trim() ? isNaN(search) ? `&q=${search}` : `&id=${search}` : "")
       const res = await axios.get(url)
       setOrders(res.data)
       const totalCount = res.headers["x-total-count"]
@@ -39,9 +39,9 @@ function AdminOrders() {
     setLoading(true)
     try {
       const [all, pro, comp] = await Promise.all([
-        axios.get("http://localhost:3000/orders"),
-        axios.get("http://localhost:3000/orders?orderStatus=Processing"),
-        axios.get("http://localhost:3000/orders?orderStatus=Completed"),
+        axios.get("https://gamering-data.onrender.com/orders"),
+        axios.get("https://gamering-data.onrender.com/orders?orderStatus=Processing"),
+        axios.get("https://gamering-data.onrender.com/orders?orderStatus=Completed"),
       ])
 
       setStatusCount({
@@ -193,7 +193,7 @@ function AdminOrders() {
                         )}
                       </div>}
                   </td>
-                  <td>₹{val?.total}</td>
+                  <td>₹{val?.total.toFixed(2)}</td>
                   <td>
                     <span
                       className={`px-3 py-1 text-sm font-semibold rounded-full

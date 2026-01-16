@@ -21,10 +21,10 @@ function AdminDashboard() {
   const fetchData = async () => {
     try {
       const [g, r, o, u] = await Promise.all([
-        axios.get("http://localhost:3000/games"),
-        axios.get("http://localhost:3000/requests"),
-        axios.get("http://localhost:3000/orders"),
-        axios.get("http://localhost:3000/users")
+        axios.get("https://gamering-data.onrender.com/games"),
+        axios.get("https://gamering-data.onrender.com/requests"),
+        axios.get("https://gamering-data.onrender.com/orders"),
+        axios.get("https://gamering-data.onrender.com/users")
       ])
       setGames(g.data)
       setRequests(r.data)
@@ -56,7 +56,7 @@ function AdminDashboard() {
   const revenueByDate = orders.reduce((acc, order) => {
     if (order.paymentStatus !== "Paid") return acc;
 
-    const date = new Date(order.createdAt).toLocaleDateString("en-GB");
+    const date = new Date(order.createdAt).toISOString().split("T")[0];
 
     acc[date] = (acc[date] || 0) + order.total;
     return acc;
@@ -407,29 +407,33 @@ function AdminDashboard() {
                   </tr>
                 </thead>
                 <tbody>
-                  {orders?.slice(0, 5).map((val, index) =>
-                    <tr key={index} className="text-center border-t-2 border-gray-300 dark:border-[#080B2C]">
-                      <td className="py-1.5">{val?.orderId}</td>
-                      <td>{val?.userFirstName} {val?.userLastName}</td>
-                      <td>₹{val?.total}</td>
-                      <td><span
-                        className={`px-3 py-1 text-sm font-semibold rounded-full
+                  {orders
+                    ?.slice()
+                    .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+                    .slice(0, 5)
+                    .map((val, index) =>
+                      <tr key={index} className="text-center border-t-2 border-gray-300 dark:border-[#080B2C]">
+                        <td className="py-1.5">{val?.orderId}</td>
+                        <td>{val?.userFirstName} {val?.userLastName}</td>
+                        <td>₹{val?.total}</td>
+                        <td><span
+                          className={`px-3 py-1 text-sm font-semibold rounded-full
                         ${val.orderStatus === "Completed"
-                            ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300"
-                            : val.orderStatus === "Processing"
-                              ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
-                              : val.orderStatus === "Cancelled"
-                                ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
-                                : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
-                          }`}
-                      >
-                        {val.orderStatus || "Unknown"}
-                      </span></td>
-                      <td>{new Date(val?.createdAt).toLocaleString('en-IN', {
-                        month: 'short',
-                        day: '2-digit',
-                      })}</td>
-                    </tr>)}
+                              ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300"
+                              : val.orderStatus === "Processing"
+                                ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
+                                : val.orderStatus === "Cancelled"
+                                  ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
+                                  : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+                            }`}
+                        >
+                          {val.orderStatus || "Unknown"}
+                        </span></td>
+                        <td>{new Date(val?.createdAt).toLocaleString('en-IN', {
+                          month: 'short',
+                          day: '2-digit',
+                        })}</td>
+                      </tr>)}
                 </tbody>
               </table>
             </div>
@@ -473,38 +477,42 @@ function AdminDashboard() {
             </div>
           </div>
           <div className="rounded-lg border-2 border-gray-300 dark:border-[#080B2C] flex flex-col gap-2.5">
-            {requests?.slice(0, 4).map((val, index) =>
-              <div key={index} className="p-2 border-b rounded-lg border-gray-300 dark:border-[#080B2C] flex items-center justify-between px-3">
-                <div className="flex items-center text-[17px] gap-1">
-                  <GoDotFill className={`text-xl mt-0.5 
+            {requests
+              ?.slice()
+              .sort((a, b) => new Date(b.requestDate) - new Date(a.requestDate))
+              .slice(0, 4)
+              .map((val, index) =>
+                <div key={index} className="p-2 border-b rounded-lg border-gray-300 dark:border-[#080B2C] flex items-center justify-between px-3">
+                  <div className="flex items-center text-[17px] gap-1">
+                    <GoDotFill className={`text-xl mt-0.5 
                     ${val.requestStatus === "Accepted"
-                      ? " text-green-700"
-                      : val.requestStatus === "Pending"
-                        ? "text-blue-700"
-                        : val.requestStatus === "Rejected"
-                          ? " text-red-700 "
-                          : " text-gray-600 "
-                    }`} />
-                  <span>{val?.gameTitle}</span>
-                </div>
-                <div className="text-gray-400">
-                  <span>by {val?.firstName} {val?.lastName}</span>
-                </div>
-                <div className={`w-fit px-5 pb-0.5 rounded 
+                        ? " text-green-700"
+                        : val.requestStatus === "Pending"
+                          ? "text-blue-700"
+                          : val.requestStatus === "Rejected"
+                            ? " text-red-700 "
+                            : " text-gray-600 "
+                      }`} />
+                    <span>{val?.gameTitle}</span>
+                  </div>
+                  <div className="text-gray-400">
+                    <span>by {val?.firstName} {val?.lastName}</span>
+                  </div>
+                  <div className={`w-fit px-5 pb-0.5 rounded 
                 ${val.requestStatus === "Accepted"
-                    ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300"
-                    : val.requestStatus === "Pending"
-                      ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
-                      : val.requestStatus === "Rejected"
-                        ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
-                        : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
-                  }`}>
-                  <span className={`px-3 py-1 text-sm font-semibold rounded-full`}>
-                    {val.requestStatus || "Unknown"}
-                  </span>
+                      ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300"
+                      : val.requestStatus === "Pending"
+                        ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
+                        : val.requestStatus === "Rejected"
+                          ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
+                          : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+                    }`}>
+                    <span className={`px-3 py-1 text-sm font-semibold rounded-full`}>
+                      {val.requestStatus || "Unknown"}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
           </div>
         </div>
       </div>

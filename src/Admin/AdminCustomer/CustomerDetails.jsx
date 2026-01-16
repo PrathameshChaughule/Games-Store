@@ -24,17 +24,17 @@ function CustomerDetails() {
     const fetchData = async () => {
         setLoading(true)
         try {
-            const res = await axios.get(`http://localhost:3000/users/${id}`)
+            const res = await axios.get(`https://gamering-data.onrender.com/users/${id}`)
             setUser(res.data)
 
             const library = res.data?.library || [];
 
             const orderPromises = library.map(item =>
-                axios.get(`http://localhost:3000/orders/${item.orderId}`)
+                axios.get(`https://gamering-data.onrender.com/orders/${item.orderId}`)
             );
 
             const gamePromises = library.map(item =>
-                axios.get(`http://localhost:3000/games/${item.gameId}`)
+                axios.get(`https://gamering-data.onrender.com/games/${item.gameId}`)
             );
 
             const orderResponses = await Promise.all(orderPromises);

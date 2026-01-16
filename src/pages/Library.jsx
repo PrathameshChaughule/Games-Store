@@ -35,7 +35,7 @@ function Library() {
         const fetchData = async () => {
             setLoading(true)
             try {
-                const res = await axios.get(`http://localhost:3000/users/${userId}`)
+                const res = await axios.get(`https://gamering-data.onrender.com/users/${userId}`)
                 const userData = res.data
                 setUser(userData)
                 setLibraryData(userData.library)
@@ -62,7 +62,7 @@ function Library() {
                     : item
             );
 
-            await axios.patch(`http://localhost:3000/users/${userId}`, {
+            await axios.patch(`https://gamering-data.onrender.com/users/${userId}`, {
                 library: updatedLibrary
             });
 
@@ -96,11 +96,11 @@ function Library() {
                 (totalStars / totalReviews).toFixed(1)
             );
 
-            await axios.patch(`http://localhost:3000/users/${userId}`, {
+            await axios.patch(`https://gamering-data.onrender.com/users/${userId}`, {
                 library: updatedLibrary
             });
 
-            await axios.patch(`http://localhost:3000/games/${gameId}`, {
+            await axios.patch(`https://gamering-data.onrender.com/games/${gameId}`, {
                 reviewsCount: updatedReviewsCount,
                 totalReviews: totalReviews,
                 rating: averageRating

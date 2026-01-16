@@ -25,7 +25,7 @@ function AdminCustomer() {
 
   const fetchData = async () => {
     try {
-      const url = `${activeStatus === "All" ? `http://localhost:3000/users?` : `http://localhost:3000/users?status=${activeStatus}`}&_sort=id&_order=desc&_page=${page}&_limit=${limit}` + (search.trim() ? isNaN(search) ? `&q=${search}` : `&id=${search}` : "")
+      const url = `${activeStatus === "All" ? `https://gamering-data.onrender.com/users?` : `https://gamering-data.onrender.com/users?status=${activeStatus}`}&_sort=id&_order=desc&_page=${page}&_limit=${limit}` + (search.trim() ? isNaN(search) ? `&q=${search}` : `&id=${search}` : "")
       const res = await axios.get(url)
       setUsers(res.data)
       const totalCount = res.headers["x-total-count"]
@@ -39,10 +39,10 @@ function AdminCustomer() {
     setLoading(true)
     try {
       const [all, active, inActive, blocked] = await Promise.all([
-        axios.get("http://localhost:3000/users"),
-        axios.get("http://localhost:3000/users?status=Active"),
-        axios.get("http://localhost:3000/users?status=Inactive"),
-        axios.get("http://localhost:3000/users?status=Blocked"),
+        axios.get("https://gamering-data.onrender.com/users"),
+        axios.get("https://gamering-data.onrender.com/users?status=Active"),
+        axios.get("https://gamering-data.onrender.com/users?status=Inactive"),
+        axios.get("https://gamering-data.onrender.com/users?status=Blocked"),
       ])
 
       setStatusCount({

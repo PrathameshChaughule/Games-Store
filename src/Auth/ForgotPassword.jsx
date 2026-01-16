@@ -84,7 +84,7 @@ function ForgotPassword() {
   const emailHandle = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/users?email=${email}`
+        `https://gamering-data.onrender.com/users?email=${email}`
       );
       const res = response.data;
       if (res.length === 0) {
@@ -124,12 +124,12 @@ function ForgotPassword() {
     try {
 
       const response = await axios.get(
-        `http://localhost:3000/users?email=${email}`
+        `https://gamering-data.onrender.com/users?email=${email}`
       );
 
       const res = response.data[0];
 
-      await axios.patch(`http://localhost:3000/users/${res.id}`, { password: hashedPassword });
+      await axios.patch(`https://gamering-data.onrender.com/users/${res.id}`, { password: hashedPassword });
       toast.success("Password reset successful");
       setTimeout(() => {
         nav("/login");

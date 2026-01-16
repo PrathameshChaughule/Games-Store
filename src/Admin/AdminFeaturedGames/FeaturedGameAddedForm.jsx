@@ -189,7 +189,7 @@ function FeaturedGameAddedForm() {
     const formSubmit = async (e) => {
         e.preventDefault()
         try {
-            await axios.post("http://localhost:3000/games", game)
+            await axios.post("https://gamering-data.onrender.com/games", game)
             toast.success("Successfully Game Added")
             setGame({
                 title: "",

@@ -27,7 +27,7 @@ function AdminMedia() {
     setLoading(true)
     try {
       const res = await axios.get(
-        `http://localhost:3000/games?_fields=id,title,category,image,addedDate`
+        `https://gamering-data.onrender.com/games?_fields=id,title,category,image,addedDate`
       );
       setGames(res.data)
       const total = res.data.reduce((acc, game) => acc + (game.image?.length || 0), 0);
@@ -168,7 +168,7 @@ function AdminMedia() {
             </div>
             <div className='px-3 pb-3 pt-1 flex flex-col gap-1'>
               <span className='text-xl'>{items?.title}</span>
-              <span className='text-lg text-gray-400'>{val.split("/").pop()}</span>
+              <span className='text-gray-400'>{val.split("/").pop().slice(0, 35)}</span>
               <div className='flex items-center gap-1 mt-1 justify-between'>
                 <div className='flex items-center gap-2'><span className='text-gray-500'>Used in :</span><div className={`w-fit px-2 rounded font-semibold ${items?.image.indexOf(val) === 0 ? `bg-orange-500/20 text-orange-400` : `bg-teal-500/20 text-teal-400`}`}>{items?.image.indexOf(val) === 0 ? <span>Cover</span> : <span>Screenshot</span>}</div></div>
                 <div>

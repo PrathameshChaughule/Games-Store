@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AdminProductsForm from "./Admin/AdminProducts/AdminProductsForm";
-import FeaturedGameAddedForm from "./Admin/AdminFeaturedGames/FeaturedGameAddedForm";
 
+const AdminProductsForm = lazy(() => import("./Admin/AdminProducts/AdminProductsForm"));
+const FeaturedGameAddedForm = lazy(() => import("./Admin/AdminFeaturedGames/FeaturedGameAddedForm"));
 const OrdersDetails = lazy(() => import("./Admin/AdminOrders/OrdersDetails"));
 const CustomerDetails = lazy(() => import("./Admin/AdminCustomer/CustomerDetails"));
 const AdminMedia = lazy(() => import("./Admin/AdminMedia"))

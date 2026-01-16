@@ -24,7 +24,7 @@ function RequestForm({ setShowRequestForm, scrollHandle }) {
 
     const formSubmit = async () => {
         try {
-            await axios.post("http://localhost:3000/requests", formData)
+            await axios.post("https://gamering-data.onrender.com/requests", formData)
             toast.success("Request Submitted")
             setShowRequestForm(null)
             scrollHandle()

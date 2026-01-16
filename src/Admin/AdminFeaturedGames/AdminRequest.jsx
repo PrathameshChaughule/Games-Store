@@ -9,7 +9,7 @@ function AdminRequest({ request, setRequestDetail, setRequests }) {
     const requestUpdate = async (status, value) => {
         try {
             const res = await axios.patch(
-                `http://localhost:3000/requests/${request.id}`,
+                `https://gamering-data.onrender.com/requests/${request.id}`,
                 { [status]: value }
             );
             setRequests(prev =>

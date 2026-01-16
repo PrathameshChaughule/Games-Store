@@ -43,7 +43,7 @@ function ProductMedia({ game, id }) {
   const updateData = async () => {
     try {
       setLoading(true);
-      await axios.patch(`http://localhost:3000/games/${id}`, {
+      await axios.patch(`https://gamering-data.onrender.com/games/${id}`, {
         image: image,
         youtube: youtube
       });
@@ -84,7 +84,8 @@ function ProductMedia({ game, id }) {
               accept="image/*"
               onChange={(e) => handleAddImage(0, e.target.files[0])}
               className="absolute bottom-1 left-1 opacity-0 w-full h-full cursor-pointer"
-            />}
+            />
+          }
 
         </div>
         <div className='relative group flex flex-col text-center w-fit border dark:border-[#022771] border-gray-300 rounded'>

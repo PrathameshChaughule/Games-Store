@@ -24,7 +24,7 @@ function AdminProducts() {
 
   const fetchData = async () => {
     try {
-      const url = `${category === "All" ? `http://localhost:3000/games?` : `http://localhost:3000/games?category=${category}`}&_sort=id&_order=desc&_page=${page}&_limit=${limit}` + (search.trim() ? isNaN(search) ? `&q=${search}` : `&id=${search}` : "")
+      const url = `${category === "All" ? `https://gamering-data.onrender.com/games?` : `https://gamering-data.onrender.com/games?category=${category}`}&_sort=id&_order=desc&_page=${page}&_limit=${limit}` + (search.trim() ? isNaN(search) ? `&q=${search}` : `&id=${search}` : "")
       const res = await axios.get(url)
       setGames(res.data)
       const totalCount = res.headers["x-total-count"]
@@ -38,11 +38,11 @@ function AdminProducts() {
     setLoading(true)
     try {
       const [all, pc, ps5, ps4, xbox] = await Promise.all([
-        axios.get("http://localhost:3000/games"),
-        axios.get("http://localhost:3000/games?category=pcGames"),
-        axios.get("http://localhost:3000/games?category=ps5Games"),
-        axios.get("http://localhost:3000/games?category=ps4Games"),
-        axios.get("http://localhost:3000/games?category=xboxGames"),
+        axios.get("https://gamering-data.onrender.com/games"),
+        axios.get("https://gamering-data.onrender.com/games?category=pcGames"),
+        axios.get("https://gamering-data.onrender.com/games?category=ps5Games"),
+        axios.get("https://gamering-data.onrender.com/games?category=ps4Games"),
+        axios.get("https://gamering-data.onrender.com/games?category=xboxGames"),
       ])
 
       setCategoryCount({
@@ -95,7 +95,7 @@ function AdminProducts() {
 
   const deleteData = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/games/${id}`);
+      await axios.delete(`https://gamering-data.onrender.com/games/${id}`);
       setGames(prev => prev.filter(game => game.id !== id));
       toast.success("Game Deleted Successfully")
     } catch (error) {

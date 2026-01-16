@@ -53,7 +53,7 @@ function Login() {
 
     try {
       const res = await axios.get(
-        `http://localhost:3000/users?email=${data.email}`
+        `https://gamering-data.onrender.com/users?email=${data.email}`
       );
       const userData = res.data;
       if (userData.length === 0) {
@@ -85,7 +85,7 @@ function Login() {
         email: user.email,
       };
 
-      await axios.patch(`http://localhost:3000/users/${user.id}`, {
+      await axios.patch(`https://gamering-data.onrender.com/users/${user.id}`, {
         status: "Active",
         lastLogin: new Date().toISOString()
       })

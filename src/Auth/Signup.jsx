@@ -38,7 +38,7 @@ function Signup() {
 
     try {
       const response = await axios.get(
-        `http://localhost:3000/users?email=${data.email}`
+        `https://gamering-data.onrender.com/users?email=${data.email}`
       );
 
       const userData = response.data;
@@ -48,7 +48,7 @@ function Signup() {
         return;
       }
 
-      const res = await axios.post("http://localhost:3000/users", {
+      const res = await axios.post("https://gamering-data.onrender.com/users", {
         ...data,
         password: hashedPassword,
         customerId: `CUS-${Date.now().toString().slice(-6)}`,

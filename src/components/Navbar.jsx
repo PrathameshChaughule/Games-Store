@@ -26,7 +26,7 @@ function Navbar() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/games");
+      const res = await axios.get("https://gamering-data.onrender.com/games");
 
       const filtered = res.data.filter(game =>
         game.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -47,9 +47,9 @@ function Navbar() {
 
 
   return (
-    <div className="bg-[#181A1E] py-2 sm:py-4">
+    <div className="bg-[#181A1E] py-3 sm:py-4">
       <div className="flex items-center justify-around w-[95vw] sm:w-[85vw] m-auto">
-        <LazyLoadImage src="/assets/logo.webp" className="w-20 sm:w-[15vw]" alt="" />
+        <LazyLoadImage src="/assets/logo.webp" className="w-20 h-9 sm:h-fit sm:w-[15vw]" alt="" />
         <ul className="mx-1 flex text-sm md:text-xl items-center justify-around w-100">
           <NavLink
             to="/"
@@ -142,12 +142,16 @@ function Navbar() {
                 </div>
               </div>
               :
-              <LazyLoadImage
-                effect="blur"
-                src="/assets/user.webp"
-                className="w-11 cursor-pointer h-11 border-4 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
-                alt=""
-              />}
+              <div className="flex flex-col items-center">
+                <LazyLoadImage
+                  effect="blur"
+                  src="/assets/user.webp"
+                  className="w-10 cursor-pointer h-10 border-4 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
+                  alt=""
+                />
+                <span className="font-semibold text-sm">Login</span>
+              </div>
+            }
             <div
               className="absolute flex flex-col items-end right-0 top-15 z-100"
               onMouseEnter={() => setProfileOpen(true)}

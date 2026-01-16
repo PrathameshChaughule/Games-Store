@@ -11,8 +11,8 @@ export const GameProvider = ({ children }) => {
 
   useEffect(() => {
     Promise.all([
-      axios.get("http://localhost:3000/games"),
-      axios.get("http://localhost:3000/news"),
+      axios.get("https://gamering-data.onrender.com/games"),
+      axios.get("https://gamering-data.onrender.com/news"),
     ])
       .then(([gamesRes, newsRes]) => {
         setGames(gamesRes.data);

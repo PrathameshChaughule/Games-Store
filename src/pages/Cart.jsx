@@ -47,14 +47,18 @@ function Cart() {
       return
     }
     try {
-      const { data } = await axios.get(`http://localhost:3000/users/${user.userId}`);
+      const { data } = await axios.get(`https://gamering-data.onrender.com/users/${user.userId}`);
       const wishlist = data.wishlist || [];
       if (wishlist.includes(gameId)) {
         toast.warning("Already added to wishlist");
         return;
       }
-      const updatedWishlist = [...wishlist, gameId];
-      await axios.patch(`http://localhost:3000/users/${userId}`, {
+      const updatedWishlist = [...wishlist, {
+        gameId: gameId,
+        addedDate: new Date().toISOString(),
+      }];
+
+      await axios.patch(`https://gamering-data.onrender.com/users/${userId}`, {
         wishlist: updatedWishlist
       });
       toast.success("Added to wishlist");
@@ -177,7 +181,7 @@ function Cart() {
             ))}{" "}
           </>
         )}
-        <div className=" p-5 h-fit bg-[#18181872] border-2 border-[#292b26]/50 rounded-xl">
+        <div className="block lg:hidden p-5 h-fit bg-[#18181872] border-2 border-[#292b26]/50 rounded-xl">
           <div className="bg-[#18181872] flex flex-col gap-3 sm:gap-6 border-2 border-[#292b26]/50 p-4 px-7 rounded-xl">
             <span className="text-[1.6rem] sm:text-[2.3rem] text-center lg:text-start font-semibold text-white/90">
               Games Summary

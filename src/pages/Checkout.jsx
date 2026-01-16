@@ -5,6 +5,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { GameContext } from "../Context/GameContext";
 import { toast } from "react-toastify";
 import axios from "axios";
+import Loading from "../components/Loading"
 
 function Checkout() {
   const [data, setData] = useState([]);
@@ -13,32 +14,46 @@ function Checkout() {
   );
   const [open, setOpen] = useState(false)
   const { updateCartCount } = useContext(GameContext);
+  const [user, setUser] = useState({})
+  const [loading, setLoading] = useState(false)
   const [paymentData, setPaymentData] = useState({
     paymentMethod: "",
-    firstName: `${userData?.firstName || ""}`,
-    lastName: `${userData?.lastName || ""}`,
-    address: "",
-    country: "India",
-    city: "",
-    state: "",
-    zipCode: "",
+    firstName: `${user?.firstName || userData?.firstName}`,
+    lastName: `${user?.lastName || userData?.lastName}`,
+    address: `${user?.address?.[0]?.address || ""}`,
+    country: `${user?.address?.[0]?.country || "India"}`,
+    city: `${user?.address?.[0]?.city || ""}`,
+    state: `${user?.address?.[0]?.state || ""}`,
+    zipCode: `${user?.address?.[0]?.zipCode || ""}`,
   });
   const [order, setOrder] = useState({ userId: userData.userId, userFirstName: userData.firstName, userLastName: userData.lastName, email: userData.email, games: [], paymentStatus: "Paid", orderStatus: "Processing", createdAt: new Date().toISOString(), total: null })
 
-  useEffect(() => {
-    const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-    setData(storedCart);
-    const gameIds = storedCart.map((val) => ({ gameId: val.id, title: val.title, price: val.price, discountPrice: val.discountPrice, image: val.image[0], category: val.category }));
-    setOrder({ ...order, games: gameIds, total: total, paymentData: paymentData })
-  }, [paymentData]);
+  const fetchData = async () => {
+    setLoading(true)
+    try {
+      const res = await axios.get(`https://gamering-data.onrender.com/users/${userData.userId}`)
+      const userRes = res.data;
+      setUser(userRes);
+      setPaymentData({
+        paymentMethod: "",
+        firstName: userRes?.firstName || userData?.firstName,
+        lastName: userRes?.lastName || userData?.lastName,
+        address: userRes?.address?.[0]?.address || "",
+        country: userRes?.address?.[0]?.country || "India",
+        city: userRes?.address?.[0]?.city || "",
+        state: userRes?.address?.[0]?.state || "",
+        zipCode: userRes?.address?.[0]?.zipCode || "",
+      });
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false)
+    }
+  }
 
-  const removeItem = (id) => {
-    const updatedCart = data.filter((item) => item.id !== id);
-    setData(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
-    toast.info("Item removed from cart");
-    updateCartCount();
-  };
+  useEffect(() => {
+    fetchData()
+  }, [])
 
   const subTotal = data.reduce(
     (sum, item) => sum + item.discountPrice * item.quantity,
@@ -49,6 +64,25 @@ function Checkout() {
   const gstAmount = subTotal * GST_RATE;
   const total = subTotal + gstAmount;
 
+  useEffect(() => {
+    const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    setData(storedCart);
+    const gameIds = storedCart.map((val) => ({ gameId: val.id, title: val.title, price: val.price, discountPrice: val.discountPrice, image: val.image[0], category: val.category }));
+    setOrder({ ...order, games: gameIds, total: total, paymentData: paymentData })
+  }, [paymentData]);
+
+  if (loading) {
+    return <div><Loading /></div>
+  }
+
+  const removeItem = (id) => {
+    const updatedCart = data.filter((item) => item.id !== id);
+    setData(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+    toast.info("Item removed from cart");
+    updateCartCount();
+  };
+
   const formHandle = (e) => {
     setPaymentData({ ...paymentData, [e.target.name]: e.target.value });
   };
@@ -56,22 +90,30 @@ function Checkout() {
   const formSubmit = async (e) => {
     e.preventDefault();
 
-    if (total === 0) {
-      toast.error("Add games to your cart");
+    const alreadyOwnedGames = data.filter((cartItem) =>
+      user?.library?.some(
+        (libItem) => libItem.gameId === cartItem.id
+      )
+    );
+
+    if (alreadyOwnedGames.length > 0) {
+      toast.error(
+        `You already own: ${alreadyOwnedGames
+          .map((g) => g.title)
+          .join(", ")}`
+      );
       return;
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/orders", order);
+      const res = await axios.post("https://gamering-data.onrender.com/orders", order);
 
       const numericOrderId = res.data.id;
       const customOrderId = `ORD-${String(numericOrderId).padStart(6, "0")}`
 
-      await axios.patch(`http://localhost:3000/orders/${numericOrderId}`, {
+      await axios.patch(`https://gamering-data.onrender.com/orders/${numericOrderId}`, {
         orderId: customOrderId
       });
-
-      const userRes = await axios.get(`http://localhost:3000/users/${userData.userId}`)
 
       const library = data.map((val) => ({
         gameId: val.id,
@@ -82,29 +124,29 @@ function Checkout() {
         starRating: 0
       }))
 
-      const updateLibrary = [...(userRes.data.library || []), ...library]
+      const updateLibrary = [...(user.library || []), ...library]
 
-      await axios.patch(`http://localhost:3000/users/${userData.userId}`, {
+      await axios.patch(`https://gamering-data.onrender.com/users/${userData.userId}`, {
         library: updateLibrary,
-        totalSpend: (userRes.data.totalSpend || 0) + total,
-        totalOrders: (userRes.data.totalOrders || 0) + 1,
+        totalSpend: (user.totalSpend || 0) + total,
+        totalOrders: (user.totalOrders || 0) + 1,
         lastOrder: new Date().toISOString()
       })
 
       toast.success("Order placed successfully!");
       toast.info("Your purchased games have been added to your library.");
-      setPaymentData({
-        paymentMethod: "",
-        firstName: `${userData?.firstName || ""}`,
-        lastName: `${userData?.lastName || ""}`,
-        address: "",
-        country: "India",
-        city: "",
-        state: "",
-        zipCode: "",
-      });
       localStorage.removeItem("cart");
       updateCartCount();
+      setPaymentData({
+        paymentMethod: "",
+        firstName: user?.firstName || userData?.firstName,
+        lastName: user?.lastName || userData?.lastName,
+        address: user?.address?.[0]?.address || "",
+        country: user?.address?.[0]?.country || "India",
+        city: user?.address?.[0]?.city || "",
+        state: user?.address?.[0]?.state || "",
+        zipCode: user?.address?.[0]?.zipCode || "",
+      })
 
     } catch (error) {
       console.log(error)
@@ -114,15 +156,15 @@ function Checkout() {
 
   return (
     <form onSubmit={(e) => formSubmit(e)}>
-      <div className="w-[90vw] my-8 m-auto h-fit flex justify-between">
-        <div className="w-[69%] flex flex-col gap-3">
-          <h1 className="text-4xl font-bold text-white/90">Checkout</h1>
+      <div className="w-[90vw] my-8 m-auto h-fit flex flex-col md:flex-row justify-between">
+        <div className="md:w-[69%] flex flex-col sm:gap-3">
+          <h1 className="text-2xl md:text-4xl font-bold text-white/90">Checkout</h1>
           <div>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
-                <span className="text-xl">Choose a payment method</span>
-                <div className="flex items-center gap-3">
-                  <label className="flex items-center gap-2 text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">
+                <span className=" sm:text-xl">Choose a payment method</span>
+                <div className="flex flex-wrap justify-center md:justify-start items-center gap-3">
+                  <label className="flex items-center gap-2 text-sm sm:text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">
                     <input
                       type="radio"
                       name="paymentMethod"
@@ -133,7 +175,7 @@ function Checkout() {
                     />
                     <span>UPI</span>
                   </label>
-                  <label className="flex items-center gap-2 text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">
+                  <label className="flex items-center gap-2 text-sm sm:text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">
                     <input
                       type="radio"
                       name="paymentMethod"
@@ -144,7 +186,7 @@ function Checkout() {
                     />
                     <span>Debit Card (Domestic)</span>
                   </label>
-                  <label className="flex items-center gap-2 text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">
+                  <label className="flex items-center gap-2 text-sm sm:text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">
                     <input
                       type="radio"
                       name="paymentMethod"
@@ -155,7 +197,7 @@ function Checkout() {
                     />
                     <span>Credit Card (Domestic)</span>
                   </label>
-                  <label className="flex items-center gap-2 text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">
+                  <label className="flex items-center gap-2 text-sm sm:text-lg border border-white/10 bg-[#1D1D1D] cursor-pointer hover:bg-[#111315] p-0.5 px-4 rounded">
                     <input
                       type="radio"
                       name="paymentMethod"
@@ -170,8 +212,8 @@ function Checkout() {
               </div>
               <div className="flex flex-col gap-2">
                 <span className="text-lg">BILLING INFORMATION</span>
-                <div className="flex justify-between">
-                  <div className="w-[48%] flex flex-col gap-3">
+                <div className="flex flex-col sm:flex-row gap-3 justify-between">
+                  <div className="sm:w-[48%] flex flex-col gap-3">
                     <div className="flex gap-2 w-full">
                       <div className="border border-white/10 flex flex-col bg-[#1D1D1D] w-full p-0.5 px-2 rounded">
                         <label htmlFor="" className="text-sm text-gray-300/80">
@@ -179,7 +221,7 @@ function Checkout() {
                         </label>
                         <input
                           type="text"
-                          className="border-none mb-1 pl-2 outline-none text-lg"
+                          className="border-none w-full mb-1 pl-2 outline-none text-lg"
                           name="firstName"
                           id="firstName"
                           onChange={(e) => formHandle(e)}
@@ -193,7 +235,7 @@ function Checkout() {
                         </label>
                         <input
                           type="text"
-                          className="border-none mb-1 pl-2 outline-none text-lg"
+                          className="border-none w-full mb-1 pl-2 outline-none text-lg"
                           name="lastName"
                           id="lastName"
                           value={paymentData.lastName}
@@ -232,7 +274,7 @@ function Checkout() {
                       />
                     </div>
                   </div>
-                  <div className="w-[48%] flex flex-col gap-3">
+                  <div className="sm:w-[48%] flex flex-col gap-3">
                     <div className="border border-white/10 flex flex-col bg-[#1D1D1D] w-full p-0.5 px-2 rounded">
                       <label htmlFor="" className="text-sm text-gray-300/80">
                         City
@@ -292,7 +334,7 @@ function Checkout() {
             </div>
           </div>
         </div>
-        <div className="w-[28%] flex flex-col gap-3 p-5 h-fit mt-17 bg-[#1D1D1D] border-2 border-[#292b26]/50 rounded-xl">
+        <div className="md:w-[28%] flex flex-col gap-3 p-5 h-fit mt-5 md:mt-17 bg-[#1D1D1D] border-2 border-[#292b26]/50 rounded-xl">
           <span className="text-2xl font-semibold text-white/90">
             Order Summary
           </span>

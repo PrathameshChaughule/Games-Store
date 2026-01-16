@@ -24,7 +24,7 @@ function OrdersDetails() {
     const fetchOrder = async () => {
         setLoading(true)
         try {
-            const res = await axios.get(`http://localhost:3000/orders/${id}`)
+            const res = await axios.get(`https://gamering-data.onrender.com/orders/${id}`)
             setOrder(res.data)
             setLoading(false)
         } catch (error) {
@@ -43,16 +43,16 @@ function OrdersDetails() {
 
     const orderUpdate = async (status) => {
         try {
-            const res = await axios.patch(`http://localhost:3000/orders/${id}`, {
+            const res = await axios.patch(`https://gamering-data.onrender.com/orders/${id}`, {
                 orderStatus: status
             })
             const userRes = await axios.get(
-                `http://localhost:3000/users/${order.userId}`
+                `https://gamering-data.onrender.com/users/${order.userId}`
             )
             const updatedLibrary = userRes.data.library.map((item) => { return { ...item, orderStatus: status } })
 
             await axios.patch(
-                `http://localhost:3000/users/${order.userId}`,
+                `https://gamering-data.onrender.com/users/${order.userId}`,
                 { library: updatedLibrary }
             )
             setOrder(res.data)
@@ -127,7 +127,7 @@ function OrdersDetails() {
                                     <div className='flex flex-col'>
                                         <span className='text-lg flex gap-3 font-semibold'><span className='text-[1.1rem] text-gray-500 font-normal'>Method: </span>{order?.paymentMethod}</span>
                                         <span className='flex gap-3 font-semibold'><span className='text-[1.1rem] text-gray-500 font-normal'>Payment: </span>{new Date(order?.createdAt).toLocaleDateString()}, {new Date(order?.createdAt).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", hour12: true, }).replace("am", "AM").replace("pm", "PM")}</span>
-                                        <span className='flex gap-3 font-semibold'><span className='text-[1.1rem] text-gray-500 font-normal'>Amount Paid: </span>₹{order?.total}</span>
+                                        <span className='flex gap-3 font-semibold'><span className='text-[1.1rem] text-gray-500 font-normal'>Amount Paid: </span>₹{order?.total?.toFixed(2)}</span>
                                     </div>
                                 </div>
                             </div>

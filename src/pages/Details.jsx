@@ -84,7 +84,7 @@ function Details() {
       return
     }
     try {
-      const { data } = await axios.get(`http://localhost:3000/users/${user.userId}`);
+      const { data } = await axios.get(`https://gamering-data.onrender.com/users/${user.userId}`);
       const wishlist = data.wishlist || [];
 
       if (wishlist.includes(gameId)) {
@@ -92,9 +92,12 @@ function Details() {
         return;
       }
 
-      const updatedWishlist = [...wishlist, gameId];
+      const updatedWishlist = [...wishlist, {
+        gameId: gameId,
+        addedDate: new Date().toISOString(),
+      }];
 
-      await axios.patch(`http://localhost:3000/users/${user.userId}`, {
+      await axios.patch(`https://gamering-data.onrender.com/users/${user.userId}`, {
         wishlist: updatedWishlist
       });
 
@@ -167,10 +170,10 @@ function Details() {
                     <LazyLoadImage
                       effect="blur"
                       src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                      className="w-60 h-17 sm:h-25 rounded md:rounded-xl cursor-pointer active:blur-[2px]"
+                      className="w-16 sm:w-25 md:w-60 h-17 sm:h-25 rounded md:rounded-xl cursor-pointer active:blur-[2px]"
                       onClick={() => setScreenshot(null)}
                     />
-                    <div onClick={() => setScreenshot(null)} className="border-2 bg-black/40 z-100 sm:text-2xl w-fit p-1.5 rounded-full text-center absolute top-4 sm:top-[32%] left-4 sm:left-[36%] cursor-pointer">
+                    <div onClick={() => setScreenshot(null)} className="border-2 bg-black/40 z-10 sm:text-2xl w-fit p-1.5 rounded-full text-center absolute top-4 sm:top-[32%] left-4 sm:left-[36%] cursor-pointer">
                       <CiPlay1 className="" />
                     </div>
                   </div>

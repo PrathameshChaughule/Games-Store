@@ -3,6 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Loading from '../components/Loading'
 
 const RequestForm = lazy(() => import("../components/RequestForm"));
 const News = lazy(() => import("../components/News"));
@@ -14,18 +15,22 @@ function Home() {
   const [games, setGames] = useState([])
   const [news, setNews] = useState([])
   const [showRequestForm, setShowRequestForm] = useState(false);
+  const [loading, setLoading] = useState(true);
   const nav = useNavigate()
 
   const fetchData = async () => {
+    setLoading(true)
     try {
       const [game, news] = await Promise.all([
-        axios.get("http://localhost:3000/games?category=pcGames&status=Active"),
-        axios.get("http://localhost:3000/news?category=pcNews")
+        axios.get("https://gamering-data.onrender.com/games?category=pcGames&status=Active"),
+        axios.get("https://gamering-data.onrender.com/news?category=pcNews")
       ])
       setGames(game.data)
       setNews(news.data)
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -75,6 +80,10 @@ function Home() {
   const filteredGames = useMemo(() => {
     return sortGame(games, filter);
   }, [games, filter]);
+
+  if (loading) {
+    return <div><Loading /></div>
+  }
 
   return (
     <div className="w-[90vw] md:w-[79vw] m-auto py-7">
@@ -173,6 +182,7 @@ function Home() {
               name={val.title}
               com={val.company}
               img={val.image}
+              discountPrice={val.discountPrice}
             />
           ))}
         </div>

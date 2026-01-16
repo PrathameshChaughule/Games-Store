@@ -96,7 +96,7 @@ function AdminSidebar() {
           Featured Games
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to="/adminReviews"
           className={({ isActive }) =>
             `flex items-center gap-2  p-2 border border-white dark:border-[#030318] hover:border-[#3586FF] dark:hover:text-white hover:text-black cursor-pointer rounded ${isActive
@@ -107,7 +107,7 @@ function AdminSidebar() {
         >
           <TbStarsFilled />
           Reviews
-        </NavLink>
+        </NavLink> */}
       </ul>
       <div className="w-full flex justify-center items-center">
         <div className="flex relative justify-center w-fit text-lg mb-6 dark:bg-[#1E2539] bg-gray-100 rounded items-center">

@@ -3754,13 +3754,71 @@
       "email": "a@gmail.com",
       "password": "$2b$10$YTVFOUlDxRYSGZiyyQw/L.GiBlZIxjrZePNWME.IqeGpUoVKGEI8e",
       "role": "user",
-      "totalSpend": 8020.46,
-      "library": [],
+      "totalSpend": 16276.919999999998,
+      "library": [
+        {
+          "gameId": 78,
+          "orderId": 8,
+          "purchasedAt": "2025-01-16T15:21:39.411Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 71,
+          "orderId": 8,
+          "purchasedAt": "2025-01-16T15:21:39.411Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 58,
+          "orderId": 9,
+          "purchasedAt": "2025-03-16T15:23:04.134Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 46,
+          "orderId": 10,
+          "purchasedAt": "2025-07-16T15:23:43.921Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        }
+      ],
       "customerId": "CUS-398913",
       "createdAt": "2026-01-09T03:46:38.913Z",
-      "lastOrder": "2026-01-09T03:46:38.913Z",
-      "lastLogin": "2026-01-16T07:51:27.461Z",
-      "wishlist": [],
+      "lastOrder": "2026-01-16T15:23:43.921Z",
+      "lastLogin": "2026-01-16T15:20:32.658Z",
+      "wishlist": [
+        {
+          "gameId": 78,
+          "addedDate": "2026-01-16T15:20:52.300Z"
+        },
+        {
+          "gameId": 78,
+          "addedDate": "2026-01-16T15:21:01.788Z"
+        },
+        {
+          "gameId": 71,
+          "addedDate": "2026-01-16T15:21:13.928Z"
+        },
+        {
+          "gameId": 58,
+          "addedDate": "2026-01-16T15:22:07.660Z"
+        },
+        {
+          "gameId": 58,
+          "addedDate": "2026-01-16T15:22:48.982Z"
+        },
+        {
+          "gameId": 46,
+          "addedDate": "2026-01-16T15:23:26.947Z"
+        }
+      ],
       "address": [
         {
           "address": "",
@@ -3772,7 +3830,7 @@
       ],
       "mobileNumber": "",
       "status": "Inactive",
-      "totalOrders": 1,
+      "totalOrders": 4,
       "id": 1
     },
     {
@@ -3781,35 +3839,103 @@
       "email": "p@gmail.com",
       "password": "$2b$10$2RnsUUbMg6oyq6Y0HM1keuK72iN5MBbVjNOc7o3jbENWzJHqbigdu",
       "role": "admin",
-      "totalSpend": 90353.78,
+      "totalSpend": 102029.88000000003,
       "library": [
         {
           "gameId": 45,
           "orderId": 1,
-          "purchasedAt": "2026-01-16T07:04:48.529Z",
+          "purchasedAt": "2025-11-16T07:04:48.529Z",
           "installStatus": "Not Installed",
-          "orderStatus": "Completed",
+          "orderStatus": "Cancelled",
           "starRating": 0
         },
         {
           "gameId": 85,
           "orderId": 1,
-          "purchasedAt": "2026-01-16T07:04:48.529Z",
+          "purchasedAt": "2025-11-16T07:04:48.529Z",
           "installStatus": "Not Installed",
-          "orderStatus": "Completed",
+          "orderStatus": "Cancelled",
           "starRating": 5
+        },
+        {
+          "gameId": 31,
+          "orderId": 2,
+          "purchasedAt": "2025-06-16T14:14:50.276Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 56,
+          "orderId": 3,
+          "purchasedAt": "2025-03-16T14:16:43.981Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 23,
+          "orderId": 4,
+          "purchasedAt": "2025-01-16T14:19:05.108Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 25,
+          "orderId": 5,
+          "purchasedAt": "2025-02-16T14:23:38.266Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 76,
+          "orderId": 6,
+          "purchasedAt": "2025-07-16T14:29:00.091Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 71,
+          "orderId": 7,
+          "purchasedAt": "2025-09-16T15:18:21.558Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 60,
+          "orderId": 7,
+          "purchasedAt": "2025-11-16T15:18:21.558Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
         }
       ],
       "wishlist": [
-        51,
-        53,
-        85,
-        27
+        {
+          "gameId": 63,
+          "addedDate": "2026-01-16T15:06:45.728Z"
+        },
+        {
+          "gameId": 52,
+          "addedDate": "2026-01-16T15:06:53.897Z"
+        },
+        {
+          "gameId": 83,
+          "addedDate": "2026-01-16T15:06:58.720Z"
+        },
+        {
+          "gameId": 32,
+          "addedDate": "2026-01-16T15:07:14.702Z"
+        }
       ],
       "customerId": "CUS-007325",
       "createdAt": "2026-01-09T04:13:27.325Z",
-      "lastOrder": "2026-01-16T07:04:48.529Z",
-      "lastLogin": "2026-01-16T07:49:02.035Z",
+      "lastOrder": "2026-01-16T15:18:21.558Z",
+      "lastLogin": "2026-01-16T15:44:45.765Z",
       "address": [
         {
           "address": "Ratnagiri, Maharashtra",
@@ -3820,8 +3946,8 @@
         }
       ],
       "mobileNumber": "1234567890",
-      "status": "Inactive",
-      "totalOrders": 12,
+      "status": "Active",
+      "totalOrders": 18,
       "id": 2
     },
     {
@@ -3830,13 +3956,99 @@
       "email": "parth@gmail.com",
       "password": "$2b$10$8kGZLn//bWFhjaz3qeCoxOlkG1GPDPAKOjrNXkXGnUBQVUnmX1Va.",
       "role": "user",
-      "totalSpend": 0,
-      "library": [],
-      "wishlist": [],
+      "totalSpend": 24772.92,
+      "library": [
+        {
+          "gameId": 77,
+          "orderId": 14,
+          "purchasedAt": "2025-02-22T15:29:30.200Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Processing",
+          "starRating": 0
+        },
+        {
+          "gameId": 48,
+          "orderId": 14,
+          "purchasedAt": "2025-02-22T15:29:30.200Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Processing",
+          "starRating": 0
+        },
+        {
+          "gameId": 47,
+          "orderId": 15,
+          "purchasedAt": "2025-04-21T15:30:03.714Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Processing",
+          "starRating": 0
+        },
+        {
+          "gameId": 33,
+          "orderId": 15,
+          "purchasedAt": "2025-04-21T15:30:03.714Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Processing",
+          "starRating": 0
+        },
+        {
+          "gameId": 17,
+          "orderId": 16,
+          "purchasedAt": "2025-09-26T15:30:48.975Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Processing",
+          "starRating": 0
+        },
+        {
+          "gameId": 54,
+          "orderId": 16,
+          "purchasedAt": "2025-09-26T15:30:48.975Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Processing",
+          "starRating": 0
+        },
+        {
+          "gameId": 72,
+          "orderId": 16,
+          "purchasedAt": "2025-09-26T15:30:48.975Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Processing",
+          "starRating": 0
+        }
+      ],
+      "wishlist": [
+        {
+          "gameId": 77,
+          "addedDate": "2026-01-16T15:28:58.694Z"
+        },
+        {
+          "gameId": 48,
+          "addedDate": "2026-01-16T15:29:08.053Z"
+        },
+        {
+          "gameId": 47,
+          "addedDate": "2026-01-16T15:29:40.317Z"
+        },
+        {
+          "gameId": 33,
+          "addedDate": "2026-01-16T15:29:47.716Z"
+        },
+        {
+          "gameId": 17,
+          "addedDate": "2026-01-16T15:30:17.403Z"
+        },
+        {
+          "gameId": 54,
+          "addedDate": "2026-01-16T15:30:23.372Z"
+        },
+        {
+          "gameId": 72,
+          "addedDate": "2026-01-16T15:30:31.963Z"
+        }
+      ],
       "customerId": "CUS-651053",
       "createdAt": "2026-01-12T07:57:31.053Z",
-      "lastLogin": "2026-01-12T07:57:31.053Z",
-      "lastOrder": null,
+      "lastLogin": "2026-01-16T15:28:42.476Z",
+      "lastOrder": "2026-01-16T15:30:48.975Z",
       "address": [
         {
           "address": "",
@@ -3847,7 +4059,7 @@
         }
       ],
       "mobileNumber": "",
-      "totalOrders": 0,
+      "totalOrders": 3,
       "status": "Inactive",
       "id": 3
     },
@@ -3857,13 +4069,91 @@
       "email": "v@gmail.com",
       "password": "$2b$10$e8P2ElLZgFxy79XPXdCunuG/msZz7oY.he0eA0YJJuVrwCL35kdiS",
       "role": "user",
-      "totalSpend": 0,
-      "library": [],
-      "wishlist": [],
+      "totalSpend": 14978.919999999998,
+      "library": [
+        {
+          "gameId": 82,
+          "orderId": 17,
+          "purchasedAt": "2025-01-18T15:32:34.888Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 42,
+          "orderId": 17,
+          "purchasedAt": "2025-01-18T15:32:34.888Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 15,
+          "orderId": 17,
+          "purchasedAt": "2025-01-18T15:32:34.888Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 83,
+          "orderId": 18,
+          "purchasedAt": "2025-03-10T15:33:09.257Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 69,
+          "orderId": 19,
+          "purchasedAt": "2025-05-26T15:33:39.953Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 60,
+          "orderId": 19,
+          "purchasedAt": "2025-05-26T15:33:39.953Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        }
+      ],
+      "wishlist": [
+        {
+          "gameId": 82,
+          "addedDate": "2026-01-16T15:31:57.494Z"
+        },
+        {
+          "gameId": 42,
+          "addedDate": "2026-01-16T15:32:14.524Z"
+        },
+        {
+          "gameId": 15,
+          "addedDate": "2026-01-16T15:32:20.656Z"
+        },
+        {
+          "gameId": 83,
+          "addedDate": "2026-01-16T15:32:44.358Z"
+        },
+        {
+          "gameId": 82,
+          "addedDate": "2026-01-16T15:32:53.036Z"
+        },
+        {
+          "gameId": 69,
+          "addedDate": "2026-01-16T15:33:18.987Z"
+        },
+        {
+          "gameId": 60,
+          "addedDate": "2026-01-16T15:33:23.873Z"
+        }
+      ],
       "customerId": "CUS-708770",
       "createdAt": "2026-01-12T07:58:28.770Z",
-      "lastLogin": "2026-01-12T07:58:28.770Z",
-      "lastOrder": null,
+      "lastLogin": "2026-01-16T15:31:50.090Z",
+      "lastOrder": "2026-01-16T15:33:39.953Z",
       "address": [
         {
           "address": "",
@@ -3874,7 +4164,7 @@
         }
       ],
       "mobileNumber": "",
-      "totalOrders": 0,
+      "totalOrders": 3,
       "status": "Inactive",
       "id": 4
     },
@@ -3884,13 +4174,83 @@
       "email": "s@gmail.com",
       "password": "$2b$10$QBo2vKO2Ue53YRf0ZnllruyFJ4nFd3CNfGvlqGn..7uzau0jzsSmS",
       "role": "user",
-      "totalSpend": 0,
-      "library": [],
-      "wishlist": [],
+      "totalSpend": 17692.92,
+      "library": [
+        {
+          "gameId": 79,
+          "orderId": 11,
+          "purchasedAt": "2026-01-10T15:25:19.216Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 61,
+          "orderId": 12,
+          "purchasedAt": "2026-03-06T15:25:57.122Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 20,
+          "orderId": 12,
+          "purchasedAt": "2026-03-06T15:25:57.122Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 49,
+          "orderId": 13,
+          "purchasedAt": "2026-09-24T15:27:58.946Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 38,
+          "orderId": 13,
+          "purchasedAt": "2026-09-24T15:27:58.946Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 18,
+          "orderId": 13,
+          "purchasedAt": "2026-09-24T15:27:58.946Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        }
+      ],
+      "wishlist": [
+        {
+          "gameId": 61,
+          "addedDate": "2026-01-16T15:25:30.493Z"
+        },
+        {
+          "gameId": 20,
+          "addedDate": "2026-01-16T15:25:40.612Z"
+        },
+        {
+          "gameId": 49,
+          "addedDate": "2026-01-16T15:27:29.380Z"
+        },
+        {
+          "gameId": 38,
+          "addedDate": "2026-01-16T15:27:39.090Z"
+        },
+        {
+          "gameId": 18,
+          "addedDate": "2026-01-16T15:27:45.973Z"
+        }
+      ],
       "customerId": "CUS-922806",
       "createdAt": "2026-01-12T08:02:02.806Z",
-      "lastLogin": "2026-01-12T08:02:02.806Z",
-      "lastOrder": null,
+      "lastLogin": "2026-01-16T15:24:56.564Z",
+      "lastOrder": "2026-01-16T15:27:58.947Z",
       "address": [
         {
           "address": "",
@@ -3901,7 +4261,7 @@
         }
       ],
       "mobileNumber": "",
-      "totalOrders": 0,
+      "totalOrders": 3,
       "status": "Inactive",
       "id": 5
     },
@@ -3911,13 +4271,83 @@
       "email": "aniket@gmail.com",
       "password": "$2b$10$ipX8MbyQPRdJnNoLY9/UOu9MQx.0heMzYycpxCktlSU4oEoyCz9TC",
       "role": "user",
-      "totalSpend": 0,
-      "library": [],
-      "wishlist": [],
+      "totalSpend": 16040.919999999998,
+      "library": [
+        {
+          "gameId": 63,
+          "orderId": 20,
+          "purchasedAt": "2026-05-13T15:35:18.136Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed",
+          "starRating": 0
+        },
+        {
+          "gameId": 2,
+          "orderId": 20,
+          "purchasedAt": "2026-05-13T15:35:18.136Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed",
+          "starRating": 0
+        },
+        {
+          "gameId": 60,
+          "orderId": 20,
+          "purchasedAt": "2026-05-13T15:35:18.136Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed",
+          "starRating": 0
+        },
+        {
+          "gameId": 50,
+          "orderId": 21,
+          "purchasedAt": "2026-12-17T15:35:36.220Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed",
+          "starRating": 0
+        },
+        {
+          "gameId": 56,
+          "orderId": 22,
+          "purchasedAt": "2026-05-20T15:35:50.654Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed",
+          "starRating": 0
+        },
+        {
+          "gameId": 35,
+          "orderId": 23,
+          "purchasedAt": "2026-01-16T15:36:06.985Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Completed",
+          "starRating": 0
+        }
+      ],
+      "wishlist": [
+        {
+          "gameId": 63,
+          "addedDate": "2026-01-16T15:34:49.811Z"
+        },
+        {
+          "gameId": 2,
+          "addedDate": "2026-01-16T15:34:56.390Z"
+        },
+        {
+          "gameId": 60,
+          "addedDate": "2026-01-16T15:35:06.543Z"
+        },
+        {
+          "gameId": 50,
+          "addedDate": "2026-01-16T15:35:27.381Z"
+        },
+        {
+          "gameId": 35,
+          "addedDate": "2026-01-16T15:35:58.405Z"
+        }
+      ],
       "customerId": "CUS-970970",
       "createdAt": "2026-01-12T08:02:50.970Z",
-      "lastLogin": "2026-01-12T08:02:50.970Z",
-      "lastOrder": null,
+      "lastLogin": "2026-01-16T15:34:40.658Z",
+      "lastOrder": "2026-01-16T15:36:06.985Z",
       "address": [
         {
           "address": "",
@@ -3928,7 +4358,7 @@
         }
       ],
       "mobileNumber": "",
-      "totalOrders": 0,
+      "totalOrders": 4,
       "status": "Inactive",
       "id": 6
     },
@@ -3937,15 +4367,48 @@
       "lastName": "Bhagane",
       "email": "maya@gmail.com",
       "role": "user",
-      "totalSpend": 0,
-      "library": [],
+      "totalSpend": 9553.28,
+      "library": [
+        {
+          "gameId": 63,
+          "orderId": 24,
+          "purchasedAt": "2025-03-28T15:36:46.686Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 29,
+          "orderId": 25,
+          "purchasedAt": "2025-05-01T15:37:03.872Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 25,
+          "orderId": 26,
+          "purchasedAt": "2025-08-10T15:37:21.386Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        },
+        {
+          "gameId": 66,
+          "orderId": 27,
+          "purchasedAt": "2025-09-20T15:37:46.070Z",
+          "installStatus": "Not Installed",
+          "orderStatus": "Cancelled",
+          "starRating": 0
+        }
+      ],
       "password": "$2b$10$p45xZp9b9DSNUtqwSXCxxeEc5tMO08DdYiIHzJsSL10ylOrfVI9Iu",
       "customerId": "CUS-156364",
       "createdAt": "2026-01-16T07:55:56.364Z",
-      "status": "Active",
-      "lastLogin": "2026-01-16T07:55:56.364Z",
-      "lastOrder": null,
-      "totalOrders": 0,
+      "status": "Inactive",
+      "lastLogin": "2026-01-16T15:36:30.426Z",
+      "lastOrder": "2026-01-16T15:37:46.070Z",
+      "totalOrders": 4,
       "address": [
         {
           "address": "",
@@ -3955,7 +4418,20 @@
           "zipCode": ""
         }
       ],
-      "wishlist": [],
+      "wishlist": [
+        {
+          "gameId": 63,
+          "addedDate": "2026-01-16T15:36:38.337Z"
+        },
+        {
+          "gameId": 25,
+          "addedDate": "2026-01-16T15:37:11.704Z"
+        },
+        {
+          "gameId": 66,
+          "addedDate": "2026-01-16T15:37:36.206Z"
+        }
+      ],
       "mobileNumber": "",
       "id": 7
     }
@@ -3986,7 +4462,7 @@
       ],
       "paymentStatus": "Paid",
       "orderStatus": "Completed",
-      "createdAt": "2026-01-16T07:04:36.505Z",
+      "createdAt": "2025-11-16T07:04:36.505Z",
       "total": 6134.82,
       "paymentData": {
         "paymentMethod": "NetBanking",
@@ -4000,6 +4476,958 @@
       },
       "id": 1,
       "orderId": "ORD-000001"
+    },
+    {
+      "userId": 2,
+      "userFirstName": "Prathamesh",
+      "userLastName": "Chaughule",
+      "email": "p@gmail.com",
+      "games": [
+        {
+          "gameId": 31,
+          "title": "Grand Theft Auto V",
+          "price": 1999,
+          "discountPrice": 1499,
+          "image": "/assets/images/Grand Theft Auto V 5.webp",
+          "category": "ps4Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Cancelled",
+      "createdAt": "2025-05-12T14:14:19.823Z",
+      "total": 1768.82,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Prathamesh",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 2,
+      "orderId": "ORD-000002"
+    },
+    {
+      "userId": 2,
+      "userFirstName": "Prathamesh",
+      "userLastName": "Chaughule",
+      "email": "p@gmail.com",
+      "games": [
+        {
+          "gameId": 56,
+          "title": "Resident Evil 4 Remake",
+          "price": 2499,
+          "discountPrice": 1999,
+          "image": "/assets/images/resident-evil-village-5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-03-19T14:16:29.267Z",
+      "total": 2358.82,
+      "paymentData": {
+        "paymentMethod": "NetBanking",
+        "firstName": "Prathamesh",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 3,
+      "orderId": "ORD-000003"
+    },
+    {
+      "userId": 2,
+      "userFirstName": "Prathamesh",
+      "userLastName": "Chaughule",
+      "email": "p@gmail.com",
+      "games": [
+        {
+          "gameId": 23,
+          "title": "God of War (2018)",
+          "price": 1999,
+          "discountPrice": 1499,
+          "image": "/assets/images/god-of-war-2018-5.webp",
+          "category": "ps4Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-06-19T14:18:49.292Z",
+      "total": 1768.82,
+      "paymentData": {
+        "paymentMethod": "NetBanking",
+        "firstName": "Prathamesh",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 4,
+      "orderId": "ORD-000004"
+    },
+    {
+      "userId": 2,
+      "userFirstName": "Prathamesh",
+      "userLastName": "Chaughule",
+      "email": "p@gmail.com",
+      "games": [
+        {
+          "gameId": 25,
+          "title": "Marvel’s Spider-Man",
+          "price": 2499,
+          "discountPrice": 1999,
+          "image": "/assets/images/spider-man-5.webp",
+          "category": "ps4Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-07-10T14:23:31.117Z",
+      "total": 2358.82,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Prathamesh",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 5,
+      "orderId": "ORD-000005"
+    },
+    {
+      "userId": 2,
+      "userFirstName": "Prathamesh",
+      "userLastName": "Chaughule",
+      "email": "p@gmail.com",
+      "games": [
+        {
+          "gameId": 76,
+          "title": "League of Legends",
+          "price": 1300,
+          "discountPrice": 0,
+          "image": "/assets/images/League of Legends 5.webp",
+          "category": "pcGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-04-19T14:27:41.449Z",
+      "total": 0,
+      "paymentData": {
+        "paymentMethod": "NetBanking",
+        "firstName": "Prathamesh",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 6,
+      "orderId": "ORD-000006"
+    },
+    {
+      "userId": 2,
+      "userFirstName": "Prathamesh",
+      "userLastName": "Chaughule",
+      "email": "p@gmail.com",
+      "games": [
+        {
+          "gameId": 71,
+          "title": "Counter-Strike: Global Offensive",
+          "price": 1200,
+          "discountPrice": 1000,
+          "image": "/assets/images/Counter-Strike Global Offensive 5.webp",
+          "category": "pcGames"
+        },
+        {
+          "gameId": 60,
+          "title": "Doom Eternal",
+          "price": 2499,
+          "discountPrice": 1899,
+          "image": "/assets/images/Doom Eternal 5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Cancelled",
+      "createdAt": "2025-08-20T15:18:17.032Z",
+      "total": 3420.8199999999997,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Prathamesh",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 7,
+      "orderId": "ORD-000007"
+    },
+    {
+      "userId": 1,
+      "userFirstName": "Aaryan",
+      "userLastName": "Chaughule",
+      "email": "a@gmail.com",
+      "games": [
+        {
+          "gameId": 78,
+          "title": "Far Cry 6",
+          "price": 2999,
+          "discountPrice": 2199,
+          "image": "/assets/images/Far Cry 6 5.webp",
+          "category": "pcGames"
+        },
+        {
+          "gameId": 71,
+          "title": "Counter-Strike: Global Offensive",
+          "price": 1200,
+          "discountPrice": 1000,
+          "image": "/assets/images/Counter-Strike Global Offensive 5.webp",
+          "category": "pcGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-01-16T15:21:25.460Z",
+      "total": 3774.8199999999997,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Aaryan",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 8,
+      "orderId": "ORD-000008"
+    },
+    {
+      "userId": 1,
+      "userFirstName": "Aaryan",
+      "userLastName": "Chaughule",
+      "email": "a@gmail.com",
+      "games": [
+        {
+          "gameId": 58,
+          "title": "Fortnite",
+          "price": 1500,
+          "discountPrice": 1099,
+          "image": "/assets/images/Fortnite 5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Cancelled",
+      "createdAt": "2025-03-16T15:22:55.160Z",
+      "total": 1296.82,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Aaryan",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 9,
+      "orderId": "ORD-000009"
+    },
+    {
+      "userId": 1,
+      "userFirstName": "Aaryan",
+      "userLastName": "Chaughule",
+      "email": "a@gmail.com",
+      "games": [
+        {
+          "gameId": 46,
+          "title": "Sea of Thieves",
+          "price": 3499,
+          "discountPrice": 2699,
+          "image": "/assets/images/Sea of Thieves 5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2025-07-16T15:23:34.736Z",
+      "total": 3184.82,
+      "paymentData": {
+        "paymentMethod": "Debit Card",
+        "firstName": "Aaryan",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 10,
+      "orderId": "ORD-000010"
+    },
+    {
+      "userId": 5,
+      "userFirstName": "Savita",
+      "userLastName": "Chaughule",
+      "email": "s@gmail.com",
+      "games": [
+        {
+          "gameId": 79,
+          "title": "Horizon Zero Dawn",
+          "price": 2499,
+          "discountPrice": 1899,
+          "image": "/assets/images/Horizon Zero Dawn 5.webp",
+          "category": "pcGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2025-12-16T15:25:08.987Z",
+      "total": 2240.82,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Savita",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 11,
+      "orderId": "ORD-000011"
+    },
+    {
+      "userId": 5,
+      "userFirstName": "Savita",
+      "userLastName": "Chaughule",
+      "email": "s@gmail.com",
+      "games": [
+        {
+          "gameId": 61,
+          "title": "Mortal Kombat 1",
+          "price": 2499,
+          "discountPrice": 1999,
+          "image": "/assets/images/Mortal-Kombat-1-5.webp",
+          "category": "xboxGames"
+        },
+        {
+          "gameId": 20,
+          "title": "Star Wars Jedi: Survivor",
+          "price": 3999,
+          "discountPrice": 3399,
+          "image": "/assets/images/Star Wars Jedi Survivor 5.webp",
+          "category": "ps5Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Cancelled",
+      "createdAt": "2025-09-06T15:25:49.439Z",
+      "total": 6369.64,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Savita",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 12,
+      "orderId": "ORD-000012"
+    },
+    {
+      "userId": 5,
+      "userFirstName": "Savita",
+      "userLastName": "Chaughule",
+      "email": "s@gmail.com",
+      "games": [
+        {
+          "gameId": 49,
+          "title": "Elden Ring",
+          "price": 3999,
+          "discountPrice": 3199,
+          "image": "/assets/images/elden-ring-5.webp",
+          "category": "xboxGames"
+        },
+        {
+          "gameId": 38,
+          "title": "Resident Evil 2 Remake",
+          "price": 2499,
+          "discountPrice": 1999,
+          "image": "/assets/images/Resident Evil 2 Remake 5.webp",
+          "category": "ps4Games"
+        },
+        {
+          "gameId": 18,
+          "title": "NBA 2K24",
+          "price": 2999,
+          "discountPrice": 2499,
+          "image": "/assets/images/NBA 2K24 5.webp",
+          "category": "ps5Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-03-23T15:27:51.376Z",
+      "total": 9082.46,
+      "paymentData": {
+        "paymentMethod": "NetBanking",
+        "firstName": "Savita",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 13,
+      "orderId": "ORD-000013"
+    },
+    {
+      "userId": 3,
+      "userFirstName": "Parth",
+      "userLastName": "Mayekar",
+      "email": "parth@gmail.com",
+      "games": [
+        {
+          "gameId": 77,
+          "title": "Assassin’s Creed Valhalla",
+          "price": 2999,
+          "discountPrice": 2299,
+          "image": "/assets/images/Assassin’s Creed Valhalla 5.webp",
+          "category": "pcGames"
+        },
+        {
+          "gameId": 48,
+          "title": "Red Dead Redemption 2",
+          "price": 4599,
+          "discountPrice": 3599,
+          "image": "/assets/images/Red-Dead-Redemption-2-5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2025-06-04T15:29:17.790Z",
+      "total": 6959.639999999999,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Parth",
+        "lastName": "Mayekar",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 14,
+      "orderId": "ORD-000014"
+    },
+    {
+      "userId": 3,
+      "userFirstName": "Parth",
+      "userLastName": "Mayekar",
+      "email": "parth@gmail.com",
+      "games": [
+        {
+          "gameId": 47,
+          "title": "Microsoft Flight Simulator",
+          "price": 3999,
+          "discountPrice": 3199,
+          "image": "/assets/images/Microsoft Flight Simulator 5.webp",
+          "category": "xboxGames"
+        },
+        {
+          "gameId": 33,
+          "title": "Sekiro: Shadows Die Twice",
+          "price": 2499,
+          "discountPrice": 1999,
+          "image": "/assets/images/Sekiro Shadows Die Twice 5.webp",
+          "category": "ps4Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2025-07-02T15:29:56.257Z",
+      "total": 6133.64,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Parth",
+        "lastName": "Mayekar",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 15,
+      "orderId": "ORD-000015"
+    },
+    {
+      "userId": 3,
+      "userFirstName": "Parth",
+      "userLastName": "Mayekar",
+      "email": "parth@gmail.com",
+      "games": [
+        {
+          "gameId": 17,
+          "title": "Gran Turismo 7",
+          "price": 3499,
+          "discountPrice": 2999,
+          "image": "/assets/images/Gran Turismo 5.webp",
+          "category": "ps5Games"
+        },
+        {
+          "gameId": 54,
+          "title": "Starfield",
+          "price": 4999,
+          "discountPrice": 3799,
+          "image": "/assets/images/Starfield 5.webp",
+          "category": "xboxGames"
+        },
+        {
+          "gameId": 72,
+          "title": "Dota 2",
+          "price": 3700,
+          "discountPrice": 3100,
+          "image": "/assets/images/Dota 2 5.webp",
+          "category": "pcGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2025-06-19T15:30:37.520Z",
+      "total": 11679.64,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Parth",
+        "lastName": "Mayekar",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 16,
+      "orderId": "ORD-000016"
+    },
+    {
+      "userId": 4,
+      "userFirstName": "Vilas",
+      "userLastName": "Chaughule",
+      "email": "v@gmail.com",
+      "games": [
+        {
+          "gameId": 82,
+          "title": "Battlefield 2042",
+          "price": 2999,
+          "discountPrice": 2199,
+          "image": "/assets/images/Battlefield 2042 5.webp",
+          "category": "pcGames"
+        },
+        {
+          "gameId": 42,
+          "title": "Persona 5 Royal",
+          "price": 2999,
+          "discountPrice": 2499,
+          "image": "/assets/images/Persona 5 Royal 5.webp",
+          "category": "ps4Games"
+        },
+        {
+          "gameId": 15,
+          "title": "Death Stranding Director’s Cut",
+          "price": 2499,
+          "discountPrice": 1999,
+          "image": "/assets/images/Death Stranding Director’s Cut 5.webp",
+          "category": "ps5Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Cancelled",
+      "createdAt": "2025-02-10T15:32:26.736Z",
+      "total": 7902.46,
+      "paymentData": {
+        "paymentMethod": "NetBanking",
+        "firstName": "Vilas",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 17,
+      "orderId": "ORD-000017"
+    },
+    {
+      "userId": 4,
+      "userFirstName": "Vilas",
+      "userLastName": "Chaughule",
+      "email": "v@gmail.com",
+      "games": [
+        {
+          "gameId": 83,
+          "title": "Baldur’s Gate 3",
+          "price": 3499,
+          "discountPrice": 2999,
+          "image": "/assets/images/Baldur’s Gate 3 5.webp",
+          "category": "pcGames"
+        },
+        {
+          "gameId": 82,
+          "title": "Battlefield 2042",
+          "price": 2999,
+          "discountPrice": 2199,
+          "image": "/assets/images/Battlefield 2042 5.webp",
+          "category": "pcGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-04-10T15:32:57.767Z",
+      "total": 6133.64,
+      "paymentData": {
+        "paymentMethod": "NetBanking",
+        "firstName": "Vilas",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 18,
+      "orderId": "ORD-000018"
+    },
+    {
+      "userId": 4,
+      "userFirstName": "Vilas",
+      "userLastName": "Chaughule",
+      "email": "v@gmail.com",
+      "games": [
+        {
+          "gameId": 69,
+          "title": "Fortnite",
+          "price": 1500,
+          "discountPrice": 1099,
+          "image": "/assets/images/Fortnite 5.webp",
+          "category": "pcGames"
+        },
+        {
+          "gameId": 60,
+          "title": "Doom Eternal",
+          "price": 2499,
+          "discountPrice": 1899,
+          "image": "/assets/images/Doom Eternal 5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-06-16T15:33:31.085Z",
+      "total": 3537.64,
+      "paymentData": {
+        "paymentMethod": "NetBanking",
+        "firstName": "Vilas",
+        "lastName": "Chaughule",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 19,
+      "orderId": "ORD-000019"
+    },
+    {
+      "userId": 6,
+      "userFirstName": "Aniket",
+      "userLastName": "Potale",
+      "email": "aniket@gmail.com",
+      "games": [
+        {
+          "gameId": 63,
+          "title": "Cyberpunk 2077",
+          "price": 2999,
+          "discountPrice": 2199,
+          "image": "/assets/images/Cyberpunk 2077 5.webp",
+          "category": "pcGames"
+        },
+        {
+          "gameId": 2,
+          "title": "God of War Ragnarök",
+          "price": 3999,
+          "discountPrice": 3399,
+          "image": "/assets/images/god-of-war-ragnarok-5.webp",
+          "category": "ps5Games"
+        },
+        {
+          "gameId": 60,
+          "title": "Doom Eternal",
+          "price": 2499,
+          "discountPrice": 1899,
+          "image": "/assets/images/Doom Eternal 5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-08-10T15:35:10.556Z",
+      "total": 8846.46,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Aniket",
+        "lastName": "Potale",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 20,
+      "orderId": "ORD-000020"
+    },
+    {
+      "userId": 6,
+      "userFirstName": "Aniket",
+      "userLastName": "Potale",
+      "email": "aniket@gmail.com",
+      "games": [
+        {
+          "gameId": 50,
+          "title": "Assassin’s Creed Valhalla",
+          "price": 2999,
+          "discountPrice": 2299,
+          "image": "/assets/images/Assassin’s Creed Valhalla 5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2025-11-10T15:35:28.801Z",
+      "total": 2712.82,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Aniket",
+        "lastName": "Potale",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Karnataka",
+        "zipCode": "415612"
+      },
+      "id": 21,
+      "orderId": "ORD-000021"
+    },
+    {
+      "userId": 6,
+      "userFirstName": "Aniket",
+      "userLastName": "Potale",
+      "email": "aniket@gmail.com",
+      "games": [
+        {
+          "gameId": 56,
+          "title": "Resident Evil 4 Remake",
+          "price": 2499,
+          "discountPrice": 1999,
+          "image": "/assets/images/resident-evil-village-5.webp",
+          "category": "xboxGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2025-09-15T15:35:43.058Z",
+      "total": 2358.82,
+      "paymentData": {
+        "paymentMethod": "NetBanking",
+        "firstName": "Aniket",
+        "lastName": "Potale",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Karnataka",
+        "zipCode": "415612"
+      },
+      "id": 22,
+      "orderId": "ORD-000022"
+    },
+    {
+      "userId": 6,
+      "userFirstName": "Aniket",
+      "userLastName": "Potale",
+      "email": "aniket@gmail.com",
+      "games": [
+        {
+          "gameId": 35,
+          "title": "FIFA 23 (PS4)",
+          "price": 2299,
+          "discountPrice": 1799,
+          "image": "/assets/images/FIFA 23 5.webp",
+          "category": "ps4Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2025-04-12T15:35:59.810Z",
+      "total": 2122.82,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Aniket",
+        "lastName": "Potale",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Karnataka",
+        "zipCode": "415612"
+      },
+      "id": 23,
+      "orderId": "ORD-000023"
+    },
+    {
+      "userId": 7,
+      "userFirstName": "Maya",
+      "userLastName": "Bhagane",
+      "email": "maya@gmail.com",
+      "games": [
+        {
+          "gameId": 63,
+          "title": "Cyberpunk 2077",
+          "price": 2999,
+          "discountPrice": 2199,
+          "image": "/assets/images/Cyberpunk 2077 5.webp",
+          "category": "pcGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-03-14T15:36:39.646Z",
+      "total": 2594.82,
+      "paymentData": {
+        "paymentMethod": "Debit Card",
+        "firstName": "Maya",
+        "lastName": "Bhagane",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 24,
+      "orderId": "ORD-000024"
+    },
+    {
+      "userId": 7,
+      "userFirstName": "Maya",
+      "userLastName": "Bhagane",
+      "email": "maya@gmail.com",
+      "games": [
+        {
+          "gameId": 29,
+          "title": "Ghost of Tsushima",
+          "price": 2999,
+          "discountPrice": 2399,
+          "image": "/assets/images/ghost-of-tsushima-5.webp",
+          "category": "ps4Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Completed",
+      "createdAt": "2025-12-26T15:36:55.805Z",
+      "total": 2830.82,
+      "paymentData": {
+        "paymentMethod": "Credit Card",
+        "firstName": "Maya",
+        "lastName": "Bhagane",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 25,
+      "orderId": "ORD-000025"
+    },
+    {
+      "userId": 7,
+      "userFirstName": "Maya",
+      "userLastName": "Bhagane",
+      "email": "maya@gmail.com",
+      "games": [
+        {
+          "gameId": 25,
+          "title": "Marvel’s Spider-Man",
+          "price": 2499,
+          "discountPrice": 1999,
+          "image": "/assets/images/spider-man-5.webp",
+          "category": "ps4Games"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Cancelled",
+      "createdAt": "2025-04-17T15:37:13.639Z",
+      "total": 2358.82,
+      "paymentData": {
+        "paymentMethod": "Debit Card",
+        "firstName": "Maya",
+        "lastName": "Bhagane",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 26,
+      "orderId": "ORD-000026"
+    },
+    {
+      "userId": 7,
+      "userFirstName": "Maya",
+      "userLastName": "Bhagane",
+      "email": "maya@gmail.com",
+      "games": [
+        {
+          "gameId": 66,
+          "title": "GTA V",
+          "price": 1999,
+          "discountPrice": 1499,
+          "image": "/assets/images/Grand Theft Auto V 5.webp",
+          "category": "pcGames"
+        }
+      ],
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "createdAt": "2026-01-16T15:37:38.096Z",
+      "total": 1768.82,
+      "paymentData": {
+        "paymentMethod": "UPI",
+        "firstName": "Maya",
+        "lastName": "Bhagane",
+        "address": "Ratnagiri, Maharashtra",
+        "country": "India",
+        "city": "Ratnagiri",
+        "state": "Maharashtra",
+        "zipCode": "415612"
+      },
+      "id": 27,
+      "orderId": "ORD-000027"
     }
   ],
   "requests": [
@@ -4341,6 +5769,20 @@
       "requestStatus": "Pending",
       "staredStatus": "Stared",
       "id": 24
+    },
+    {
+      "requestId": "REQ-828",
+      "customerId": "CUS-007325",
+      "email": "p@gmail.com",
+      "firstName": "Prathamesh",
+      "lastName": "Chaughule",
+      "gameTitle": "PUBG",
+      "platform": "pcGames",
+      "requestDate": "2026-01-16T15:20:01.792Z",
+      "readStatus": "Unread",
+      "requestStatus": "Pending",
+      "staredStatus": "Unstared",
+      "id": 25
     }
   ]
 }

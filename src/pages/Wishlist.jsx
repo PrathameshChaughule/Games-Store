@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useMemo, useState } from 'react'
 import { TbSortDescending2 } from 'react-icons/tb'
 import Loading from '../components/Loading';
 import { toast } from 'react-toastify';
@@ -20,28 +20,31 @@ function Wishlist() {
   const nav = useNavigate()
 
   const fetchData = async () => {
-    setLoading(true)
+    setLoading(true);
     try {
-      const { data } = await axios.get(`http://localhost:3000/users/${userId}`)
+      const { data } = await axios.get(`https://gamering-data.onrender.com/users/${userId}`);
       const wishlist = data.wishlist || [];
-      const requests = wishlist.map(id =>
-        axios.get(`http://localhost:3000/games/${id}`)
+
+      const requests = wishlist.map(item =>
+        axios.get(`https://gamering-data.onrender.com/games/${item.gameId}`)
+          .then(res => ({
+            ...res.data,
+            addedAt: item.addedAt
+          }))
       );
-      const responses = await Promise.all(requests);
-      const gamesData = responses.map(r => r.data);
+
+      const gamesData = await Promise.all(requests);
       setGames(gamesData);
     } catch (error) {
       console.log(error);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   useEffect(() => {
     fetchData()
   }, [])
-
-  if (loading) return <div><Loading /></div>
 
   const addToCart = (gameId, game) => {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -58,22 +61,50 @@ function Wishlist() {
 
   const removeWishlist = async (gameId) => {
     try {
-      const { data } = await axios.get(`http://localhost:3000/users/${userId}`);
+      const { data } = await axios.get(
+        `https://gamering-data.onrender.com/users/${userId}`
+      );
+
       const wishlist = data.wishlist || [];
 
-      const updatedWishlist = wishlist.filter((item) => item !== gameId)
-
-      await axios.patch(`http://localhost:3000/users/${userId}`, {
+      const updatedWishlist = wishlist.filter(
+        (item) => item.gameId !== gameId
+      );
+      await axios.patch(`https://gamering-data.onrender.com/users/${userId}`, {
         wishlist: updatedWishlist
       });
 
-      const updatedData = games.filter((val) => val.id !== gameId)
-      setGames(updatedData)
+      setGames(prev => prev.filter(game => game.id !== gameId));
+
       toast.success("Removed from wishlist");
     } catch (error) {
       console.log(error);
     }
-  }
+  };
+
+  const sortGame = (games, filter) => {
+    let sorted = [...games];
+
+    if (filter === "Newest Added") {
+      sorted.sort(
+        (a, b) => new Date(b.addedDate) - new Date(a.addedDate)
+      );
+    }
+
+    if (filter === "Oldest Added") {
+      sorted.sort(
+        (a, b) => new Date(a.addedDate) - new Date(b.addedDate)
+      );
+    }
+
+    return sorted;
+  };
+
+  const filteredGames = useMemo(() => {
+    return sortGame(games, filter);
+  }, [games, filter]);
+
+  if (loading) return <div><Loading /></div>
 
   return (
     <div className='w-[67vw] relative flex flex-col gap-3'>
@@ -111,7 +142,7 @@ function Wishlist() {
           </div>
         </div>
         :
-        games?.map((val, index) =>
+        filteredGames?.map((val, index) =>
           <div key={index} className='w-full mt-2 border bg-[#181A1E] border-[#2f354494] rounded'>
             <div className='flex p-3 px-5 gap-5 items-start'>
               <LazyLoadImage

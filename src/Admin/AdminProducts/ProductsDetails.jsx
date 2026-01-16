@@ -18,7 +18,7 @@ function ProductsDetails() {
         const fetchGame = async () => {
             try {
                 setLoading(true);
-                const res = await axios.get(`http://localhost:3000/games/${id}`);
+                const res = await axios.get(`https://gamering-data.onrender.com/games/${id}`);
                 setGame(res.data);
             } catch (err) {
                 console.log(err)
