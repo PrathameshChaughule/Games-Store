@@ -214,8 +214,7 @@ This project was built to:
 
 ## 👨‍💻 Author
 
-<h2 align="center">Author</h2>
-<p align="center">
+<p>
   <strong>Prathamesh Chaughule</strong><br/>
   📧 prathameshChaughule21@gmail.com<br/>
   🎯 Frontend Developer | React Enthusiast
