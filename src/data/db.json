@@ -6,11 +6,11 @@
       "company": "Insomniac Games",
       "category": "ps5Games",
       "image": [
-        "/assets/images/spider-man-2-5.webp",
-        "/assets/images/spider-man-2-2.webp",
-        "/assets/images/spider-man-2-3.webp",
-        "/assets/images/spider-man-2-4.webp",
-        "/assets/images/spider-man-2-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-2-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-2-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-2-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-2-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-2-1.webp"
       ],
       "price": 4999,
       "discountPrice": 3999,
@@ -48,11 +48,11 @@
       "company": "Respawn Entertainment",
       "category": "pcGames",
       "image": [
-        "/assets/images/Apex Legends 5.webp",
-        "/assets/images/Apex Legends 4.webp",
-        "/assets/images/Apex Legends 3.webp",
-        "/assets/images/Apex Legends 2.webp",
-        "/assets/images/Apex Legends 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends1.webp"
       ],
       "price": 1099,
       "discountPrice": 799,
@@ -90,11 +90,11 @@
       "company": "Playground Games",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Forza Horizon 5 5.webp",
-        "/assets/images/Forza Horizon 5 4.webp",
-        "/assets/images/Forza Horizon 5 3.webp",
-        "/assets/images/Forza Horizon 5 2.webp",
-        "/assets/images/Forza Horizon 5 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Forza-Horizon-5-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Forza-Horizon-5-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Forza-Horizon-5-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Forza-Horizon-5-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Forza-Horizon-5-1.webp"
       ],
       "price": 3499,
       "discountPrice": 2799,
@@ -133,11 +133,11 @@
       "company": "Santa Monica Studio",
       "category": "ps5Games",
       "image": [
-        "/assets/images/god-of-war-ragnarok-5.webp",
-        "/assets/images/god-of-war-ragnarok-1.webp",
-        "/assets/images/god-of-war-ragnarok-2.webp",
-        "/assets/images/god-of-war-ragnarok-3.webp",
-        "/assets/images/god-of-war-ragnarok-4.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-4.webp"
       ],
       "price": 3999,
       "discountPrice": 3399,
@@ -175,11 +175,11 @@
       "company": "Guerrilla Games",
       "category": "ps5Games",
       "image": [
-        "/assets/images/horizon-forbidden-west-5.webp",
-        "/assets/images/horizon-forbidden-west-1.webp",
-        "/assets/images/horizon-forbidden-west-3.webp",
-        "/assets/images/horizon-forbidden-west-2.webp",
-        "/assets/images/horizon-forbidden-west-4.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/horizon-forbidden-west-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/horizon-forbidden-west-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/horizon-forbidden-west-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/horizon-forbidden-west-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/horizon-forbidden-west-4.webp"
       ],
       "price": 3999,
       "discountPrice": 3199,
@@ -217,11 +217,11 @@
       "company": "Bluepoint Games",
       "category": "ps5Games",
       "image": [
-        "/assets/images/demons-souls-5.webp",
-        "/assets/images/demons-souls-1.webp",
-        "/assets/images/demons-souls-2.webp",
-        "/assets/images/demons-souls-3.webp",
-        "/assets/images/demons-souls-4.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/demons-souls-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/demons-souls-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/demons-souls-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/demons-souls-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/demons-souls-4.webp"
       ],
       "price": 3499,
       "discountPrice": 2799,
@@ -259,11 +259,11 @@
       "company": "Square Enix",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Final-Fantasy-5.webp",
-        "/assets/images/Final-Fantasy-1.webp",
-        "/assets/images/Final-Fantasy-2.webp",
-        "/assets/images/Final-Fantasy-3.webp",
-        "/assets/images/Final-Fantasy-4.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Final-Fantasy-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Final-Fantasy-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Final-Fantasy-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Final-Fantasy-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Final-Fantasy-4.webp"
       ],
       "price": 4499,
       "discountPrice": 3599,
@@ -301,11 +301,11 @@
       "company": "FromSoftware",
       "category": "ps5Games",
       "image": [
-        "/assets/images/elden-ring-5.webp",
-        "/assets/images/elden-ring-1.webp",
-        "/assets/images/elden-ring-2.webp",
-        "/assets/images/elden-ring-3.webp",
-        "/assets/images/elden-ring-4.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-4.webp"
       ],
       "price": 3999,
       "discountPrice": 3499,
@@ -343,11 +343,11 @@
       "company": "Naughty Dog",
       "category": "ps5Games",
       "image": [
-        "/assets/images/the-last-of-us-part-5.webp",
-        "/assets/images/the-last-of-us-part-4.webp",
-        "/assets/images/the-last-of-us-part-3.webp",
-        "/assets/images/the-last-of-us-part-2.webp",
-        "/assets/images/the-last-of-us-part-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2499,
@@ -385,11 +385,11 @@
       "company": "Sucker Punch",
       "category": "ps5Games",
       "image": [
-        "/assets/images/ghost-of-tsushima-5.webp",
-        "/assets/images/god-of-war-ragnarok-4.webp",
-        "/assets/images/god-of-war-ragnarok-3.webp",
-        "/assets/images/god-of-war-ragnarok-2.webp",
-        "/assets/images/god-of-war-ragnarok-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ghost-of-tsushima-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-ragnarok-1.webp"
       ],
       "price": 3499,
       "discountPrice": 2799,
@@ -427,11 +427,11 @@
       "company": "Insomniac Games",
       "category": "ps5Games",
       "image": [
-        "/assets/images/ratchet-and-clank-rift-5.webp",
-        "/assets/images/ratchet-and-clank-rift-2.webp",
-        "/assets/images/ratchet-and-clank-rift-3.webp",
-        "/assets/images/ratchet-and-clank-rift-4.webp",
-        "/assets/images/ratchet-and-clank-rift-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ratchet-and-clank-rift-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ratchet-and-clank-rift-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ratchet-and-clank-rift-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ratchet-and-clank-rift-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ratchet-and-clank-rift-1.webp"
       ],
       "price": 3499,
       "discountPrice": 2999,
@@ -469,11 +469,11 @@
       "company": "Capcom",
       "category": "ps5Games",
       "image": [
-        "/assets/images/resident-evil-village-5.webp",
-        "/assets/images/resident-evil-village-1.webp",
-        "/assets/images/resident-evil-village-2.webp",
-        "/assets/images/resident-evil-village-3.webp",
-        "/assets/images/resident-evil-village-4.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-4.webp"
       ],
       "price": 2999,
       "discountPrice": 2499,
@@ -511,11 +511,11 @@
       "company": "NetherRealm Studios",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Mortal-Kombat-1-5.webp",
-        "/assets/images/Mortal-Kombat-1-4.webp",
-        "/assets/images/Mortal-Kombat-1-3.webp",
-        "/assets/images/Mortal-Kombat-1-2.webp",
-        "/assets/images/Mortal-Kombat-1-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-1.webp"
       ],
       "price": 3499,
       "discountPrice": 2999,
@@ -553,11 +553,11 @@
       "company": "Ubisoft",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Assassin’s-Creed-Mirage-5.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-2.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-4.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-3.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2499,
@@ -595,11 +595,11 @@
       "company": "Activision",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Call-of-Duty-III-5.webp",
-        "/assets/images/Call-of-Duty-III-2.webp",
-        "/assets/images/Call-of-Duty-III-3.webp",
-        "/assets/images/Call-of-Duty-III-4.webp",
-        "/assets/images/Call-of-Duty-III-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-1.webp"
       ],
       "youtube": "https://www.youtube.com/embed/i3IsLrPeZG8?si=RZ2-LK0qbWtHChep",
       "releaseDate": "2023-11-05",
@@ -637,11 +637,11 @@
       "company": "Housemarque",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Returnal-5.webp",
-        "/assets/images/Returnal-3.webp",
-        "/assets/images/Returnal-1.webp",
-        "/assets/images/Returnal-2.webp",
-        "/assets/images/Returnal-4.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Returnal-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Returnal-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Returnal-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Returnal-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Returnal-4.webp"
       ],
       "price": 2999,
       "discountPrice": 2499,
@@ -679,11 +679,11 @@
       "company": "Kojima Productions",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Death Stranding Director’s Cut 5.webp",
-        "/assets/images/Death Stranding Director’s Cut 2.webp",
-        "/assets/images/Death Stranding Director’s Cut 3.webp",
-        "/assets/images/Death Stranding Director’s Cut 4.webp",
-        "/assets/images/Death Stranding Director’s Cut 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DeathStrandingDirectorsCut5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DeathStrandingDirectorsCut2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DeathStrandingDirectorsCut3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DeathStrandingDirectorsCut4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DeathStrandingDirectorsCut1.webp"
       ],
       "price": 2499,
       "discountPrice": 1999,
@@ -721,11 +721,11 @@
       "company": "CD Projekt",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Cyberpunk 2077 5.webp",
-        "/assets/images/Cyberpunk 2077 2.webp",
-        "/assets/images/Cyberpunk 2077 3.webp",
-        "/assets/images/Cyberpunk 2077 4.webp",
-        "/assets/images/Cyberpunk 2077 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2399,
@@ -763,11 +763,11 @@
       "company": "Polyphony Digital",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Gran Turismo 5.webp",
-        "/assets/images/Gran Turismo 2.webp",
-        "/assets/images/Gran Turismo 3.webp",
-        "/assets/images/Gran Turismo 4.webp",
-        "/assets/images/Gran Turismo 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GranTurismo5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GranTurismo2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GranTurismo3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GranTurismo4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GranTurismo1.webp"
       ],
       "price": 3499,
       "discountPrice": 2999,
@@ -805,11 +805,11 @@
       "company": "2K Games",
       "category": "ps5Games",
       "image": [
-        "/assets/images/NBA 2K24 5.webp",
-        "/assets/images/NBA 2K24 4.webp",
-        "/assets/images/NBA 2K24 3.webp",
-        "/assets/images/NBA 2K24 2.webp",
-        "/assets/images/NBA 2K24 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/NBA-2K24-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/NBA-2K24-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/NBA-2K24-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/NBA-2K24-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/NBA-2K24-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2499,
@@ -847,11 +847,11 @@
       "company": "EA Sports",
       "category": "ps5Games",
       "image": [
-        "/assets/images/FIFA 23 5.webp",
-        "/assets/images/FIFA 23 4.webp",
-        "/assets/images/FIFA 23 3.webp",
-        "/assets/images/FIFA 23 2.webp",
-        "/assets/images/FIFA 23 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-1.webp"
       ],
       "price": 2799,
       "discountPrice": 2299,
@@ -889,11 +889,11 @@
       "company": "Respawn Entertainment",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Star Wars Jedi Survivor 5.webp",
-        "/assets/images/Star Wars Jedi Survivor 4.webp",
-        "/assets/images/Star Wars Jedi Survivor 3.webp",
-        "/assets/images/Star Wars Jedi Survivor 2.webp",
-        "/assets/images/Star Wars Jedi Survivor 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/StarWarsJediSurvivor5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/StarWarsJediSurvivor4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/StarWarsJediSurvivor3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/StarWarsJediSurvivor2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/StarWarsJediSurvivor1.webp"
       ],
       "price": 3999,
       "discountPrice": 3399,
@@ -931,11 +931,11 @@
       "company": "Guerrilla",
       "category": "ps5Games",
       "image": [
-        "/assets/images/Horizon Call of the Mountain 5.webp",
-        "/assets/images/Horizon Call of the Mountain 4.webp",
-        "/assets/images/Horizon Call of the Mountain 3.webp",
-        "/assets/images/Horizon Call of the Mountain 2.webp",
-        "/assets/images/Horizon Call of the Mountain 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HorizonCalloftheMountain5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HorizonCalloftheMountain4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HorizonCalloftheMountain3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HorizonCalloftheMountain2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HorizonCalloftheMountain1.webp"
       ],
       "price": 3499,
       "discountPrice": 2999,
@@ -973,11 +973,11 @@
       "company": "Naughty Dog",
       "category": "ps4Games",
       "image": [
-        "/assets/images/the-last-of-us-part-5.webp",
-        "/assets/images/the-last-of-us-part-4.webp",
-        "/assets/images/the-last-of-us-part-3.webp",
-        "/assets/images/the-last-of-us-part-2.webp",
-        "/assets/images/the-last-of-us-part-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-1.webp"
       ],
       "price": 2499,
       "discountPrice": 1999,
@@ -1015,11 +1015,11 @@
       "company": "Santa Monica Studio",
       "category": "ps4Games",
       "image": [
-        "/assets/images/god-of-war-2018-5.webp",
-        "/assets/images/god-of-war-2018-4.webp",
-        "/assets/images/god-of-war-2018-3.webp",
-        "/assets/images/god-of-war-2018-2.webp",
-        "/assets/images/god-of-war-2018-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-2018-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-2018-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-2018-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-2018-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-2018-1.webp"
       ],
       "price": 1999,
       "discountPrice": 1499,
@@ -1057,11 +1057,11 @@
       "company": "Naughty Dog",
       "category": "ps4Games",
       "image": [
-        "/assets/images/uncharted-4-5.webp",
-        "/assets/images/uncharted-4-4.webp",
-        "/assets/images/uncharted-4-3.webp",
-        "/assets/images/uncharted-4-2.webp",
-        "/assets/images/uncharted-4-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/uncharted-4-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/uncharted-4-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/uncharted-4-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/uncharted-4-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/uncharted-4-1.webp"
       ],
       "price": 1999,
       "discountPrice": 1499,
@@ -1099,11 +1099,11 @@
       "company": "Insomniac Games",
       "category": "ps4Games",
       "image": [
-        "/assets/images/spider-man-5.webp",
-        "/assets/images/spider-man-3.webp",
-        "/assets/images/spider-man-4.webp",
-        "/assets/images/spider-man-2.webp",
-        "/assets/images/spider-man-2-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-2-1.webp"
       ],
       "price": 2499,
       "discountPrice": 1999,
@@ -1141,11 +1141,11 @@
       "company": "Guerrilla Games",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Horizon-Zero-Dawn-5.webp",
-        "/assets/images/Horizon-Zero-Dawn-4.webp",
-        "/assets/images/Horizon-Zero-Dawn-3.webp",
-        "/assets/images/Horizon-Zero-Dawn-2.webp",
-        "/assets/images/Horizon-Zero-Dawn-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Horizon-Zero-Dawn-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Horizon-Zero-Dawn-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Horizon-Zero-Dawn-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Horizon-Zero-Dawn-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Horizon-Zero-Dawn-1.webp"
       ],
       "price": 2499,
       "discountPrice": 1899,
@@ -1183,15 +1183,18 @@
       "company": "Rockstar Games",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Red-Dead-Redemption-2-5.webp",
-        "/assets/images/Red-Dead-Redemption-2-4.webp",
-        "/assets/images/Red-Dead-Redemption-2-3.webp",
-        "/assets/images/Red-Dead-Redemption-2-2.webp",
-        "/assets/images/Red-Dead-Redemption-2-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-1.webp"
       ],
       "price": 4599,
       "discountPrice": 3499,
-      "mode": "Single Player & Multi Player",
+      "mode": [
+        "Single Player",
+        "Multi Player"
+      ],
       "tags": [
         "Action",
         "Adventure",
@@ -1223,11 +1226,11 @@
       "company": "FromSoftware",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Bloodborne-5.webp",
-        "/assets/images/Bloodborne-4.webp",
-        "/assets/images/Bloodborne-3.webp",
-        "/assets/images/Bloodborne-2.webp",
-        "/assets/images/Bloodborne-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Bloodborne-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Bloodborne-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Bloodborne-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Bloodborne-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Bloodborne-1.webp"
       ],
       "price": 1999,
       "discountPrice": 1499,
@@ -1265,11 +1268,11 @@
       "company": "Sucker Punch",
       "category": "ps4Games",
       "image": [
-        "/assets/images/ghost-of-tsushima-5.webp",
-        "/assets/images/ghost-of-tsushima-4.webp",
-        "/assets/images/ghost-of-tsushima-3.webp",
-        "/assets/images/ghost-of-tsushima-2.webp",
-        "/assets/images/ghost-of-tsushima-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ghost-of-tsushima-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ghost-of-tsushima-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ghost-of-tsushima-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ghost-of-tsushima-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ghost-of-tsushima-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2399,
@@ -1307,11 +1310,11 @@
       "company": "CD Projekt",
       "category": "ps4Games",
       "image": [
-        "/assets/images/The Witcher 3 Wild Hunt 5.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 4.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 3.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 2.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt1.webp"
       ],
       "price": 1999,
       "discountPrice": 1499,
@@ -1349,15 +1352,18 @@
       "company": "Rockstar Games",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Grand Theft Auto V 5.webp",
-        "/assets/images/Grand Theft Auto V 4.webp",
-        "/assets/images/Grand Theft Auto V 3.webp",
-        "/assets/images/Grand Theft Auto V 2.webp",
-        "/assets/images/Grand Theft Auto V 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV1.webp"
       ],
       "price": 1999,
       "discountPrice": 1499,
-      "mode": "Single Player & Multi Player",
+      "mode": [
+        "Single Player",
+        "Multi Player"
+      ],
       "tags": [
         "Action",
         "Open World",
@@ -1389,11 +1395,11 @@
       "company": "Ubisoft",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Assassin’s-Creed-Mirage-5.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-4.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-3.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-2.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2499,
@@ -1431,11 +1437,11 @@
       "company": "FromSoftware",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Sekiro Shadows Die Twice 5.webp",
-        "/assets/images/Sekiro Shadows Die Twice 4.webp",
-        "/assets/images/Sekiro Shadows Die Twice 3.webp",
-        "/assets/images/Sekiro Shadows Die Twice 2.webp",
-        "/assets/images/Sekiro Shadows Die Twice 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SekiroShadowsDieTwice5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SekiroShadowsDieTwice4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SekiroShadowsDieTwice3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SekiroShadowsDieTwice2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SekiroShadowsDieTwice1.webp"
       ],
       "price": 2499,
       "discountPrice": 1999,
@@ -1473,11 +1479,11 @@
       "company": "Ubisoft",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Assassin’s Creed Odyssey 5.webp",
-        "/assets/images/Assassin’s Creed Odyssey 4.webp",
-        "/assets/images/Assassin’s Creed Odyssey 3.webp",
-        "/assets/images/Assassin’s Creed Odyssey 2.webp",
-        "/assets/images/Assassin’s Creed Odyssey 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey1.webp"
       ],
       "price": 2499,
       "discountPrice": 1999,
@@ -1515,11 +1521,11 @@
       "company": "EA Sports",
       "category": "ps4Games",
       "image": [
-        "/assets/images/FIFA 23 5.webp",
-        "/assets/images/FIFA 23 4.webp",
-        "/assets/images/FIFA 23 3.webp",
-        "/assets/images/FIFA 23 2.webp",
-        "/assets/images/FIFA 23 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-1.webp"
       ],
       "price": 2299,
       "discountPrice": 1799,
@@ -1557,11 +1563,11 @@
       "company": "Activision",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Call of Duty Warzone 5.webp",
-        "/assets/images/Call of Duty Warzone 4.webp",
-        "/assets/images/Call of Duty Warzone 3.webp",
-        "/assets/images/Call of Duty Warzone 2.webp",
-        "/assets/images/Call of Duty Warzone 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/CallofDutyWarzone5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/CallofDutyWarzone4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/CallofDutyWarzone3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/CallofDutyWarzone2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/CallofDutyWarzone1.webp"
       ],
       "price": 2800,
       "discountPrice": 1999,
@@ -1599,11 +1605,11 @@
       "company": "CD Projekt",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Cyberpunk 2077 5.webp",
-        "/assets/images/Cyberpunk 2077 1.webp",
-        "/assets/images/Cyberpunk 2077 2.webp",
-        "/assets/images/Cyberpunk 2077 3.webp",
-        "/assets/images/Cyberpunk 2077 4.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-4.webp"
       ],
       "price": 1799,
       "discountPrice": 1399,
@@ -1641,11 +1647,11 @@
       "company": "Capcom",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Resident Evil 2 Remake 5.webp",
-        "/assets/images/Resident Evil 2 Remake 4.webp",
-        "/assets/images/Resident Evil 2 Remake 3.webp",
-        "/assets/images/Resident Evil 2 Remake 2.webp",
-        "/assets/images/Resident Evil 2 Remake 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ResidentEvil2Remake5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ResidentEvil2Remake4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ResidentEvil2Remake3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ResidentEvil2Remake2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ResidentEvil2Remake1.webp"
       ],
       "price": 2499,
       "discountPrice": 1999,
@@ -1683,11 +1689,11 @@
       "company": "Epic Games",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Fortnite 5.webp",
-        "/assets/images/Fortnite 4.webp",
-        "/assets/images/Fortnite 3.webp",
-        "/assets/images/Fortnite 2.webp",
-        "/assets/images/Fortnite 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite1.webp"
       ],
       "price": 1500,
       "discountPrice": 999,
@@ -1725,11 +1731,11 @@
       "company": "Respawn Entertainment",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Apex Legends 5.webp",
-        "/assets/images/Apex Legends 4.webp",
-        "/assets/images/Apex Legends 3.webp",
-        "/assets/images/Apex Legends 2.webp",
-        "/assets/images/Apex Legends 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends1.webp"
       ],
       "price": 1099,
       "discountPrice": 799,
@@ -1767,11 +1773,11 @@
       "company": "EA DICE",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Battlefield 1 5.webp",
-        "/assets/images/Battlefield 1 4.webp",
-        "/assets/images/Battlefield 1 3.webp",
-        "/assets/images/Battlefield 1 2.webp",
-        "/assets/images/Battlefield 1 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield15.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield14.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield13.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield12.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield11.webp"
       ],
       "price": 2499,
       "discountPrice": 1799,
@@ -1809,11 +1815,11 @@
       "company": "Atlus",
       "category": "ps4Games",
       "image": [
-        "/assets/images/Persona 5 Royal 5.webp",
-        "/assets/images/Persona 5 Royal 4.webp",
-        "/assets/images/Persona 5 Royal 3.webp",
-        "/assets/images/Persona 5 Royal 2.webp",
-        "/assets/images/Persona 5 Royal 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Persona5Royal5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Persona5Royal4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Persona5Royal3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Persona5Royal2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Persona5Royal1.webp"
       ],
       "price": 2999,
       "discountPrice": 2499,
@@ -1851,11 +1857,11 @@
       "company": "343 Industries",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Halo Infinite 5.webp",
-        "/assets/images/Halo Infinite 4.webp",
-        "/assets/images/Halo Infinite 3.webp",
-        "/assets/images/Halo Infinite 2.webp",
-        "/assets/images/Halo Infinite 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HaloInfinite5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HaloInfinite4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HaloInfinite3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HaloInfinite2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HaloInfinite1.webp"
       ],
       "price": 2999,
       "discountPrice": 2299,
@@ -1878,7 +1884,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.5,
-      "sizeGB": 97,
+      "installSizeGB": 97,
       "totalReviews": 1580,
       "reviewsCount": {
         "1": 0,
@@ -1894,11 +1900,11 @@
       "company": "The Coalition",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Gears 5 5.webp",
-        "/assets/images/Gears 5 4.webp",
-        "/assets/images/Gears 5 3.webp",
-        "/assets/images/Gears 5 2.webp",
-        "/assets/images/Gears 5 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Gears-5-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Gears-5-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Gears-5-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Gears-5-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Gears-5-1.webp"
       ],
       "price": 2199,
       "discountPrice": 1699,
@@ -1921,7 +1927,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.2,
-      "sizeGB": 80,
+      "installSizeGB": 80,
       "totalReviews": 1120,
       "reviewsCount": {
         "1": 11,
@@ -1937,11 +1943,11 @@
       "company": "Rare",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Sea of Thieves 5.webp",
-        "/assets/images/Sea of Thieves 4.webp",
-        "/assets/images/Sea of Thieves 3.webp",
-        "/assets/images/Sea of Thieves 2.webp",
-        "/assets/images/Sea of Thieves 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SeaofThieves5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SeaofThieves4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SeaofThieves3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SeaofThieves2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SeaofThieves1.webp"
       ],
       "price": 3499,
       "discountPrice": 2699,
@@ -1963,7 +1969,7 @@
       "requestId": "REQ-013",
       "featuredStatus": "Featured",
       "rating": 4.3,
-      "sizeGB": 85,
+      "installSizeGB": 85,
       "totalReviews": 1360,
       "reviewsCount": {
         "1": 14,
@@ -1979,11 +1985,11 @@
       "company": "Asobo Studio",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Microsoft Flight Simulator 5.webp",
-        "/assets/images/Microsoft Flight Simulator 4.webp",
-        "/assets/images/Microsoft Flight Simulator 3.webp",
-        "/assets/images/Microsoft Flight Simulator 2.webp",
-        "/assets/images/Microsoft Flight Simulator 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/MicrosoftFlightSimulator5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/MicrosoftFlightSimulator4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/MicrosoftFlightSimulator3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/MicrosoftFlightSimulator2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/MicrosoftFlightSimulator1.webp"
       ],
       "price": 3999,
       "discountPrice": 3199,
@@ -2005,7 +2011,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.4,
-      "sizeGB": 150,
+      "installSizeGB": 150,
       "totalReviews": 1240,
       "reviewsCount": {
         "1": 12,
@@ -2021,11 +2027,11 @@
       "company": "Rockstar Games",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Red-Dead-Redemption-2-5.webp",
-        "/assets/images/Red-Dead-Redemption-2-4.webp",
-        "/assets/images/Red-Dead-Redemption-2-3.webp",
-        "/assets/images/Red-Dead-Redemption-2-2.webp",
-        "/assets/images/Red-Dead-Redemption-2-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-1.webp"
       ],
       "price": 4599,
       "discountPrice": 3599,
@@ -2048,7 +2054,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
-      "sizeGB": 120,
+      "installSizeGB": 120,
       "totalReviews": 2140,
       "reviewsCount": {
         "1": 0,
@@ -2064,11 +2070,11 @@
       "company": "FromSoftware",
       "category": "xboxGames",
       "image": [
-        "/assets/images/elden-ring-5.webp",
-        "/assets/images/elden-ring-4.webp",
-        "/assets/images/elden-ring-3.webp",
-        "/assets/images/elden-ring-2.webp",
-        "/assets/images/elden-ring-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-1.webp"
       ],
       "price": 3999,
       "discountPrice": 3199,
@@ -2091,7 +2097,7 @@
       "requestId": "REQ-014",
       "featuredStatus": "Featured",
       "rating": 4.9,
-      "sizeGB": 60,
+      "installSizeGB": 60,
       "totalReviews": 2380,
       "reviewsCount": {
         "1": 0,
@@ -2107,11 +2113,11 @@
       "company": "Ubisoft",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Assassin’s Creed Valhalla 5.webp",
-        "/assets/images/Assassin’s Creed Odyssey 4.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-3.webp",
-        "/assets/images/Assassin’s Creed Odyssey 2.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedValhalla5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2299,
@@ -2133,7 +2139,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.3,
-      "sizeGB": 90,
+      "installSizeGB": 90,
       "totalReviews": 1310,
       "reviewsCount": {
         "1": 13,
@@ -2149,11 +2155,11 @@
       "company": "CD Projekt",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Cyberpunk 2077 5.webp",
-        "/assets/images/Cyberpunk 2077 4.webp",
-        "/assets/images/Cyberpunk 2077 3.webp",
-        "/assets/images/Cyberpunk 2077 2.webp",
-        "/assets/images/Cyberpunk 2077 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2199,
@@ -2175,7 +2181,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.4,
-      "sizeGB": 70,
+      "installSizeGB": 70,
       "totalReviews": 1470,
       "reviewsCount": {
         "1": 15,
@@ -2191,11 +2197,11 @@
       "company": "EA Sports",
       "category": "xboxGames",
       "image": [
-        "/assets/images/FIFA 23 5.webp",
-        "/assets/images/FIFA 23 4.webp",
-        "/assets/images/FIFA 23 3.webp",
-        "/assets/images/FIFA 23 2.webp",
-        "/assets/images/FIFA 23 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/FIFA-23-1.webp"
       ],
       "price": 2799,
       "discountPrice": 1999,
@@ -2218,7 +2224,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.2,
-      "sizeGB": 50,
+      "installSizeGB": 50,
       "totalReviews": 1390,
       "reviewsCount": {
         "1": 14,
@@ -2234,11 +2240,11 @@
       "company": "Activision",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Call of Duty II 5.webp",
-        "/assets/images/Call-of-Duty-III-2.webp",
-        "/assets/images/Call of Duty Warzone 2.webp",
-        "/assets/images/Call-of-Duty-III-1.webp",
-        "/assets/images/Call of Duty Warzone 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-II-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/CallofDutyWarzone2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/CallofDutyWarzone1.webp"
       ],
       "price": 4999,
       "discountPrice": 3999,
@@ -2261,7 +2267,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.3,
-      "sizeGB": 100,
+      "installSizeGB": 100,
       "totalReviews": 1520,
       "reviewsCount": {
         "1": 15,
@@ -2277,11 +2283,11 @@
       "company": "Bethesda Game Studios",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Starfield 5.webp",
-        "/assets/images/Starfield 4.webp",
-        "/assets/images/Starfield 3.webp",
-        "/assets/images/Starfield 2.webp",
-        "/assets/images/Starfield 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield1.webp"
       ],
       "price": 4999,
       "discountPrice": 3799,
@@ -2303,7 +2309,7 @@
       "requestId": "REQ-015",
       "featuredStatus": "Featured",
       "rating": 4.1,
-      "sizeGB": 125,
+      "installSizeGB": 125,
       "totalReviews": 980,
       "reviewsCount": {
         "1": 10,
@@ -2319,11 +2325,11 @@
       "company": "CD Projekt",
       "category": "xboxGames",
       "image": [
-        "/assets/images/The Witcher 3 Wild Hunt 5.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 4.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 3.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 2.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt1.webp"
       ],
       "price": 1499,
       "discountPrice": 1099,
@@ -2345,7 +2351,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
-      "sizeGB": 50,
+      "installSizeGB": 50,
       "totalReviews": 2260,
       "reviewsCount": {
         "1": 0,
@@ -2361,11 +2367,11 @@
       "company": "Capcom",
       "category": "xboxGames",
       "image": [
-        "/assets/images/resident-evil-village-5.webp",
-        "/assets/images/resident-evil-village-4.webp",
-        "/assets/images/resident-evil-village-3.webp",
-        "/assets/images/resident-evil-village-2.webp",
-        "/assets/images/resident-evil-village-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/resident-evil-village-1.webp"
       ],
       "price": 2499,
       "discountPrice": 1999,
@@ -2387,7 +2393,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.5,
-      "sizeGB": 35,
+      "installSizeGB": 35,
       "totalReviews": 1440,
       "reviewsCount": {
         "1": 0,
@@ -2403,11 +2409,11 @@
       "company": "Respawn Entertainment",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Apex Legends 5.webp",
-        "/assets/images/Apex Legends 4.webp",
-        "/assets/images/Apex Legends 3.webp",
-        "/assets/images/Apex Legends 2.webp",
-        "/assets/images/Apex Legends 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends1.webp"
       ],
       "price": 1099,
       "discountPrice": 799,
@@ -2429,7 +2435,7 @@
       "requestId": "REQ-016",
       "featuredStatus": "Featured",
       "rating": 4.4,
-      "sizeGB": 75,
+      "installSizeGB": 75,
       "totalReviews": 1670,
       "reviewsCount": {
         "1": 17,
@@ -2445,11 +2451,11 @@
       "company": "Epic Games",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Fortnite 5.webp",
-        "/assets/images/Fortnite 4.webp",
-        "/assets/images/Fortnite 3.webp",
-        "/assets/images/Fortnite 2.webp",
-        "/assets/images/Fortnite 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite1.webp"
       ],
       "price": 1500,
       "discountPrice": 1099,
@@ -2471,7 +2477,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.5,
-      "sizeGB": 45,
+      "installSizeGB": 45,
       "totalReviews": 2090,
       "reviewsCount": {
         "1": 0,
@@ -2487,11 +2493,11 @@
       "company": "EA DICE",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Battlefield 1 5.webp",
-        "/assets/images/Battlefield 1 4.webp",
-        "/assets/images/Battlefield 1 3.webp",
-        "/assets/images/Battlefield 1 2.webp",
-        "/assets/images/Battlefield 1 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield15.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield14.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield13.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield12.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield11.webp"
       ],
       "price": 1999,
       "discountPrice": 1499,
@@ -2513,7 +2519,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4,
-      "sizeGB": 70,
+      "installSizeGB": 70,
       "totalReviews": 860,
       "reviewsCount": {
         "1": 17,
@@ -2529,11 +2535,11 @@
       "company": "id Software",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Doom Eternal 5.webp",
-        "/assets/images/Doom Eternal 4.webp",
-        "/assets/images/Doom Eternal 3.webp",
-        "/assets/images/Doom Eternal 2.webp",
-        "/assets/images/Doom Eternal 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DoomEternal5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DoomEternal4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DoomEternal3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DoomEternal2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/DoomEternal1.webp"
       ],
       "price": 2499,
       "discountPrice": 1899,
@@ -2554,13 +2560,13 @@
       "status": "Active",
       "requestId": null,
       "featuredStatus": "Not Featured",
-      "rating": 4.1,
-      "sizeGB": 45,
-      "totalReviews": 910,
+      "rating": 4.5,
+      "installSizeGB": 45,
+      "totalReviews": 911,
       "reviewsCount": {
         "1": 9,
         "2": 18,
-        "3": 64,
+        "3": 65,
         "4": 191,
         "5": 628
       }
@@ -2571,11 +2577,11 @@
       "company": "NetherRealm Studios",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Mortal-Kombat-1-5.webp",
-        "/assets/images/Mortal-Kombat-1-4.webp",
-        "/assets/images/Mortal-Kombat-1-3.webp",
-        "/assets/images/Mortal-Kombat-1-2.webp",
-        "/assets/images/Mortal-Kombat-1-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Mortal-Kombat-1-1.webp"
       ],
       "price": 2499,
       "discountPrice": 1999,
@@ -2597,7 +2603,7 @@
       "requestId": "REQ-017",
       "featuredStatus": "Featured",
       "rating": 4.3,
-      "sizeGB": 55,
+      "installSizeGB": 55,
       "totalReviews": 1180,
       "reviewsCount": {
         "1": 12,
@@ -2613,11 +2619,11 @@
       "company": "Bethesda",
       "category": "xboxGames",
       "image": [
-        "/assets/images/Skyrim Special Edition 5.webp",
-        "/assets/images/Skyrim Special Edition 4.webp",
-        "/assets/images/Skyrim Special Edition 3.webp",
-        "/assets/images/Skyrim Special Edition 2.webp",
-        "/assets/images/Skyrim Special Edition 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition1.webp"
       ],
       "price": 1499,
       "discountPrice": 1199,
@@ -2639,7 +2645,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
-      "sizeGB": 15,
+      "installSizeGB": 15,
       "totalReviews": 1860,
       "reviewsCount": {
         "1": 0,
@@ -2655,11 +2661,11 @@
       "company": "CD Projekt",
       "category": "pcGames",
       "image": [
-        "/assets/images/Cyberpunk 2077 5.webp",
-        "/assets/images/Cyberpunk 2077 4.webp",
-        "/assets/images/Cyberpunk 2077 3.webp",
-        "/assets/images/Cyberpunk 2077 2.webp",
-        "/assets/images/Cyberpunk 2077 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Cyberpunk-2077-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2199,
@@ -2681,7 +2687,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.4,
-      "sizeGB": 70,
+      "installSizeGB": 70,
       "totalReviews": 184250,
       "reviewsCount": {
         "1": 1843,
@@ -2697,11 +2703,11 @@
       "company": "CD Projekt",
       "category": "pcGames",
       "image": [
-        "/assets/images/The Witcher 3 Wild Hunt 5.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 4.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 3.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 2.webp",
-        "/assets/images/The Witcher 3 Wild Hunt 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheWitcher3WildHunt1.webp"
       ],
       "price": 1499,
       "discountPrice": 1099,
@@ -2723,7 +2729,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
-      "sizeGB": 50,
+      "installSizeGB": 50,
       "totalReviews": 256400,
       "reviewsCount": {
         "1": 0,
@@ -2739,11 +2745,11 @@
       "company": "Rockstar Games",
       "category": "pcGames",
       "image": [
-        "/assets/images/Red-Dead-Redemption-2-5.webp",
-        "/assets/images/Red-Dead-Redemption-2-4.webp",
-        "/assets/images/Red-Dead-Redemption-2-3.webp",
-        "/assets/images/Red-Dead-Redemption-2-2.webp",
-        "/assets/images/Red-Dead-Redemption-2-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Red-Dead-Redemption-2-1.webp"
       ],
       "price": 4599,
       "discountPrice": 3499,
@@ -2766,7 +2772,7 @@
       "requestId": "REQ-018",
       "featuredStatus": "Featured",
       "rating": 4.8,
-      "sizeGB": 120,
+      "installSizeGB": 120,
       "totalReviews": 312780,
       "reviewsCount": {
         "1": 3128,
@@ -2782,11 +2788,11 @@
       "company": "Rockstar Games",
       "category": "pcGames",
       "image": [
-        "/assets/images/Grand Theft Auto V 5.webp",
-        "/assets/images/Grand Theft Auto V 4.webp",
-        "/assets/images/Grand Theft Auto V 3.webp",
-        "/assets/images/Grand Theft Auto V 2.webp",
-        "/assets/images/Grand Theft Auto V 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/GrandTheftAutoV1.webp"
       ],
       "price": 1999,
       "discountPrice": 1499,
@@ -2809,7 +2815,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.8,
-      "sizeGB": 95,
+      "installSizeGB": 95,
       "totalReviews": 520900,
       "reviewsCount": {
         "1": 5209,
@@ -2825,11 +2831,11 @@
       "company": "Mojang Studios",
       "category": "pcGames",
       "image": [
-        "/assets/images/Minecraft 5.webp",
-        "/assets/images/Minecraft 4.webp",
-        "/assets/images/Minecraft 3.webp",
-        "/assets/images/Minecraft 2.webp",
-        "/assets/images/Minecraft 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Minecraft5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Minecraft4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Minecraft3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Minecraft2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Minecraft1.webp"
       ],
       "price": 1999,
       "discountPrice": 1499,
@@ -2852,7 +2858,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
-      "sizeGB": 2,
+      "installSizeGB": 2,
       "totalReviews": 1045800,
       "reviewsCount": {
         "1": 0,
@@ -2868,11 +2874,11 @@
       "company": "Riot Games",
       "category": "pcGames",
       "image": [
-        "/assets/images/Valorant 5.webp",
-        "/assets/images/Valorant 4.webp",
-        "/assets/images/Valorant 3.webp",
-        "/assets/images/Valorant 2.webp",
-        "/assets/images/Valorant 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Valorant5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Valorant4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Valorant3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Valorant2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Valorant1.webp"
       ],
       "price": 2176,
       "discountPrice": 0,
@@ -2895,7 +2901,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.6,
-      "sizeGB": 30,
+      "installSizeGB": 30,
       "totalReviews": 342600,
       "reviewsCount": {
         "1": 3426,
@@ -2911,11 +2917,11 @@
       "company": "Epic Games",
       "category": "pcGames",
       "image": [
-        "/assets/images/Fortnite 5.webp",
-        "/assets/images/Fortnite 4.webp",
-        "/assets/images/Fortnite 3.webp",
-        "/assets/images/Fortnite 2.webp",
-        "/assets/images/Fortnite 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Fortnite1.webp"
       ],
       "price": 1500,
       "discountPrice": 1099,
@@ -2937,7 +2943,7 @@
       "requestId": "REQ-019",
       "featuredStatus": "Featured",
       "rating": 4.5,
-      "sizeGB": 45,
+      "installSizeGB": 45,
       "totalReviews": 689400,
       "reviewsCount": {
         "1": 6894,
@@ -2953,11 +2959,11 @@
       "company": "Valve",
       "category": "pcGames",
       "image": [
-        "/assets/images/Counter-Strike Global Offensive 5.webp",
-        "/assets/images/Counter-Strike Global Offensive 4.webp",
-        "/assets/images/Counter-Strike Global Offensive 3.webp",
-        "/assets/images/Counter-Strike Global Offensive 2.webp",
-        "/assets/images/Counter-Strike Global Offensive 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Counter-StrikeGlobalOffensive5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Counter-StrikeGlobalOffensive4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Counter-StrikeGlobalOffensive3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Counter-StrikeGlobalOffensive2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Counter-StrikeGlobalOffensive1.webp"
       ],
       "price": 1200,
       "discountPrice": 1000,
@@ -2979,7 +2985,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.7,
-      "sizeGB": 15,
+      "installSizeGB": 15,
       "totalReviews": 912700,
       "reviewsCount": {
         "1": 9127,
@@ -2995,11 +3001,11 @@
       "company": "Valve",
       "category": "pcGames",
       "image": [
-        "/assets/images/Dota 2 5.webp",
-        "/assets/images/Dota 2 4.webp",
-        "/assets/images/Dota 2 3.webp",
-        "/assets/images/Dota 2 2.webp",
-        "/assets/images/Dota 2 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Dota-2-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Dota-2-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Dota-2-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Dota-2-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Dota-2-1.webp"
       ],
       "price": 3700,
       "discountPrice": 3100,
@@ -3021,7 +3027,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.6,
-      "sizeGB": 15,
+      "installSizeGB": 15,
       "totalReviews": 865200,
       "reviewsCount": {
         "1": 8652,
@@ -3037,11 +3043,11 @@
       "category": "pcGames",
       "company": "Blizzard",
       "image": [
-        "/assets/images/Overwatch 2 5.webp",
-        "/assets/images/Overwatch 2 4.webp",
-        "/assets/images/Overwatch 2 3.webp",
-        "/assets/images/Overwatch 2 2.webp",
-        "/assets/images/Overwatch 2 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Overwatch-2-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Overwatch-2-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Overwatch-2-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Overwatch-2-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Overwatch-2-1.webp"
       ],
       "price": 1200,
       "discountPrice": 899,
@@ -3064,7 +3070,7 @@
       "requestId": "REQ-020",
       "featuredStatus": "Featured",
       "rating": 4.1,
-      "sizeGB": 50,
+      "installSizeGB": 50,
       "totalReviews": 156900,
       "reviewsCount": {
         "1": 3138,
@@ -3080,11 +3086,11 @@
       "company": "Activision",
       "category": "pcGames",
       "image": [
-        "/assets/images/Call of Duty II 5.webp",
-        "/assets/images/Call-of-Duty-III-4.webp",
-        "/assets/images/Call-of-Duty-III-3.webp",
-        "/assets/images/Call-of-Duty-III-2.webp",
-        "/assets/images/Call-of-Duty-III-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-II-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Call-of-Duty-III-1.webp"
       ],
       "price": 4999,
       "discountPrice": 3999,
@@ -3107,7 +3113,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.3,
-      "sizeGB": 100,
+      "installSizeGB": 100,
       "totalReviews": 224500,
       "reviewsCount": {
         "1": 2245,
@@ -3123,11 +3129,11 @@
       "company": "FromSoftware",
       "category": "pcGames",
       "image": [
-        "/assets/images/elden-ring-5.webp",
-        "/assets/images/elden-ring-4.webp",
-        "/assets/images/elden-ring-3.webp",
-        "/assets/images/elden-ring-2.webp",
-        "/assets/images/elden-ring-1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/elden-ring-1.webp"
       ],
       "price": 3999,
       "discountPrice": 3199,
@@ -3150,7 +3156,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
-      "sizeGB": 60,
+      "installSizeGB": 60,
       "totalReviews": 478600,
       "reviewsCount": {
         "1": 0,
@@ -3166,11 +3172,11 @@
       "company": "Riot Games",
       "category": "pcGames",
       "image": [
-        "/assets/images/League of Legends 5.webp",
-        "/assets/images/League of Legends 4.webp",
-        "/assets/images/League of Legends 3.webp",
-        "/assets/images/League of Legends 2.webp",
-        "/assets/images/League of Legends 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/LeagueofLegends5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/LeagueofLegends4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/LeagueofLegends3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/LeagueofLegends2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/LeagueofLegends1.webp"
       ],
       "price": 1300,
       "discountPrice": 0,
@@ -3193,7 +3199,7 @@
       "requestId": "REQ-021",
       "featuredStatus": "Featured",
       "rating": 4.7,
-      "sizeGB": 25,
+      "installSizeGB": 25,
       "totalReviews": 1284300,
       "reviewsCount": {
         "1": 12843,
@@ -3209,11 +3215,11 @@
       "company": "Ubisoft",
       "category": "pcGames",
       "image": [
-        "/assets/images/Assassin’s Creed Valhalla 5.webp",
-        "/assets/images/Assassin’s Creed Odyssey 4.webp",
-        "/assets/images/Assassin’s Creed Odyssey 2.webp",
-        "/assets/images/Assassin’s-Creed-Mirage-1.webp",
-        "/assets/images/Assassin’s Creed Odyssey 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedValhalla5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Assassins-Creed-Mirage-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey1.webp"
       ],
       "price": 2999,
       "discountPrice": 2299,
@@ -3235,7 +3241,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.2,
-      "sizeGB": 90,
+      "installSizeGB": 90,
       "totalReviews": 198700,
       "reviewsCount": {
         "1": 1987,
@@ -3251,11 +3257,11 @@
       "company": "Ubisoft",
       "category": "pcGames",
       "image": [
-        "/assets/images/Far Cry 6 5.webp",
-        "/assets/images/Far Cry 6 4.webp",
-        "/assets/images/Far Cry 6 3.webp",
-        "/assets/images/Far Cry 6 2.webp",
-        "/assets/images/Far Cry 6 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Far-Cry-6-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Far-Cry-6-4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Far-Cry-6-3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Far-Cry-6-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Far-Cry-6-1.webp"
       ],
       "price": 2999,
       "discountPrice": 2199,
@@ -3277,7 +3283,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.1,
-      "sizeGB": 75,
+      "installSizeGB": 75,
       "totalReviews": 142300,
       "reviewsCount": {
         "1": 2846,
@@ -3293,11 +3299,11 @@
       "company": "Guerrilla Games",
       "category": "pcGames",
       "image": [
-        "/assets/images/Horizon Zero Dawn 5.webp",
-        "/assets/images/horizon-forbidden-west-2.webp",
-        "/assets/images/Horizon Call of the Mountain 2.webp",
-        "/assets/images/horizon-forbidden-west-1.webp",
-        "/assets/images/Horizon Call of the Mountain 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Horizon-Zero-Dawn-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/horizon-forbidden-west-2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HorizonCalloftheMountain2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/horizon-forbidden-west-1.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HorizonCalloftheMountain1.webp"
       ],
       "price": 2499,
       "discountPrice": 1899,
@@ -3319,7 +3325,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.6,
-      "sizeGB": 70,
+      "installSizeGB": 70,
       "totalReviews": 265800,
       "reviewsCount": {
         "1": 2658,
@@ -3335,11 +3341,11 @@
       "company": "Bethesda",
       "category": "pcGames",
       "image": [
-        "/assets/images/Starfield 5.webp",
-        "/assets/images/Starfield 4.webp",
-        "/assets/images/Starfield 3.webp",
-        "/assets/images/Starfield 2.webp",
-        "/assets/images/Starfield 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Starfield1.webp"
       ],
       "price": 4999,
       "discountPrice": 3799,
@@ -3361,7 +3367,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4,
-      "sizeGB": 125,
+      "installSizeGB": 125,
       "totalReviews": 116900,
       "reviewsCount": {
         "1": 3507,
@@ -3377,11 +3383,11 @@
       "company": "Bethesda",
       "category": "pcGames",
       "image": [
-        "/assets/images/The Elder Scrolls V Skyrim 5.webp",
-        "/assets/images/Skyrim Special Edition 4.webp",
-        "/assets/images/Skyrim Special Edition 3.webp",
-        "/assets/images/Skyrim Special Edition 2.webp",
-        "/assets/images/Skyrim Special Edition 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/TheElderScrollsVSkyrim5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition4.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/SkyrimSpecialEdition1.webp"
       ],
       "price": 1499,
       "discountPrice": 1199,
@@ -3403,7 +3409,7 @@
       "requestId": "REQ-022",
       "featuredStatus": "Featured",
       "rating": 4.8,
-      "sizeGB": 15,
+      "installSizeGB": 15,
       "totalReviews": 734500,
       "reviewsCount": {
         "1": 7345,
@@ -3419,11 +3425,11 @@
       "company": "EA DICE",
       "category": "pcGames",
       "image": [
-        "/assets/images/Battlefield 2042 5.webp",
-        "/assets/images/Battlefield 1 4.webp",
-        "/assets/images/Battlefield 1 3.webp",
-        "/assets/images/Battlefield 1 2.webp",
-        "/assets/images/Battlefield 1 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield-2042-5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield14.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield13.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield12.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield11.webp"
       ],
       "price": 2999,
       "discountPrice": 2199,
@@ -3445,7 +3451,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 3.8,
-      "sizeGB": 100,
+      "installSizeGB": 100,
       "totalReviews": 187400,
       "reviewsCount": {
         "1": 5622,
@@ -3461,11 +3467,11 @@
       "company": "Larian Studios",
       "category": "pcGames",
       "image": [
-        "/assets/images/Baldur’s Gate 3 5.webp",
-        "/assets/images/Baldur’s Gate 3 4.webp",
-        "/assets/images/Baldur’s Gate 3 3.webp",
-        "/assets/images/Baldur’s Gate 3 2.webp",
-        "/assets/images/Baldur’s Gate 3 1.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/BaldursGate35.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/BaldursGate34.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/BaldursGate33.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/BaldursGate32.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/BaldursGate31.webp"
       ],
       "price": 3499,
       "discountPrice": 2999,
@@ -3488,7 +3494,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
-      "sizeGB": 150,
+      "installSizeGB": 150,
       "totalReviews": 392600,
       "reviewsCount": {
         "1": 0,
@@ -3504,11 +3510,11 @@
       "company": "Larian Studios",
       "category": "pcGames",
       "image": [
-        "/assets/images/Apex Legends 2.webp",
-        "/assets/images/Apex Legends 5.webp",
-        "/assets/images/Battlefield V 5.webp",
-        "/assets/images/Assassin’s Creed Odyssey 3.webp",
-        "/assets/images/Far Cry 6 5.webp"
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends2.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ApexLegends5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/BattlefieldV5.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/AssassinsCreedOdyssey3.webp",
+        "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Far-Cry-6-5.webp"
       ],
       "price": 3499,
       "discountPrice": 2999,
@@ -3531,7 +3537,7 @@
       "requestId": null,
       "featuredStatus": "Not Featured",
       "rating": 4.9,
-      "sizeGB": 150,
+      "installSizeGB": 150,
       "totalReviews": 392600,
       "reviewsCount": {
         "1": 0,
@@ -3573,7 +3579,7 @@
       "requestId": "undefined",
       "featuredStatus": "Featured",
       "rating": 5,
-      "sizeGB": 130,
+      "installSizeGB": 130,
       "totalReviews": 1,
       "reviewsCount": {
         "1": 0,
@@ -3591,9 +3597,9 @@
       "gameName": "Marvel’s Spider-Man Remastered",
       "title": "Experience the Superhero Adventure",
       "category": "pcNews",
-      "date": "December 12, 2021",
+      "date": "2025-02-05T10:30:45.123Z",
       "views": 456,
-      "image": "/assets/images/spider-man-1.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/spider-man-1.webp",
       "description": "Swing through New York City in this visually stunning, action-packed open-world adventure."
     },
     {
@@ -3601,9 +3607,9 @@
       "gameName": "League of Legends",
       "title": "The World's Most Popular MOBA",
       "category": "pcNews",
-      "date": "October 27, 2009",
+      "date": "2025-03-02T10:30:45.123Z",
       "views": 1000,
-      "image": "/assets/images/League of Legends 2.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/LeagueofLegends2.webp",
       "description": "A competitive Multi Player online battle arena featuring strategic team-based gameplay, iconic champions, and a massive global esports scene."
     },
     {
@@ -3611,9 +3617,9 @@
       "gameName": "Ratchet & Clank: Rift Apart",
       "title": "Jump Between Dimensions in This Epic Adventure",
       "category": "pcNews",
-      "date": "May 22, 2021",
+      "date": "2025-01-02T10:30:45.123Z",
       "views": 809,
-      "image": "/assets/images/ratchet-and-clank-rift-1.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ratchet-and-clank-rift-1.webp",
       "description": "A high-energy sci-fi adventure with creative weapons, humor, and insane visuals."
     },
     {
@@ -3621,129 +3627,129 @@
       "gameName": "Battlefield 2042",
       "title": "The Ultimate Modern Warfare FPS",
       "category": "pcNews",
-      "date": "June 18, 2021",
+      "date": "2025-04-01T10:30:45.123Z",
       "views": 200,
-      "image": "/assets/images/Battlefield 1 5.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Battlefield15.webp",
       "description": "A massive-scale Multi Player shooter with powerful weapons, vehicles, and tactical combat."
     },
     {
-      "id": 1,
+      "id": 5,
       "gameName": "Demon’s Souls",
       "title": "A Stunning Remake of a Classic",
       "category": "ps5News",
-      "date": "November 12, 2020",
+      "date": "2025-07-08T10:30:45.123Z",
       "views": 540,
-      "image": "/assets/images/demons-souls-5.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/demons-souls-5.webp",
       "description": "A beautifully recreated dark fantasy action RPG with challenging enemies and breathtaking visuals."
     },
     {
-      "id": 2,
+      "id": 6,
       "gameName": "Ratchet & Clank: Rift Apart",
       "title": "Dimension-Hopping Adventure",
       "category": "ps5News",
-      "date": "June 11, 2021",
+      "date": "2025-09-01T10:30:45.123Z",
       "views": 1200,
-      "image": "/assets/images/ratchet-and-clank-rift-3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ratchet-and-clank-rift-3.webp",
       "description": "Travel through dimensions instantly in this fast-paced, visually incredible action-platformer."
     },
     {
-      "id": 3,
+      "id": 7,
       "gameName": "Horizon Forbidden West",
       "title": "A Vast Open-World Journey",
       "category": "ps5News",
-      "date": "February 18, 2022",
+      "date": "2025-06-11T10:30:45.123Z",
       "views": 980,
-      "image": "/assets/images/horizon-forbidden-west-3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/horizon-forbidden-west-3.webp",
       "description": "Explore a lush post-apocalyptic world filled with machines, tribes, and epic combat."
     },
     {
-      "id": 4,
+      "id": 8,
       "gameName": "Returnal",
       "title": "A Sci-Fi Roguelike Shooter",
       "category": "ps5News",
-      "date": "April 30, 2021",
+      "date": "2025-08-10T10:30:45.123Z",
       "views": 310,
-      "image": "/assets/images/Returnal-3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Returnal-3.webp",
       "description": "Experience intense, fast-paced third-person shooting with psychological horror elements."
     },
     {
-      "id": 1,
+      "id": 9,
       "gameName": "The Last of Us Part II",
       "title": "An Emotional Post-Apocalyptic Journey",
       "category": "ps4News",
-      "date": "June 19, 2020",
+      "date": "2025-11-21T10:30:45.123Z",
       "views": 780,
-      "image": "/assets/images/the-last-of-us-part-3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/the-last-of-us-part-3.webp",
       "description": "A gripping story of survival, revenge, and human emotion set in a beautifully detailed world."
     },
     {
-      "id": 2,
+      "id": 10,
       "gameName": "God of War",
       "title": "A New Beginning for Kratos",
       "category": "ps4News",
-      "date": "April 20, 2018",
+      "date": "2025-04-01T10:30:45.123Z",
       "views": 1500,
-      "image": "/assets/images/god-of-war-2018-3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/god-of-war-2018-3.webp",
       "description": "Join Kratos and Atreus on a mythological adventure filled with stunning visuals and deep storytelling."
     },
     {
-      "id": 3,
+      "id": 11,
       "gameName": "Ghost of Tsushima",
       "title": "Become the Samurai Warrior",
       "category": "ps4News",
-      "date": "July 17, 2020",
+      "date": "2025-02-11T10:30:45.123Z",
       "views": 1120,
-      "image": "/assets/images/ghost-of-tsushima-3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/ghost-of-tsushima-3.webp",
       "description": "Explore feudal Japan as Jin Sakai and fight to protect your island from Mongol invaders."
     },
     {
-      "id": 4,
+      "id": 12,
       "gameName": "Uncharted 4: A Thief’s End",
       "title": "Nathan Drake’s Final Adventure",
       "category": "ps4News",
-      "date": "May 10, 2016",
+      "date": "2025-05-08T10:30:45.123Z",
       "views": 630,
-      "image": "/assets/images/uncharted-4-4.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/uncharted-4-4.webp",
       "description": "A cinematic treasure-hunting adventure filled with action, puzzles, and breathtaking environments."
     },
     {
-      "id": 1,
+      "id": 13,
       "gameName": "Halo Infinite",
       "title": "Master Chief Returns",
       "category": "xboxNews",
-      "date": "December 8, 2021",
+      "date": "2025-05-11T10:30:45.123Z",
       "views": 920,
-      "image": "/assets/images/Halo Infinite 3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/HaloInfinite3.webp",
       "description": "Experience the next chapter of Master Chief’s journey with open-world exploration and intense sci-fi combat."
     },
     {
-      "id": 2,
+      "id": 14,
       "gameName": "Forza Horizon 5",
       "title": "Race Through Stunning Landscapes",
       "category": "xboxNews",
-      "date": "November 9, 2021",
+      "date": "2025-09-13T10:30:45.123Z",
       "views": 1400,
-      "image": "/assets/images/Forza Horizon 5 2.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Forza-Horizon-5-2.webp",
       "description": "Drive across a beautiful open-world Mexico with realistic cars, dynamic weather, and endless events."
     },
     {
-      "id": 3,
+      "id": 15,
       "gameName": "Gears 5",
       "title": "A Brutal and Action-Packed Shooter",
       "category": "xboxNews",
-      "date": "September 10, 2019",
+      "date": "2025-03-01T10:30:45.123Z",
       "views": 760,
-      "image": "/assets/images/Gears 5 3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Gears-5-3.webp",
       "description": "Follow Kait Diaz’s story in this intense third-person shooter with massive battles and deep lore."
     },
     {
-      "id": 4,
+      "id": 16,
       "gameName": "Microsoft Flight Simulator",
       "title": "The Most Realistic Flying Experience",
       "category": "xboxNews",
-      "date": "July 27, 2021",
+      "date": "2025-01-01T10:30:45.123Z",
       "views": 580,
-      "image": "/assets/images/Microsoft Flight Simulator 3.webp",
+      "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/MicrosoftFlightSimulator3.webp",
       "description": "Fly across the entire world with incredible realism, detailed aircraft, and dynamic weather technology."
     }
   ],
@@ -3755,70 +3761,12 @@
       "password": "$2b$10$YTVFOUlDxRYSGZiyyQw/L.GiBlZIxjrZePNWME.IqeGpUoVKGEI8e",
       "role": "user",
       "totalSpend": 16276.919999999998,
-      "library": [
-        {
-          "gameId": 78,
-          "orderId": 8,
-          "purchasedAt": "2025-01-16T15:21:39.411Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 71,
-          "orderId": 8,
-          "purchasedAt": "2025-01-16T15:21:39.411Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 58,
-          "orderId": 9,
-          "purchasedAt": "2025-03-16T15:23:04.134Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 46,
-          "orderId": 10,
-          "purchasedAt": "2025-07-16T15:23:43.921Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        }
-      ],
+      "library": [],
       "customerId": "CUS-398913",
       "createdAt": "2026-01-09T03:46:38.913Z",
       "lastOrder": "2026-01-16T15:23:43.921Z",
       "lastLogin": "2026-01-16T15:20:32.658Z",
-      "wishlist": [
-        {
-          "gameId": 78,
-          "addedDate": "2026-01-16T15:20:52.300Z"
-        },
-        {
-          "gameId": 78,
-          "addedDate": "2026-01-16T15:21:01.788Z"
-        },
-        {
-          "gameId": 71,
-          "addedDate": "2026-01-16T15:21:13.928Z"
-        },
-        {
-          "gameId": 58,
-          "addedDate": "2026-01-16T15:22:07.660Z"
-        },
-        {
-          "gameId": 58,
-          "addedDate": "2026-01-16T15:22:48.982Z"
-        },
-        {
-          "gameId": 46,
-          "addedDate": "2026-01-16T15:23:26.947Z"
-        }
-      ],
+      "wishlist": [],
       "address": [
         {
           "address": "",
@@ -3839,14 +3787,14 @@
       "email": "p@gmail.com",
       "password": "$2b$10$2RnsUUbMg6oyq6Y0HM1keuK72iN5MBbVjNOc7o3jbENWzJHqbigdu",
       "role": "admin",
-      "totalSpend": 102029.88000000003,
+      "totalSpend": 104388.70000000004,
       "library": [
         {
           "gameId": 45,
           "orderId": 1,
           "purchasedAt": "2025-11-16T07:04:48.529Z",
           "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
+          "orderStatus": "Completed",
           "starRating": 0
         },
         {
@@ -3854,64 +3802,8 @@
           "orderId": 1,
           "purchasedAt": "2025-11-16T07:04:48.529Z",
           "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
+          "orderStatus": "Completed",
           "starRating": 5
-        },
-        {
-          "gameId": 31,
-          "orderId": 2,
-          "purchasedAt": "2025-06-16T14:14:50.276Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 56,
-          "orderId": 3,
-          "purchasedAt": "2025-03-16T14:16:43.981Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 23,
-          "orderId": 4,
-          "purchasedAt": "2025-01-16T14:19:05.108Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 25,
-          "orderId": 5,
-          "purchasedAt": "2025-02-16T14:23:38.266Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 76,
-          "orderId": 6,
-          "purchasedAt": "2025-07-16T14:29:00.091Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 71,
-          "orderId": 7,
-          "purchasedAt": "2025-09-16T15:18:21.558Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 60,
-          "orderId": 7,
-          "purchasedAt": "2025-11-16T15:18:21.558Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
         }
       ],
       "wishlist": [
@@ -3924,18 +3816,18 @@
           "addedDate": "2026-01-16T15:06:53.897Z"
         },
         {
-          "gameId": 83,
-          "addedDate": "2026-01-16T15:06:58.720Z"
-        },
-        {
           "gameId": 32,
           "addedDate": "2026-01-16T15:07:14.702Z"
+        },
+        {
+          "gameId": 53,
+          "addedDate": "2026-01-17T08:02:21.355Z"
         }
       ],
       "customerId": "CUS-007325",
       "createdAt": "2026-01-09T04:13:27.325Z",
-      "lastOrder": "2026-01-16T15:18:21.558Z",
-      "lastLogin": "2026-01-16T15:44:45.765Z",
+      "lastOrder": "2026-01-17T08:31:35.999Z",
+      "lastLogin": "2026-01-17T08:31:25.445Z",
       "address": [
         {
           "address": "Ratnagiri, Maharashtra",
@@ -3946,8 +3838,8 @@
         }
       ],
       "mobileNumber": "1234567890",
-      "status": "Active",
-      "totalOrders": 18,
+      "status": "Inactive",
+      "totalOrders": 19,
       "id": 2
     },
     {
@@ -3957,64 +3849,7 @@
       "password": "$2b$10$8kGZLn//bWFhjaz3qeCoxOlkG1GPDPAKOjrNXkXGnUBQVUnmX1Va.",
       "role": "user",
       "totalSpend": 24772.92,
-      "library": [
-        {
-          "gameId": 77,
-          "orderId": 14,
-          "purchasedAt": "2025-02-22T15:29:30.200Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 0
-        },
-        {
-          "gameId": 48,
-          "orderId": 14,
-          "purchasedAt": "2025-02-22T15:29:30.200Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 0
-        },
-        {
-          "gameId": 47,
-          "orderId": 15,
-          "purchasedAt": "2025-04-21T15:30:03.714Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 0
-        },
-        {
-          "gameId": 33,
-          "orderId": 15,
-          "purchasedAt": "2025-04-21T15:30:03.714Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 0
-        },
-        {
-          "gameId": 17,
-          "orderId": 16,
-          "purchasedAt": "2025-09-26T15:30:48.975Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 0
-        },
-        {
-          "gameId": 54,
-          "orderId": 16,
-          "purchasedAt": "2025-09-26T15:30:48.975Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 0
-        },
-        {
-          "gameId": 72,
-          "orderId": 16,
-          "purchasedAt": "2025-09-26T15:30:48.975Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Processing",
-          "starRating": 0
-        }
-      ],
+      "library": [],
       "wishlist": [
         {
           "gameId": 77,
@@ -4070,56 +3905,7 @@
       "password": "$2b$10$e8P2ElLZgFxy79XPXdCunuG/msZz7oY.he0eA0YJJuVrwCL35kdiS",
       "role": "user",
       "totalSpend": 14978.919999999998,
-      "library": [
-        {
-          "gameId": 82,
-          "orderId": 17,
-          "purchasedAt": "2025-01-18T15:32:34.888Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 42,
-          "orderId": 17,
-          "purchasedAt": "2025-01-18T15:32:34.888Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 15,
-          "orderId": 17,
-          "purchasedAt": "2025-01-18T15:32:34.888Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 83,
-          "orderId": 18,
-          "purchasedAt": "2025-03-10T15:33:09.257Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 69,
-          "orderId": 19,
-          "purchasedAt": "2025-05-26T15:33:39.953Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 60,
-          "orderId": 19,
-          "purchasedAt": "2025-05-26T15:33:39.953Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        }
-      ],
+      "library": [],
       "wishlist": [
         {
           "gameId": 82,
@@ -4175,56 +3961,7 @@
       "password": "$2b$10$QBo2vKO2Ue53YRf0ZnllruyFJ4nFd3CNfGvlqGn..7uzau0jzsSmS",
       "role": "user",
       "totalSpend": 17692.92,
-      "library": [
-        {
-          "gameId": 79,
-          "orderId": 11,
-          "purchasedAt": "2026-01-10T15:25:19.216Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 61,
-          "orderId": 12,
-          "purchasedAt": "2026-03-06T15:25:57.122Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 20,
-          "orderId": 12,
-          "purchasedAt": "2026-03-06T15:25:57.122Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 49,
-          "orderId": 13,
-          "purchasedAt": "2026-09-24T15:27:58.946Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 38,
-          "orderId": 13,
-          "purchasedAt": "2026-09-24T15:27:58.946Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 18,
-          "orderId": 13,
-          "purchasedAt": "2026-09-24T15:27:58.946Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        }
-      ],
+      "library": [],
       "wishlist": [
         {
           "gameId": 61,
@@ -4272,56 +4009,7 @@
       "password": "$2b$10$ipX8MbyQPRdJnNoLY9/UOu9MQx.0heMzYycpxCktlSU4oEoyCz9TC",
       "role": "user",
       "totalSpend": 16040.919999999998,
-      "library": [
-        {
-          "gameId": 63,
-          "orderId": 20,
-          "purchasedAt": "2026-05-13T15:35:18.136Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Completed",
-          "starRating": 0
-        },
-        {
-          "gameId": 2,
-          "orderId": 20,
-          "purchasedAt": "2026-05-13T15:35:18.136Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Completed",
-          "starRating": 0
-        },
-        {
-          "gameId": 60,
-          "orderId": 20,
-          "purchasedAt": "2026-05-13T15:35:18.136Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Completed",
-          "starRating": 0
-        },
-        {
-          "gameId": 50,
-          "orderId": 21,
-          "purchasedAt": "2026-12-17T15:35:36.220Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Completed",
-          "starRating": 0
-        },
-        {
-          "gameId": 56,
-          "orderId": 22,
-          "purchasedAt": "2026-05-20T15:35:50.654Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Completed",
-          "starRating": 0
-        },
-        {
-          "gameId": 35,
-          "orderId": 23,
-          "purchasedAt": "2026-01-16T15:36:06.985Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Completed",
-          "starRating": 0
-        }
-      ],
+      "library": [],
       "wishlist": [
         {
           "gameId": 63,
@@ -4368,40 +4056,7 @@
       "email": "maya@gmail.com",
       "role": "user",
       "totalSpend": 9553.28,
-      "library": [
-        {
-          "gameId": 63,
-          "orderId": 24,
-          "purchasedAt": "2025-03-28T15:36:46.686Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 29,
-          "orderId": 25,
-          "purchasedAt": "2025-05-01T15:37:03.872Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 25,
-          "orderId": 26,
-          "purchasedAt": "2025-08-10T15:37:21.386Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        },
-        {
-          "gameId": 66,
-          "orderId": 27,
-          "purchasedAt": "2025-09-20T15:37:46.070Z",
-          "installStatus": "Not Installed",
-          "orderStatus": "Cancelled",
-          "starRating": 0
-        }
-      ],
+      "library": [],
       "password": "$2b$10$p45xZp9b9DSNUtqwSXCxxeEc5tMO08DdYiIHzJsSL10ylOrfVI9Iu",
       "customerId": "CUS-156364",
       "createdAt": "2026-01-16T07:55:56.364Z",
@@ -4448,7 +4103,7 @@
           "title": "Gears 5",
           "price": 2199,
           "discountPrice": 1699,
-          "image": "/assets/images/Gears 5 5.webp",
+          "image": "https://kgmtgimpocouatucimhn.supabase.co/storage/v1/object/public/game-images/Gears 5 5.webp",
           "category": "xboxGames"
         },
         {
@@ -4476,958 +4131,6 @@
       },
       "id": 1,
       "orderId": "ORD-000001"
-    },
-    {
-      "userId": 2,
-      "userFirstName": "Prathamesh",
-      "userLastName": "Chaughule",
-      "email": "p@gmail.com",
-      "games": [
-        {
-          "gameId": 31,
-          "title": "Grand Theft Auto V",
-          "price": 1999,
-          "discountPrice": 1499,
-          "image": "/assets/images/Grand Theft Auto V 5.webp",
-          "category": "ps4Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Cancelled",
-      "createdAt": "2025-05-12T14:14:19.823Z",
-      "total": 1768.82,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Prathamesh",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 2,
-      "orderId": "ORD-000002"
-    },
-    {
-      "userId": 2,
-      "userFirstName": "Prathamesh",
-      "userLastName": "Chaughule",
-      "email": "p@gmail.com",
-      "games": [
-        {
-          "gameId": 56,
-          "title": "Resident Evil 4 Remake",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/resident-evil-village-5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-03-19T14:16:29.267Z",
-      "total": 2358.82,
-      "paymentData": {
-        "paymentMethod": "NetBanking",
-        "firstName": "Prathamesh",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 3,
-      "orderId": "ORD-000003"
-    },
-    {
-      "userId": 2,
-      "userFirstName": "Prathamesh",
-      "userLastName": "Chaughule",
-      "email": "p@gmail.com",
-      "games": [
-        {
-          "gameId": 23,
-          "title": "God of War (2018)",
-          "price": 1999,
-          "discountPrice": 1499,
-          "image": "/assets/images/god-of-war-2018-5.webp",
-          "category": "ps4Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-06-19T14:18:49.292Z",
-      "total": 1768.82,
-      "paymentData": {
-        "paymentMethod": "NetBanking",
-        "firstName": "Prathamesh",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 4,
-      "orderId": "ORD-000004"
-    },
-    {
-      "userId": 2,
-      "userFirstName": "Prathamesh",
-      "userLastName": "Chaughule",
-      "email": "p@gmail.com",
-      "games": [
-        {
-          "gameId": 25,
-          "title": "Marvel’s Spider-Man",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/spider-man-5.webp",
-          "category": "ps4Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-07-10T14:23:31.117Z",
-      "total": 2358.82,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Prathamesh",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 5,
-      "orderId": "ORD-000005"
-    },
-    {
-      "userId": 2,
-      "userFirstName": "Prathamesh",
-      "userLastName": "Chaughule",
-      "email": "p@gmail.com",
-      "games": [
-        {
-          "gameId": 76,
-          "title": "League of Legends",
-          "price": 1300,
-          "discountPrice": 0,
-          "image": "/assets/images/League of Legends 5.webp",
-          "category": "pcGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-04-19T14:27:41.449Z",
-      "total": 0,
-      "paymentData": {
-        "paymentMethod": "NetBanking",
-        "firstName": "Prathamesh",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 6,
-      "orderId": "ORD-000006"
-    },
-    {
-      "userId": 2,
-      "userFirstName": "Prathamesh",
-      "userLastName": "Chaughule",
-      "email": "p@gmail.com",
-      "games": [
-        {
-          "gameId": 71,
-          "title": "Counter-Strike: Global Offensive",
-          "price": 1200,
-          "discountPrice": 1000,
-          "image": "/assets/images/Counter-Strike Global Offensive 5.webp",
-          "category": "pcGames"
-        },
-        {
-          "gameId": 60,
-          "title": "Doom Eternal",
-          "price": 2499,
-          "discountPrice": 1899,
-          "image": "/assets/images/Doom Eternal 5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Cancelled",
-      "createdAt": "2025-08-20T15:18:17.032Z",
-      "total": 3420.8199999999997,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Prathamesh",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 7,
-      "orderId": "ORD-000007"
-    },
-    {
-      "userId": 1,
-      "userFirstName": "Aaryan",
-      "userLastName": "Chaughule",
-      "email": "a@gmail.com",
-      "games": [
-        {
-          "gameId": 78,
-          "title": "Far Cry 6",
-          "price": 2999,
-          "discountPrice": 2199,
-          "image": "/assets/images/Far Cry 6 5.webp",
-          "category": "pcGames"
-        },
-        {
-          "gameId": 71,
-          "title": "Counter-Strike: Global Offensive",
-          "price": 1200,
-          "discountPrice": 1000,
-          "image": "/assets/images/Counter-Strike Global Offensive 5.webp",
-          "category": "pcGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-01-16T15:21:25.460Z",
-      "total": 3774.8199999999997,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Aaryan",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 8,
-      "orderId": "ORD-000008"
-    },
-    {
-      "userId": 1,
-      "userFirstName": "Aaryan",
-      "userLastName": "Chaughule",
-      "email": "a@gmail.com",
-      "games": [
-        {
-          "gameId": 58,
-          "title": "Fortnite",
-          "price": 1500,
-          "discountPrice": 1099,
-          "image": "/assets/images/Fortnite 5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Cancelled",
-      "createdAt": "2025-03-16T15:22:55.160Z",
-      "total": 1296.82,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Aaryan",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 9,
-      "orderId": "ORD-000009"
-    },
-    {
-      "userId": 1,
-      "userFirstName": "Aaryan",
-      "userLastName": "Chaughule",
-      "email": "a@gmail.com",
-      "games": [
-        {
-          "gameId": 46,
-          "title": "Sea of Thieves",
-          "price": 3499,
-          "discountPrice": 2699,
-          "image": "/assets/images/Sea of Thieves 5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2025-07-16T15:23:34.736Z",
-      "total": 3184.82,
-      "paymentData": {
-        "paymentMethod": "Debit Card",
-        "firstName": "Aaryan",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 10,
-      "orderId": "ORD-000010"
-    },
-    {
-      "userId": 5,
-      "userFirstName": "Savita",
-      "userLastName": "Chaughule",
-      "email": "s@gmail.com",
-      "games": [
-        {
-          "gameId": 79,
-          "title": "Horizon Zero Dawn",
-          "price": 2499,
-          "discountPrice": 1899,
-          "image": "/assets/images/Horizon Zero Dawn 5.webp",
-          "category": "pcGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2025-12-16T15:25:08.987Z",
-      "total": 2240.82,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Savita",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 11,
-      "orderId": "ORD-000011"
-    },
-    {
-      "userId": 5,
-      "userFirstName": "Savita",
-      "userLastName": "Chaughule",
-      "email": "s@gmail.com",
-      "games": [
-        {
-          "gameId": 61,
-          "title": "Mortal Kombat 1",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/Mortal-Kombat-1-5.webp",
-          "category": "xboxGames"
-        },
-        {
-          "gameId": 20,
-          "title": "Star Wars Jedi: Survivor",
-          "price": 3999,
-          "discountPrice": 3399,
-          "image": "/assets/images/Star Wars Jedi Survivor 5.webp",
-          "category": "ps5Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Cancelled",
-      "createdAt": "2025-09-06T15:25:49.439Z",
-      "total": 6369.64,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Savita",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 12,
-      "orderId": "ORD-000012"
-    },
-    {
-      "userId": 5,
-      "userFirstName": "Savita",
-      "userLastName": "Chaughule",
-      "email": "s@gmail.com",
-      "games": [
-        {
-          "gameId": 49,
-          "title": "Elden Ring",
-          "price": 3999,
-          "discountPrice": 3199,
-          "image": "/assets/images/elden-ring-5.webp",
-          "category": "xboxGames"
-        },
-        {
-          "gameId": 38,
-          "title": "Resident Evil 2 Remake",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/Resident Evil 2 Remake 5.webp",
-          "category": "ps4Games"
-        },
-        {
-          "gameId": 18,
-          "title": "NBA 2K24",
-          "price": 2999,
-          "discountPrice": 2499,
-          "image": "/assets/images/NBA 2K24 5.webp",
-          "category": "ps5Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-03-23T15:27:51.376Z",
-      "total": 9082.46,
-      "paymentData": {
-        "paymentMethod": "NetBanking",
-        "firstName": "Savita",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 13,
-      "orderId": "ORD-000013"
-    },
-    {
-      "userId": 3,
-      "userFirstName": "Parth",
-      "userLastName": "Mayekar",
-      "email": "parth@gmail.com",
-      "games": [
-        {
-          "gameId": 77,
-          "title": "Assassin’s Creed Valhalla",
-          "price": 2999,
-          "discountPrice": 2299,
-          "image": "/assets/images/Assassin’s Creed Valhalla 5.webp",
-          "category": "pcGames"
-        },
-        {
-          "gameId": 48,
-          "title": "Red Dead Redemption 2",
-          "price": 4599,
-          "discountPrice": 3599,
-          "image": "/assets/images/Red-Dead-Redemption-2-5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2025-06-04T15:29:17.790Z",
-      "total": 6959.639999999999,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Parth",
-        "lastName": "Mayekar",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 14,
-      "orderId": "ORD-000014"
-    },
-    {
-      "userId": 3,
-      "userFirstName": "Parth",
-      "userLastName": "Mayekar",
-      "email": "parth@gmail.com",
-      "games": [
-        {
-          "gameId": 47,
-          "title": "Microsoft Flight Simulator",
-          "price": 3999,
-          "discountPrice": 3199,
-          "image": "/assets/images/Microsoft Flight Simulator 5.webp",
-          "category": "xboxGames"
-        },
-        {
-          "gameId": 33,
-          "title": "Sekiro: Shadows Die Twice",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/Sekiro Shadows Die Twice 5.webp",
-          "category": "ps4Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2025-07-02T15:29:56.257Z",
-      "total": 6133.64,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Parth",
-        "lastName": "Mayekar",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 15,
-      "orderId": "ORD-000015"
-    },
-    {
-      "userId": 3,
-      "userFirstName": "Parth",
-      "userLastName": "Mayekar",
-      "email": "parth@gmail.com",
-      "games": [
-        {
-          "gameId": 17,
-          "title": "Gran Turismo 7",
-          "price": 3499,
-          "discountPrice": 2999,
-          "image": "/assets/images/Gran Turismo 5.webp",
-          "category": "ps5Games"
-        },
-        {
-          "gameId": 54,
-          "title": "Starfield",
-          "price": 4999,
-          "discountPrice": 3799,
-          "image": "/assets/images/Starfield 5.webp",
-          "category": "xboxGames"
-        },
-        {
-          "gameId": 72,
-          "title": "Dota 2",
-          "price": 3700,
-          "discountPrice": 3100,
-          "image": "/assets/images/Dota 2 5.webp",
-          "category": "pcGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2025-06-19T15:30:37.520Z",
-      "total": 11679.64,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Parth",
-        "lastName": "Mayekar",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 16,
-      "orderId": "ORD-000016"
-    },
-    {
-      "userId": 4,
-      "userFirstName": "Vilas",
-      "userLastName": "Chaughule",
-      "email": "v@gmail.com",
-      "games": [
-        {
-          "gameId": 82,
-          "title": "Battlefield 2042",
-          "price": 2999,
-          "discountPrice": 2199,
-          "image": "/assets/images/Battlefield 2042 5.webp",
-          "category": "pcGames"
-        },
-        {
-          "gameId": 42,
-          "title": "Persona 5 Royal",
-          "price": 2999,
-          "discountPrice": 2499,
-          "image": "/assets/images/Persona 5 Royal 5.webp",
-          "category": "ps4Games"
-        },
-        {
-          "gameId": 15,
-          "title": "Death Stranding Director’s Cut",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/Death Stranding Director’s Cut 5.webp",
-          "category": "ps5Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Cancelled",
-      "createdAt": "2025-02-10T15:32:26.736Z",
-      "total": 7902.46,
-      "paymentData": {
-        "paymentMethod": "NetBanking",
-        "firstName": "Vilas",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 17,
-      "orderId": "ORD-000017"
-    },
-    {
-      "userId": 4,
-      "userFirstName": "Vilas",
-      "userLastName": "Chaughule",
-      "email": "v@gmail.com",
-      "games": [
-        {
-          "gameId": 83,
-          "title": "Baldur’s Gate 3",
-          "price": 3499,
-          "discountPrice": 2999,
-          "image": "/assets/images/Baldur’s Gate 3 5.webp",
-          "category": "pcGames"
-        },
-        {
-          "gameId": 82,
-          "title": "Battlefield 2042",
-          "price": 2999,
-          "discountPrice": 2199,
-          "image": "/assets/images/Battlefield 2042 5.webp",
-          "category": "pcGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-04-10T15:32:57.767Z",
-      "total": 6133.64,
-      "paymentData": {
-        "paymentMethod": "NetBanking",
-        "firstName": "Vilas",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 18,
-      "orderId": "ORD-000018"
-    },
-    {
-      "userId": 4,
-      "userFirstName": "Vilas",
-      "userLastName": "Chaughule",
-      "email": "v@gmail.com",
-      "games": [
-        {
-          "gameId": 69,
-          "title": "Fortnite",
-          "price": 1500,
-          "discountPrice": 1099,
-          "image": "/assets/images/Fortnite 5.webp",
-          "category": "pcGames"
-        },
-        {
-          "gameId": 60,
-          "title": "Doom Eternal",
-          "price": 2499,
-          "discountPrice": 1899,
-          "image": "/assets/images/Doom Eternal 5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-06-16T15:33:31.085Z",
-      "total": 3537.64,
-      "paymentData": {
-        "paymentMethod": "NetBanking",
-        "firstName": "Vilas",
-        "lastName": "Chaughule",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 19,
-      "orderId": "ORD-000019"
-    },
-    {
-      "userId": 6,
-      "userFirstName": "Aniket",
-      "userLastName": "Potale",
-      "email": "aniket@gmail.com",
-      "games": [
-        {
-          "gameId": 63,
-          "title": "Cyberpunk 2077",
-          "price": 2999,
-          "discountPrice": 2199,
-          "image": "/assets/images/Cyberpunk 2077 5.webp",
-          "category": "pcGames"
-        },
-        {
-          "gameId": 2,
-          "title": "God of War Ragnarök",
-          "price": 3999,
-          "discountPrice": 3399,
-          "image": "/assets/images/god-of-war-ragnarok-5.webp",
-          "category": "ps5Games"
-        },
-        {
-          "gameId": 60,
-          "title": "Doom Eternal",
-          "price": 2499,
-          "discountPrice": 1899,
-          "image": "/assets/images/Doom Eternal 5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-08-10T15:35:10.556Z",
-      "total": 8846.46,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Aniket",
-        "lastName": "Potale",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 20,
-      "orderId": "ORD-000020"
-    },
-    {
-      "userId": 6,
-      "userFirstName": "Aniket",
-      "userLastName": "Potale",
-      "email": "aniket@gmail.com",
-      "games": [
-        {
-          "gameId": 50,
-          "title": "Assassin’s Creed Valhalla",
-          "price": 2999,
-          "discountPrice": 2299,
-          "image": "/assets/images/Assassin’s Creed Valhalla 5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2025-11-10T15:35:28.801Z",
-      "total": 2712.82,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Aniket",
-        "lastName": "Potale",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Karnataka",
-        "zipCode": "415612"
-      },
-      "id": 21,
-      "orderId": "ORD-000021"
-    },
-    {
-      "userId": 6,
-      "userFirstName": "Aniket",
-      "userLastName": "Potale",
-      "email": "aniket@gmail.com",
-      "games": [
-        {
-          "gameId": 56,
-          "title": "Resident Evil 4 Remake",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/resident-evil-village-5.webp",
-          "category": "xboxGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2025-09-15T15:35:43.058Z",
-      "total": 2358.82,
-      "paymentData": {
-        "paymentMethod": "NetBanking",
-        "firstName": "Aniket",
-        "lastName": "Potale",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Karnataka",
-        "zipCode": "415612"
-      },
-      "id": 22,
-      "orderId": "ORD-000022"
-    },
-    {
-      "userId": 6,
-      "userFirstName": "Aniket",
-      "userLastName": "Potale",
-      "email": "aniket@gmail.com",
-      "games": [
-        {
-          "gameId": 35,
-          "title": "FIFA 23 (PS4)",
-          "price": 2299,
-          "discountPrice": 1799,
-          "image": "/assets/images/FIFA 23 5.webp",
-          "category": "ps4Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2025-04-12T15:35:59.810Z",
-      "total": 2122.82,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Aniket",
-        "lastName": "Potale",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Karnataka",
-        "zipCode": "415612"
-      },
-      "id": 23,
-      "orderId": "ORD-000023"
-    },
-    {
-      "userId": 7,
-      "userFirstName": "Maya",
-      "userLastName": "Bhagane",
-      "email": "maya@gmail.com",
-      "games": [
-        {
-          "gameId": 63,
-          "title": "Cyberpunk 2077",
-          "price": 2999,
-          "discountPrice": 2199,
-          "image": "/assets/images/Cyberpunk 2077 5.webp",
-          "category": "pcGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-03-14T15:36:39.646Z",
-      "total": 2594.82,
-      "paymentData": {
-        "paymentMethod": "Debit Card",
-        "firstName": "Maya",
-        "lastName": "Bhagane",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 24,
-      "orderId": "ORD-000024"
-    },
-    {
-      "userId": 7,
-      "userFirstName": "Maya",
-      "userLastName": "Bhagane",
-      "email": "maya@gmail.com",
-      "games": [
-        {
-          "gameId": 29,
-          "title": "Ghost of Tsushima",
-          "price": 2999,
-          "discountPrice": 2399,
-          "image": "/assets/images/ghost-of-tsushima-5.webp",
-          "category": "ps4Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Completed",
-      "createdAt": "2025-12-26T15:36:55.805Z",
-      "total": 2830.82,
-      "paymentData": {
-        "paymentMethod": "Credit Card",
-        "firstName": "Maya",
-        "lastName": "Bhagane",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 25,
-      "orderId": "ORD-000025"
-    },
-    {
-      "userId": 7,
-      "userFirstName": "Maya",
-      "userLastName": "Bhagane",
-      "email": "maya@gmail.com",
-      "games": [
-        {
-          "gameId": 25,
-          "title": "Marvel’s Spider-Man",
-          "price": 2499,
-          "discountPrice": 1999,
-          "image": "/assets/images/spider-man-5.webp",
-          "category": "ps4Games"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Cancelled",
-      "createdAt": "2025-04-17T15:37:13.639Z",
-      "total": 2358.82,
-      "paymentData": {
-        "paymentMethod": "Debit Card",
-        "firstName": "Maya",
-        "lastName": "Bhagane",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 26,
-      "orderId": "ORD-000026"
-    },
-    {
-      "userId": 7,
-      "userFirstName": "Maya",
-      "userLastName": "Bhagane",
-      "email": "maya@gmail.com",
-      "games": [
-        {
-          "gameId": 66,
-          "title": "GTA V",
-          "price": 1999,
-          "discountPrice": 1499,
-          "image": "/assets/images/Grand Theft Auto V 5.webp",
-          "category": "pcGames"
-        }
-      ],
-      "paymentStatus": "Paid",
-      "orderStatus": "Processing",
-      "createdAt": "2026-01-16T15:37:38.096Z",
-      "total": 1768.82,
-      "paymentData": {
-        "paymentMethod": "UPI",
-        "firstName": "Maya",
-        "lastName": "Bhagane",
-        "address": "Ratnagiri, Maharashtra",
-        "country": "India",
-        "city": "Ratnagiri",
-        "state": "Maharashtra",
-        "zipCode": "415612"
-      },
-      "id": 27,
-      "orderId": "ORD-000027"
     }
   ],
   "requests": [
@@ -5439,14 +4142,11 @@
       "firstName": "Savita",
       "lastName": "Chaughule",
       "gameTitle": "GTA 6",
-      "platform": [
-        "pcGames",
-        "ps5Games"
-      ],
+      "platform": "pcGames",
       "requestDate": "2025-12-10T10:31:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Rejected",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 2,
@@ -5460,7 +4160,7 @@
       "requestDate": "2025-12-08T10:32:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 3,
@@ -5474,7 +4174,7 @@
       "requestDate": "2025-12-11T10:33:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Stared"
+      "starredStatus": "Stared"
     },
     {
       "id": 4,
@@ -5488,7 +4188,7 @@
       "requestDate": "2025-12-12T10:34:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 5,
@@ -5502,7 +4202,7 @@
       "requestDate": "2025-12-13T10:35:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Rejected",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 6,
@@ -5516,7 +4216,7 @@
       "requestDate": "2025-12-14T10:36:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 7,
@@ -5530,7 +4230,7 @@
       "requestDate": "2025-12-15T10:37:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Stared"
+      "starredStatus": "Stared"
     },
     {
       "id": 8,
@@ -5544,7 +4244,7 @@
       "requestDate": "2025-12-16T10:38:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 9,
@@ -5558,7 +4258,7 @@
       "requestDate": "2025-12-17T10:39:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 10,
@@ -5572,7 +4272,7 @@
       "requestDate": "2025-12-18T10:40:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 11,
@@ -5586,7 +4286,7 @@
       "requestDate": "2025-12-19T10:31:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Stared"
+      "starredStatus": "Stared"
     },
     {
       "id": 12,
@@ -5600,7 +4300,7 @@
       "requestDate": "2025-12-16T20:32:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 13,
@@ -5614,7 +4314,7 @@
       "requestDate": "2025-12-17T20:33:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 14,
@@ -5628,7 +4328,7 @@
       "requestDate": "2025-12-18T20:34:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 15,
@@ -5642,7 +4342,7 @@
       "requestDate": "2025-12-19T20:35:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 16,
@@ -5656,7 +4356,7 @@
       "requestDate": "2025-12-20T20:36:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Stared"
+      "starredStatus": "Stared"
     },
     {
       "id": 17,
@@ -5670,7 +4370,7 @@
       "requestDate": "2026-01-01T20:37:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 18,
@@ -5684,7 +4384,7 @@
       "requestDate": "2025-12-23T20:38:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 19,
@@ -5698,7 +4398,7 @@
       "requestDate": "2025-12-24T20:39:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 20,
@@ -5712,7 +4412,7 @@
       "requestDate": "2026-01-01T20:40:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Stared"
+      "starredStatus": "Stared"
     },
     {
       "id": 21,
@@ -5726,7 +4426,7 @@
       "requestDate": "2025-12-26T20:31:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Unstared"
+      "starredStatus": "Unstared"
     },
     {
       "id": 22,
@@ -5740,7 +4440,7 @@
       "requestDate": "2025-12-28T20:32:45.123Z",
       "readStatus": "Read",
       "requestStatus": "Accepted",
-      "staredStatus": "Stared"
+      "starredStatus": "Stared"
     },
     {
       "requestId": "REQ-831",
@@ -5753,7 +4453,7 @@
       "requestDate": "2026-01-14T08:43:29.561Z",
       "readStatus": "Read",
       "requestStatus": "Pending",
-      "staredStatus": "Unstared",
+      "starredStatus": "Unstared",
       "id": 23
     },
     {
@@ -5767,7 +4467,7 @@
       "requestDate": "2026-01-14T08:55:27.441Z",
       "readStatus": "Read",
       "requestStatus": "Pending",
-      "staredStatus": "Stared",
+      "starredStatus": "Stared",
       "id": 24
     },
     {
@@ -5781,7 +4481,7 @@
       "requestDate": "2026-01-16T15:20:01.792Z",
       "readStatus": "Unread",
       "requestStatus": "Pending",
-      "staredStatus": "Unstared",
+      "starredStatus": "Unstared",
       "id": 25
     }
   ]
