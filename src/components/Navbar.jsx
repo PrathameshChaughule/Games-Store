@@ -149,13 +149,16 @@ function Navbar() {
               </div>
               :
               <div className="flex items-center gap-2 cursor-pointer text-white">
-                <LazyLoadImage
-                  effect="blur"
-                  src="/assets/user.webp"
-                  className="w-10 h-10 cursor-pointer object-cover border-2 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
-                  alt=""
-                />
-                <span className="text-sm font-medium">Login</span>
+                <div className="w-10 h-10 sm:w-11 sm:h-11">
+                  <LazyLoadImage
+                    effect="blur"
+                    src="/assets/user.webp"
+                    className="w-full sm:h-full cursor-pointer object-cover border-2 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
+                    alt=""
+                  />
+                </div>
+
+                <span className="text-sm font-medium hidden md:block">Login</span>
               </div>
             }
             <div
