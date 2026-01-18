@@ -18,7 +18,11 @@ function News({ title, date, view, img, desc }) {
           <span>{title}</span>
           <div className="flex gap-3 text-md my-1.5 text-gray-400">
             <span className="flex items-center gap-2">
-              {date}
+              {new Date(date)
+                .toLocaleString("en-IN", {
+                  dateStyle: "medium",
+                  timeStyle: "short"
+                })}
               <LuDot />
             </span>
             <span className="flex items-center gap-2">

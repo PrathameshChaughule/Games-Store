@@ -3,41 +3,44 @@ import { lazy, Suspense } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const AdminProductsForm = lazy(() => import("./Admin/AdminProducts/AdminProductsForm"));
-const FeaturedGameAddedForm = lazy(() => import("./Admin/AdminFeaturedGames/FeaturedGameAddedForm"));
-const OrdersDetails = lazy(() => import("./Admin/AdminOrders/OrdersDetails"));
-const CustomerDetails = lazy(() => import("./Admin/AdminCustomer/CustomerDetails"));
-const AdminMedia = lazy(() => import("./Admin/AdminMedia"))
-const AdminFeaturedGames = lazy(() => import("./Admin/AdminFeaturedGames/AdminFeaturedGames"))
-const AdminReviews = lazy(() => import("./Admin/AdminReviews"))
+import { addGame } from "./addGame";
+
+const AdminProductsForm = lazy(() => import("./pages/Admin/AdminProducts/AdminProductsForm"));
+const FeaturedGameAddedForm = lazy(() => import("./pages/Admin/AdminFeaturedGames/FeaturedGameAddedForm"));
+const OrdersDetails = lazy(() => import("./pages/Admin/AdminOrders/OrdersDetails"));
+const CustomerDetails = lazy(() => import("./pages/Admin/AdminCustomer/CustomerDetails"));
+const AdminMedia = lazy(() => import("./pages/Admin/AdminMedia"))
+const AdminFeaturedGames = lazy(() => import("./pages/Admin/AdminFeaturedGames/AdminFeaturedGames"))
+const AdminReviews = lazy(() => import("./pages/Admin/AdminReviews"))
 const UserDetailsLayout = lazy(() => import("./Layout/UserDetailsLayout"));
-const MyAccount = lazy(() => import("./pages/MyAccount"))
-const OrderHistory = lazy(() => import("./pages/OrderHistory"))
-const Wishlist = lazy(() => import("./pages/Wishlist"))
-const Settings = lazy(() => import("./pages/Settings"))
+const MyAccount = lazy(() => import("./pages/User/MyAccount"))
+const OrderHistory = lazy(() => import("./pages/User/OrderHistory"))
+const Wishlist = lazy(() => import("./pages/User/Wishlist"))
+const Settings = lazy(() => import("./pages/User/Settings"))
 const Loading = lazy(() => import("./components/Loading"));
-const AdminDashboard = lazy(() => import("./Admin/AdminDashboard/AdminDashboard"))
-const AdminCustomer = lazy(() => import("./Admin/AdminCustomer/AdminCustomer"))
-const AdminOrders = lazy(() => import("./Admin/AdminOrders/AdminOrders"))
-const AdminProducts = lazy(() => import("../src/Admin/AdminProducts/AdminProducts"))
+const AdminDashboard = lazy(() => import("./pages/Admin/AdminDashboard/AdminDashboard"))
+const AdminCustomer = lazy(() => import("./pages/Admin/AdminCustomer/AdminCustomer"))
+const AdminOrders = lazy(() => import("./pages/Admin/AdminOrders/AdminOrders"))
+const AdminProducts = lazy(() => import("../src/pages/Admin/AdminProducts/AdminProducts"))
 const UserLayout = lazy(() => import("./Layout/UserLayout"))
 const AdminLayout = lazy(() => import("./Layout/AdminLayout"))
 const PublicLayout = lazy(() => import("./Layout/PublicLayout"))
 const Login = lazy(() => import("./Auth/Login"))
 const Signup = lazy(() => import("./Auth/Signup"))
 const ForgotPassword = lazy(() => import("./Auth/ForgotPassword"))
-const ProductsDetails = lazy(() => import("./Admin/AdminProducts/ProductsDetails"))
-const Library = lazy(() => import("./pages/Library"))
-const Checkout = lazy(() => import("./pages/Checkout"));
-const Cart = lazy(() => import("./pages/Cart"));
-const Home = lazy(() => import("./pages/Home"));
-const PS5 = lazy(() => import("./pages/PS5"));
-const PS4 = lazy(() => import("./pages/PS4"));
-const XBOX = lazy(() => import("./pages/XBOX"));
-const Details = lazy(() => import("./pages/Details"));
-const Downloads = lazy(() => import("./pages/Downloads"))
+const ProductsDetails = lazy(() => import("./pages/Admin/AdminProducts/ProductsDetails"))
+const Library = lazy(() => import("./pages/User/Library"))
+const Checkout = lazy(() => import("./pages/User/Checkout"));
+const Cart = lazy(() => import("./pages/User/Cart"));
+const Home = lazy(() => import("./pages/User/Home"));
+const PS5 = lazy(() => import("./pages/User/PS5"));
+const PS4 = lazy(() => import("./pages/User/PS4"));
+const XBOX = lazy(() => import("./pages/User/XBOX"));
+const Details = lazy(() => import("./pages/User/Details"));
+const Downloads = lazy(() => import("./pages/User/Downloads"))
 
 function App() {
+  // addGame()
   return (
     <div className="bg-[#111315] text-white h-fit w-[100%]">
       <Router>

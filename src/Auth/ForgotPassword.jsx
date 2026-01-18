@@ -1,9 +1,10 @@
-import axios from "axios";
+
 import { useEffect, useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import bcrypt from "bcryptjs";
+import { supabase } from "../supabaseClient/supabaseClient";
 
 function ForgotPassword() {
   const [page, setPage] = useState("email");
@@ -23,17 +24,17 @@ function ForgotPassword() {
     {
       src: "/assets/video/League Of Legends.webm",
       position: "object-[60%]",
-      poster: "/assets/images/lol.webp",
+      poster: "/assets/video/lol.webp",
     },
     {
       src: "/assets/video/Valorant.webm",
       position: "object-[40%] scale-115",
-      poster: "/assets/images/valorent.webp",
+      poster: "/assets/video/valorent.webp",
     },
     {
       src: "/assets/video/Sekiro.webm",
       position: "object-[46%] scale-100",
-      poster: "/assets/images/sekiro.webp",
+      poster: "/assets/video/sekiro.webp",
     },
   ];
 
@@ -83,18 +84,23 @@ function ForgotPassword() {
 
   const emailHandle = async () => {
     try {
-      const response = await axios.get(
-        `https://gamering-data.onrender.com/users?email=${email}`
-      );
-      const res = response.data;
-      if (res.length === 0) {
+      const { data, error } = await supabase
+        .from("users")
+        .select("id")
+        .eq("email", email);
+
+      if (error) throw error;
+
+      if (!data || data.length === 0) {
         toast.error("Email not registered. Please sign up first.");
         return;
       }
+
       setPage("otp");
       otpGenerate();
+
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -117,27 +123,38 @@ function ForgotPassword() {
       return;
     }
 
-    setLoading(true)
-
-    const hashedPassword = await bcrypt.hash(password, saltRounds);
+    setLoading(true);
 
     try {
+      const hashedPassword = await bcrypt.hash(password, saltRounds);
 
-      const response = await axios.get(
-        `https://gamering-data.onrender.com/users?email=${email}`
-      );
+      const { data, error } = await supabase
+        .from("users")
+        .select("id")
+        .eq("email", email)
+        .single();
 
-      const res = response.data[0];
+      if (error || !data) {
+        toast.error("User not found");
+        setLoading(false);
+        return;
+      }
 
-      await axios.patch(`https://gamering-data.onrender.com/users/${res.id}`, { password: hashedPassword });
+      await supabase
+        .from("users")
+        .update({ password: hashedPassword })
+        .eq("id", data.id);
+
       toast.success("Password reset successful");
+
       setTimeout(() => {
         nav("/login");
       }, 1000);
+
     } catch (error) {
-      console.log(error);
+      console.error(error);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   };
 

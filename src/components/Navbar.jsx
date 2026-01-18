@@ -8,7 +8,8 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdMonitor } from "react-icons/md";
 import Profile from "./Profile";
 import { IoLogoPlaystation, IoLogoXbox, IoSearch } from "react-icons/io5";
-import axios from "axios";
+
+import { supabase } from "../supabaseClient/supabaseClient";
 
 function Navbar() {
   const { cartCount } = useContext(GameContext);
@@ -26,9 +27,13 @@ function Navbar() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("https://gamering-data.onrender.com/games");
+      const { data, error } = await supabase
+        .from("games")
+        .select("*");
 
-      const filtered = res.data.filter(game =>
+      if (error) throw error;
+
+      const filtered = data.filter(game =>
         game.title.toLowerCase().includes(search.toLowerCase()) ||
         game.tags?.some(tag =>
           tag.toLowerCase().includes(search.toLowerCase())
@@ -39,7 +44,8 @@ function Navbar() {
     } catch (error) {
       console.log(error);
     }
-  }
+  };
+
 
   useEffect(() => {
     fetchData()
@@ -142,14 +148,14 @@ function Navbar() {
                 </div>
               </div>
               :
-              <div className="flex flex-col items-center">
+              <div className="flex items-center gap-2 cursor-pointer text-white">
                 <LazyLoadImage
                   effect="blur"
                   src="/assets/user.webp"
-                  className="w-10 cursor-pointer h-10 border-4 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
+                  className="w-10 h-10 cursor-pointer object-cover border-2 shadow hover:shadow-md shadow-blue-500 border-blue-500 rounded-full"
                   alt=""
                 />
-                <span className="font-semibold text-sm">Login</span>
+                <span className="text-sm font-medium">Login</span>
               </div>
             }
             <div

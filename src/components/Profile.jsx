@@ -1,26 +1,31 @@
-import axios from "axios";
+
 import { FaBell, FaHeart, FaShoppingCart, FaUser, FaUserSecret } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { GiPowerButton } from "react-icons/gi";
 import { IoGameController } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "../supabaseClient/supabaseClient";
 
 function Profile() {
   const userData = JSON.parse(localStorage.getItem("auth"));
   const nav = useNavigate();
 
   const logOut = async () => {
-
     try {
-      await axios.patch(`https://gamering-data.onrender.com/users/${userData.userId}`, {
-        status: "Inactive"
-      })
-      localStorage.removeItem("auth", "cart");
+      const { error } = await supabase
+        .from("users")
+        .update({ status: "Inactive" })
+        .eq("id", userData.userId);
+
+      if (error) throw error;
+
+      localStorage.removeItem("auth");
+      localStorage.removeItem("cart");
+
       nav("/");
     } catch (error) {
       console.log(error);
     }
-    return;
   };
 
   return (

@@ -1,6 +1,6 @@
 import { Navigate, Outlet } from "react-router-dom";
-import AdminSidebar from "../Admin/AdminSidebar";
-import AdminNavbar from "../Admin/AdminNavbar";
+import AdminSidebar from "../pages/Admin/AdminSidebar";
+import AdminNavbar from "../pages/Admin/AdminNavbar";
 
 const AdminLayout = () => {
   const auth = JSON.parse(localStorage.getItem("auth"));

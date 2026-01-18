@@ -1,8 +1,9 @@
-import axios from "axios";
+
 import { FaHeart, FaShoppingCart, FaUser } from "react-icons/fa";
 import { GiPowerButton } from "react-icons/gi";
 import { IoGameController, IoSettingsSharp } from "react-icons/io5";
 import { NavLink, useNavigate } from "react-router-dom";
+import { supabase } from "../supabaseClient/supabaseClient";
 
 function Sidebar() {
     const userData = JSON.parse(localStorage.getItem("auth"));
@@ -10,15 +11,20 @@ function Sidebar() {
 
     const logOut = async () => {
         try {
-            await axios.patch(`https://gamering-data.onrender.com/users/${userData.userId}`, {
-                status: "Inactive"
-            })
-            localStorage.removeItem("auth", "cart");
+            const { error } = await supabase
+                .from("users")
+                .update({ status: "Inactive" })
+                .eq("id", userData.userId);
+
+            if (error) throw error;
+
+            localStorage.removeItem("auth");
+            localStorage.removeItem("cart");
+
             nav("/");
         } catch (error) {
             console.log(error);
         }
-        return;
     };
     return (
         <div className="border rounded bg-[#181A1E] border-[#181A1E] md:w-65 py-5">

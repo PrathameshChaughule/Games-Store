@@ -1,9 +1,10 @@
-import axios from "axios";
+
 import { useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import bcrypt from "bcryptjs";
+import { supabase } from "../supabaseClient/supabaseClient";
 
 function Signup() {
   const lastPage = localStorage.getItem("lastPage") || "/";
@@ -27,58 +28,70 @@ function Signup() {
 
   const formSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
 
     if (password !== confirmPassword) {
       toast.error("Password and Confirm Password must be same");
+      setLoading(false);
       return;
     }
 
-    const hashedPassword = await bcrypt.hash(password, saltRounds);
-
     try {
-      const response = await axios.get(
-        `https://gamering-data.onrender.com/users?email=${data.email}`
-      );
+      const { data: existingUser, error: fetchError } = await supabase
+        .from("users")
+        .select("id")
+        .eq("email", data.email)
+        .maybeSingle();
 
-      const userData = response.data;
-
-      if (userData.length > 0) {
+      if (existingUser) {
         toast.error("User already exists");
+        setLoading(false);
         return;
       }
 
-      const res = await axios.post("https://gamering-data.onrender.com/users", {
-        ...data,
-        password: hashedPassword,
-        customerId: `CUS-${Date.now().toString().slice(-6)}`,
-        createdAt: new Date().toISOString(),
-        status: "Active",
-        lastLogin: new Date().toISOString(),
-        lastOrder: null,
-        totalOrders: 0,
-        address: [
-          {
-            address: "",
-            city: "",
-            country: "India",
-            state: "",
-            zipCode: ""
-          }
-        ],
-        wishlist: [],
-        mobileNumber: "",
-      });
+      if (fetchError) {
+        throw fetchError;
+      }
+
+      const hashedPassword = await bcrypt.hash(password, saltRounds);
+
+      const { data: newUser, error: insertError } = await supabase
+        .from("users")
+        .insert({
+          ...data,
+          password: hashedPassword,
+          customerId: `CUS-${Date.now().toString().slice(-6)}`,
+          createdAt: new Date().toISOString(),
+          status: "Active",
+          lastLogin: new Date().toISOString(),
+          lastOrder: null,
+          totalOrders: 0,
+          address: [
+            {
+              address: "",
+              city: "",
+              country: "India",
+              state: "",
+              zipCode: ""
+            }
+          ],
+          wishlist: [],
+          mobileNumber: ""
+        })
+        .select()
+        .single();
+
+      if (insertError) throw insertError;
 
       const auth = {
         token: crypto.randomUUID(),
         isAuth: true,
-        role: res.data.role,
-        customerId: `CUS-${Date.now().toString().slice(-6)}`,
-        userId: res.data.id,
-        firstName: res.data.firstName,
-        lastName: res.data.lastName,
-        email: res.data.email
+        role: newUser.role,
+        customerId: newUser.customerId,
+        userId: newUser.id,
+        firstName: newUser.firstName,
+        lastName: newUser.lastName,
+        email: newUser.email
       };
 
       localStorage.setItem("auth", JSON.stringify(auth));
@@ -98,9 +111,10 @@ function Signup() {
       console.error(error);
       toast.error("Something went wrong");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   };
+
 
 
   return (
@@ -120,7 +134,7 @@ function Signup() {
           <div className="hidden lg:flex w-[50%] h-full overflow-hidden relative">
             <video
               src="/assets/video/Mortal-Kombat.webm"
-              poster="/assets/images/mk.webp"
+              poster="/assets/video/mk.webp"
               autoPlay
               muted
               playsInline

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { toast } from 'react-toastify'
+import { supabase } from '../supabaseClient/supabaseClient'
 
 function RequestForm({ setShowRequestForm, scrollHandle }) {
     const userData = JSON.parse(localStorage.getItem("auth"))
@@ -15,7 +16,7 @@ function RequestForm({ setShowRequestForm, scrollHandle }) {
         requestDate: new Date().toISOString(),
         readStatus: "Unread",
         requestStatus: "Pending",
-        staredStatus: "Unstared"
+        starredStatus: "Unstared"
     })
 
     const formHandle = (e) => {
@@ -24,14 +25,19 @@ function RequestForm({ setShowRequestForm, scrollHandle }) {
 
     const formSubmit = async () => {
         try {
-            await axios.post("https://gamering-data.onrender.com/requests", formData)
-            toast.success("Request Submitted")
-            setShowRequestForm(null)
-            scrollHandle()
+            const { error } = await supabase
+                .from("requests")
+                .insert([formData]);
+
+            if (error) throw error;
+
+            toast.success("Request Submitted");
+            setShowRequestForm(null);
+            scrollHandle();
         } catch (error) {
             console.log(error);
         }
-    }
+    };
 
     return (
         <div className="min-h-screen flex items-center justify-center px-4">

@@ -1,9 +1,10 @@
-import axios from "axios";
+
 import { useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import bcrypt from "bcryptjs";
+import { supabase } from "../supabaseClient/supabaseClient";
 
 function Login() {
   const lastPage = localStorage.getItem("lastPage") || "/";
@@ -19,27 +20,27 @@ function Login() {
     {
       src: "/assets/video/Solo-Leveling.webm",
       position: "object-[54%]",
-      poster: "/assets/images/sl.webp",
+      poster: "/assets/video/sl.webp",
     },
     {
       src: "/assets/video/League Of Legends.webm",
       position: "object-[60%]",
-      poster: "/assets/images/lol.webp",
+      poster: "/assets/video/lol.webp",
     },
     {
       src: "/assets/video/Mortal-Kombat.webm",
       position: "object-[50%] scale-120",
-      poster: "/assets/images/mk.webp",
+      poster: "/assets/video/mk.webp",
     },
     {
       src: "/assets/video/Valorant.webm",
       position: "object-[40%] scale-115",
-      poster: "/assets/images/valorent.webp",
+      poster: "/assets/video/valorent.webp",
     },
     {
       src: "/assets/video/Sekiro.webm",
       position: "object-[46%] scale-100",
-      poster: "/assets/images/sekiro.webp",
+      poster: "/assets/video/sekiro.webp",
     },
   ];
 
@@ -48,20 +49,26 @@ function Login() {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
+
   const formSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
-      const res = await axios.get(
-        `https://gamering-data.onrender.com/users?email=${data.email}`
-      );
-      const userData = res.data;
-      if (userData.length === 0) {
+      const { data: users, error } = await supabase
+        .from("users")
+        .select("*")
+        .eq("email", data.email);
+
+      if (error) throw error;
+
+      if (!users || users.length === 0) {
         toast.error("Invalid credentials");
+        setLoading(false);
         return;
       }
 
-      const user = userData[0];
+      const user = users[0];
 
       const isPasswordMatch = await bcrypt.compare(
         data.password,
@@ -85,22 +92,29 @@ function Login() {
         email: user.email,
       };
 
-      await axios.patch(`https://gamering-data.onrender.com/users/${user.id}`, {
-        status: "Active",
-        lastLogin: new Date().toISOString()
-      })
+      await supabase
+        .from("users")
+        .update({
+          status: "Active",
+          last_login: new Date().toISOString(),
+        })
+        .eq("id", user.id);
 
       localStorage.setItem("auth", JSON.stringify(auth));
+
       toast.success("Login Successful!");
-      setLoading(true);
       setTimeout(() => {
         nav(lastPage);
         setLoading(false);
       }, 1000);
+
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      toast.error("Something went wrong");
+      setLoading(false);
     }
   };
+
 
   return (
     <div className="flex items-center justify-center h-[100vh] w-[100vw]">
