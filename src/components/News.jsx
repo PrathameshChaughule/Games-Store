@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRegEye } from "react-icons/fa";
 import { LuDot } from "react-icons/lu";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -7,7 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 function News({ title, date, view, img, desc }) {
   return (
     <div>
-      <div className="flex flex-col gap-2 cursor-pointer md:w-80 rounded-2xl bg-gray-400/10">
+      <div className="flex h-90 flex-col gap-2 cursor-pointer md:w-80 rounded-2xl bg-gray-400/10">
         <LazyLoadImage
           effect="blur"
           className="h-43 w-full rounded-t-2xl"

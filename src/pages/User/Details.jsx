@@ -201,10 +201,10 @@ function Details() {
                     <LazyLoadImage
                       effect="blur"
                       src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                      className="w-16 sm:w-25 md:w-60 h-17 sm:h-25 rounded md:rounded-xl cursor-pointer active:blur-[2px]"
+                      className="w-60 h-17 sm:h-25 rounded md:rounded-xl cursor-pointer active:blur-[2px]"
                       onClick={() => setScreenshot(null)}
                     />
-                    <div onClick={() => setScreenshot(null)} className="border-2 bg-black/40 z-10 sm:text-2xl w-fit p-1.5 rounded-full text-center absolute top-4 sm:top-[32%] left-4 sm:left-[36%] cursor-pointer">
+                    <div onClick={() => setScreenshot(null)} className="border-2 bg-black/40 z-10 sm:text-2xl w-fit p-1.5 rounded-full text-center absolute top-4 sm:top-[32%] left-[4vw] sm:left-[5.5vw] cursor-pointer">
                       <CiPlay1 className="" />
                     </div>
                   </div>

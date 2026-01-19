@@ -8,7 +8,7 @@ function Card({ id, name, com, img, discountPrice }) {
   return (
     <div
       onClick={() => nav(`/details/${id}`)}
-      className="flex flex-col items-center w-35 h-40 lg:h-fit lg:w-fit cursor-pointer hover:bg-white/10 p-3 rounded-xl"
+      className="flex flex-col items-center w-42 h-40 lg:h-fit lg:w-fit cursor-pointer hover:bg-white/10 p-3 rounded-xl"
     >
       <div className="relative">
         <LazyLoadImage
@@ -17,7 +17,7 @@ function Card({ id, name, com, img, discountPrice }) {
           className="h-[100px] md:w-50 md:h-40 lg:rounded-lg"
           alt={name}
         />
-        <div className="absolute bottom-2 right-1 font-semibold bg-gray-900/70 px-2 rounded text-[15px]">
+        <div className="absolute bottom-2 right-1 font-semibold bg-gray-900/70 px-2 rounded text-[12px] sm:text-[15px]">
           <span>₹{discountPrice}</span>
         </div>
       </div>

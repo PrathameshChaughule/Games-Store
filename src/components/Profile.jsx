@@ -1,13 +1,17 @@
-
-import { FaBell, FaHeart, FaShoppingCart, FaUser, FaUserSecret } from "react-icons/fa";
+import { FaBell, FaHeart, FaPlaystation, FaShoppingCart, FaUser, FaUserSecret, FaXbox } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { GiPowerButton } from "react-icons/gi";
 import { IoGameController } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient/supabaseClient";
+import { MdMonitor } from "react-icons/md";
+import { RiShoppingCartLine } from "react-icons/ri";
+import { GameContext } from "../Context/GameContext";
+import { useContext } from "react";
 
 function Profile() {
   const userData = JSON.parse(localStorage.getItem("auth"));
+  const { cartCount } = useContext(GameContext);
   const nav = useNavigate();
 
   const logOut = async () => {
@@ -44,6 +48,56 @@ function Profile() {
             <p className="text-lg text-gray-400 -mt-1">{userData?.email}</p>
           </div>
         </div>
+        <ul className="md:hidden flex text-md md:text-xl items-center justify-around border rounded-2xl">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `cursor-pointer hover:text-gray-400 font-bold px-2 py-1 rounded-2xl w-full justify-center flex items-center gap-2 ${isActive
+                ? "text-white border border-r-2 border-white"
+                : "text-gray-300"
+              }`
+            }
+          >
+            <MdMonitor className="text-xl" />
+            PC
+          </NavLink>
+          <NavLink
+            to="/ps5Games"
+            className={({ isActive }) =>
+              `cursor-pointer hover:text-gray-400 font-bold px-2 py-1 flex w-full rounded-2xl justify-center items-center gap-2 ${isActive
+                ? "text-white border border-r-2 border-l-2 border-white"
+                : "text-gray-300"
+              }`
+            }
+          >
+            <FaPlaystation className="text-xl" />
+            PS5
+          </NavLink>
+          <NavLink
+            to="/ps4Games"
+            className={({ isActive }) =>
+              `cursor-pointer hover:text-gray-400 font-bold px-2 py-1 flex w-full rounded-2xl justify-center items-center gap-2 ${isActive
+                ? "text-white border border-r-2 border-l-2 border-white"
+                : "text-gray-300"
+              }`
+            }
+          >
+            <FaPlaystation className="text-xl" />
+            PS4
+          </NavLink>
+          <NavLink
+            to="/xboxGames"
+            className={({ isActive }) =>
+              `cursor-pointer hover:text-gray-400 font-bold px-3.5 py-1 flex w-full rounded-2xl justify-center items-center gap-2 ${isActive
+                ? "text-white border border-l-2 border-white"
+                : "text-gray-300"
+              }`
+            }
+          >
+            <FaXbox className="text-xl" />
+            XBOX
+          </NavLink>
+        </ul>
         <hr className="border border-white/10" />
         <div className="text-xl flex flex-col gap-1 p-2 py-1">
           {userData.role === "admin" && (
@@ -72,6 +126,17 @@ function Profile() {
           <p onClick={() => nav("/userDownloads")} className="px-4 flex items-center gap-3 py-2 rounded hover:bg-[#111315] cursor-pointer">
             <FiDownload /> Downloads
           </p> */}
+          <div className="px-2 md:hidden flex items-center justify-between hover:bg-[#111315] cursor-pointer">
+            <p
+              onClick={() => nav("/cart")}
+              className={`md:hidden flex relative items-center gap-3 cursor-pointer p-1.5 sm:p-2 rounded `}>
+              <RiShoppingCartLine className="text-2xl lg:text-3xl" /> Cart
+            </p>
+            <div className="md:hidden flex border mr-1.5 bg-white h-8 w-8 rounded-full items-center justify-center">
+              <p className="text-2xl text-black font-bold">{cartCount}</p>
+            </div>
+          </div>
+
           <hr className="border border-white/10 my-2" />
           <div
             onClick={logOut}
@@ -82,7 +147,7 @@ function Profile() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
 
   );
 }

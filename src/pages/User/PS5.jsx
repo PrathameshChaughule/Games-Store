@@ -102,7 +102,7 @@ function PS5() {
         <div className="w-full h-fit md:h-90 flex items-end justify-center relative">
           <LazyLoadImage
             src="/assets/cod.webp"
-            className="w-[130px] sm:w-[220px] md:w-[306px] absolute right-[10px] sm:right-[4px] md:right-[2vw] -top-0  md:-top-[-4] z-20 drop-shadow-2xl"
+            className="hidden md:block w-[130px] sm:w-[220px] md:w-[306px] absolute right-[10px] sm:right-[4px] md:right-[2vw] -top-0  md:-top-[-4] z-20 drop-shadow-2xl"
             alt=""
           />
 
@@ -111,6 +111,11 @@ function PS5() {
                       rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10 
                       overflow-hidden"
           >
+            <img
+              src="/assets/cod.webp"
+              className="block md:hidden w-[208px] absolute right-0 md:right-[2vw] top-0 z-10 drop-shadow-2xl"
+              alt=""
+            />
             <div
               className={`absolute -top-10 -left-10 w-52 h-52 bg-red-600 blur-3xl opacity-40 rounded-full`}
             ></div>
@@ -128,20 +133,20 @@ function PS5() {
                 New
               </span>
 
-              <span className="sm:text-[20px] md:text-3xl mt-2 sm:mt-2 md:mt-7 font-bold">
+              <span className="sm:text-[20px] md:text-3xl mt-3 sm:mt-2 md:mt-7 font-bold">
                 Call of Duty: <br /> Modern Warfare III
               </span>
 
-              <span className={`text-red-400 md:text-xl mt-4`}>₹ 2,799</span>
+              <span className={`text-red-400 font-bold md:text-xl mt-3 sm:mt-4`}>₹ 2,799</span>
 
-              <div onClick={() => nav("/details/13")} className="p-2 px-3 w-fit mt-4 rounded-md bg-white/10 flex gap-2">
+              <div onClick={() => nav("/details/13")} className="sm:p-2 sm:px-3 w-fit mt-4 rounded-md md:bg-white/10 flex gap-2">
                 <span
                   className={`text-[16px] md:text-xl p-2.5 px-4 bg-red-400 text-black rounded font-bold cursor-pointer`}
                 >
                   Purchase
                 </span>
                 <span
-                  className={`text-[16px] md:text-xl p-2.5 px-3 rounded text-red-400 font-bold cursor-pointer `}
+                  className={`text-[16px] md:text-xl p-2.5 px-3 rounded text-red-400 backdrop-blur-sm md:backdrop-blur-none border md:border-0 font-bold cursor-pointer`}
                 >
                   Add To Cart
                 </span>
@@ -152,7 +157,7 @@ function PS5() {
         <div className="flex flex-col items-start gap-4 my-10 w-fit m-auto">
           <span className="text-xl md:text-2xl">Suggest games</span>
           <div className="flex gap-3 flex-wrap justify-center">
-            <div className="flex gap-3 flex-wrap justify-center flex-row-reverse">
+            <div className="flex gap-3 flex-wrap justify-center flex-row">
               {games
                 ?.filter((val) => val.featuredStatus === "Featured")
                 ?.sort((a, b) => new Date(b.addedDate) - new Date(a.addedDate))
@@ -166,22 +171,22 @@ function PS5() {
                     alt={val?.title}
                   />
                 ))}
-            </div>
-            <div onClick={() => {
-              if (!isAuth) {
-                toast.error("Login required");
-                return;
-              }
+              <div onClick={() => {
+                if (!isAuth) {
+                  toast.error("Login required");
+                  return;
+                }
 
-              setShowRequestForm(true);
-              scrollHandle();
-            }} className="flex flex-col bg-white/5 md:w-40 items-center w-[24vw] h-25 rounded-2xl border-dotted border-3 border-gray-700 cursor-pointer text-gray-400/50 ">
-              <span className="text-3xl">+</span>
-              <span className="text-center font-semibold">
-                Propose
-                <br />
-                Your Game
-              </span>
+                setShowRequestForm(true);
+                scrollHandle();
+              }} className="flex flex-col bg-white/5 md:w-40 items-center w-[24vw] h-25 rounded-2xl border-dotted border-3 border-gray-700 cursor-pointer text-gray-400/50 ">
+                <span className="text-3xl">+</span>
+                <span className="text-center font-semibold">
+                  Propose
+                  <br />
+                  Your Game
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -206,7 +211,7 @@ function PS5() {
           ))}
         </div>
         <div className="flex w-[70vw] m-auto flex-col gap-4 my-6">
-          <span className="text-2xl text-start font-bold mb-4">
+          <span className="text-xl sm:text-2xl text-center sm:text-start font-bold sm:mb-4">
             New and Interesting
           </span>
         </div>

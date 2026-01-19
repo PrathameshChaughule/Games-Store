@@ -54,9 +54,9 @@ function Navbar() {
 
   return (
     <div className="bg-[#181A1E] py-3 sm:py-4">
-      <div className="flex items-center justify-around w-[95vw] sm:w-[85vw] m-auto">
+      <div className="flex items-center justify-between md:justify-around w-[95vw] sm:w-[85vw] m-auto">
         <LazyLoadImage src="/assets/logo.webp" className="w-20 h-9 sm:h-fit sm:w-[15vw]" alt="" />
-        <ul className="mx-1 flex text-sm md:text-xl items-center justify-around w-100">
+        <ul className="hidden md:flex mx-1 text-sm md:text-xl items-center justify-around w-100">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -113,19 +113,19 @@ function Navbar() {
               Download
             </span>
           </div>
-          <div onClick={() => { setSearchOpen(!searchOpen), setProfileOpen(false) }} className="flex -mr-2.5 items-center gap-1 cursor-pointer p-1.5 sm:p-2.5 rounded text-gray-300 hover:bg-gray-700">
-            <FaSearch className="lg:text-2xl" />
+          <div onClick={() => { setSearchOpen(!searchOpen), setProfileOpen(false) }} className="flex md:-mr-2.5 items-center gap-1 cursor-pointer p-1.5 sm:p-2.5 rounded text-gray-300 hover:bg-gray-700">
+            <FaSearch className="text-xl sm:text-2xl" />
           </div>
           <NavLink
             to="/cart"
             className={({ isActive }) =>
-              `flex relative items-center gap-1 cursor-pointer p-1.5 sm:p-2 rounded ${isActive
+              `hidden md:flex relative items-center gap-1 cursor-pointer p-1.5 sm:p-2 rounded ${isActive
                 ? "text-white border-b-2 border-white hover:bg-[#181A1E]"
                 : "text-gray-300 hover:bg-gray-700"
               }`
             }
           >
-            <RiShoppingCartLine className="text-xl lg:text-3xl" />
+            <RiShoppingCartLine className="text-2xl lg:text-3xl" />
             <div className="bg-white w-4 h-4 flex items-center justify-center lg:w-5 lg:h-5 text-center text-black font-bold rounded-2xl lg:text-[13px] absolute -top-0.5 lg:top-1 right-0.5 border border-black">
               <p className="mt-[-3px] md:text-sm lg:mt-[-1px]">{cartCount}</p>
             </div>
@@ -138,13 +138,16 @@ function Navbar() {
             className="flex items-center gap-3 relative"
           >
             {userData?.isAuth ?
-              <div className="flex items-center sm:gap-1">
-                <div className="relative cursor-pointer border-3 border-blue-600 text-white/90 text-center h-7.5 w-7.5 sm:h-8 sm:w-8 md:h-12 md:w-12 flex items-center justify-center rounded-full md:text-3xl font-bold">
+              <div className="flex relative items-center sm:gap-1">
+                <div className="relative cursor-pointer border-3 border-blue-600 text-white/90 text-center h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 flex items-center justify-center rounded-full text-xl md:text-3xl font-bold">
                   <span>{userData?.firstName.split("")[0]}</span>
                   <div className="absolute -bottom-0.5 -right-1 h-2.5 w-2.5 sm:h-3.5 sm:w-3.5 border-2 border-[#181A1E] rounded-full bg-green-500"></div>
                 </div>
-                <div className={`text-sm md:text-xl mt-1 ${profileOpen ? 'rotate-180' : 'rotate-0'}`}>
+                <div className={`text-lg md:text-xl mt-1 ${profileOpen ? 'rotate-180' : 'rotate-0'}`}>
                   <FaAngleDown />
+                </div>
+                <div className="md:hidden bg-white w-4 h-4 flex items-center justify-center lg:w-5 lg:h-5 text-center text-black font-bold rounded-2xl lg:text-[13px] absolute -top-0.5 lg:top-1 right-3 border border-black">
+                  <p className="mt-[-3px] md:text-sm lg:mt-[-1px]">{cartCount}</p>
                 </div>
               </div>
               :
