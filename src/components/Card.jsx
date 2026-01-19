@@ -1,9 +1,16 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { useNavigate } from "react-router-dom";
+import { getOptimizedImage } from "../supabaseClient/supabaseClient";
 
 function Card({ id, name, com, img, discountPrice }) {
   const nav = useNavigate();
+  const imageUrl = getOptimizedImage(img[0], {
+    width: 350,
+    height: 480,
+    quality: 55,
+    resize: "contain"
+  });
 
   return (
     <div
@@ -12,7 +19,7 @@ function Card({ id, name, com, img, discountPrice }) {
     >
       <div className="relative">
         <LazyLoadImage
-          src={img[0]}
+          src={imageUrl}
           effect="blur"
           className="h-[100px] md:w-50 md:h-40 lg:rounded-lg"
           alt={name}
