@@ -317,7 +317,7 @@ function CustomerDetails() {
                                                         <span className='text-xl font-semibold'>{val?.title}</span>
                                                         <span className='text-gray-500'>{new Date(val?.releaseDate).toLocaleDateString()}</span>
                                                     </div>
-                                                    <div className='flex flex-col gap-2'>
+                                                    <div className='flex flex-col gap-2 justify-center'>
                                                         <div className={`border pb-0.5 px-3 text-sm mr-1 rounded-2xl flex items-center justify-center gap-2 
                                                         ${filteredStatus.orderStatus === "Completed"
                                                                 ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300"

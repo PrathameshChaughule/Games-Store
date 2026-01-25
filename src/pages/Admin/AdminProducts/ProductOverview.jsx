@@ -7,7 +7,7 @@ import { FaPlaystation, FaRegCircleCheck, FaXbox } from "react-icons/fa6";
 import { MdMonitor } from "react-icons/md";
 import { toast } from "react-toastify";
 import Loading from '../../../components/Loading'
-import { supabase } from "../../../supabaseClient/supabaseClient";
+import { getOptimizedImage, supabase } from "../../../supabaseClient/supabaseClient";
 
 function ProductOverview({ game, id }) {
     if (!game) {
@@ -120,7 +120,12 @@ function ProductOverview({ game, id }) {
             <div className='flex flex-col gap-5 w-full border-4 dark:border-[#011743] border-gray-300 rounded-b p-5 relative'>
                 <div className='flex gap-10 w-full'>
                     <LazyLoadImage
-                        src={game?.image?.[0]}
+                        src={getOptimizedImage(game?.image?.[0], {
+                            width: 350,
+                            height: 480,
+                            quality: 50,
+                            resize: "contain"
+                        })}
                         effect="blur"
                         className="h-70 w-100 rounded-lg"
                         alt={game?.title || "Game Image"}
@@ -169,7 +174,7 @@ function ProductOverview({ game, id }) {
                                 </div>
                             </div>
                             <div className='mb-4'>
-                                <div className="w-full flex justify-end"><p className="w-fit px-3 py-0.5 rounded font-semibold text-red-600 bg-red-600/10 border absolute top-1 right-0.5 text-sm">{game?.addedDate?.split("T")[0]}</p></div>
+                                <div className="w-full flex justify-end"><p className="w-fit px-3 py-0.5 rounded font-semibold text-red-600 bg-red-600/10 border absolute top-1 right-0.5 text-sm">{new Date(game?.addedDate).toLocaleDateString()}</p></div>
                                 <div>
                                     <span className='text-7xl font-semibold text-green-700'>{game.popularity}</span>
                                     <span className='text-3xl'>/ 100</span>

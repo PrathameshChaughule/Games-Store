@@ -207,7 +207,7 @@ function AdminCustomer() {
                   <td>{new Date(item.createdAt).toLocaleDateString()}</td>
                   <td>{item.totalOrders}</td>
                   <td>₹{item.totalSpend.toFixed(2)}</td>
-                  <td>{item.library?.length || 0}</td>
+                  <td>{item.library?.filter((val) => val.orderStatus === "Completed")?.length || 0}</td>
                   <td><span className={`px-2 py-0.5 rounded font-semibold ${item.status === "Active" ? "bg-green-600/20 text-green-600" : item.status === "Inactive" ? "bg-yellow-500/20 text-yellow-600" : "bg-red-500/20 text-red-600"}`}>{item.status}</span></td>
                   <td className='flex items-center justify-center'><div onClick={() => nav(`/adminCustomer/${item.id}`)} className='w-fit my-2 p-2 rounded text-2xl cursor-pointer dark:hover:bg-[#0e145bf4] hover:bg-gray-100 dark:text-white/80 text-black/70'><BsFillEyeFill /></div></td>
                 </tr>

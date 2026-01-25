@@ -72,7 +72,7 @@ function AdminOrders() {
         completed: completed.data.length,
       });
 
-      const revenue = all.data.reduce((sum, order) => sum + (order.total || 0), 0).toFixed(2);
+      const revenue = all.data.filter((val) => val.orderStatus === "Completed").reduce((sum, order) => sum + (order.total || 0), 0).toFixed(2);
       setTotalRevenue(revenue);
 
       setTimeout(() => setLoading(false), 500);

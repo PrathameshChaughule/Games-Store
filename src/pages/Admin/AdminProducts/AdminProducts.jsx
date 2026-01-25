@@ -14,9 +14,10 @@ function AdminProducts() {
   const [games, setGames] = useState([])
   const [show, setShow] = useState(false)
   const [filter, setFilter] = useState("Newest Added");
-  const [categoryCount, setCategoryCount] = useState({ allGames: 0, pcGames: 0, ps5Games: 0, ps4Games: 0, xboxGames: 0 })
+  const [categoryCount, setCategoryCount] = useState({ allGames: 0, pcGames: 0, ps5Games: 0, ps4Games: 0, xboxGames: 0, activeGames: 0, inactiveGames: 0 })
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All")
+  const [status, setStatus] = useState("All")
   const [page, setPage] = useState(1)
   const [totalPage, setTotalPage] = useState()
   const [loading, setLoading] = useState(false)
@@ -24,6 +25,7 @@ function AdminProducts() {
   const nav = useNavigate()
 
   const fetchData = async () => {
+    setLoading(true)
     try {
       let query = supabase
         .from("games")
@@ -33,6 +35,10 @@ function AdminProducts() {
 
       if (category !== "All") {
         query = query.eq("category", category);
+      }
+
+      if (status !== "All") {
+        query = query.eq("status", status);
       }
 
       if (search.trim()) {
@@ -51,6 +57,8 @@ function AdminProducts() {
       setTotalPage(Math.ceil(count / limit));
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false)
     }
   };
 
@@ -58,12 +66,14 @@ function AdminProducts() {
   const fetchCount = async () => {
     setLoading(true);
     try {
-      const [all, pc, ps5, ps4, xbox] = await Promise.all([
+      const [all, pc, ps5, ps4, xbox, active, inactive] = await Promise.all([
         supabase.from("games").select("id", { count: "exact" }),
         supabase.from("games").select("id", { count: "exact" }).eq("category", "pcGames"),
         supabase.from("games").select("id", { count: "exact" }).eq("category", "ps5Games"),
         supabase.from("games").select("id", { count: "exact" }).eq("category", "ps4Games"),
         supabase.from("games").select("id", { count: "exact" }).eq("category", "xboxGames"),
+        supabase.from("games").select("id", { count: "exact" }).eq("status", "Active"),
+        supabase.from("games").select("id", { count: "exact" }).eq("status", "Inactive"),
       ]);
 
       setCategoryCount({
@@ -72,22 +82,22 @@ function AdminProducts() {
         ps5Games: ps5.count,
         ps4Games: ps4.count,
         xboxGames: xbox.count,
+        activeGames: active.count,
+        inactiveGames: inactive.count
       });
-
-      setTimeout(() => {
-        setLoading(false);
-      }, 500);
 
     } catch (error) {
       console.log(error);
       setLoading(false);
+    } finally {
+      setLoading(false)
     }
   };
 
 
   useEffect(() => {
     fetchData()
-  }, [page, category, search])
+  }, [page, category, search, status])
 
   useEffect(() => {
     fetchCount()
@@ -137,7 +147,19 @@ function AdminProducts() {
 
   return (
     <div className='p-5 px-7 m-3 bg-[#FFFFFF] dark:bg-[#030318] rounded-lg w-[98%] flex flex-col gap-5'>
-      <h3 className='text-2xl font-bold'>Products</h3>
+      <div className='flex items-center justify-between'>
+        <h3 className='text-2xl font-bold'>Products</h3>
+        <div className='flex items-center gap-5'>
+          <div onClick={() => setStatus("Active")} className='border px-4 flex items-center gap-2 rounded font-semibold bg-green-600/20 text-green-600 hover:bg-green-600 hover:text-white cursor-pointer'>
+            <span>Active :</span>
+            <span className='font-bold'>{categoryCount.activeGames}</span>
+          </div>
+          <div onClick={() => setStatus("Inactive")} className='border px-4 flex items-center gap-2 rounded font-semibold bg-red-500/20 text-red-600 hover:bg-red-600 hover:text-white cursor-pointer'>
+            <span>Inactive :</span>
+            <span className='font-bold'>{categoryCount.inactiveGames}</span>
+          </div>
+        </div>
+      </div>
       <div className='flex justify-between items-center'>
         <div onClick={() => setCategory("All")} className='flex gap-2 w-[19%] p-2.5 px-5 items-center border-2 border-gray-300 dark:bg-[#080B2C] dark:border-[#080B2C] hover:dark:border-[#080B2C] dark:hover:bg-[#030318] hover:bg-gray-50 hover:border-white cursor-pointer rounded-lg'>
           <div className='flex flex-col justify-center items-center gap-1 w-[50%]'>

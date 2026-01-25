@@ -34,7 +34,7 @@ function Profile() {
 
   return (
     <div className="flex z-100 flex-col items-end">
-      <div class="w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-b-[20px] border-b-[#1D1D1D] mr-4"> </div>
+      <div className="w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-b-[20px] border-b-[#1D1D1D] mr-4"> </div>
       <div className="z-100 flex flex-col gap-2 rounded-xl p-5 bg-[#1D1D1D] border border-white/10 w-90 h-fit">
         <div className="flex gap-3 items-center mb-3">
           <div className="relative cursor-pointer border-3 border-blue-600 text-white/90 text-center h-16 w-16 flex items-center justify-center rounded-full text-[45px] font-bold">

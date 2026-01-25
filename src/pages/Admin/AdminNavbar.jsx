@@ -13,7 +13,8 @@ function AdminNavbar() {
   return (
     <div className="border-b border-gray-300 dark:border-[#011743] dark:bg-[#030318] bg-white flex py-2 px-2 gap-7 relative">
       <div className="px-3.5">
-        <LazyLoadImage src="/assets/logo.webp" className="w-45" effect="blur" />
+        <LazyLoadImage src="/assets/logo.webp" className="w-45 hidden dark:block" effect="blur" />
+        <LazyLoadImage src="/assets/light logo.png" className="w-45 block dark:hidden" effect="blur" />
       </div>
       <div className="flex border-l border-gray-300 dark:border-[#011743] justify-between items-center w-full px-9">
         <div className="flex items-center gap-2 dark:bg-[#1E2539] bg-gray-100 border border-gray-200 dark:border-[#011743]  h-fit p-2.5 rounded-lg">

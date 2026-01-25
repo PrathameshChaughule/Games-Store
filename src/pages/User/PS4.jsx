@@ -20,11 +20,12 @@ function PS4() {
   const [showRequestForm, setShowRequestForm] = useState(false);
   const nav = useNavigate()
   const [loading, setLoading] = useState(true);
+  const [hero, setHero] = useState([])
 
   const fetchData = async () => {
     setLoading(true)
     try {
-      const [game, news] = await Promise.all([
+      const [game, news, hero] = await Promise.all([
         supabase
           .from("games")
           .select("*")
@@ -35,12 +36,19 @@ function PS4() {
           .from("news")
           .select("*")
           .eq("category", "ps4News")
+          .eq("status", "Active"),
+
+        supabase
+          .from("herosection")
+          .select("*")
+          .eq("category", "ps4Games")
       ])
 
-      if (games.error) throw games.error;
+      if (game.error) throw games.error;
       if (news.error) throw news.error;
       setGames(game.data)
       setNews(news.data)
+      setHero(hero.data)
     } catch (error) {
       console.log(error);
     } finally {
@@ -102,7 +110,7 @@ function PS4() {
     <div>
       <div className="w-[90vw] md:w-[79vw] m-auto py-7">
         <div>
-          <div className="w-full h-fit md:h-90 flex items-end justify-center relative">
+          <div style={{ '--hero-color': hero[0]?.color }} className="w-full h-fit md:h-90 flex items-end justify-center relative">
             <LazyLoadImage
               src="/assets/got.webp"
               className="hidden md:block max-[496px]:w-[130px] max-[736px]:w-[220px] md:w-[306px] absolute right-[10px] sm:right-[4px] md:right-[2vw] -top-0  md:-top-[-4] z-20 drop-shadow-2xl"
@@ -120,38 +128,38 @@ function PS4() {
                 alt=""
               />
               <div
-                className={`absolute -top-10 -left-10 w-52 h-52 bg-[#E2DBC5]/50 blur-3xl opacity-40 rounded-full`}
+                className={`absolute -top-10 -left-10 w-52 h-52 bg-[var(--hero-color)]/50 blur-3xl opacity-40 rounded-full`}
               ></div>
               <div
-                className={`absolute top-20 -right-10 w-60 h-60 bg-[#E2DBC5]/100 blur-[90px] opacity-100 rounded-full`}
+                className={`absolute top-20 -right-10 w-60 h-60 bg-[var(--hero-color)]/100 blur-[90px] opacity-100 rounded-full`}
               ></div>
               <div
-                className={`absolute bottom-0 left-1/2 w-48 h-48 bg-[#E2DBC5]/80 blur-[150px] opacity-60 rounded-full`}
+                className={`absolute bottom-0 left-1/2 w-48 h-48 bg-[var(--hero-color)]/80 blur-[150px] opacity-60 rounded-full`}
               ></div>
 
               <div className="flex h-20 flex-col p-5 md:p-18 md:pt-7 relative z-10">
                 <span
-                  className={`text-[12px] md:text-xl px-3 py-1 text-black font-semibold rounded bg-[#AF996A] w-fit mt-8 sm:mt-4`}
+                  className={`text-[12px] md:text-xl px-3 py-1 text-black font-semibold rounded bg-[var(--hero-color)] w-fit mt-8 sm:mt-4`}
                 >
-                  New
+                  {hero[0]?.status}
                 </span>
 
                 <span className="text-xl md:text-5xl mt-8 sm:mt-10 font-bold">
-                  Ghost of Tsushima
+                  {hero[0]?.title}
                 </span>
 
-                <span className={`text-[#AF996A] text-lg font-bold md:text-xl mt-2 sm:mt-4`}>
-                  ₹ 2,399
+                <span className={`text-[var(--hero-color)] text-lg font-bold md:text-xl mt-2 sm:mt-4`}>
+                  ₹ {hero[0]?.price}
                 </span>
 
-                <div onClick={() => nav("/details/29")} className="sm:p-2 sm:px-3 w-fit mt-4 rounded-md md:bg-white/10 flex gap-2">
+                <div onClick={() => nav(`/details/${hero[0]?.gameId}`)} className="sm:p-2 sm:px-3 w-fit mt-4 rounded-md md:bg-white/10 flex gap-2">
                   <span
-                    className={`text-[16px] md:text-xl p-2.5 px-4 bg-[#AF996A] text-black rounded font-bold cursor-pointer`}
+                    className={`text-[16px] md:text-xl p-2.5 px-4 bg-[var(--hero-color)] text-black rounded font-bold cursor-pointer`}
                   >
                     Purchase
                   </span>
                   <span
-                    className={`text-[16px] md:text-xl p-2.5 px-3 rounded text-[#cea141] md:text-[#bea163] bg-[#af996a5e] border md:border-0 font-extrabold md:font-bold cursor-pointer`}
+                    className={`text-[16px] md:text-xl p-2.5 px-3 rounded text-[var(--hero-color)] md:text-[var(--hero-color)] bg-[#af996a5e] md:bg-transparent border md:border-0 font-extrabold md:font-bold cursor-pointer`}
                   >
                     Add To Cart
                   </span>
@@ -237,7 +245,6 @@ function PS4() {
                 key={index.id}
                 title={index.title}
                 date={index.date}
-                view={index.views}
                 img={index.image}
                 desc={index.description}
               />

@@ -18,12 +18,13 @@ function Home() {
   const [news, setNews] = useState([])
   const [showRequestForm, setShowRequestForm] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [hero, setHero] = useState([])
   const nav = useNavigate()
 
   const fetchData = async () => {
     setLoading(true)
     try {
-      const [gamesRes, newsRes] = await Promise.all([
+      const [gamesRes, newsRes, hero] = await Promise.all([
         supabase
           .from("games")
           .select("*")
@@ -34,11 +35,19 @@ function Home() {
           .from("news")
           .select("*")
           .eq("category", "pcNews")
+          .eq("status", "Active"),
+
+        supabase
+          .from("herosection")
+          .select("*")
+          .eq("category", "pcGames")
       ])
       if (gamesRes.error) throw gamesRes.error;
       if (newsRes.error) throw newsRes.error;
+      if (hero.error) throw hero.error;
       setGames(gamesRes.data)
       setNews(newsRes.data)
+      setHero(hero.data)
     } catch (error) {
       console.log(error);
     } finally {
@@ -98,7 +107,7 @@ function Home() {
   return (
     <div className="w-[90vw] md:w-[79vw] m-auto py-7">
       <div>
-        <div className="w-full h-fit md:h-90 flex items-end justify-center relative">
+        <div style={{ '--hero-color': hero[0]?.color }} className="w-full h-fit md:h-90 flex items-end justify-center relative">
           <LazyLoadImage
             src="/assets/Cyberpunk.webp"
             className="hidden md:block w-[160px] min-[529px]:w-[240px] md:w-[350px] absolute right-[-12px] md:right-[2vw] -top-3 sm:-top-7 md:-top-13 z-20 drop-shadow-2xl"
@@ -116,36 +125,36 @@ function Home() {
               alt=""
             />
             <div
-              className={`absolute -top-10 -left-10 w-52 h-52 bg-yellow-600 blur-3xl opacity-40 rounded-full`}
+              className={`absolute -top-10 -left-10 w-52 h-52 bg-[var(--hero-color)]/70 blur-3xl opacity-40 rounded-full`}
             ></div>
             <div
-              className={`absolute top-20 -right-10 w-60 h-60 bg-yellow-500 blur-[90px] opacity-30 rounded-full`}
+              className={`absolute top-20 -right-10 w-60 h-60 bg-[var(--hero-color)]/100 blur-[90px] opacity-30 rounded-full`}
             ></div>
             <div
-              className={`absolute bottom-0 left-1/2 w-48 h-48 bg-yellow-700 blur-[100px] opacity-20 rounded-full`}
+              className={`absolute bottom-0 left-1/2 w-48 h-48 bg-[var(--hero-color)]/80 blur-[100px] opacity-20 rounded-full`}
             ></div>
 
             <div className="flex h-20 flex-col p-5 md:p-18 md:pt-7 relative z-40 md:z-10">
               <span
-                className={`text-[12px] md:text-xl px-3 py-1 text-black font-semibold rounded bg-yellow-400 w-fit mt-11 sm:mt-4`}
+                className={`text-[12px] md:text-xl px-3 py-1 text-black font-semibold rounded bg-[var(--hero-color)] w-fit mt-11 sm:mt-4`}
               >
-                New
+                {hero[0]?.status}
               </span>
 
               <span className="text-xl md:text-5xl mt-5 sm:mt-10 font-bold">
-                Cyberpunk 2077
+                {hero[0]?.title}
               </span>
 
-              <span className={`text-yellow-400 md:text-xl font-bold mt-2 sm:mt-4`}>₹ 3,000</span>
+              <span className={`text-[var(--hero-color)] md:text-xl font-bold mt-2 sm:mt-4`}>₹ {hero[0]?.price}</span>
 
-              <div onClick={() => nav("/details/63")} className="sm:p-2 sm:px-3 w-fit mt-4 rounded-md md:bg-white/10 flex gap-2">
+              <div onClick={() => nav(`/details/${hero[0]?.gameId}`)} className="sm:p-2 sm:px-3 w-fit mt-4 rounded-md md:bg-white/10 flex gap-2">
                 <span
-                  className={`text-[16px] md:text-xl p-2.5 px-4 bg-yellow-400 text-black rounded font-bold cursor-pointer`}
+                  className={`text-[16px] md:text-xl p-2.5 px-4 bg-[var(--hero-color)] text-black rounded font-bold cursor-pointer`}
                 >
                   Purchase
                 </span>
                 <span
-                  className={`text-[16px] md:text-xl p-2.5 px-3 rounded text-yellow-400 backdrop-blur-sm md:backdrop-blur-none border md:border-0 font-bold cursor-pointer`}
+                  className={`text-[16px] md:text-xl p-2.5 px-3 rounded text-[var(--hero-color)] md:text-[var(--hero-color)] backdrop-blur-sm md:backdrop-blur-none border md:border-0 font-bold cursor-pointer`}
                 >
                   Add To Cart
                 </span>
@@ -229,7 +238,6 @@ function Home() {
               key={item.id}
               title={item.title}
               date={item.date}
-              view={item.views}
               img={item.image}
               desc={item.description}
             />

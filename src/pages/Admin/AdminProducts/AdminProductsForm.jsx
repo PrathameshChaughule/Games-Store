@@ -662,7 +662,7 @@ function AdminProductsForm() {
                 </div>
 
             </form >
-        </div >
+        </div>
     )
 }
 

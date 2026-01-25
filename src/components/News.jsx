@@ -1,10 +1,8 @@
-import { FaRegEye } from "react-icons/fa";
-import { LuDot } from "react-icons/lu";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { getOptimizedImage } from "../supabaseClient/supabaseClient";
 
-function News({ title, date, view, img, desc }) {
+function News({ title, date, img, desc }) {
   const imageUrl = getOptimizedImage(img, {
     width: 350,
     height: 480,
@@ -24,15 +22,7 @@ function News({ title, date, view, img, desc }) {
           <span>{title}</span>
           <div className="flex gap-3 text-md my-1.5 text-gray-400">
             <span className="flex items-center gap-2">
-              {new Date(date)
-                .toLocaleString("en-IN", {
-                  dateStyle: "medium",
-                  timeStyle: "short"
-                })}
-              <LuDot />
-            </span>
-            <span className="flex items-center gap-2">
-              <FaRegEye /> {view}
+              {date}
             </span>
           </div>
           <span className="text-sm text-gray-500">{desc}</span>

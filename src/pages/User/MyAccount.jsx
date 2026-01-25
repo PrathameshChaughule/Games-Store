@@ -10,19 +10,26 @@ function MyAccount() {
   const [user, setUser] = useState({})
   const [loading, setLoading] = useState(false)
   const [formOpen, setFormOpen] = useState(false)
+  const [orders, setOrders] = useState([])
 
   const fetchData = async () => {
     setLoading(true);
     try {
-      const { data, error } = await supabase
+      const { data: userdata, error: userError } = await supabase
         .from("users")
         .select("*")
         .eq("id", userData.userId)
         .single();
+      if (userError) throw error;
+      setUser(userdata);
 
-      if (error) throw error;
-
-      setUser(data);
+      const { data: orderData, error: orderError } = await supabase
+        .from("orders")
+        .select("*")
+        .eq("userId", userData.userId)
+        .single();
+      if (orderError) throw error;
+      setOrders(orders)
 
     } catch (error) {
       console.error("Failed to fetch user:", error.message);
@@ -59,9 +66,10 @@ function MyAccount() {
 
   const formSubmit = async () => {
     try {
+      const { id, ...updateData } = user;
       const { error } = await supabase
         .from("users")
-        .update(user)
+        .update(updateData)
         .eq("id", userData.userId);
 
       if (error) throw error;
@@ -90,7 +98,7 @@ function MyAccount() {
                     <span>{user?.firstName?.at(0)}</span>
                     <div className="absolute bottom-1 -right-0.5 h-5 w-5 border-4 border-[#181A1E] rounded-full bg-green-500"></div>
                   </div>
-                  <div className='mt-2 text-center'>
+                  <div className='mt-2 text-center xl:text-start'>
                     <p className='text-3xl font-semibold'>{user?.firstName} {user?.lastName}</p>
                     <p className='text-xl text-gray-400'>{user?.email}</p>
                   </div>
@@ -139,29 +147,29 @@ function MyAccount() {
                 <div className='sm:px-8 flex flex-col justify-between py-2 gap-3'>
                   <div className='flex gap-25 w-fit'>
                     <p>Address:</p>
-                    {user?.address?.[0].address === "" ? <p className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add Address</p> : <p>{user?.address?.[0]?.address}</p>}
+                    {user?.address?.[0].address === "" ? <p onClick={() => setFormOpen(true)} className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add Address</p> : <p>{user?.address?.[0]?.address}</p>}
                   </div>
                   <div className='flex gap-12 w-fit'>
                     <p>Phone Number:</p>
-                    {user?.mobileNumber === "" ? <p className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add Mobile Number</p> : <p>{user?.mobileNumber}</p>}
+                    {user?.mobileNumber === "" ? <p onClick={() => setFormOpen(true)} className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add Mobile Number</p> : <p>{user?.mobileNumber}</p>}
                   </div>
                   <div className='flex gap-32 w-fit'>
                     <p>City:</p>
-                    {user?.address?.[0].city === "" ? <p className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add City</p> : <p>{user?.address?.[0]?.city}</p>}
+                    {user?.address?.[0].city === "" ? <p onClick={() => setFormOpen(true)} className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add City</p> : <p>{user?.address?.[0]?.city}</p>}
                   </div>
                 </div>
                 <div className='sm:px-8 flex flex-col sm:mr-15 2xl:mr-0 text-start justify-between py-2 gap-3'>
                   <div className='flex gap-27 w-fit'>
                     <p>Country:</p>
-                    {user?.address?.[0].country === "" ? <p className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add Country</p> : <p>{user?.address?.[0]?.country}</p>}
+                    {user?.address?.[0].country === "" ? <p onClick={() => setFormOpen(true)} className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add Country</p> : <p>{user?.address?.[0]?.country}</p>}
                   </div>
                   <div className='flex gap-16 w-fit'>
                     <p>State/Province:</p>
-                    {user?.address?.[0].state ? <p>{user?.address?.[0]?.state}</p> : <p className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add State</p>}
+                    {user?.address?.[0].state ? <p>{user?.address?.[0]?.state}</p> : <p onClick={() => setFormOpen(true)} className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add State</p>}
                   </div>
                   <div className='flex gap-9 w-fit'>
                     <p>Zip or Postal Code:</p>
-                    {user?.address?.[0].zipCode ? <p>{user?.address?.[0]?.zipCode}</p> : <p className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add Zip Code</p>}
+                    {user?.address?.[0].zipCode ? <p>{user?.address?.[0]?.zipCode}</p> : <p onClick={() => setFormOpen(true)} className='underline text-gray-500 cursor-pointer hover:text-gray-400'>Add Zip Code</p>}
                   </div>
                 </div>
               </div>
@@ -190,11 +198,11 @@ function MyAccount() {
         </div>
       </div>
       {formOpen &&
-        <div class="absolute top-2 -left-1 w-full xl:w-210 mx-auto p-6 bg-gradient-to-br from-[#0b0f14] to-[#10151c] rounded-xl border border-white/10 shadow-lg">
-          <div class="flex items-center justify-between mb-6">
-            <h2 class="text-xl font-semibold text-white">Edit Profile</h2>
+        <div className="absolute top-2 -left-1 w-full xl:w-210 mx-auto p-6 bg-gradient-to-br from-[#0b0f14] to-[#10151c] rounded-xl border border-white/10 shadow-lg">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-xl font-semibold text-white">Edit Profile</h2>
             <div className='flex items-center justify-end flex-wrap gap-3'>
-              <button onClick={() => { formSubmit(), setFormOpen(false) }} class="px-4 py-2 text-sm cursor-pointer rounded-md bg-sky-500 hover:bg-sky-600 font-semibold text-white transition">
+              <button onClick={() => { formSubmit(), setFormOpen(false) }} className="px-4 py-2 text-sm cursor-pointer rounded-md bg-sky-500 hover:bg-sky-600 font-semibold text-white transition">
                 Save Changes
               </button>
               <button
@@ -206,103 +214,103 @@ function MyAccount() {
               </button>
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
             <div>
-              <label class="text-sm text-gray-400">First Name</label>
+              <label className="text-sm text-gray-400">First Name</label>
               <input
                 type="text"
                 placeholder="Enter first name"
                 value={user?.firstName}
                 name='firstName'
                 onChange={(e) => formHandle(e)}
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label class="text-sm text-gray-400">Last Name</label>
+              <label className="text-sm text-gray-400">Last Name</label>
               <input
                 type="text"
                 placeholder="Enter last name"
                 value={user?.lastName}
                 name='lastName'
                 onChange={(e) => formHandle(e)}
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label class="text-sm text-gray-400">Email Address</label>
+              <label className="text-sm text-gray-400">Email Address</label>
               <input
                 type="email"
                 placeholder="Enter your email"
                 value={user?.email}
                 name='email'
                 onChange={(e) => formHandle(e)}
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <p class="text-xs text-gray-500 mt-1">Email change requires verification</p>
+              <p className="text-xs text-gray-500 mt-1">Email change requires verification</p>
             </div>
             <div>
-              <label class="text-sm text-gray-400">Phone Number</label>
+              <label className="text-sm text-gray-400">Phone Number</label>
               <input
                 type="text"
                 placeholder="+91 XXXXX XXXXX"
                 value={user?.mobileNumber}
                 name='mobileNumber'
                 onChange={(e) => formHandle(e)}
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </div>
-          <h3 class="text-lg font-medium text-white mb-4">Billing Information</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div class="md:col-span-2">
-              <label class="text-sm text-gray-400">Address</label>
+          <h3 className="text-lg font-medium text-white mb-4">Billing Information</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="md:col-span-2">
+              <label className="text-sm text-gray-400">Address</label>
               <input
                 type="text"
                 placeholder="Street address"
                 value={user?.address?.[0].address}
                 name='address'
                 onChange={(e) => addressHandle(e)}
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label class="text-sm text-gray-400">City</label>
+              <label className="text-sm text-gray-400">City</label>
               <input
                 type="text"
                 placeholder="City"
                 value={user?.address?.[0].city}
                 name='city'
                 onChange={(e) => addressHandle(e)}
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label class="text-sm text-gray-400">State / Province</label>
+              <label className="text-sm text-gray-400">State / Province</label>
               <input
                 type="text"
                 placeholder="State"
                 value={user?.address?.[0].state}
                 name='state'
                 onChange={(e) => addressHandle(e)}
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label class="text-sm text-gray-400">Zip / Postal Code</label>
+              <label className="text-sm text-gray-400">Zip / Postal Code</label>
               <input
                 type="text"
                 placeholder="Postal Code"
                 value={user?.address?.[0].zipCode}
                 name='zipCode'
                 onChange={(e) => addressHandle(e)}
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label class="text-sm text-gray-400">Country</label>
+              <label className="text-sm text-gray-400">Country</label>
               <select
-                class="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full bg-[#0f141b] border border-white/10 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={user?.address?.[0].country}
                 name='country'
                 onChange={(e) => addressHandle(e)}

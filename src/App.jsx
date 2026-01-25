@@ -4,6 +4,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { addGame } from "./addGame";
+import AdminFeaturedNews from "./pages/Admin/AdminFeaturedNews/AdminFeaturedNews";
+import NewsDetails from "./pages/Admin/AdminFeaturedNews/NewsDetails";
+import AdminFeaturedNewsForm from "./pages/Admin/AdminFeaturedNews/AdminFeaturedNewsForm";
 
 const AdminProductsForm = lazy(() => import("./pages/Admin/AdminProducts/AdminProductsForm"));
 const FeaturedGameAddedForm = lazy(() => import("./pages/Admin/AdminFeaturedGames/FeaturedGameAddedForm"));
@@ -101,6 +104,9 @@ function App() {
               <Route path="/adminMedia" element={<AdminMedia />} />
               <Route path="/adminFeaturedGames" element={<AdminFeaturedGames />} />
               <Route path="/featuredGameAddedForm/:requestId" element={<FeaturedGameAddedForm />} />
+              <Route path="/adminFeaturedNews" element={<AdminFeaturedNews />} />
+              <Route path="/adminFeaturedNews/:id" element={<NewsDetails />} />
+              <Route path="/adminFeaturedNewsForm" element={<AdminFeaturedNewsForm />} />
               <Route path="/adminReviews" element={<AdminReviews />} />
             </Route>
           </Routes>

@@ -62,20 +62,29 @@ function OrdersDetails() {
 
             const { data: user, error: userError } = await supabase
                 .from("users")
-                .select("library")
+                .select("library, totalSpend")
                 .eq("id", updatedOrder.userId)
                 .single();
 
             if (userError) throw userError;
 
-            const updatedLibrary = user.library.map(item => ({
+            const updatedLibrary = (user.library ?? []).map(item => ({
                 ...item,
                 orderStatus: status
             }));
 
+            let totalSpend = user.totalSpend ?? 0;
+
+            if (status === "Completed") {
+                totalSpend += Number(order.total);
+            }
+
             const { error: libraryError } = await supabase
                 .from("users")
-                .update({ library: updatedLibrary })
+                .update({
+                    library: updatedLibrary,
+                    totalSpend
+                })
                 .eq("id", updatedOrder.userId);
 
             if (libraryError) throw libraryError;
@@ -83,10 +92,11 @@ function OrdersDetails() {
             setOrder(updatedOrder);
             toast.success(`Order Status of ${updatedOrder.orderId} Updated`);
         } catch (error) {
-            console.log(error);
+            console.error(error);
             toast.error("Failed to update order status");
         }
     };
+
 
 
 

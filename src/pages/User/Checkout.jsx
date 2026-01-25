@@ -138,7 +138,6 @@ function Checkout() {
         .from("users")
         .update({
           library: updatedLibrary,
-          totalSpend: (user.totalSpend || 0) + total,
           totalOrders: (user.totalOrders || 0) + 1,
           lastOrder: new Date().toISOString()
         })

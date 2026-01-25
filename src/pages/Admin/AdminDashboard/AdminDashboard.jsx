@@ -1,4 +1,3 @@
-import axios from "axios"
 import { useEffect, useState } from "react"
 import { FaHeart } from "react-icons/fa"
 import { FiShoppingBag } from "react-icons/fi"
@@ -45,7 +44,7 @@ function AdminDashboard() {
       setOrders(ordersData || [])
       setUsers(usersData || [])
 
-      const revenue = (ordersData || []).reduce(
+      const revenue = (ordersData || [])?.filter((val) => val.orderStatus === "Completed")?.reduce(
         (sum, order) => sum + (order.total || 0),
         0
       ).toFixed(2)
@@ -65,7 +64,6 @@ function AdminDashboard() {
       setLoading(false)
     }
   }
-
 
   useEffect(() => {
     fetchData()
@@ -170,7 +168,6 @@ function AdminDashboard() {
       (label) => statusColors[label] || "#94a3b8"
     ),
   };
-
 
   // bar graph category sales
   const categoryMap = {};

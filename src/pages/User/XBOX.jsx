@@ -19,12 +19,13 @@ function XBOX() {
   const [news, setNews] = useState([])
   const [showRequestForm, setShowRequestForm] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [hero, setHero] = useState([])
   const nav = useNavigate()
 
   const fetchData = async () => {
     setLoading(true)
     try {
-      const [game, news] = await Promise.all([
+      const [game, news, hero] = await Promise.all([
         supabase
           .from("games")
           .select("*")
@@ -35,12 +36,20 @@ function XBOX() {
           .from("news")
           .select("*")
           .eq("category", "xboxNews")
+          .eq("status", "Active"),
+
+        supabase
+          .from("herosection")
+          .select("*")
+          .eq("category", "xboxGames")
       ])
 
       if (games.error) throw games.error;
       if (news.error) throw news.error;
+      if (hero.error) throw hero.error;
       setGames(game.data)
       setNews(news.data)
+      setHero(hero.data)
     } catch (error) {
       console.log(error);
     } finally {
@@ -102,7 +111,7 @@ function XBOX() {
       <div>
         <div className="w-[90vw] md:w-[79vw] m-auto py-7">
           <div>
-            <div className="w-full h-fit md:h-90 flex items-end justify-center relative">
+            <div style={{ '--hero-color': hero[0]?.color }} className="w-full h-fit md:h-90 flex items-end justify-center relative">
               <LazyLoadImage
                 src="/assets/cod1.webp"
                 className="hidden md:block w-[200px] min-[703px]:w-[350px] md:w-[440px] absolute right-[0px] sm:right-[4px] md:right-[0vw] -top-[-20px] sm:-top-[-5px] md:-top-[-40px] z-20 drop-shadow-2xl"
@@ -120,38 +129,38 @@ function XBOX() {
                   alt=""
                 />
                 <div
-                  className={`absolute -top-10 -left-10 w-80 h-62 bg-[#86CF2B] blur-3xl opacity-30 rounded-full`}
+                  className={`absolute -top-10 -left-10 w-80 h-62 bg-[var(--hero-color)]/70 blur-3xl opacity-30 rounded-full`}
                 ></div>
                 <div
-                  className={`absolute top-20 -right-10 w-80 h-60 bg-[#86CF2B]  blur-[90px] opacity-60 rounded-full`}
+                  className={`absolute top-20 -right-10 w-80 h-60 bg-[var(--hero-color)]/100 blur-[90px] opacity-60 rounded-full`}
                 ></div>
                 <div
-                  className={`absolute bottom-0 left-1/2 w-48 h-48 bg-[#86CF2B] blur-[150px] opacity-50 rounded-full`}
+                  className={`absolute bottom-0 left-1/2 w-48 h-48 bg-[var(--hero-color)]/80 blur-[150px] opacity-50 rounded-full`}
                 ></div>
 
                 <div className="flex h-20 flex-col p-5 md:p-18 md:pt-7 relative z-10">
                   <span
-                    className={`text-[12px] md:text-xl px-3 py-1 text-black font-semibold rounded bg-[#86CF2B] w-fit mt-4`}
+                    className={`text-[12px] md:text-xl px-3 py-1 text-black font-semibold rounded bg-[var(--hero-color)] w-fit mt-4`}
                   >
-                    New
+                    {hero[0]?.status}
                   </span>
 
-                  <span className="text-xl sm:text-[20px] md:text-3xl mt-4 sm:mt-2 md:mt-7 font-bold">
-                    Call of Duty: <br /> Modern Warfare II
+                  <span className="text-xl md:text-5xl mt-5 sm:mt-10 font-bold">
+                    {hero[0]?.title}
                   </span>
 
-                  <span className={`text-[#86CF2B] font-bold text-xl sm:mt-4`}>
-                    ₹ 1,999
+                  <span className={`text-[var(--hero-color)] font-bold text-xl sm:mt-4`}>
+                    ₹ {hero[0]?.price}
                   </span>
 
                   <div onClick={() => nav("/details/53")} className="sm:p-2 sm:px-3 w-fit mt-4 rounded-md md:bg-white/10 flex gap-2">
                     <span
-                      className={`text-[16px] md:text-xl p-2.5 px-4 bg-[#86CF2B] text-black rounded font-bold cursor-pointer`}
+                      className={`text-[16px] md:text-xl p-2.5 px-4 bg-[var(--hero-color)] text-black rounded font-bold cursor-pointer`}
                     >
                       Purchase
                     </span>
                     <span
-                      className={`text-[16px] md:text-xl p-2.5 px-3 rounded text-[#86CF2B] backdrop-blur-sm md:backdrop-blur-none border md:border-0 font-bold cursor-pointer`}
+                      className={`text-[16px] md:text-xl p-2.5 px-3 rounded text-[var(--hero-color)] backdrop-blur-sm md:backdrop-blur-none border md:border-0 font-bold cursor-pointer`}
                     >
                       Add To Cart
                     </span>
@@ -236,7 +245,6 @@ function XBOX() {
                   key={index.id}
                   title={index.title}
                   date={index.date}
-                  view={index.views}
                   img={index.image}
                   desc={index.description}
                 />

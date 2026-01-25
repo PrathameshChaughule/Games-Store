@@ -4,7 +4,7 @@ import { LuTrash2 } from 'react-icons/lu';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { toast } from 'react-toastify';
-import { supabase } from '../../../supabaseClient/supabaseClient';
+import { getOptimizedImage, supabase } from '../../../supabaseClient/supabaseClient';
 import Loading from '../../../components/Loading';
 
 function ProductMedia({ game, id }) {
@@ -110,7 +110,12 @@ function ProductMedia({ game, id }) {
         <div className='relative group flex flex-col text-center w-fit border dark:border-[#022771] border-gray-300 rounded'>
           {loading ? <div className='h-38 w-63'><Loading /></div> :
             <LazyLoadImage
-              src={image[0] || "/assets/images/placeholder.webp"}
+              src={getOptimizedImage(image[0], {
+                width: 350,
+                height: 480,
+                quality: 50,
+                resize: "contain"
+              }) || "/assets/images/placeholder.webp"}
               effect="blur"
               className="h-38 w-63 rounded"
               alt={game.title}
@@ -133,7 +138,12 @@ function ProductMedia({ game, id }) {
         <div className='relative group flex flex-col text-center w-fit border dark:border-[#022771] border-gray-300 rounded'>
           {loading ? <div className='h-38 w-63'><Loading /></div> :
             <LazyLoadImage
-              src={image[1] || "/assets/images/placeholder.webp"}
+              src={getOptimizedImage(image[1], {
+                width: 350,
+                height: 480,
+                quality: 50,
+                resize: "contain"
+              }) || "/assets/images/placeholder.webp"}
               effect="blur"
               className="h-38 w-63 rounded"
               alt={game.title}
@@ -155,7 +165,12 @@ function ProductMedia({ game, id }) {
         <div className='relative group flex flex-col text-center w-fit border dark:border-[#022771] border-gray-300 rounded'>
           {loading ? <div className='h-38 w-63'><Loading /></div> :
             <LazyLoadImage
-              src={image[2] || "/assets/images/placeholder.webp"}
+              src={getOptimizedImage(image[2], {
+                width: 350,
+                height: 480,
+                quality: 50,
+                resize: "contain"
+              }) || "/assets/images/placeholder.webp"}
               effect="blur"
               className="h-38 w-63 rounded"
               alt={game.title}
@@ -177,7 +192,12 @@ function ProductMedia({ game, id }) {
         <div className='relative group flex flex-col text-center w-fit border dark:border-[#022771] border-gray-300 rounded'>
           {loading ? <div className='h-38 w-63'><Loading /></div> :
             <LazyLoadImage
-              src={image[3] || "/assets/images/placeholder.webp"}
+              src={getOptimizedImage(image[3], {
+                width: 350,
+                height: 480,
+                quality: 50,
+                resize: "contain"
+              }) || "/assets/images/placeholder.webp"}
               effect="blur"
               className="h-38 w-63 rounded"
               alt={game.title}
@@ -199,7 +219,12 @@ function ProductMedia({ game, id }) {
         <div className='relative group flex flex-col text-center w-fit border dark:border-[#022771] border-gray-300 rounded'>
           {loading ? <div className='h-38 w-63'><Loading /></div> :
             <LazyLoadImage
-              src={image[4] || "/assets/images/placeholder.webp"}
+              src={getOptimizedImage(image[4], {
+                width: 350,
+                height: 480,
+                quality: 50,
+                resize: "contain"
+              }) || "/assets/images/placeholder.webp"}
               effect="blur"
               className="h-38 w-63 rounded"
               alt={game.title}
