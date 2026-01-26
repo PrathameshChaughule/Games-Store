@@ -42,6 +42,7 @@ function XBOX() {
           .from("herosection")
           .select("*")
           .eq("category", "xboxGames")
+          .eq("activeStatus", "Active")
       ])
 
       if (games.error) throw games.error;
@@ -113,7 +114,7 @@ function XBOX() {
           <div>
             <div style={{ '--hero-color': hero[0]?.color }} className="w-full h-fit md:h-90 flex items-end justify-center relative">
               <LazyLoadImage
-                src="/assets/cod1.webp"
+                src={hero[0]?.image}
                 className="hidden md:block w-[200px] min-[703px]:w-[350px] md:w-[440px] absolute right-[0px] sm:right-[4px] md:right-[0vw] -top-[-20px] sm:-top-[-5px] md:-top-[-40px] z-20 drop-shadow-2xl"
                 alt=""
               />
@@ -124,7 +125,7 @@ function XBOX() {
                                   overflow-hidden"
               >
                 <img
-                  src="/assets/cod1.webp"
+                  src={hero[0]?.image}
                   className="block md:hidden w-[330px] absolute -right-15 -top-[-20px] z-10 drop-shadow-2xl"
                   alt=""
                 />

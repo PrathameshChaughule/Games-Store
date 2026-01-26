@@ -2,12 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { addGame } from "./supabaseClient/addGame";
 
-import { addGame } from "./addGame";
-import AdminFeaturedNews from "./pages/Admin/AdminFeaturedNews/AdminFeaturedNews";
-import NewsDetails from "./pages/Admin/AdminFeaturedNews/NewsDetails";
-import AdminFeaturedNewsForm from "./pages/Admin/AdminFeaturedNews/AdminFeaturedNewsForm";
 
+const AdminFeaturedNews = lazy(() => import("./pages/Admin/AdminFeaturedNews/AdminFeaturedNews"));
+const NewsDetails = lazy(() => import("./pages/Admin/AdminFeaturedNews/NewsDetails"));
+const AdminFeaturedNewsForm = lazy(() => import("./pages/Admin/AdminFeaturedNews/AdminFeaturedNewsForm"));
+const AdminHeroSection = lazy(() => import("./pages/Admin/AdminHeroSection/AdminHeroSection"));
+const HeroSectionAddedForm = lazy(() => import("./pages/Admin/AdminHeroSection/HeroSectionAddedForm"));
+const HeroSectionUpdateForm = lazy(() => import("./pages/Admin/AdminHeroSection/HeroSectionUpdateForm"));
 const AdminProductsForm = lazy(() => import("./pages/Admin/AdminProducts/AdminProductsForm"));
 const FeaturedGameAddedForm = lazy(() => import("./pages/Admin/AdminFeaturedGames/FeaturedGameAddedForm"));
 const OrdersDetails = lazy(() => import("./pages/Admin/AdminOrders/OrdersDetails"));
@@ -108,6 +111,9 @@ function App() {
               <Route path="/adminFeaturedNews/:id" element={<NewsDetails />} />
               <Route path="/adminFeaturedNewsForm" element={<AdminFeaturedNewsForm />} />
               <Route path="/adminReviews" element={<AdminReviews />} />
+              <Route path="/adminHeroSection" element={<AdminHeroSection />} />
+              <Route path="/adminHeroSectionAdded" element={<HeroSectionAddedForm />} />
+              <Route path="/adminHeroSectionUpdate/:id" element={<HeroSectionUpdateForm />} />
             </Route>
           </Routes>
         </Suspense>

@@ -23,6 +23,7 @@ function AdminCustomer() {
 
 
   const fetchData = async () => {
+    setLoading(true)
     try {
       let query = supabase
         .from("users")
@@ -50,6 +51,8 @@ function AdminCustomer() {
       setTotalPage(Math.ceil(count / limit));
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false)
     }
   };
 

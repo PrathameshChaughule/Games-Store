@@ -42,6 +42,7 @@ function PS4() {
           .from("herosection")
           .select("*")
           .eq("category", "ps4Games")
+          .eq("activeStatus", "Active")
       ])
 
       if (game.error) throw games.error;
@@ -112,7 +113,7 @@ function PS4() {
         <div>
           <div style={{ '--hero-color': hero[0]?.color }} className="w-full h-fit md:h-90 flex items-end justify-center relative">
             <LazyLoadImage
-              src="/assets/got.webp"
+              src={hero[0]?.image}
               className="hidden md:block max-[496px]:w-[130px] max-[736px]:w-[220px] md:w-[306px] absolute right-[10px] sm:right-[4px] md:right-[2vw] -top-0  md:-top-[-4] z-20 drop-shadow-2xl"
               alt=""
             />
@@ -123,7 +124,7 @@ function PS4() {
                             overflow-hidden"
             >
               <img
-                src="/assets/got.webp"
+                src={hero[0]?.image}
                 className="block md:hidden w-[200px] absolute right-[10px] sm:right-[4px] md:right-[2vw] -top-0  md:-top-[-4] z-10 drop-shadow-2xl"
                 alt=""
               />

@@ -189,7 +189,7 @@ function AdminProductsForm() {
     const uploadImage = async (file, index) => {
         if (!file) return;
 
-        const fileName = `${Date.now()}-${file.name}`;
+        const fileName = file.name;
 
         const { error } = await supabase.storage
             .from("game-images")

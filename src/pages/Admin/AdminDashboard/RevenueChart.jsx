@@ -8,6 +8,7 @@ const RevenueChart = ({ dates, revenue, theme }) => {
             type: "area",
             toolbar: { show: false },
             foreColor: isDark ? "#CBD5E1" : "#334155",
+            background: "transparent",
         },
         stroke: { curve: "smooth", width: 3 },
         dataLabels: { enabled: false },
@@ -29,6 +30,9 @@ const RevenueChart = ({ dates, revenue, theme }) => {
             },
         },
         tooltip: {
+            shared: true,
+            intersect: false,
+            theme: isDark ? "dark" : "light",
             y: {
                 formatter: (val) => `₹${val.toFixed(2)}`,
             },

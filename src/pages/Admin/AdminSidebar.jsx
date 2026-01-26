@@ -4,6 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiSun, FiTruck, FiUser } from "react-icons/fi";
 import { IoFolderOpenOutline, IoGameController, IoMailOpenOutline, IoNewspaperOutline } from "react-icons/io5";
 import { LuLayoutGrid } from "react-icons/lu";
+import { MdViewQuilt } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { SlCalender } from "react-icons/sl";
 import { TbStarsFilled } from "react-icons/tb";
@@ -107,7 +108,18 @@ function AdminSidebar() {
           <IoNewspaperOutline />
           Featured News
         </NavLink>
-
+        <NavLink
+          to="/adminHeroSection"
+          className={({ isActive }) =>
+            `flex items-center gap-2  p-2 border border-white dark:border-[#030318] hover:border-[#3586FF] dark:hover:text-white hover:text-black cursor-pointer rounded ${isActive
+              ? "text-white bg-[#3586FF] hover:text-white"
+              : "text-[#4B5359] dark:text-gray-400"
+            }`
+          }
+        >
+          <MdViewQuilt />
+          Main Banner
+        </NavLink>
         {/* <NavLink
           to="/adminReviews"
           className={({ isActive }) =>

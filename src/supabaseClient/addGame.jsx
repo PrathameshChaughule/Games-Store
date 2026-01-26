@@ -1,4 +1,4 @@
-import { supabase } from "./supabaseClient/supabaseClient";
+import { supabase } from "./supabaseClient";
 
 
 export const addGame = async () => {

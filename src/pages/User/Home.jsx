@@ -41,6 +41,7 @@ function Home() {
           .from("herosection")
           .select("*")
           .eq("category", "pcGames")
+          .eq("activeStatus", "Active")
       ])
       if (gamesRes.error) throw gamesRes.error;
       if (newsRes.error) throw newsRes.error;
@@ -109,7 +110,7 @@ function Home() {
       <div>
         <div style={{ '--hero-color': hero[0]?.color }} className="w-full h-fit md:h-90 flex items-end justify-center relative">
           <LazyLoadImage
-            src="/assets/Cyberpunk.webp"
+            src={hero[0]?.image}
             className="hidden md:block w-[160px] min-[529px]:w-[240px] md:w-[350px] absolute right-[-12px] md:right-[2vw] -top-3 sm:-top-7 md:-top-13 z-20 drop-shadow-2xl"
             alt=""
           />
@@ -120,7 +121,7 @@ function Home() {
                   overflow-hidden"
           >
             <img
-              src="/assets/Cyberpunk.webp"
+              src={hero[0]?.image}
               className="block md:hidden w-[240px] absolute -right-4 md:right-[2vw] -top-3 sm:-top-7 md:-top-13 z-20 drop-shadow-2xl"
               alt=""
             />

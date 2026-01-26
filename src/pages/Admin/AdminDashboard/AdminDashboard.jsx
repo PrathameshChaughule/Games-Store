@@ -9,6 +9,8 @@ import RevenueChart from './RevenueChart'
 import Chart from "react-apexcharts";
 import Loading from '../../../components/Loading'
 import { supabase } from "../../../supabaseClient/supabaseClient"
+import { PiWarningFill } from "react-icons/pi"
+import { BiSolidTime } from "react-icons/bi"
 
 function AdminDashboard() {
   const theme = localStorage.getItem("theme")
@@ -19,6 +21,7 @@ function AdminDashboard() {
   const [totalRevenue, setTotalRevenue] = useState(0)
   const [totalWishlist, setTotalWishlist] = useState(0)
   const [loading, setLoading] = useState(false)
+  const [showGame, setShowGame] = useState(0)
 
   const fetchData = async () => {
     setLoading(true)
@@ -413,65 +416,99 @@ function AdminDashboard() {
             <p className="text-lg font-semibold text-gray-500 dark:text-gray-300">Revenue Overview</p>
             <RevenueChart dates={revenueDates} revenue={revenueAmounts} theme={theme} />
           </div>
-          <div className="flex justify-between">
-            <div className="border-3 w-[63%] p-2 px-2 rounded-lg border-gray-300 dark:border-[#080B2C] h-72.5">
-              <p className="text-lg ml-2 mb-1 font-semibold text-gray-500 dark:text-gray-300">Recent Orders</p>
-              <table className="w-full border-2 border-gray-300 dark:border-[#080B2C] rounded-lg">
-                <thead className="dark:bg-[#080B2C] bg-[#F3F4F6]">
-                  <tr>
-                    <th className="py-1.5 rounded-t-lg">Order ID</th>
-                    <th>User Name</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {orders
-                    ?.slice()
-                    .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-                    .slice(0, 5)
-                    .map((val, index) =>
-                      <tr key={index} className="text-center border-t-2 border-gray-300 dark:border-[#080B2C]">
-                        <td className="py-1.5">{val?.orderId}</td>
-                        <td>{val?.userFirstName} {val?.userLastName}</td>
-                        <td>₹{val?.total}</td>
-                        <td><span
-                          className={`px-3 py-1 text-sm font-semibold rounded-full
-                        ${val.orderStatus === "Completed"
-                              ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300"
-                              : val.orderStatus === "Processing"
-                                ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
-                                : val.orderStatus === "Cancelled"
-                                  ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
-                                  : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
-                            }`}
-                        >
-                          {val.orderStatus || "Unknown"}
-                        </span></td>
-                        <td>{new Date(val?.createdAt).toLocaleString('en-IN', {
-                          month: 'short',
-                          day: '2-digit',
-                        })}</td>
-                      </tr>)}
-                </tbody>
-              </table>
-            </div>
-            <div className="border-3 w-[35%] p-2 px-4 rounded-lg border-gray-300 dark:border-[#080B2C] h-72.5">
-              <p className="text-lg font-semibold text-gray-500 dark:text-gray-300">Order Status</p>
-              <Chart
-                options={orderStatusChartOptions}
-                series={orderStatusSeries}
-                type="donut"
-                height={245}
-                width={310}
-              />
-            </div>
-          </div>
         </div>
         <div className="border-3 p-2 px-4 w-[25.5%] rounded-lg border-gray-300 dark:border-[#080B2C]">
           <p className="text-lg font-semibold text-gray-500 dark:text-gray-300">Store Alerts</p>
-
+          <div className="py-1 flex flex-col justify-center gap-2">
+            <div className="rounded border border-gray-300 dark:bg-[#080B2C] dark:border-[#080B2C] flex items-center justify-center p-3 gap-6">
+              <PiWarningFill className="text-4xl text-yellow-400" />
+              <p className="w-50">{requests?.filter((val) => val.requestStatus === "Pending").length} games requests awaiting approval</p>
+            </div>
+            <div className="rounded border border-gray-300 dark:bg-[#080B2C] dark:border-[#080B2C] flex items-center justify-center p-3 gap-6">
+              <BiSolidTime className="text-4xl text-yellow-400" />
+              <p className="w-50">{orders?.filter((val) => val.orderStatus === "Processing").length} orders pending for 24+ hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between">
+        <div className="border-3 w-[68.5%] p-2 px-2 rounded-lg border-gray-300 dark:border-[#080B2C] h-72.5">
+          <p className="text-lg ml-2 mb-1 font-semibold text-gray-500 dark:text-gray-300">Recent Orders</p>
+          <table className="w-full border-2 border-gray-300 dark:border-[#080B2C] rounded-lg">
+            <thead className="dark:bg-[#080B2C] bg-[#F3F4F6]">
+              <tr>
+                <th className="py-1.5 rounded-t-lg">Order ID</th>
+                <th>User Name</th>
+                <th>Games</th>
+                <th>Amount</th>
+                <th>Payment Status</th>
+                <th>Order Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              {orders
+                ?.slice()
+                .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+                .slice(0, 5)
+                .map((val, index) =>
+                  <tr key={index} className="text-center border-t-2 border-gray-300 dark:border-[#080B2C]">
+                    <td className="py-1.5">{val?.orderId}</td>
+                    <td>{val?.userFirstName} {val?.userLastName}</td>
+                    <td className='relative cursor-pointer'><span onMouseEnter={() => setShowGame(val?.id)} onMouseLeave={() => setShowGame(0)} >{val?.games?.length} Games</span>
+                      {showGame === val?.id &&
+                        <div className='absolute flex flex-col gap-1 rounded w-60 p-1 top-11 -left-14 z-100 dark:bg-[#080B2C] bg-gray-300'>
+                          {val?.games?.map((val, index) =>
+                            <p key={index} className='px-1 py-0.5 rounded text-gray-300/90 font-semibold'>{val.title}</p>
+                          )}
+                        </div>}
+                    </td>
+                    <td>₹{val?.total}</td>
+                    <td>
+                      <span
+                        className={`px-3 py-1 text-sm font-semibold rounded-full
+                        ${val.paymentStatus === "Paid"
+                            ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300"
+                            : val.paymentStatus === "Pending"
+                              ? "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300"
+                              : val.paymentStatus === "Failed"
+                                ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
+                                : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+                          }`}
+                      >
+                        {val.paymentStatus || "Unknown"}
+                      </span>
+                    </td>
+                    <td><span
+                      className={`px-3 py-1 text-sm font-semibold rounded-full
+                        ${val.orderStatus === "Completed"
+                          ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300"
+                          : val.orderStatus === "Processing"
+                            ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
+                            : val.orderStatus === "Cancelled"
+                              ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
+                              : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+                        }`}
+                    >
+                      {val.orderStatus || "Unknown"}
+                    </span></td>
+                    <td>{new Date(val?.createdAt).toLocaleString('en-IN', {
+                      month: 'short',
+                      day: '2-digit',
+                    })}</td>
+                  </tr>)}
+            </tbody>
+          </table>
+        </div>
+        <div className="border-3 w-[30%] p-2 px-4 rounded-lg border-gray-300 dark:border-[#080B2C] h-72.5">
+          <p className="text-lg font-semibold text-gray-500 dark:text-gray-300">Order Status</p>
+          <Chart
+            options={orderStatusChartOptions}
+            series={orderStatusSeries}
+            type="donut"
+            height={245}
+            width={365}
+          />
         </div>
       </div>
       <div className="flex justify-between">
