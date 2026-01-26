@@ -156,14 +156,13 @@ function Details() {
       <img
         src={screenshot === null ? game.image[0] : screenshot}
         className="
-      absolute inset-0
+      md:absolute inset-0
       w-full h-full
       object-fill
-      blur-sm
       scale-100
       opacity-60
       z-0
-    "
+    " style={{ filter: "blur(4px)" }}
         alt=""
       />
       <div className="w-[90vw] my-8 m-auto h-fit flex justify-between">
@@ -173,7 +172,7 @@ function Details() {
           <>
             <div className="xl:w-[73%] z-50 w-[100%] flex flex-col md:gap-6">
               <div className="flex flex-col gap-4.5">
-                <p className="border-2 text-gray-500 border-[#292b26] bg-[#131313]/30 w-fit px-3 rounded-xl">
+                <p className="border-2 text-gray-200 border-[#292b26] bg-[#131313]/60 w-fit px-3 rounded">
                   <span onClick={() => nav("/")} className="cursor-pointer">
                     All Games
                   </span>{" "}
@@ -188,14 +187,14 @@ function Details() {
                   >
                     {game.category}
                   </span>{" "}
-                  &#62; <span className="text-white/80">{game.title}</span>
+                  &#62; <span className="text-white">{game.title}</span>
                 </p>
-                <h1 className="text-4xl font-semibold">{game.title}</h1>
-                <div className="flex flex-wrap mb-3 gap-2 md:gap-5 items-center text-gray-400">
+                <h1 className="text-4xl font-semibold text-white text-shadow-2xs text-shadow-black/50">{game.title}</h1>
+                <div className="bg-[#131313]/60 border-2 border-[#292b26] w-fit p-1 px-4 rounded flex flex-wrap mb-3 gap-2 md:gap-5 items-center text-gray-300">
                   <span className="flex items-center gap-2">
                     <CgSun />
                     Releases Date :{" "}
-                    <span className="text-white/80">{game.releaseDate}</span>
+                    <span className="text-white">{game.releaseDate}</span>
                   </span>{" "}
                   <div className="w-0.5 h-4.5 bg-gray-500"></div>{" "}
                   <span className="flex items-center gap-2">
@@ -210,7 +209,7 @@ function Details() {
                   </span>
                 </div>
               </div>
-              <div className="bg-[#18181872] border-2 border-[#292b26]/50 p-2 sm:p-4 sm:px-7 rounded-xl">
+              <div className="bg-[#131313]/60 border-2 border-[#292b26]/50 p-2 sm:p-4 sm:px-7 rounded-xl">
                 <div className=" lg:gap-5 flex flex-col lg:flex-row items-center justify-between">
                   <div className="flex lg:flex-col gap-1.5 sm:gap-3">
                     <div className="relative hover:scale-103 transition-all">
@@ -307,7 +306,7 @@ function Details() {
                 </div>
               </div>
               <div className="xl:hidden w-full flex-wrap sm:flex-nowrap py-3 sm:p-5 flex gap-6">
-                <div className="bg-[#18181872] w-full sm:w-[70%] border-2 border-[#292b26]/50 rounded-xl p-5 flex flex-col gap-3 justify-between">
+                <div className="bg-[#131313]/60 w-full sm:w-[70%] border-2 border-[#292b26]/50 rounded-xl p-5 flex flex-col gap-3 justify-between">
                   <div className="flex flex-col justify-between gap-4">
                     <LazyLoadImage
                       effect="blur"
@@ -376,8 +375,8 @@ function Details() {
                     </div>
                   </div>
                   <div className="flex flex-col gap-3 justify-between">
-                    <div className="flex w-full items-center justify-center gap-2 p-3 py-2 bg-[#212121c8] rounded-xl">
-                      <div className="p-2.5 text-xl rounded-xl bg-[#373636]">
+                    <div className="flex w-full items-center justify-center gap-2 p-3 py-2 bg-[#131313]/60 rounded-xl">
+                      <div className="p-2.5 text-xl rounded-xl bg-[#131313]/60">
                         <SlEarphonesAlt />
                       </div>
                       <div className="flex flex-col cursor-pointer">
@@ -390,7 +389,7 @@ function Details() {
                   </div>
                 </div>
                 <div className="flex flex-wrap sm:flex-col gap-3">
-                  <div className="bg-[#18181872] w-full border-2 border-[#292b26]/50 h-fit rounded-xl p-5 flex flex-col gap-2">
+                  <div className="bg-[#131313]/60 w-full border-2 border-[#292b26]/50 h-fit rounded-xl p-5 flex flex-col gap-2">
                     <div className="flex items-center gap-4 py-2 rounded-xl px-5 bg-[#212121c8]/60 justify-center">
                       <span className="text-6xl font-bold text-white/70">
                         {game.rating}
@@ -500,14 +499,14 @@ function Details() {
                     </div>
                   </div>
                   <div className="flex w-full flex-col gap-3">
-                    <div className="bg-[#18181872] border-2 border-[#292b26]/50 h-fit rounded-xl px-5 py-2 flex flex-col">
+                    <div className="bg-[#131313]/60 border-2 border-[#292b26]/50 h-fit rounded-xl px-5 py-2 flex flex-col">
                       <h1 className="text-2xl pl-2 font-semibold text-gray-300">Popularity :</h1>
                       <div className="flex items-end justify-center">
                         <span className='text-7xl font-bold text-green-500'>{game.popularity}</span>
                         <span className='text-3xl font-semibold'>/ 100</span>
                       </div>
                     </div>
-                    <div className="p-4 w-full rounded-xl text-center flex flex-col items-center gap-2 bg-[#18181872] border-2 border-[#292b26]/50">
+                    <div className="p-4 w-full rounded-xl text-center flex flex-col items-center gap-2 bg-[#131313]/60 border-2 border-[#292b26]/50">
                       <span className="text-[#FFFDF6] text-md flex items-center gap-2">
                         <FaRegCircleCheck className="text-lg" />
                         Can activate in India
@@ -525,11 +524,11 @@ function Details() {
 
                 </div>
               </div>
-              <div className="bg-[#18181872] mb-5 sm:mb-0 border-2 border-[#292b26]/50 p-4 px-7 rounded-xl">
+              <div className="bg-[#131313]/60 mb-5 sm:mb-0 border-2 border-[#292b26]/50 p-4 px-7 rounded-xl">
                 <span className="font-semibold m-2 text-lg">Description</span>
                 <hr className="my-3 border-[#292b26]" />
                 <div className="mx-2">
-                  <span className="text-[#848484]">
+                  <span className="text-[#c5c5c5]">
                     {show
                       ? `${game.description}`
                       : `${game.description}`.slice(0, 330)}
@@ -544,7 +543,7 @@ function Details() {
                   )}
                 </div>
               </div>
-              <div className="bg-[#18181872] border-2 border-[#292b26]/50 p-2 sm:p-4 sm:px-7 rounded-xl flex gap-2 sm:gap-5 items-center justify-between">
+              <div className="bg-[#131313]/60 border-2 border-[#292b26]/50 p-2 sm:p-4 sm:px-7 rounded-xl flex gap-2 sm:gap-5 items-center justify-between">
                 {games.length > 0 && random.length > 0 && games[random[0]] && (
                   <>
                     {random.map((val, index) => {
@@ -569,7 +568,7 @@ function Details() {
               </div>
             </div>
             <div className="hidden w-[27%] z-50 p-5 mt-22 xl:flex flex-col gap-6">
-              <div className="bg-[#18181872] border-2 border-[#292b26]/50  rounded-xl p-5 flex flex-col gap-3">
+              <div className="bg-[#131313]/60 border-2 border-[#292b26]/50  rounded-xl p-5 flex flex-col gap-3">
                 <LazyLoadImage
                   effect="blur"
                   src={getOptimizedImage(game.image[0], {
@@ -582,7 +581,7 @@ function Details() {
                 />
                 <div className="flex items-center justify-center gap-2 flex-wrap">
                   {game?.tags?.map((val, index) =>
-                    <div key={index} className="text-sm w-fit px-2 rounded pb-0.5 bg-blue-800/30 font-semibold text-blue-400">
+                    <div key={index} className="text-sm w-fit px-2 rounded pb-0.5 bg-blue-800/50 font-semibold text-blue-400">
                       <span>{val}</span>
                     </div>)}
                 </div>
@@ -596,7 +595,7 @@ function Details() {
                     </span>
                   </div>
                   <div className="flex flex-col gap-3">
-                    <span className="bg-[#502519] text-[#CF8485] py-[2px] px-4 rounded-lg text-[12px] text-center">
+                    <span className="bg-[#5f2515] text-[#e8d2d3] py-[2px] px-4 rounded-lg text-[12px] text-center">
                       Save{" "}
                       {Math.round(
                         ((game.price - game.discountPrice) / game.price) * 100
@@ -615,7 +614,7 @@ function Details() {
                       nav("/checkout");
                       addToCart(game.id);
                     }}
-                    className="border border-[#F1BD38]/20 bg-[#362A11] hover:bg-[#362A11]/80 rounded-lg flex justify-center p-1 cursor-pointer"
+                    className="border border-[#F1BD38]/30 bg-[#604a1b] hover:bg-[#362A11] rounded-lg flex justify-center p-1 cursor-pointer"
                   >
                     <span className="flex text-[#F1BD38] items-center gap-2 text-lg">
                       Buy now
@@ -624,7 +623,7 @@ function Details() {
                   </div>
                   <div
                     onClick={() => addToCart(game.id)}
-                    className="border border-[#C6E258]/20 bg-[#21280F] hover:bg-[#21280F]/80 rounded-lg flex justify-center p-1 cursor-pointer"
+                    className="border border-[#C6E258]/30 bg-[#39461a] hover:bg-[#21280F] rounded-lg flex justify-center p-1 cursor-pointer"
                   >
                     <span className="flex text-[#C6E258] items-center gap-2 text-lg">
                       Add to cart <FaOpencart />
@@ -632,7 +631,7 @@ function Details() {
                   </div>
                   <div
                     onClick={() => addToWishlist(game.id)}
-                    className="border border-pink-800/20 bg-pink-800/25 hover:bg-pink-900/35 rounded-lg flex justify-center p-1 cursor-pointer"
+                    className="border border-pink-800/60 bg-pink-800/35 hover:bg-pink-900/35 rounded-lg flex justify-center p-1 cursor-pointer"
                   >
                     <span className="flex text-pink-600 items-center gap-2 text-lg">
                       Add to wishlist <FaRegHeart />
@@ -665,7 +664,7 @@ function Details() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#18181872] border-2 border-[#292b26]/50  rounded-xl p-5 flex flex-col gap-2">
+              <div className="bg-[#131313]/60 border-2 border-[#292b26]/50  rounded-xl p-5 flex flex-col gap-2">
                 <div className="flex items-center gap-8 py-2 rounded-xl bg-[#212121c8]/60 justify-center">
                   <span className="text-6xl font-bold text-white/70">
                     {game.rating}

@@ -9,7 +9,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Footer() {
   return (
-    <div className="bg-[#181A1E] py-5 md:py-13 flex flex-col justify-center gap-2 md:gap-10 items-center">
+    <div className="bg-[#181A1E] py-5 md:py-13 flex flex-col justify-center gap-2 md:gap-10 items-center z-100">
       <LazyLoadImage src="/assets/logo.webp" className="w-50" alt="" />
       <div className="flex gap-5 md:gap-10 items-center flex-col md:flex-row text-lg justify-center">
         <ul className="flex gap-10 items-center">
