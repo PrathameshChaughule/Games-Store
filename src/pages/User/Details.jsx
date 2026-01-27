@@ -32,6 +32,7 @@ function Details() {
   const [games, setGames] = useState([])
   const nav = useNavigate();
   const { updateCartCount } = useContext(GameContext);
+  const [loader, setLoader] = useState(false)
 
 
   const fetchData = async () => {
@@ -108,6 +109,7 @@ function Details() {
       toast.warning("LogIn Required")
       return
     }
+    setLoader(true)
     try {
       const { data, error: fetchError } = await supabase
         .from("users")
@@ -119,10 +121,15 @@ function Details() {
 
       const wishlist = data?.wishlist || [];
 
-      if (wishlist.includes(gameId)) {
+      const alreadyExists = wishlist.some(
+        (item) => item.gameId === gameId
+      );
+
+      if (alreadyExists) {
         toast.warning("Already added to wishlist");
         return;
       }
+
       const updatedWishlist = [...wishlist, {
         gameId: gameId,
         addedDate: new Date().toISOString(),
@@ -138,6 +145,8 @@ function Details() {
     } catch (error) {
       console.error(error);
       toast.error("Failed to add to wishlist");
+    } finally {
+      setLoader(false)
     }
   };
 
@@ -363,14 +372,15 @@ function Details() {
                             Add to cart <FaOpencart />
                           </span>
                         </div>
-                        <div
+                        <button
+                          disabled={loader}
                           onClick={() => addToWishlist(game.id)}
-                          className="border border-pink-800/20 bg-pink-800/25 hover:bg-pink-900/35 rounded-lg flex justify-center p-1 cursor-pointer"
+                          className={`border border-pink-800/20 bg-pink-800/25 hover:bg-pink-900/35 rounded-lg flex justify-center p-1 ${loader ? "cursor-not-allowed" : "cursor-pointer"} `}
                         >
                           <span className="flex text-pink-600 items-center gap-2 text-lg">
                             Add to wishlist <FaRegHeart />
                           </span>
-                        </div>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -629,14 +639,15 @@ function Details() {
                       Add to cart <FaOpencart />
                     </span>
                   </div>
-                  <div
+                  <button
+                    disabled={loader}
                     onClick={() => addToWishlist(game.id)}
-                    className="border border-pink-800/60 bg-pink-800/35 hover:bg-pink-900/35 rounded-lg flex justify-center p-1 cursor-pointer"
+                    className={`border border-pink-800/60 bg-pink-800/35 hover:bg-pink-900/35 rounded-lg flex justify-center p-1 ${loader ? "cursor-not-allowed" : "cursor-pointer"}`}
                   >
                     <span className="flex text-pink-600 items-center gap-2 text-lg">
                       Add to wishlist <FaRegHeart />
                     </span>
-                  </div>
+                  </button>
                 </div>
                 <div className="p-4 rounded-xl flex items-center flex-col gap-2 bg-[#212121c8]">
                   <span className="text-[#FFFDF6] text-md flex items-center gap-2">

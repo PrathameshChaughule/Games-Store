@@ -1,9 +1,7 @@
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import bcrypt from "bcryptjs";
 import { supabase } from "../supabaseClient/supabaseClient";
 
 function Signup() {
@@ -20,7 +18,111 @@ function Signup() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false)
   const nav = useNavigate();
-  const saltRounds = 10
+
+  const handleGoogleSignup = async () => {
+    try {
+      sessionStorage.setItem("google_login", "true");
+
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: window.location.origin + "/login",
+        },
+      });
+
+      if (error) throw error;
+    } catch (err) {
+      console.error(err);
+      toast.error("Google sign-in failed");
+    }
+  };
+
+  useEffect(() => {
+    const runAfterGoogleRedirect = async () => {
+      const isGooglelogin = sessionStorage.getItem("google_login");
+      if (!isGooglelogin) return;
+
+      const {
+        data: { session },
+        error: sessionError,
+      } = await supabase.auth.getSession();
+
+      if (sessionError || !session?.user) return;
+
+      const user = session.user;
+
+      const fullName = user.user_metadata?.full_name || "";
+      const firstName =
+        user.user_metadata?.firstName || fullName.split(" ")[0] || "";
+      const lastName =
+        user.user_metadata?.lastName || fullName.split(" ")[1] || "";
+
+      const { data: existingUser } = await supabase
+        .from("users")
+        .select("*")
+        .eq("authid", user.id)
+        .maybeSingle();
+
+      if (!existingUser) {
+        const { error: insertError } = await supabase.from("users").insert({
+          authid: user.id,
+          email: user.email,
+          firstName,
+          lastName,
+          role: "user",
+          customerId: `CUS-${Date.now().toString().slice(-6)}`,
+          status: "Active",
+          totalSpend: 0,
+          totalOrders: 0,
+          library: [],
+          address: [
+            { address: "", city: "", state: "", country: "India", zipCode: "" },
+          ],
+          wishlist: [],
+          mobileNumber: "",
+          createdAt: new Date().toISOString(),
+          lastLogin: new Date().toISOString(),
+          lastOrder: null
+        });
+
+        if (insertError) {
+          console.error(insertError);
+          return;
+        }
+      }
+
+      const { data: dbUser, error: fetchError } = await supabase
+        .from("users")
+        .select("*")
+        .eq("authid", user.id)
+        .single();
+
+      if (fetchError || !dbUser) {
+        toast.error(fetchError)
+        toast.error("Failed to load user data");
+        return;
+      }
+
+      const auth = {
+        isAuth: true,
+        role: dbUser.role,
+        customerId: dbUser.customerId,
+        authId: dbUser.authid,
+        userId: dbUser.id,
+        firstName: dbUser.firstName,
+        lastName: dbUser.lastName,
+        email: dbUser.email,
+      };
+
+      localStorage.setItem("auth", JSON.stringify(auth));
+
+      sessionStorage.removeItem("google_login");
+      toast.success(`Welcome ${dbUser.firstName}!`);
+      nav(lastPage);
+    };
+
+    runAfterGoogleRedirect();
+  }, [nav, lastPage]);
 
   const formHandle = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -30,86 +132,96 @@ function Signup() {
     e.preventDefault();
     setLoading(true);
 
-    if (password !== confirmPassword) {
-      toast.error("Password and Confirm Password must be same");
-      setLoading(false);
-      return;
-    }
-
     try {
-      const { data: existingUser, error: fetchError } = await supabase
-        .from("users")
-        .select("id")
-        .eq("email", data.email)
-        .maybeSingle();
+      const email = data.email.trim();
+      const firstName = data.firstName.trim();
+      const lastName = data.lastName.trim();
 
-      if (existingUser) {
-        toast.error("User already exists");
+      const [localPart, domain] = email.split("@");
+      if (!localPart || localPart.length < 6 || !domain || !domain.includes(".") || !/\d/.test(localPart)) {
+        toast.error(
+          "Email must have at least 3 characters in the local part and include a 3 number, e.g., user123@gmail.com"
+        );
         setLoading(false);
         return;
       }
 
-      if (fetchError) {
-        throw fetchError;
+      if (password !== confirmPassword) {
+        toast.error("Passwords do not match");
+        setLoading(false);
+        return;
       }
 
-      const hashedPassword = await bcrypt.hash(password, saltRounds);
+      const { data: authData, error: signUpError } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          data: { firstName, lastName },
+        },
+      });
 
-      const { data: newUser, error: insertError } = await supabase
+      if (signUpError) throw signUpError;
+
+      toast.success("Account successfully created 🎉");
+
+      const userIdFromAuth = authData.user.id;
+
+      const { data: existingUser } = await supabase
         .from("users")
-        .insert({
-          ...data,
-          password: hashedPassword,
-          customerId: `CUS-${Date.now().toString().slice(-6)}`,
-          createdAt: new Date().toISOString(),
-          status: "Active",
-          lastLogin: new Date().toISOString(),
-          lastOrder: null,
-          totalOrders: 0,
-          address: [
-            {
-              address: "",
-              city: "",
-              country: "India",
-              state: "",
-              zipCode: ""
-            }
-          ],
-          wishlist: [],
-          mobileNumber: ""
-        })
-        .select()
-        .single();
+        .select("*")
+        .eq("authid", userIdFromAuth)
+        .maybeSingle();
 
-      if (insertError) throw insertError;
+      let newUser;
+
+      if (!existingUser) {
+        const { data, error: insertError } = await supabase
+          .from("users")
+          .insert({
+            authid: userIdFromAuth,
+            email,
+            firstName,
+            lastName,
+            role: "user",
+            customerId: `CUS-${Date.now().toString().slice(-6)}`,
+            status: "Active",
+            totalSpend: 0,
+            totalOrders: 0,
+            library: [],
+            address: [{ address: "", city: "", state: "", country: "India", zipCode: "" }],
+            wishlist: [],
+            mobileNumber: "",
+            createdAt: new Date().toISOString(),
+            lastLogin: new Date().toISOString(),
+            lastOrder: null
+          })
+          .select()
+          .single();
+
+        if (insertError) throw insertError;
+        newUser = data;
+      } else {
+        newUser = existingUser;
+      }
 
       const auth = {
-        token: crypto.randomUUID(),
         isAuth: true,
         role: newUser.role,
         customerId: newUser.customerId,
+        authId: newUser.authid,
         userId: newUser.id,
         firstName: newUser.firstName,
         lastName: newUser.lastName,
-        email: newUser.email
+        email: newUser.email,
       };
 
       localStorage.setItem("auth", JSON.stringify(auth));
 
-      setData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        password: "",
-        role: "user"
-      });
-
-      toast.success("Account created successfully 🎉");
       nav(lastPage);
 
-    } catch (error) {
-      console.error(error);
-      toast.error("Something went wrong");
+    } catch (err) {
+      console.error(err);
+      toast.error(err.message || "Signup failed");
     } finally {
       setLoading(false);
     }
@@ -246,8 +358,18 @@ function Signup() {
                   <span>SIGN UP NOW</span>}
                 </button>
               </form>
+              <div className="flex items-center justify-between gap-2">
+                <div className="h-[0.5px] bg-gray-500 w-full"></div>
+                <span className="text-gray-700 mb-0.5 w-75 text-sm sm:text-[15px]">Or Sing Up With</span>
+                <div className="h-[0.5px] bg-gray-500 w-full"></div>
+              </div>
             </div>
-
+            <div className="w-full my-3 lg:-my-3 flex justify-center items-center">
+              <button onClick={() => handleGoogleSignup()} className="border w-fit p-1.5 flex items-center gap-2 px-4 cursor-pointer rounded border-gray-400 hover:bg-gray-50">
+                <img src="/assets/google.svg" className="w-7" alt="" />
+                <span className="text-lg text-gray-700">Sign Up With Google</span>
+              </button>
+            </div>
             <div>
               <span className="font-medium cursor-pointer hover:text-black/70">
                 Privacy Policy

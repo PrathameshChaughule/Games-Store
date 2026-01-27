@@ -36,7 +36,7 @@ function Sidebar() {
                     </div>
                     <div>
                         <p className="text-2xl font-semibold">{userData?.firstName.toUpperCase()}</p>
-                        <p className="text-lg text-gray-300">{userData?.email}</p>
+                        <p className="text-lg text-gray-300 break-all px-3">{userData?.email}</p>
                     </div>
                 </div>
 

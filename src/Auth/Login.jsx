@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import bcrypt from "bcryptjs";
 import { supabase } from "../supabaseClient/supabaseClient";
 
 function Login() {
@@ -43,6 +42,110 @@ function Login() {
     },
   ];
 
+  const handleGoogleLogin = async () => {
+    try {
+      sessionStorage.setItem("google_login", "true");
+
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: window.location.origin + "/login",
+        },
+      });
+
+      if (error) throw error;
+    } catch (err) {
+      console.error(err);
+      toast.error("Google sign-in failed");
+    }
+  };
+
+  useEffect(() => {
+    const runAfterGoogleRedirect = async () => {
+      const isGooglelogin = sessionStorage.getItem("google_login");
+      if (!isGooglelogin) return;
+
+      const {
+        data: { session },
+        error: sessionError,
+      } = await supabase.auth.getSession();
+
+      if (sessionError || !session?.user) return;
+
+      const user = session.user;
+
+      const fullName = user.user_metadata?.full_name || "";
+      const firstName =
+        user.user_metadata?.firstName || fullName.split(" ")[0] || "";
+      const lastName =
+        user.user_metadata?.lastName || fullName.split(" ")[1] || "";
+
+      const { data: existingUser } = await supabase
+        .from("users")
+        .select("*")
+        .eq("authid", user.id)
+        .maybeSingle();
+
+      if (!existingUser) {
+        const { error: insertError } = await supabase.from("users").insert({
+          authid: user.id,
+          email: user.email,
+          firstName,
+          lastName,
+          role: "user",
+          customerId: `CUS-${Date.now().toString().slice(-6)}`,
+          status: "Active",
+          totalSpend: 0,
+          totalOrders: 0,
+          library: [],
+          address: [
+            { address: "", city: "", state: "", country: "India", zipCode: "" },
+          ],
+          wishlist: [],
+          mobileNumber: "",
+          createdAt: new Date().toISOString(),
+          lastLogin: new Date().toISOString(),
+          lastOrder: null
+        });
+
+        if (insertError) {
+          console.error(insertError);
+          return;
+        }
+      }
+
+      const { data: dbUser, error: fetchError } = await supabase
+        .from("users")
+        .select("*")
+        .eq("authid", user.id)
+        .single();
+
+      if (fetchError || !dbUser) {
+        toast.error(fetchError)
+        toast.error("Failed to load user data");
+        return;
+      }
+
+      const auth = {
+        isAuth: true,
+        role: dbUser.role,
+        customerId: dbUser.customerId,
+        authId: dbUser.authid,
+        userId: dbUser.id,
+        firstName: dbUser.firstName,
+        lastName: dbUser.lastName,
+        email: dbUser.email,
+      };
+
+      localStorage.setItem("auth", JSON.stringify(auth));
+
+      sessionStorage.removeItem("google_login");
+      toast.success(`Welcome ${dbUser.firstName}!`);
+      nav(lastPage);
+    };
+
+    runAfterGoogleRedirect();
+  }, [nav, lastPage]);
 
   const formHandle = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -54,42 +157,31 @@ function Login() {
     setLoading(true);
 
     try {
-      const { data: users, error } = await supabase
-        .from("users")
-        .select("*")
-        .eq("email", data.email);
+      const { data: authData, error: authError } =
+        await supabase.auth.signInWithPassword({
+          email: data.email,
+          password: data.password,
+        });
 
-      if (error) throw error;
-
-      if (!users || users.length === 0) {
-        toast.error("Invalid credentials");
-        setLoading(false);
-        return;
-      }
-
-      const user = users[0];
-
-      const isPasswordMatch = await bcrypt.compare(
-        data.password,
-        user.password
-      );
-
-      if (!isPasswordMatch) {
+      if (authError) {
         toast.error("Invalid email or password");
         setLoading(false);
         return;
       }
 
-      const auth = {
-        token: crypto.randomUUID(),
-        isAuth: true,
-        role: user.role,
-        customerId: user.customerId,
-        userId: user.id,
-        firstName: user.firstName,
-        lastName: user.lastName,
-        email: user.email,
-      };
+      const userId = authData.user.id;
+
+      const { data: user, error: fetchError } = await supabase
+        .from("users")
+        .select("*")
+        .eq("authid", userId)
+        .single();
+
+      if (fetchError || !user) {
+        toast.error("User profile not found");
+        setLoading(false);
+        return;
+      }
 
       await supabase
         .from("users")
@@ -97,22 +189,32 @@ function Login() {
           status: "Active",
           lastLogin: new Date().toISOString(),
         })
-        .eq("id", user.id);
+        .eq("authid", userId);
+
+      const auth = {
+        isAuth: true,
+        role: user.role,
+        customerId: user.customerId,
+        authId: user.authid,
+        userId: user.id,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        email: user.email,
+      };
 
       localStorage.setItem("auth", JSON.stringify(auth));
 
-      toast.success("Login Successful!");
-      setTimeout(() => {
-        nav(lastPage);
-        setLoading(false);
-      }, 1000);
+      toast.success("Login successful 🎉");
+      nav(lastPage);
 
-    } catch (error) {
-      console.error(error);
+    } catch (err) {
+      console.error(err);
       toast.error("Something went wrong");
+    } finally {
       setLoading(false);
     }
   };
+
 
 
   return (
@@ -217,8 +319,18 @@ function Login() {
                   }
                 </button>
               </form>
+              <div className="flex items-center justify-between gap-2">
+                <div className="h-[0.5px] bg-gray-500 w-full"></div>
+                <span className="text-gray-700 mb-0.5 w-75 text-sm sm:text-[15px]">Or Sing In With</span>
+                <div className="h-[0.5px] bg-gray-500 w-full"></div>
+              </div>
             </div>
-
+            <div className="w-full flex justify-center items-center">
+              <button onClick={() => handleGoogleLogin()} className="border w-fit p-1.5 flex items-center gap-2 px-4 cursor-pointer rounded border-gray-400 hover:bg-gray-50">
+                <img src="/assets/google.svg" className="w-7" alt="" />
+                <span className="text-lg text-gray-700">Sign In With Google</span>
+              </button>
+            </div>
             <div>
               <span className="font-medium cursor-pointer hover:text-black/70">
                 Privacy Policy

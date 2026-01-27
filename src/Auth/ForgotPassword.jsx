@@ -1,9 +1,7 @@
-
 import { useEffect, useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import bcrypt from "bcryptjs";
 import { supabase } from "../supabaseClient/supabaseClient";
 
 function ForgotPassword() {
@@ -18,7 +16,6 @@ function ForgotPassword() {
   const [loading, setLoading] = useState(false)
   const nav = useNavigate();
   const OTP_TIME = 30;
-  const saltRounds = 10
 
   const videos = [
     {
@@ -126,8 +123,6 @@ function ForgotPassword() {
     setLoading(true);
 
     try {
-      const hashedPassword = await bcrypt.hash(password, saltRounds);
-
       const { data, error } = await supabase
         .from("users")
         .select("id")
@@ -142,7 +137,7 @@ function ForgotPassword() {
 
       await supabase
         .from("users")
-        .update({ password: hashedPassword })
+        .update({ password: password })
         .eq("id", data.id);
 
       toast.success("Password reset successful");

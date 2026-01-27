@@ -42,10 +42,10 @@ function Profile() {
             <div className="absolute -bottom-0.5 -right-1 h-3.5 w-3.5 border-2 border-[#181A1E] rounded-full bg-green-500"></div>
           </div>
           <div>
-            <p className="text-[23px]">
+            <p className="text-[20px] break-all">
               {userData.firstName} {userData.lastName}
             </p>
-            <p className="text-lg text-gray-400 -mt-1">{userData?.email}</p>
+            <p className="text-gray-400 -mt-1 break-all">{userData?.email}</p>
           </div>
         </div>
         <ul className="md:hidden flex text-md md:text-xl items-center justify-around border rounded-2xl">

@@ -151,8 +151,8 @@ function Navbar() {
                 </div>
               </div>
               :
-              <div className="flex items-center gap-2 cursor-pointer text-white">
-                <div className="w-10 h-10 sm:w-11 sm:h-11">
+              <div className="flex items-center gap-1 bg-[#10106f] border-[#10106f] hover:bg-transparent cursor-pointer text-white border-3 p-1 rounded-full">
+                <div className="w-10 h-10 sm:w-9 sm:h-9">
                   <LazyLoadImage
                     effect="blur"
                     src="/assets/user.webp"
@@ -160,8 +160,7 @@ function Navbar() {
                     alt=""
                   />
                 </div>
-
-                <span className="text-sm font-medium hidden md:block">Login</span>
+                <span className="font-bold hidden md:block pr-0.5">Login</span>
               </div>
             }
             <div

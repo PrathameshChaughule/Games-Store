@@ -9,7 +9,6 @@ import AdminProfile from "./AdminProfile";
 function AdminNavbar() {
   const [profileOpen, setProfileOpen] = useState(false);
   const userData = JSON.parse(localStorage.getItem("auth"));
-
   return (
     <div className="border-b border-gray-300 dark:border-[#011743] dark:bg-[#030318] bg-white flex py-2 px-2 gap-7 relative">
       <div className="px-3.5">
@@ -25,7 +24,7 @@ function AdminNavbar() {
             className="w-full border-none outline-none"
           />
         </div>
-        <div onClick={() => setProfileOpen(!profileOpen)} className="flex items-center cursor-pointer">
+        <div onClick={() => setProfileOpen(!profileOpen)} className="flex items-center cursor-pointer rounded-full px-1.5 py-0.5 bg-[#F3F4F6] dark:bg-[#080B2C]">
           <div className="flex items-center gap-3 relative mr-3">
             <LazyLoadImage
               src="/assets/user.webp"
@@ -37,9 +36,14 @@ function AdminNavbar() {
               <FaCrown className="text-[#F5B736] cursor-pointer absolute bottom-0 right-0 z-100" />
             )}
           </div>
-          <span className="font-semibold flex items-center gap-1 cursor-pointer">Admin <GoTriangleDown className={`text-xl mt-0.5 ${profileOpen ? "rotate-180" : "rotate-0"}`} /></span>
+          <div className="flex flex-col">
+            <p className="text-lg font-semibold">
+              {userData.firstName} {userData.lastName}
+            </p>
+            <p className="w-fit px-3 text-xs rounded-xs bg-green-500 dark:bg-green-600 font-semibold text-white">Admin</p>
+          </div>
+          <span className="font-semibold flex items-center gap-1 cursor-pointer ml-2 mr-1 -mt-2"><GoTriangleDown className={`text-4xl mt-0.5 ${profileOpen ? "rotate-180" : "rotate-0"}`} /></span>
         </div>
-
       </div>
       {profileOpen && (
         <div
@@ -48,7 +52,7 @@ function AdminNavbar() {
         />
       )}
       <div
-        className="absolute z-100 right-3 top-18  "
+        className="absolute z-100 right-16 top-18  "
         onClick={() => setProfileOpen(!profileOpen)}
       >
         {profileOpen && <>{userData?.isAuth && <AdminProfile />}</>}
