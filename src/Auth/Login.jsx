@@ -72,12 +72,8 @@ function Login() {
       setLoader(true);
 
       try {
-        const {
-          data: { session },
-          error: sessionError,
-        } = await supabase.auth.getSession();
-
-        if (sessionError || !session?.user) {
+        const { data: { session }, error } = await supabase.auth.getSession();
+        if (error || !session?.user) {
           setLoader(false);
           return;
         }
@@ -85,15 +81,21 @@ function Login() {
         const user = session.user;
 
         const fullName = user.user_metadata?.full_name || "";
-        const firstName =
-          user.user_metadata?.firstName || fullName.split(" ")[0] || "";
-        const lastName =
-          user.user_metadata?.lastName || fullName.split(" ")[1] || "";
+        const firstName = user.user_metadata?.firstName || fullName.split(" ")[0] || "";
+        const lastName = user.user_metadata?.lastName || fullName.split(" ")[1] || "";
 
-        const { data, error } = await supabase
+        let dbUser = null;
+
+        const { data: existingUser } = await supabase
           .from("users")
-          .upsert(
-            {
+          .select("id, authid, role, customerId, firstName, lastName, email")
+          .eq("authid", user.id)
+          .maybeSingle();
+
+        if (!existingUser) {
+          const { data: insertedUser, error: insertError } = await supabase
+            .from("users")
+            .insert({
               authid: user.id,
               email: user.email,
               firstName,
@@ -101,38 +103,21 @@ function Login() {
               role: "user",
               customerId: `CUS-${Date.now().toString().slice(-6)}`,
               status: "Active",
-              totalSpend: 0,
-              totalOrders: 0,
-              library: [],
-              address: [
-                {
-                  address: "",
-                  city: "",
-                  state: "",
-                  country: "India",
-                  zipCode: "",
-                },
-              ],
-              wishlist: [],
-              mobileNumber: "",
               createdAt: new Date().toISOString(),
-              lastLogin: new Date().toISOString(),
-              lastOrder: null,
-            },
-            {
-              onConflict: "authid",
-              returning: "representation",
-            }
-          );
+            })
+            .select()
+            .single();
 
-        if (error || !data?.[0]) {
-          toast.error(error)
-          toast.error("Failed to load user data");
-          setLoader(false);
-          return;
+          if (insertError) {
+            console.error(insertError);
+            setLoader(false);
+            return;
+          }
+
+          dbUser = insertedUser;
+        } else {
+          dbUser = existingUser;
         }
-
-        const dbUser = data[0];
 
         const auth = {
           isAuth: true,
@@ -149,8 +134,25 @@ function Login() {
         sessionStorage.removeItem("google_login");
 
         toast.success(`Welcome ${dbUser.firstName}!`);
-        setLoader(false);
         nav(lastPage);
+        setLoader(false);
+
+        (async () => {
+          try {
+            await supabase.from("users").update({
+              lastLogin: new Date().toISOString(),
+              totalSpend: 0,
+              totalOrders: 0,
+              library: [],
+              address: [{ address: "", city: "", state: "", country: "India", zipCode: "" }],
+              wishlist: [],
+              mobileNumber: "",
+              lastOrder: null
+            }).eq("authid", user.id);
+          } catch (bgError) {
+            console.error("Background update failed:", bgError);
+          }
+        })();
 
       } catch (err) {
         console.error(err);
@@ -236,8 +238,7 @@ function Login() {
   return (
     <div className="relative flex items-center justify-center h-[100vh] w-[100vw]">
       <video
-        key={`bg-${currentIndex}`}
-        src={videos[currentIndex].src}
+        src={videos[0].src}
         autoPlay
         muted
         loop
@@ -255,14 +256,14 @@ function Login() {
         <div className="w-[85%] md:w-[70%] lg:h-[80%] flex rounded-xl justify-between  overflow-hidden bg-white">
           <div className="hidden lg:flex w-[50%] h-full overflow-hidden relative">
             <video
-              src={videos[currentIndex].src}
-              poster={videos[currentIndex].poster}
+              src={videos[0].src}
+              poster={videos[0].poster}
               autoPlay
               muted
               playsInline
               loop
               // onEnded={handleEnd}
-              className={`absolute w-full rounded-l-xl h-full object-cover ${videos[currentIndex].position}`}
+              className={`absolute w-full rounded-l-xl h-full object-cover ${videos[0].position}`}
             />
           </div>
 
