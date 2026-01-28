@@ -135,8 +135,6 @@ function Login() {
 
         toast.success(`Welcome ${dbUser.firstName}!`);
         nav(lastPage);
-        setLoader(false);
-
         (async () => {
           try {
             await supabase.from("users").update({
